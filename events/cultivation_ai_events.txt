@@ -4,6 +4,8 @@
 cultivation_ai.0001 = {
     type = character_event
     hide_window = yes
+    theme = realm
+    desc = cultivation_ai.0001.desc
 
     trigger = {
         is_ai = yes
@@ -129,6 +131,8 @@ cultivation_ai.0001 = {
 cultivation_ai.0002 = {
     type = character_event
     hide_window = yes
+    theme = realm
+    desc = cultivation_ai.0002.desc
 
     trigger = {
         is_ai = yes

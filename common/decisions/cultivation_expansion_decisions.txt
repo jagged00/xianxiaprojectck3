@@ -180,7 +180,7 @@ awaken_meridian_disciples_decision = {
 
     is_shown = {
         is_cultivator = yes
-        OR = { is_ruler = yes is_court_physician = yes has_court_position = court_tutor }
+        OR = { is_ruler = yes has_court_position = court_tutor }
         OR = {
             any_courtier = { is_adult = yes NOT = { is_cultivator = yes } OR = { has_trait = poor_meridians has_trait = normal_meridians has_trait = good_meridians has_trait = excellent_meridians has_trait = heavenly_meridians } }
             any_vassal = { is_adult = yes NOT = { is_cultivator = yes } OR = { has_trait = poor_meridians has_trait = normal_meridians has_trait = good_meridians has_trait = excellent_meridians has_trait = heavenly_meridians } }

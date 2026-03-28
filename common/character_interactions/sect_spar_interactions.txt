@@ -143,10 +143,10 @@
 		}
 		is_valid = {
 			scope:actor = {
-				has_courtier = scope:secondary_actor
+				scope:secondary_actor = { is_courtier_of = scope:actor }
 			}
 			scope:recipient = {
-				has_courtier = scope:secondary_recipient
+				scope:secondary_recipient = { is_courtier_of = scope:recipient }
 			}
 		}
 		flag = send_own_court
@@ -159,7 +159,7 @@
 		}
 		is_valid = {
 			scope:actor = {
-				has_courtier = scope:secondary_actor
+				scope:secondary_actor = { is_courtier_of = scope:actor }
 			}
 		}
 		flag = send_other_court

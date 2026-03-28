@@ -134,13 +134,12 @@ window = {
 				}
 				
 				# Partner info and buttons
-				vbox = {
-					parentanchor = bottom|hcenter
-					position = { -300 300 }
-					margin = { -200 500 }
-					spacing = 5
-					
-					margin = { 15 10 }
+					vbox = {
+						parentanchor = bottom|hcenter
+						position = { -300 300 }
+						spacing = 5
+						
+						margin = { 15 10 }
 					
 					# Find Partner button with icon (like Find Concubine)
 					button_round = {
@@ -369,10 +368,10 @@ window = {
 						layoutpolicy_horizontal = expanding
 						spacing = 10
 						
-						text_single = {
-							text = "Sect:"
-							min_width = 100
-						}
+							text_single = {
+								text = "CULTIVATION_GUI_SECT_LABEL"
+								min_width = 100
+							}
 						
 						text_single = {
 							text = "[Character.GetFaith.GetName]"
@@ -385,10 +384,10 @@ window = {
 						layoutpolicy_horizontal = expanding
 						spacing = 10
 						
-						text_single = {
-							text = "Prowess:"
-							min_width = 100
-						}
+							text_single = {
+								text = "CULTIVATION_GUI_PROWESS_LABEL"
+								min_width = 100
+							}
 						
 						text_single = {
 							text = "[Character.GetProwess]"
@@ -401,10 +400,10 @@ window = {
 						layoutpolicy_horizontal = expanding
 						spacing = 10
 						
-						text_single = {
-							text = "Realm:"
-							min_width = 100
-						}
+							text_single = {
+								text = "CULTIVATION_GUI_REALM_LABEL"
+								min_width = 100
+							}
 						
 						# FLOWCONTAINER with ignoreinvisible = yes
 						# This makes invisible children not take up space!
@@ -412,7 +411,7 @@ window = {
 							ignoreinvisible = yes
 							layoutpolicy_horizontal = expanding
 							
-							text_single = {
+								text_single = {
 								layoutpolicy_horizontal = expanding
 								default_format = "#high"
 								
@@ -513,8 +512,8 @@ window = {
 								default_format = "#high"
 								
 								visible = "[GetScriptedGui('show_mortal').IsShown(GuiScope.SetRoot(Character.MakeScope).End)]"
-								text = "Mortal"
-							}
+									text = "CULTIVATION_GUI_MORTAL_LABEL"
+								}
 						}
 					}
 				}

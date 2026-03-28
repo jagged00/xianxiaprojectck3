@@ -29,33 +29,33 @@
  ##############
  ##Bloodline Men-at-Arms
  ##############
- yin_cultivator_1:0"Yin Cultivator"
- yin_cultivator_1_flavor:0"Yin Cultivator"
- yin_cultivator_2:0"Master Yin Cultivator"
- yin_cultivator_2_flavor:0"Master Yin Cultivator"
- yin_cultivator_3:0"Grandmaster Yin Cultivator"
- yin_cultivator_3_flavor:0"Grandmaster Yin Cultivator"
+ yin_cultivator_1:0 "Yin Cultivator"
+ yin_cultivator_1_flavor:0 "Yin Cultivator"
+ yin_cultivator_2:0 "Master Yin Cultivator"
+ yin_cultivator_2_flavor:0 "Master Yin Cultivator"
+ yin_cultivator_3:0 "Grandmaster Yin Cultivator"
+ yin_cultivator_3_flavor:0 "Grandmaster Yin Cultivator"
 
- yang_cultivator_1:0"Yang Cultivator"
- yang_cultivator_1_flavor:0"Yang Cultivator"
- yang_cultivator_2:0"Master Yang Cultivator"
- yang_cultivator_2_flavor:0"Yang Cultivator"
- yang_cultivator_3:0"Grandmaster Yang Cultivator"
- yang_cultivator_3_flavor:0"Yang Cultivator"
+ yang_cultivator_1:0 "Yang Cultivator"
+ yang_cultivator_1_flavor:0 "Yang Cultivator"
+ yang_cultivator_2:0 "Master Yang Cultivator"
+ yang_cultivator_2_flavor:0 "Yang Cultivator"
+ yang_cultivator_3:0 "Grandmaster Yang Cultivator"
+ yang_cultivator_3_flavor:0 "Yang Cultivator"
 
- primal_cultivator_1:0"Primal Cultivator"
- primal_cultivator_1_flavor:0"Primal Cultivator"
- primal_cultivator_2:0"Master Primal Cultivator"
- primal_cultivator_2_flavor:0"Primal Cultivator"
- primal_cultivator_3:0"Grandmaster Primal Cultivator"
- primal_cultivator_3_flavor:0"Primal Cultivator"
+ primal_cultivator_1:0 "Primal Cultivator"
+ primal_cultivator_1_flavor:0 "Primal Cultivator"
+ primal_cultivator_2:0 "Master Primal Cultivator"
+ primal_cultivator_2_flavor:0 "Primal Cultivator"
+ primal_cultivator_3:0 "Grandmaster Primal Cultivator"
+ primal_cultivator_3_flavor:0 "Primal Cultivator"
 
- sun_cultivator_1:0"Sand Warrior"
- sun_cultivator_1_flavor:0"Sand Warrior"
- sun_cultivator_2:0"Master Sand Warrior"
- sun_cultivator_2_flavor:0"Sand Warrior"
- sun_cultivator_3:0"Grandmaster Sand Warrior"
- sun_cultivator_3_flavor:0"Sand Warrior
+ sun_cultivator_1:0 "Sand Warrior"
+ sun_cultivator_1_flavor:0 "Sand Warrior"
+ sun_cultivator_2:0 "Master Sand Warrior"
+ sun_cultivator_2_flavor:0 "Sand Warrior"
+ sun_cultivator_3:0 "Grandmaster Sand Warrior"
+ sun_cultivator_3_flavor:0 "Sand Warrior"
 
  ##############
  ##Dynasty
@@ -119,7 +119,6 @@
  OPPONENT_SPAR_RECORD:0 "Opponent's Record"
 
  CHALLENGE_TO_SPAR:0 "Challenge to Spar"
- CANCEL:0 "Cancel"
 
  # Interaction descriptions
  sect_spar_interaction_desc_own_court:0 "Arrange a sect spar between members of your court to test their skills and build experience."
@@ -213,6 +212,15 @@
  sect_spar_option_tooltip:0 "Your record: #P [Character.Var('sect_spars_won').GetValue]W#! - #N [Character.Var('sect_spars_lost').GetValue]L#! ([Character.Var('sect_spars_total').GetValue] total)"
  sect_join_is_cultivator_desc:0 "You are cultivator."
  sect_join_isnt_cultivator_desc:0 "You are not a cultivator."
+ FIND_LEFT_PARTNER_TOOLTIP:0 "Find a left-side dual cultivation partner."
+ FIND_RIGHT_PARTNER_TOOLTIP:0 "Find a right-side dual cultivation partner."
+ BREAKTHROUGH:0 "Breakthrough"
+ CULTIVATION_GUI_SECT_LABEL:0 "Sect:"
+ CULTIVATION_GUI_PROWESS_LABEL:0 "Prowess:"
+ CULTIVATION_GUI_REALM_LABEL:0 "Realm:"
+ CULTIVATION_GUI_MORTAL_LABEL:0 "Mortal"
+ cultivation_ai.0001.desc:0 "The wheel of cultivation turns unseen among the masses."
+ cultivation_ai.0002.desc:0 "A wandering soul seeks a sect aligned with their destiny."
 
  ##################################################
  # LIFESTYLE
@@ -439,7 +447,6 @@
  mortal_muscle_reconstruction_perk_desc:0 "Reconstruct muscles for greater strength."
 
  mortal_bone_reconstruction_perk:0 "Bone Reconstruction"
- mortal_bone_reconstruction_perk_name:0 "Bone Reconstruction"
  mortal_bone_reconstruction_perk_name:0 "Bone Reconstruction"
  mortal_bone_reconstruction_perk_desc:0 "Strengthen bones through cultivation."
 
@@ -2055,11 +2062,7 @@
  ## BREAKTHROUGH MODIFIERS
  #######################
 
- contemplating_breakthrough:0 "Contemplating Breakthrough"
- contemplating_breakthrough_desc:0 "Deep in contemplation, preparing for the breakthrough attempt."
 
- failed_breakthrough_attempt:0 "Failed Breakthrough"
- failed_breakthrough_attempt_desc:0 "Still recovering from the failed breakthrough. Foundation is unstable."
 
  #######################
  ## CULTIVATION PATH TENETS

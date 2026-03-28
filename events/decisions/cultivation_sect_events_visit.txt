@@ -21,7 +21,6 @@ cultivation_sect_visit.1000 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -77,7 +76,6 @@ cultivation_sect_visit.1001 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -130,7 +128,6 @@ cultivation_sect_visit.1003 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -183,7 +180,6 @@ cultivation_sect_visit.1004 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -236,7 +232,6 @@ cultivation_sect_visit.1052 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -289,7 +284,6 @@ cultivation_sect_visit.1053 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -342,7 +336,6 @@ cultivation_sect_visit.1100 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -395,7 +388,6 @@ cultivation_sect_visit.1101 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -448,7 +440,6 @@ cultivation_sect_visit.1102 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -503,7 +494,6 @@ cultivation_sect_visit.1150 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -556,7 +546,6 @@ cultivation_sect_visit.1154 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -611,7 +600,6 @@ cultivation_sect_visit.2000 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -664,7 +652,6 @@ cultivation_sect_visit.2001 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -717,7 +704,6 @@ cultivation_sect_visit.2003 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -770,7 +756,6 @@ cultivation_sect_visit.2051 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -823,7 +808,6 @@ cultivation_sect_visit.2052 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -876,7 +860,6 @@ cultivation_sect_visit.2103 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -929,7 +912,6 @@ cultivation_sect_visit.2104 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -984,7 +966,6 @@ cultivation_sect_visit.2150 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1037,7 +1018,6 @@ cultivation_sect_visit.2151 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1090,7 +1070,6 @@ cultivation_sect_visit.2152 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1143,7 +1122,6 @@ cultivation_sect_visit.3001 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1196,7 +1174,6 @@ cultivation_sect_visit.3051 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1249,7 +1226,6 @@ cultivation_sect_visit.3100 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1302,7 +1278,6 @@ cultivation_sect_visit.3101 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1355,7 +1330,6 @@ cultivation_sect_visit.3150 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1410,7 +1384,6 @@ cultivation_sect_visit.4000 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1463,7 +1436,6 @@ cultivation_sect_visit.4002 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1518,7 +1490,6 @@ cultivation_sect_visit.4050 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1571,7 +1542,6 @@ cultivation_sect_visit.4051 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1624,7 +1594,6 @@ cultivation_sect_visit.4052 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1677,7 +1646,6 @@ cultivation_sect_visit.4101 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1730,7 +1698,6 @@ cultivation_sect_visit.4102 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }
@@ -1783,7 +1750,6 @@ cultivation_sect_visit.4152 = {
             age = 40
             dynasty = none
             gender = male
-            randomize_traits = yes
             save_scope_as = sect_elder
         }        
         scope:sect_elder = { add_trait = cultivation_core_formation }

@@ -8,7 +8,7 @@ cultivation_legacy_1 = { # Mystic training
 		}
     }
 	character_modifier = {
-		popular_opinion = -15
+		general_opinion = -15
 	}
 
 	traits = {
@@ -87,7 +87,7 @@ cultivation_legacy_4 = { # MaA 2 + Popular opinion penalty
 	legacy = cultivation_legacy_track
 
 	character_modifier = {
-		popular_opinion = -5
+		general_opinion = -5
 	}
 	
     effect = {
