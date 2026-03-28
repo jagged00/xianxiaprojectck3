@@ -30,11 +30,11 @@ on_birth_child = {
 }
 
 # This is the pulse that all our initialization events hook into
-#cultivation_character_initialization_pulse = {
-#	events = {
-#		cultivation_init.0001  # Initialize this character with cultivation trait
-#	}
-#}
+cultivation_character_initialization_pulse = {
+	events = {
+		cultivation_character_initialization.0002
+	}
+}
 
 on_faith_created = {
 	events = {

@@ -9,6 +9,7 @@ cultivation_ai.0001 = {
         is_ai = yes
         is_alive = yes
         is_adult = yes
+        has_active_meridians = yes
         NOT = { has_trait = incapable }
     }
 
@@ -121,27 +122,96 @@ cultivation_ai.0002 = {
         is_ai = yes
         is_alive = yes
         is_adult = yes
-        is_cultivator = yes
+        has_active_meridians = yes
         NOT = { has_character_flag = ai_recently_joined_sect }
     }
 
     immediate = {
-        random_list = {
-            18 = {
-                random_list = {
-                    15 = { set_character_faith = faith:mount_hua_sect }
-                    15 = { set_character_faith = faith:wudang_sect }
-                    12 = { set_character_faith = faith:shaolin_temple }
-                    12 = { set_character_faith = faith:jade_cauldron_sect }
-                    12 = { set_character_faith = faith:divine_beast_mountain }
-                    10 = { set_character_faith = faith:crimson_moon_blade_hall }
-                    8 = { set_character_faith = faith:blood_river_sect }
-                    8 = { set_character_faith = faith:five_poison_cult }
-                    8 = { set_character_faith = faith:lone_wolf_wanderers }
+        # Only join if missing sect faith OR missing cultivation realm trait
+        if = {
+            limit = {
+                OR = {
+                    NOT = { is_cultivator = yes }
+                    NOT = {
+                        faith = {
+                            OR = {
+                                has_doctrine = tenet_orthodox_cultivation
+                                has_doctrine = tenet_unorthodox_cultivation
+                                has_doctrine = tenet_demonic_cultivation
+                                has_doctrine = tenet_vagrant_cultivation
+                            }
+                        }
+                    }
                 }
-                add_character_flag = { flag = ai_recently_joined_sect days = 1825 }
             }
-            82 = { }
+            # Demonic personalities
+            if = {
+                limit = {
+                    OR = {
+                        has_trait = sadistic
+                        has_trait = callous
+                        has_trait = wrathful
+                        has_trait = vengeful
+                        has_trait = arbitrary
+                    }
+                }
+                random_list = {
+                    25 = { set_character_faith = faith:blood_yin_cult }
+                    25 = { set_character_faith = faith:blood_moon_demonic_sect }
+                    20 = { set_character_faith = faith:ten_thousand_corpse_valley }
+                    15 = { set_character_faith = faith:succubus_palace }
+                    15 = { set_character_faith = faith:venomous_serpent_valley }
+                }
+            }
+            # Orthodox personalities
+            else_if = {
+                limit = {
+                    OR = {
+                        has_trait = just
+                        has_trait = compassionate
+                        has_trait = honest
+                        has_trait = calm
+                        has_trait = forgiving
+                    }
+                }
+                random_list = {
+                    25 = { set_character_faith = faith:mount_hua_sect }
+                    25 = { set_character_faith = faith:wudang_sect }
+                    20 = { set_character_faith = faith:shaolin_temple }
+                    15 = { set_character_faith = faith:heavenly_sword_pavilion }
+                    15 = { set_character_faith = faith:divine_beast_mountain }
+                }
+            }
+            # Unorthodox personalities
+            else_if = {
+                limit = {
+                    OR = {
+                        has_trait = ambitious
+                        has_trait = deceitful
+                        has_trait = cynical
+                        has_trait = impatient
+                        has_trait = greedy
+                    }
+                }
+                random_list = {
+                    25 = { set_character_faith = faith:crimson_moon_blade_hall }
+                    20 = { set_character_faith = faith:tyrant_saber_palace }
+                    20 = { set_character_faith = faith:medicine_king_valley }
+                    20 = { set_character_faith = faith:jade_chamber_sect }
+                    15 = { set_character_faith = faith:moonless_night_pavilion }
+                }
+            }
+            # Fallback: wandering/vagrant sects
+            else = {
+                random_list = {
+                    40 = { set_character_faith = faith:lone_wolf_wanderers }
+                    30 = { set_character_faith = faith:vagrant_blade_brotherhood }
+                    20 = { set_character_faith = faith:thousand_treasures_pavilion }
+                    10 = { set_character_faith = faith:primal_beast_sect }
+                }
+            }
+
+            add_character_flag = { flag = ai_recently_joined_sect days = 1825 }
         }
     }
 }

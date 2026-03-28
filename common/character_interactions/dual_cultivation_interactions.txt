@@ -117,6 +117,144 @@
             
             # Apply dual cultivation effects
             dual_cultivation_effect = yes
+            add_character_modifier = {
+                modifier = dual_cultivation_insight
+                months = 6
+            }
+            scope:recipient = {
+                add_character_modifier = {
+                    modifier = dual_cultivation_insight
+                    months = 6
+                }
+            }
+
+            # Yin/Yang body resonance: trait holder and their partner both benefit
+            if = {
+                limit = {
+                    OR = {
+                        has_trait = yin_bloodline_1
+                        has_trait = yin_bloodline_2
+                        has_trait = yin_bloodline_3
+                    }
+                }
+                add_character_modifier = {
+                    modifier = dual_cultivation_yin_body_resonance
+                    months = 6
+                }
+                scope:recipient = {
+                    add_character_modifier = {
+                        modifier = dual_cultivation_yin_body_resonance
+                        months = 6
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    OR = {
+                        has_trait = yang_bloodline_1
+                        has_trait = yang_bloodline_2
+                        has_trait = yang_bloodline_3
+                    }
+                }
+                add_character_modifier = {
+                    modifier = dual_cultivation_yang_body_resonance
+                    months = 6
+                }
+                scope:recipient = {
+                    add_character_modifier = {
+                        modifier = dual_cultivation_yang_body_resonance
+                        months = 6
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    scope:recipient = {
+                        OR = {
+                            has_trait = yin_bloodline_1
+                            has_trait = yin_bloodline_2
+                            has_trait = yin_bloodline_3
+                        }
+                    }
+                }
+                add_character_modifier = {
+                    modifier = dual_cultivation_yin_body_resonance
+                    months = 6
+                }
+                scope:recipient = {
+                    add_character_modifier = {
+                        modifier = dual_cultivation_yin_body_resonance
+                        months = 6
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    scope:recipient = {
+                        OR = {
+                            has_trait = yang_bloodline_1
+                            has_trait = yang_bloodline_2
+                            has_trait = yang_bloodline_3
+                        }
+                    }
+                }
+                add_character_modifier = {
+                    modifier = dual_cultivation_yang_body_resonance
+                    months = 6
+                }
+                scope:recipient = {
+                    add_character_modifier = {
+                        modifier = dual_cultivation_yang_body_resonance
+                        months = 6
+                    }
+                }
+            }
+
+            # Yin + Yang together grants extra harmony bonus to both partners
+            if = {
+                limit = {
+                    OR = {
+                        AND = {
+                            OR = {
+                                has_trait = yin_bloodline_1
+                                has_trait = yin_bloodline_2
+                                has_trait = yin_bloodline_3
+                            }
+                            scope:recipient = {
+                                OR = {
+                                    has_trait = yang_bloodline_1
+                                    has_trait = yang_bloodline_2
+                                    has_trait = yang_bloodline_3
+                                }
+                            }
+                        }
+                        AND = {
+                            OR = {
+                                has_trait = yang_bloodline_1
+                                has_trait = yang_bloodline_2
+                                has_trait = yang_bloodline_3
+                            }
+                            scope:recipient = {
+                                OR = {
+                                    has_trait = yin_bloodline_1
+                                    has_trait = yin_bloodline_2
+                                    has_trait = yin_bloodline_3
+                                }
+                            }
+                        }
+                    }
+                }
+                add_character_modifier = {
+                    modifier = dual_cultivation_yinyang_harmony
+                    months = 6
+                }
+                scope:recipient = {
+                    add_character_modifier = {
+                        modifier = dual_cultivation_yinyang_harmony
+                        months = 6
+                    }
+                }
+            }
             
             # Additional benefits based on realm compatibility
             if = {
