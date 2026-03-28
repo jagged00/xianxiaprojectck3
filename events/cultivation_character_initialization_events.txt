@@ -1,0 +1,17 @@
+﻿# Cultivation Character Initialization Events
+# Path: events/cultivation_character_initialization_events.txt
+# Based on ACTUAL Carnalitas implementation
+#
+#namespace = cultivation_character_initialization
+#
+#cultivation_character_initialization.0001 = {
+#	scope = none
+#	hidden = yes
+#	
+#	immediate = {
+#		# Loop through every living character and fire the pulse for them
+#		every_living_character = {
+#			trigger_event = { on_action = cultivation_character_initialization_pulse }
+#		}
+#	}
+#}

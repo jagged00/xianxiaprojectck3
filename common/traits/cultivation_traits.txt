@@ -1,0 +1,713 @@
+﻿# A Regressor's Tale of Cultivation - Traits
+# Path: common/traits/cultivation_traits.txt
+
+# Standard compatibility values  
+@pos_compat_high = 30
+@pos_compat_medium = 15
+@pos_compat_low = 5
+
+@neg_compat_high = -30
+@neg_compat_medium = -15
+@neg_compat_low = -5
+
+##################################################
+# 1. MORTAL (Not a trait - base state)
+##################################################
+
+#cultivation_mortal = {
+#	category = lifestyle
+#	group = cultivation_realm
+#	level = 1
+#	
+#	icon = {
+#		first_valid = {
+#			triggered_desc = {
+#				trigger = { NOT = { exists = this } }
+#				desc = cultivation_mortal.dds
+#			}
+#			triggered_desc = {
+#				trigger = { is_female = yes }
+#				desc = cultivation_mortal_f.dds
+#			}
+#			desc = cultivation_mortal.dds
+#		}
+#	}
+#	
+#	desc = {
+#		first_valid = {
+#			triggered_desc = {
+#				trigger = { NOT = { exists = this } }
+#				desc = trait_cultivation_mortal_desc
+#			}
+#			desc = trait_cultivation_mortal_character_desc
+#		}
+#	}
+#	
+#	learning = 1
+#	
+#	compatibility = {
+#		cultivation_qi_gathering = @pos_compat_low
+#	}
+#}
+
+##################################################
+# 2. QI GATHERING
+##################################################
+
+cultivation_qi_gathering = {
+	category = lifestyle
+	group = cultivation_realm
+	level = 1
+	
+	opposites = { incapable }
+	
+	life_expectancy = 10
+	
+	shown_in_ruler_designer = no
+	
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = cultivation_qi_gathering.dds
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = cultivation_qi_gathering_f.dds
+			}
+			desc = cultivation_qi_gathering.dds
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_cultivation_qi_gathering_desc
+			}
+			desc = trait_cultivation_qi_gathering_character_desc
+		}
+	}
+
+	# Dummy flags — just here for loc really.
+
+	flag = immortal_visuals
+	flag = immortal_incapability
+	no_prowess_loss_from_age = yes
+	
+	martial = 1
+	prowess = 1
+	learning = 1
+	compatibility = {
+		cultivation_qi_refining = @pos_compat_low
+	}
+}
+
+##################################################
+# 3. QI REFINING
+##################################################
+
+cultivation_qi_refining = {
+	category = lifestyle
+	group = cultivation_realm
+	level = 2
+	
+	opposites = { incapable }
+	
+	life_expectancy = 10
+	
+	shown_in_ruler_designer = no
+	
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = cultivation_qi_refining.dds
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = cultivation_qi_refining_f.dds
+			}
+			desc = cultivation_qi_refining.dds
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_cultivation_qi_refining_desc
+			}
+			desc = trait_cultivation_qi_refining_character_desc
+		}
+	}
+	
+	martial = 2
+	prowess = 2
+	learning = 2
+	health = 0.5
+	
+
+	# Dummy flags — just here for loc really.
+	flag = immortal_visuals
+	flag = immortal_incapability
+	no_prowess_loss_from_age = yes
+	
+	compatibility = {
+		cultivation_qi_gathering = @pos_compat_low
+		cultivation_qi_building = @pos_compat_low
+	}
+}
+
+##################################################
+# 4. QI BUILDING
+##################################################
+
+cultivation_qi_building = {
+	category = lifestyle
+	group = cultivation_realm
+	level = 3
+	
+	opposites = { incapable }
+	
+	life_expectancy = 15
+	
+	shown_in_ruler_designer = no
+	
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = cultivation_qi_building.dds
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = cultivation_qi_building_f.dds
+			}
+			desc = cultivation_qi_building.dds
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_cultivation_qi_building_desc
+			}
+			desc = trait_cultivation_qi_building_character_desc
+		}
+	}
+	
+	martial = 3
+	prowess = 3
+	learning = 3
+	health = 1.0
+	
+	compatibility = {
+		cultivation_qi_refining = @pos_compat_low
+		cultivation_core_formation = @pos_compat_low
+	}
+}
+
+##################################################
+# 5. CORE FORMATION (+15 years lifespan)
+##################################################
+
+cultivation_core_formation = {
+	category = lifestyle
+	group = cultivation_realm
+	level = 4
+	
+	opposites = { incapable }
+	
+	life_expectancy = 40
+	
+	shown_in_ruler_designer = no
+	
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = cultivation_core_formation.dds
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = cultivation_core_formation_f.dds
+			}
+			desc = cultivation_core_formation.dds
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_cultivation_core_formation_desc
+			}
+			desc = trait_cultivation_core_formation_character_desc
+		}
+	}
+	
+	martial = 4
+	prowess = 5
+	learning = 4
+	health = 1.5
+	
+	# +15 years lifespan
+	health_penalty_mult = -0.05
+	
+	compatibility = {
+		cultivation_qi_building = @pos_compat_low
+		cultivation_nascent_soul = @pos_compat_low
+	}
+}
+
+##################################################
+# 6. NASCENT SOUL (+40 years lifespan)
+##################################################
+
+cultivation_nascent_soul = {
+	category = lifestyle
+	group = cultivation_realm
+	level = 5
+	
+	opposites = { incapable }
+	
+	life_expectancy = 70
+	
+	shown_in_ruler_designer = no
+	
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = cultivation_nascent_soul.dds
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = cultivation_nascent_soul_f.dds
+			}
+			desc = cultivation_nascent_soul.dds
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_cultivation_nascent_soul_desc
+			}
+			desc = trait_cultivation_nascent_soul_character_desc
+		}
+	}
+	
+	martial = 6
+	prowess = 8
+	learning = 5
+	health = 2.0
+	advantage = 10
+	
+	# +40 years lifespan
+	health_penalty_mult = -0.10
+	
+	compatibility = {
+		cultivation_core_formation = @pos_compat_low
+		cultivation_heavenly_being = @pos_compat_low
+	}
+}
+
+##################################################
+# 7. HEAVENLY BEING (+70 years lifespan)
+##################################################
+
+cultivation_heavenly_being = {
+	category = lifestyle
+	group = cultivation_realm
+	level = 6
+	
+	opposites = { incapable }
+	
+	life_expectancy = 100
+	
+	shown_in_ruler_designer = no
+	
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = cultivation_heavenly_being.dds
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = cultivation_heavenly_being_f.dds
+			}
+			desc = cultivation_heavenly_being.dds
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_cultivation_heavenly_being_desc
+			}
+			desc = trait_cultivation_heavenly_being_character_desc
+		}
+	}
+	
+	martial = 8
+	prowess = 12
+	learning = 6
+	health = 3.0
+	advantage = 20
+	monthly_prestige = 0.5
+	
+	# +70 years lifespan
+	health_penalty_mult = -0.15
+	
+	compatibility = {
+		cultivation_nascent_soul = @pos_compat_low
+		cultivation_four_axis = @pos_compat_low
+	}
+}
+
+##################################################
+# 8. FOUR-AXIS (+100 years lifespan)
+##################################################
+
+cultivation_four_axis = {
+	category = lifestyle
+	group = cultivation_realm
+	level = 7
+	
+	opposites = { incapable }
+	
+	life_expectancy = 150
+	
+	shown_in_ruler_designer = no
+	
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = cultivation_four_axis.dds
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = cultivation_four_axis_f.dds
+			}
+			desc = cultivation_four_axis.dds
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_cultivation_four_axis_desc
+			}
+			desc = trait_cultivation_four_axis_character_desc
+		}
+	}
+	
+	martial = 10
+	prowess = 15
+	learning = 8
+	health = 4.0
+	advantage = 30
+	monthly_prestige = 1.0
+	dread_gain_mult = 0.25
+	
+	# +100 years lifespan
+	health_penalty_mult = -0.20
+	
+	compatibility = {
+		cultivation_heavenly_being = @pos_compat_low
+		cultivation_integration = @pos_compat_low
+	}
+}
+
+##################################################
+# 9. INTEGRATION (+150 years + RESURRECTION!)
+##################################################
+
+cultivation_integration = {
+	category = lifestyle
+	group = cultivation_realm
+	level = 8
+	
+	opposites = { incapable }
+	
+	life_expectancy = 200
+	
+	shown_in_ruler_designer = no
+	
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = cultivation_integration.dds
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = cultivation_integration_f.dds
+			}
+			desc = cultivation_integration.dds
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_cultivation_integration_desc
+			}
+			desc = trait_cultivation_integration_character_desc
+		}
+	}
+	
+	martial = 12
+	prowess = 18
+	learning = 10
+	health = 5.0
+	advantage = 50
+	monthly_prestige = 2.0
+	dread_gain_mult = 0.5
+	
+	# +150 years lifespan + Resurrection mechanic
+	health_penalty_mult = -0.30
+	
+	# Note: Resurrection would need custom on_action event
+	
+	compatibility = {
+		cultivation_four_axis = @pos_compat_low
+		cultivation_star_shattering = @pos_compat_low
+	}
+}
+
+##################################################
+# 10. STAR SHATTERING (+200 years lifespan)
+##################################################
+
+cultivation_star_shattering = {
+	category = lifestyle
+	group = cultivation_realm
+	level = 9
+	
+	opposites = { incapable }
+	
+	life_expectancy = 280
+	
+	shown_in_ruler_designer = no
+	
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = cultivation_star_shattering.dds
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = cultivation_star_shattering_f.dds
+			}
+			desc = cultivation_star_shattering.dds
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_cultivation_star_shattering_desc
+			}
+			desc = trait_cultivation_star_shattering_character_desc
+		}
+	}
+	
+	martial = 15
+	prowess = 22
+	learning = 12
+	health = 6.0
+	advantage = 70
+	monthly_prestige = 3.0
+	dread_gain_mult = 0.75
+	
+	# +200 years lifespan
+	health_penalty_mult = -0.40
+	
+	compatibility = {
+		cultivation_integration = @pos_compat_low
+		cultivation_sacred_vessel = @pos_compat_low
+	}
+}
+
+##################################################
+# 11. SACRED VESSEL (+280 years lifespan)
+##################################################
+
+cultivation_sacred_vessel = {
+	category = lifestyle
+	group = cultivation_realm
+	level = 10
+	
+	opposites = { incapable }
+	
+	life_expectancy = 350
+	
+	shown_in_ruler_designer = no
+	
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = cultivation_sacred_vessel.dds
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = cultivation_sacred_vessel_f.dds
+			}
+			desc = cultivation_sacred_vessel.dds
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_cultivation_sacred_vessel_desc
+			}
+			desc = trait_cultivation_sacred_vessel_character_desc
+		}
+	}
+	
+	martial = 18
+	prowess = 26
+	learning = 15
+	health = 8.0
+	advantage = 90
+	monthly_prestige = 4.0
+	dread_baseline_add = 20
+	
+	# +280 years lifespan
+	health_penalty_mult = -0.50
+	
+	compatibility = {
+		cultivation_star_shattering = @pos_compat_low
+		cultivation_entering_nirvana = @pos_compat_low
+	}
+}
+
+##################################################
+# 12. ENTERING NIRVANA (+350 years lifespan)
+##################################################
+
+cultivation_entering_nirvana = {
+	category = lifestyle
+	group = cultivation_realm
+	level = 11
+	
+	opposites = { incapable }
+	
+	life_expectancy = 500
+	
+	shown_in_ruler_designer = no
+	
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = cultivation_entering_nirvana.dds
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = cultivation_entering_nirvana_f.dds
+			}
+			desc = cultivation_entering_nirvana.dds
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_cultivation_entering_nirvana_desc
+			}
+			desc = trait_cultivation_entering_nirvana_character_desc
+		}
+	}
+	
+	martial = 20
+	prowess = 30
+	learning = 18
+	health = 10.0
+	advantage = 100
+	monthly_prestige = 5.0
+	dread_baseline_add = 30
+	stress_loss_mult = 0.5
+	
+	# +350 years lifespan
+	health_penalty_mult = -0.60
+	
+	compatibility = {
+		cultivation_sacred_vessel = @pos_compat_low
+		cultivation_true_immortal = @pos_compat_low
+	}
+}
+
+##################################################
+# 13. TRUE IMMORTAL (IMMORTAL!)
+##################################################
+
+cultivation_true_immortal = {
+	category = lifestyle
+	group = cultivation_realm
+	level = 12
+	
+	opposites = { incapable }
+	
+	life_expectancy = 1000
+	
+	shown_in_ruler_designer = no
+	
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = cultivation_true_immortal.dds
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = cultivation_true_immortal_f.dds
+			}
+			desc = cultivation_true_immortal.dds
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_cultivation_true_immortal_desc
+			}
+			desc = trait_cultivation_true_immortal_character_desc
+		}
+	}
+	
+	immortal = yes
+	martial = 25
+	prowess = 40
+	learning = 20
+	health = 15.0
+	advantage = 150
+	monthly_prestige = 10.0
+	dread_baseline_add = 50
+	stress_loss_mult = 0.75
+	fertility = -0.75
+	
+	# IMMORTAL - no aging!
+	health_penalty_mult = -1.0
+	
+	compatibility = {
+		cultivation_entering_nirvana = @pos_compat_low
+	}
+}

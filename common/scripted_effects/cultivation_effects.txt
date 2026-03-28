@@ -1,0 +1,24 @@
+﻿# Cultivation Scripted Effects
+# Path: common/scripted_effects/cultivation_effects.txt
+# Following Carnalitas pattern for trait initialization
+
+#
+# cultivation_seed_mortal_trait_effect
+# cultivation_remove_all_cultivation_traits_effect
+#
+
+# Seed cultivation mortal trait for this character
+#cultivation_seed_mortal_trait_effect = {
+	# Only add if they don't have any cultivation trait already
+#	if = {
+#		limit = {
+#			cultivation_has_any_trait_trigger = no
+#		}
+#		
+#		# Mark as seeded
+#		add_character_flag = cultivation_trait_seeded
+#		
+		# Add the mortal trait
+#		add_trait = cultivation_mortal
+#	}
+#}

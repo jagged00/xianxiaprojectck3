@@ -1,0 +1,38 @@
+﻿cultivation_legacy_track = {
+    # Track requirements
+    can_add_to_legacy = {
+        is_adult = yes
+        
+        # Must have at least started cultivation
+        #OR = {
+        #    has_trait = qi_gathering
+        #}
+    }
+    
+    # Visual settings
+    picture = "gfx/interface/illustrations/legacies/cultivation_legacy.dds"
+    
+    # Track benefits
+    character_modifier = {
+        monthly_prestige_gain_mult = 0.1
+    }
+    
+    # Track completion bonus
+    on_completion = {
+        dynasty = {
+            add_dynasty_prestige = 500
+            add_dynasty_modifier = {
+                modifier = martial_arts_legacy_complete
+                years = 100
+            }
+        }
+    }
+
+
+	# Dynasty modifier for completing the track
+	martial_arts_legacy_complete = {
+		icon = prestige_positive
+		monthly_dynasty_prestige = 1.0
+		general_opinion = 10
+	}
+}
