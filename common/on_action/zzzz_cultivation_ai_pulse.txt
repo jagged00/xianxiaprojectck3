@@ -1,0 +1,6 @@
+﻿on_yearly_playable_pulse = {
+	events = {
+		cultivation_ai.0001
+		cultivation_ai.0002
+	}
+}

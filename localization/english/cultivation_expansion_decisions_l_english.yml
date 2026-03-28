@@ -1,0 +1,20 @@
+﻿l_english:
+ claim_heavenly_mandate_vassal_title:0 "Claim the Heavenly Mandate"
+ claim_heavenly_mandate_vassal_desc:0 "Your cultivation has reached a height where mortal hierarchy no longer binds you. Claim Heaven's Mandate and force destiny to acknowledge your right to rule."
+ claim_heavenly_mandate_vassal_confirm:0 "Heaven bears witness."
+ claim_heavenly_mandate_vassal_tooltip:0 "Gain the [GetTrait('conqueror').GetName(GetNullCharacter)] trait and a pressed claim on your liege's primary title."
+
+ claim_heavenly_mandate_independent_title:0 "Proclaim a Heavenly Mandate"
+ claim_heavenly_mandate_independent_desc:0 "As an independent cultivator-lord, your will is your own law. Proclaim your mandate and let all realms know your destiny is conquest."
+ claim_heavenly_mandate_independent_confirm:0 "My mandate is absolute."
+ claim_heavenly_mandate_independent_tooltip:0 "Gain the [GetTrait('conqueror').GetName(GetNullCharacter)] trait."
+
+ claim_superior_realm_liege_title:0 "Assert Superior Realm Authority"
+ claim_superior_realm_liege_desc:0 "Your liege stands below your realm of attainment. By heavenly law, power outranks title; claim what should be yours."
+ claim_superior_realm_liege_confirm:0 "The weak cannot command the strong."
+ claim_superior_realm_liege_tooltip:0 "Gain a pressed claim on your liege's primary title."
+
+ awaken_meridian_disciples_decision:0 "Awaken Meridian Disciples"
+ awaken_meridian_disciples_decision_desc:0 "Gather those with awakened meridian potential and guide them into Qi Gathering, strengthening your court and domain with new disciples."
+ awaken_meridian_disciples_decision_confirm:0 "Open their meridians."
+ awaken_meridian_disciples_tooltip:0 "Eligible courtiers and vassals with meridian traits begin at Qi Gathering."
