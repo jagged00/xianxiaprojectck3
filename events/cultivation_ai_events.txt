@@ -123,23 +123,21 @@ cultivation_ai.0002 = {
         is_alive = yes
         is_adult = yes
         has_active_meridians = yes
+        NOT = { has_character_flag = ai_has_joined_sect }
         NOT = { has_character_flag = ai_recently_joined_sect }
     }
 
     immediate = {
-        # Only join if missing sect faith OR missing cultivation realm trait
+        # Only join if missing sect faith; joining is one-time and then rate-limited
         if = {
             limit = {
-                OR = {
-                    NOT = { is_cultivator = yes }
-                    NOT = {
-                        faith = {
-                            OR = {
-                                has_doctrine = tenet_orthodox_cultivation
-                                has_doctrine = tenet_unorthodox_cultivation
-                                has_doctrine = tenet_demonic_cultivation
-                                has_doctrine = tenet_vagrant_cultivation
-                            }
+                NOT = {
+                    faith = {
+                        OR = {
+                            has_doctrine = tenet_orthodox_cultivation
+                            has_doctrine = tenet_unorthodox_cultivation
+                            has_doctrine = tenet_demonic_cultivation
+                            has_doctrine = tenet_vagrant_cultivation
                         }
                     }
                 }
@@ -211,6 +209,7 @@ cultivation_ai.0002 = {
                 }
             }
 
+            add_character_flag = ai_has_joined_sect
             add_character_flag = { flag = ai_recently_joined_sect days = 1825 }
         }
     }
