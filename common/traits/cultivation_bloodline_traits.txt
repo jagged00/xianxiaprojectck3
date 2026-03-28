@@ -54,7 +54,7 @@ yin_bloodline_1 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 	compatibility = {
 		cultivation_qi_gathering = @pos_compat_low
@@ -98,7 +98,7 @@ yin_bloodline_2 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 	compatibility = {
 		cultivation_qi_gathering = @pos_compat_low
@@ -142,7 +142,7 @@ yin_bloodline_3 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 	compatibility = {
 		cultivation_qi_gathering = @pos_compat_low
@@ -198,7 +198,7 @@ yang_bloodline_1 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 }
 
 yang_bloodline_2 = {
@@ -244,7 +244,7 @@ yang_bloodline_2 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 }
 
 yang_bloodline_3 = {
@@ -290,7 +290,7 @@ yang_bloodline_3 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 }
 
 ##################################################
@@ -334,7 +334,7 @@ dragon_bloodline_1 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -375,7 +375,7 @@ dragon_bloodline_2 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -416,7 +416,7 @@ dragon_bloodline_3 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -461,7 +461,7 @@ phoenix_bloodline_1 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -502,7 +502,7 @@ phoenix_bloodline_2 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -543,7 +543,7 @@ phoenix_bloodline_3 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -589,7 +589,7 @@ anchestor_bloodline_1 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -631,7 +631,7 @@ anchestor_bloodline_2 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -673,7 +673,7 @@ anchestor_bloodline_3 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -718,7 +718,7 @@ poison_bloodline_1 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -759,7 +759,7 @@ poison_bloodline_2 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -800,7 +800,7 @@ poison_bloodline_3 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -845,7 +845,7 @@ cursed_bloodline_1 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -886,7 +886,7 @@ cursed_bloodline_2 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -927,7 +927,7 @@ cursed_bloodline_3 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -972,7 +972,7 @@ demon_bloodline_1 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -1013,7 +1013,7 @@ demon_bloodline_2 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -1054,7 +1054,7 @@ demon_bloodline_3 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 }
 
@@ -1107,7 +1107,7 @@ primal_bloodline_1 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 	# Note: Resurrection would need custom on_action event
 	
@@ -1155,7 +1155,7 @@ primal_bloodline_2 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 	# Note: Resurrection would need custom on_action event
 	
@@ -1203,7 +1203,7 @@ primal_bloodline_3 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 	# Note: Resurrection would need custom on_action event
 	
@@ -1250,7 +1250,7 @@ spirit_bloodline_1 = {
 	dread_gain_mult = 0.75
 	
 	# +200 years lifespan
-	health_penalty_mult = -0.40
+	health = -0.40
 	
 }
 
@@ -1292,7 +1292,7 @@ spirit_bloodline_2 = {
 	dread_gain_mult = 0.75
 	
 	# +200 years lifespan
-	health_penalty_mult = -0.40
+	health = -0.40
 	
 }
 
@@ -1334,7 +1334,7 @@ spirit_bloodline_3 = {
 	dread_gain_mult = 0.75
 	
 	# +200 years lifespan
-	health_penalty_mult = -0.40
+	health = -0.40
 	
 }
 
@@ -1387,7 +1387,7 @@ sun_bloodline_1 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 	# Note: Resurrection would need custom on_action event
 	
@@ -1435,7 +1435,7 @@ sun_bloodline_2 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 	# Note: Resurrection would need custom on_action event
 	
@@ -1483,7 +1483,7 @@ sun_bloodline_3 = {
 	dread_gain_mult = 0.1
 	
 	# +150 years lifespan + Resurrection mechanic
-	#health_penalty_mult = -0.30
+	#health = -0.30
 	
 	# Note: Resurrection would need custom on_action event
 	

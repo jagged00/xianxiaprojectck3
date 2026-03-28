@@ -34,7 +34,7 @@
             current_description = visit_mount_hua_sect_decision_tooltip
             localization = visit_mount_hua_sect
             icon = "gfx/interface/icons/faith/mount_hua_sect.dds"
-            is_valid = { not = { has_flag = banished_mount_hua_sect } }
+            is_valid = { not = { has_character_flag = banished_mount_hua_sect } }
             ai_chance = { value = 0 }
         }
 
@@ -43,7 +43,7 @@
             current_description = visit_heavenly_sword_pavilion_decision_tooltip
             localization = visit_heavenly_sword_pavilion
             icon = "gfx/interface/icons/faith/heavenly_sword_pavilion.dds"
-            is_valid = { not = { has_flag = banished_heavenly_sword_pavilion } }
+            is_valid = { not = { has_character_flag = banished_heavenly_sword_pavilion } }
             ai_chance = { value = 0 }
         }
 
@@ -52,7 +52,7 @@
             current_description = visit_ten_thousand_swords_valley_decision_tooltip
             localization = visit_ten_thousand_swords_valley
             icon = "gfx/interface/icons/faith/ten_thousand_swords_valley.dds"
-            is_valid = { not = { has_flag = banished_ten_thousand_swords_valley } }
+            is_valid = { not = { has_character_flag = banished_ten_thousand_swords_valley } }
             ai_chance = { value = 0 }
         }
 
@@ -61,7 +61,7 @@
             current_description = visit_violet_thunder_blade_sect_decision_tooltip
             localization = visit_violet_thunder_blade_sect
             icon = "gfx/interface/icons/faith/violet_thunder_blade_sect.dds"
-            is_valid = { not = { has_flag = banished_violet_thunder_blade_sect } }
+            is_valid = { not = { has_character_flag = banished_violet_thunder_blade_sect } }
             ai_chance = { value = 0 }
         }
 
@@ -69,7 +69,7 @@
             value = visit_nine_star_formation_sect
             localization = visit_nine_star_formation_sect
             icon = "gfx/interface/icons/faith/nine_star_formation_sect.dds"
-            is_valid = { not = { has_flag = banished_nine_star_formation_sect } }
+            is_valid = { not = { has_character_flag = banished_nine_star_formation_sect } }
             ai_chance = { value = 0 }
         }
 
@@ -77,7 +77,7 @@
             value = visit_mystic_seal_pavilion
             localization = visit_mystic_seal_pavilion
             icon = "gfx/interface/icons/faith/mystic_seal_pavilion.dds"
-            is_valid = { not = { has_flag = banished_mystic_seal_pavilion } }
+            is_valid = { not = { has_character_flag = banished_mystic_seal_pavilion } }
             ai_chance = { value = 0 }
         }
 
@@ -87,7 +87,7 @@
             current_description = visit_wudang_sect_decision_tooltip
             localization = visit_wudang_sect
             icon = "gfx/interface/icons/faith/wudang_sect.dds"
-            is_valid = { not = { has_flag = banished_wudang_sect } }
+            is_valid = { not = { has_character_flag = banished_wudang_sect } }
             ai_chance = { value = 0 }
         }
 
@@ -95,7 +95,7 @@
             value = visit_shaolin_temple
             localization = visit_shaolin_temple
             icon = "gfx/interface/icons/faith/shaolin_temple.dds"
-            is_valid = { not = { has_flag = banished_shaolin_temple } }
+            is_valid = { not = { has_character_flag = banished_shaolin_temple } }
             ai_chance = { value = 0 }
         }
 
@@ -103,7 +103,7 @@
             value = visit_eternal_harmony_pavilion
             localization = visit_eternal_harmony_pavilion
             icon = "gfx/interface/icons/faith/eternal_harmony_pavilion.dds"
-            is_valid = { not = { has_flag = banished_eternal_harmony_pavilion } }
+            is_valid = { not = { has_character_flag = banished_eternal_harmony_pavilion } }
             ai_chance = { value = 0 }
         }
 
@@ -112,7 +112,7 @@
             value = visit_divine_beast_mountain
             localization = visit_divine_beast_mountain
             icon = "gfx/interface/icons/faith/divine_beast_mountain.dds"
-            is_valid = { not = { has_flag = banished_divine_beast_mountain } }
+            is_valid = { not = { has_character_flag = banished_divine_beast_mountain } }
             ai_chance = { value = 0 }
         }
 
@@ -120,7 +120,7 @@
             value = visit_thousand_beast_valley
             localization = visit_thousand_beast_valley
             icon = "gfx/interface/icons/faith/thousand_beast_valley.dds"
-            is_valid = { not = { has_flag = banished_thousand_beast_valley } }
+            is_valid = { not = { has_character_flag = banished_thousand_beast_valley } }
             ai_chance = { value = 0 }
         }
 
@@ -133,7 +133,7 @@
             value = visit_crimson_moon_blade_hall
             localization = visit_crimson_moon_blade_hall
             icon = "gfx/interface/icons/faith/crimson_moon_blade_hall.dds"
-            is_valid = { not = { has_flag = banished_crimson_moon_blade_hall } }
+            is_valid = { not = { has_character_flag = banished_crimson_moon_blade_hall } }
             ai_chance = { value = 0 }
         }
 
@@ -141,7 +141,7 @@
             value = visit_tyrant_saber_palace
             localization = visit_tyrant_saber_palace
             icon = "gfx/interface/icons/faith/tyrant_saber_palace.dds"
-            is_valid = { not = { has_flag = banished_tyrant_saber_palace } }
+            is_valid = { not = { has_character_flag = banished_tyrant_saber_palace } }
             ai_chance = { value = 0 }
         }
 
@@ -149,7 +149,7 @@
             value = visit_demon_suppressing_blade_clan
             localization = visit_demon_suppressing_blade_clan
             icon = "gfx/interface/icons/faith/demon_suppressing_blade_clan.dds"
-            is_valid = { not = { has_flag = banished_demon_suppressing_blade_clan } }
+            is_valid = { not = { has_character_flag = banished_demon_suppressing_blade_clan } }
             ai_chance = { value = 0 }
         }
 
@@ -157,7 +157,7 @@
             value = visit_medicine_king_valley
             localization = visit_medicine_king_valley
             icon = "gfx/interface/icons/faith/medicine_king_valley.dds"
-            is_valid = { not = { has_flag = banished_medicine_king_valley } }
+            is_valid = { not = { has_character_flag = banished_medicine_king_valley } }
             ai_chance = { value = 0 }
         }
 
@@ -165,7 +165,7 @@
             value = visit_hundred_herbs_pavilion
             localization = visit_hundred_herbs_pavilion
             icon = "gfx/interface/icons/faith/hundred_herbs_pavilion.dds"
-            is_valid = { not = { has_flag = banished_hundred_herbs_pavilion } }
+            is_valid = { not = { has_character_flag = banished_hundred_herbs_pavilion } }
             ai_chance = { value = 0 }
         }
 
@@ -173,7 +173,7 @@
             value = visit_jade_chamber_sect
             localization = visit_jade_chamber_sect
             icon = "gfx/interface/icons/faith/jade_chamber_sect.dds"
-            is_valid = { not = { has_flag = banished_jade_chamber_sect } }
+            is_valid = { not = { has_character_flag = banished_jade_chamber_sect } }
             ai_chance = { value = 0 }
         }
 
@@ -181,7 +181,7 @@
             value = visit_eternal_pleasure_hall
             localization = visit_eternal_pleasure_hall
             icon = "gfx/interface/icons/faith/eternal_pleasure_hall.dds"
-            is_valid = { not = { has_flag = banished_eternal_pleasure_hall } }
+            is_valid = { not = { has_character_flag = banished_eternal_pleasure_hall } }
             ai_chance = { value = 0 }
         }
 
@@ -190,7 +190,7 @@
             value = visit_moonless_night_pavilion
             localization = visit_moonless_night_pavilion
             icon = "gfx/interface/icons/faith/moonless_night_pavilion.dds"
-            is_valid = { not = { has_flag = banished_moonless_night_pavilion } }
+            is_valid = { not = { has_character_flag = banished_moonless_night_pavilion } }
             ai_chance = { value = 0 }
         }
 
@@ -198,7 +198,7 @@
             value = visit_pale_bone_hall
             localization = visit_pale_bone_hall
             icon = "gfx/interface/icons/faith/pale_bone_hall.dds"
-            is_valid = { not = { has_flag = banished_pale_bone_hall } }
+            is_valid = { not = { has_character_flag = banished_pale_bone_hall } }
             ai_chance = { value = 0 }
         }
 
@@ -206,7 +206,7 @@
             value = visit_eternal_rest_clan
             localization = visit_eternal_rest_clan
             icon = "gfx/interface/icons/faith/eternal_rest_clan.dds"
-            is_valid = { not = { has_flag = banished_eternal_rest_clan } }
+            is_valid = { not = { has_character_flag = banished_eternal_rest_clan } }
             ai_chance = { value = 0 }
         }
 
@@ -218,7 +218,7 @@
             value = visit_ten_thousand_corpse_valley
             localization = visit_ten_thousand_corpse_valley
             icon = "gfx/interface/icons/faith/ten_thousand_corpse_valley.dds"
-            is_valid = { not = { has_flag = banished_ten_thousand_corpse_valley } }
+            is_valid = { not = { has_character_flag = banished_ten_thousand_corpse_valley } }
             ai_chance = { value = 0 }
         }
 
@@ -226,7 +226,7 @@
             value = visit_venomous_serpent_valley
             localization = visit_venomous_serpent_valley
             icon = "gfx/interface/icons/faith/venomous_serpent_valley.dds"
-            is_valid = { not = { has_flag = banished_venomous_serpent_valley } }
+            is_valid = { not = { has_character_flag = banished_venomous_serpent_valley } }
             ai_chance = { value = 0 }
         }
 
@@ -235,7 +235,7 @@
             value = visit_blood_yin_cult
             localization = visit_blood_yin_cult
             icon = "gfx/interface/icons/faith/blood_yin_cult.dds"
-            is_valid = { not = { has_flag = banished_blood_yin_cult } }
+            is_valid = { not = { has_character_flag = banished_blood_yin_cult } }
             ai_chance = { value = 0 }
         }
 
@@ -243,7 +243,7 @@
             value = visit_blood_moon_demonic_sect
             localization = visit_blood_moon_demonic_sect
             icon = "gfx/interface/icons/faith/blood_moon_demonic_sect.dds"
-            is_valid = { not = { has_flag = banished_blood_moon_demonic_sect } }
+            is_valid = { not = { has_character_flag = banished_blood_moon_demonic_sect } }
             ai_chance = { value = 0 }
         }
 
@@ -252,7 +252,7 @@
             value = visit_succubus_palace
             localization = visit_succubus_palace
             icon = "gfx/interface/icons/faith/succubus_palace.dds"
-            is_valid = { not = { has_flag = banished_succubus_palace } }
+            is_valid = { not = { has_character_flag = banished_succubus_palace } }
             ai_chance = { value = 0 }
         }
 
@@ -265,7 +265,7 @@
             value = visit_lone_wolf_wanderers
             localization = visit_lone_wolf_wanderers
             icon = "gfx/interface/icons/faith/lone_wolf_wanderers.dds"
-            is_valid = { not = { has_flag = banished_lone_wolf_wanderers } }
+            is_valid = { not = { has_character_flag = banished_lone_wolf_wanderers } }
             ai_chance = { value = 0 }
         }
 
@@ -273,7 +273,7 @@
             value = visit_vagrant_blade_brotherhood
             localization = visit_vagrant_blade_brotherhood
             icon = "gfx/interface/icons/faith/vagrant_blade_brotherhood.dds"
-            is_valid = { not = { has_flag = banished_vagrant_blade_brotherhood } }
+            is_valid = { not = { has_character_flag = banished_vagrant_blade_brotherhood } }
             ai_chance = { value = 0 }
         }
 
@@ -282,7 +282,7 @@
             value = visit_thousand_treasures_pavilion
             localization = visit_thousand_treasures_pavilion
             icon = "gfx/interface/icons/faith/thousand_treasures_pavilion.dds"
-            is_valid = { not = { has_flag = banished_thousand_treasures_pavilion } }
+            is_valid = { not = { has_character_flag = banished_thousand_treasures_pavilion } }
             ai_chance = { value = 0 }
         }
 
@@ -290,7 +290,7 @@
             value = visit_mystic_forge_hall
             localization = visit_mystic_forge_hall
             icon = "gfx/interface/icons/faith/mystic_forge_hall.dds"
-            is_valid = { not = { has_flag = banished_mystic_forge_hall } }
+            is_valid = { not = { has_character_flag = banished_mystic_forge_hall } }
             ai_chance = { value = 0 }
         }
 
@@ -298,7 +298,7 @@
             value = visit_ancient_relic_sect
             localization = visit_ancient_relic_sect
             icon = "gfx/interface/icons/faith/ancient_relic_sect.dds"
-            is_valid = { not = { has_flag = banished_ancient_relic_sect } }
+            is_valid = { not = { has_character_flag = banished_ancient_relic_sect } }
             ai_chance = { value = 0 }
         }
 
@@ -306,7 +306,7 @@
             value = visit_primal_beast_sect
             localization = visit_primal_beast_sect
             icon = "gfx/interface/icons/faith/primal_beast_sect.dds"
-            is_valid = { not = { has_flag = banished_primal_beast_sect } }
+            is_valid = { not = { has_character_flag = banished_primal_beast_sect } }
             ai_chance = { value = 0 }
         }
 
@@ -314,7 +314,7 @@
             value = visit_primordial_chaos_hall
             localization = visit_primordial_chaos_hall
             icon = "gfx/interface/icons/faith/primordial_chaos_hall.dds"
-            is_valid = { not = { has_flag = banished_primordial_chaos_hall } }
+            is_valid = { not = { has_character_flag = banished_primordial_chaos_hall } }
             ai_chance = { value = 0 }
         }
 
@@ -322,7 +322,7 @@
             value = visit_feral_bond_sect
             localization = visit_feral_bond_sect
             icon = "gfx/interface/icons/faith/feral_bond_sect.dds"
-            is_valid = { not = { has_flag = banished_feral_bond_sect } }
+            is_valid = { not = { has_character_flag = banished_feral_bond_sect } }
             ai_chance = { value = 0 }
         }
     }    

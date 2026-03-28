@@ -14,6 +14,6 @@ display_sect_spars_won = {
     value = 1
     if = {
         limit = { exists = var:sect_spars_won }
-        add = sect_spars_won
+        add = var:sect_spars_won
     }
 }

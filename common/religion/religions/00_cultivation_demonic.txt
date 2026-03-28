@@ -6,7 +6,7 @@
 cultivation_demonic = {
     family = rf_cultivation_demonic
 	doctrine_background_icon = core_tenet_banner_eastern.dds
-	doctrine = evil_hostility_doctrine
+	doctrine = abrahamic_hostility_doctrine
 	pagan_roots = yes
 	
 	doctrine = doctrine_gender_equal

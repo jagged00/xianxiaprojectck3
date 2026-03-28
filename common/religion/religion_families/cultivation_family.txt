@@ -18,7 +18,7 @@ rf_cultivation_unorthodox = {
 rf_cultivation_demonic = {
     graphical_faith = "pagan_gfx"
 	piety_icon_group = eastern
-	hostility_doctrine = evil_hostility_doctrine
+	hostility_doctrine = abrahamic_hostility_doctrine
 	doctrine_background_icon = core_tenet_banner_eastern.dds
 }
 

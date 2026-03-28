@@ -4,20 +4,34 @@
 cultivation_ai.0001 = {
     type = character_event
     hide_window = yes
+    theme = realm
+    desc = cultivation_ai.0001.desc
 
     trigger = {
         is_ai = yes
         is_alive = yes
         is_adult = yes
-        has_active_meridians = yes
         NOT = { has_trait = incapable }
     }
 
     immediate = {
+        # Bootstrap vanilla AI into the cultivation system
+        if = {
+            limit = { NOT = { has_active_meridians = yes } }
+            random_list = {
+                20 = { add_trait = poor_meridians }
+                40 = { add_trait = normal_meridians }
+                25 = { add_trait = good_meridians }
+                10 = { add_trait = excellent_meridians }
+                5 = { add_trait = heavenly_meridians }
+            }
+        }
+
         # Awakening
         if = {
             limit = {
                 NOT = { is_cultivator = yes }
+                has_active_meridians = yes
                 OR = {
                     has_trait = poor_meridians
                     has_trait = normal_meridians
@@ -27,8 +41,8 @@ cultivation_ai.0001 = {
                 }
             }
             random_list = {
-                15 = { add_trait = cultivation_qi_gathering }
-                85 = { }
+                45 = { add_trait = cultivation_qi_gathering }
+                55 = { }
             }
         }
 
@@ -117,29 +131,28 @@ cultivation_ai.0001 = {
 cultivation_ai.0002 = {
     type = character_event
     hide_window = yes
+    theme = realm
+    desc = cultivation_ai.0002.desc
 
     trigger = {
         is_ai = yes
         is_alive = yes
         is_adult = yes
-        has_active_meridians = yes
+        NOT = { has_character_flag = ai_has_joined_sect }
         NOT = { has_character_flag = ai_recently_joined_sect }
     }
 
     immediate = {
-        # Only join if missing sect faith OR missing cultivation realm trait
+        # Only join if missing sect faith; joining is one-time and then rate-limited
         if = {
             limit = {
-                OR = {
-                    NOT = { is_cultivator = yes }
-                    NOT = {
-                        faith = {
-                            OR = {
-                                has_doctrine = tenet_orthodox_cultivation
-                                has_doctrine = tenet_unorthodox_cultivation
-                                has_doctrine = tenet_demonic_cultivation
-                                has_doctrine = tenet_vagrant_cultivation
-                            }
+                NOT = {
+                    faith = {
+                        OR = {
+                            has_doctrine = tenet_orthodox_cultivation
+                            has_doctrine = tenet_unorthodox_cultivation
+                            has_doctrine = tenet_demonic_cultivation
+                            has_doctrine = tenet_vagrant_cultivation
                         }
                     }
                 }
@@ -211,6 +224,7 @@ cultivation_ai.0002 = {
                 }
             }
 
+            add_character_flag = ai_has_joined_sect
             add_character_flag = { flag = ai_recently_joined_sect days = 1825 }
         }
     }
