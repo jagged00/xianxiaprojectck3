@@ -9,6 +9,7 @@ cultivation_ai.0001 = {
         is_ai = yes
         is_alive = yes
         is_adult = yes
+        has_active_meridians = yes
         NOT = { has_trait = incapable }
     }
 
@@ -121,6 +122,7 @@ cultivation_ai.0002 = {
         is_ai = yes
         is_alive = yes
         is_adult = yes
+        has_active_meridians = yes
         is_cultivator = yes
         NOT = { has_character_flag = ai_recently_joined_sect }
     }

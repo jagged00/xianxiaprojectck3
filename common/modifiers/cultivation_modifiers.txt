@@ -143,6 +143,31 @@ dual_cultivation_boost = {
     prowess = 2
     attraction_opinion = 10
     stress_loss_mult = 0.1
+    monthly_lifestyle_xp_gain_mult = 0.10
+}
+
+
+
+dual_cultivation_insight = {
+    icon = learning_positive
+    learning = 1
+    monthly_lifestyle_xp_gain_mult = 0.20
+}
+
+dual_cultivation_yin_body_resonance = {
+    icon = learning_positive
+    monthly_lifestyle_xp_gain_mult = 0.10
+}
+
+dual_cultivation_yang_body_resonance = {
+    icon = learning_positive
+    monthly_lifestyle_xp_gain_mult = 0.10
+}
+
+dual_cultivation_yinyang_harmony = {
+    icon = learning_positive
+    learning = 1
+    monthly_lifestyle_xp_gain_mult = 0.15
 }
 
 # Cultivation Breakthrough Modifiers
