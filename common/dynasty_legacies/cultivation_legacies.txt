@@ -4,4 +4,14 @@
 	legacy_3 = cultivation_legacy_3
 	legacy_4 = cultivation_legacy_4
 	legacy_5 = cultivation_legacy_5
+
+	on_completion = {
+		dynasty = {
+			add_dynasty_prestige = 500
+			add_dynasty_modifier = {
+				modifier = martial_arts_legacy_complete
+				years = 100
+			}
+		}
+	}
 }
