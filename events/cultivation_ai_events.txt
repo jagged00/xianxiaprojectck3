@@ -132,11 +132,11 @@ cultivation_ai.0002 = {
                     15 = { set_character_faith = faith:mount_hua_sect }
                     15 = { set_character_faith = faith:wudang_sect }
                     12 = { set_character_faith = faith:shaolin_temple }
-                    12 = { set_character_faith = faith:jade_cauldron_sect }
+                    12 = { set_character_faith = faith:jade_chamber_sect }
                     12 = { set_character_faith = faith:divine_beast_mountain }
                     10 = { set_character_faith = faith:crimson_moon_blade_hall }
-                    8 = { set_character_faith = faith:blood_river_sect }
-                    8 = { set_character_faith = faith:five_poison_cult }
+                    8 = { set_character_faith = faith:blood_yin_cult }
+                    8 = { set_character_faith = faith:venomous_serpent_valley }
                     8 = { set_character_faith = faith:lone_wolf_wanderers }
                 }
                 add_character_flag = { flag = ai_recently_joined_sect days = 1825 }
