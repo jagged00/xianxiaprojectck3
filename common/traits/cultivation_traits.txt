@@ -740,7 +740,6 @@ cultivation_true_immortal = {
 	fertility = -0.75
 	
 	# IMMORTAL - no aging!
-	health = -1.0
 	
 	compatibility = {
 		cultivation_entering_nirvana = @pos_compat_low
