@@ -65,3 +65,13 @@ is_immortal_cultivator = {
 		has_trait = cultivation_true_immortal
     }
 }
+
+has_active_meridians = {
+    OR = {
+        has_trait = poor_meridians
+        has_trait = normal_meridians
+        has_trait = good_meridians
+        has_trait = excellent_meridians
+        has_trait = heavenly_meridians
+    }
+}

@@ -56,6 +56,25 @@ cultivation_breakthrough.1000 = {
 				#     has_artifact = breakthrough_pill
 				# }
 				
+
+				# Meridian affinity affects breakthrough odds
+				modifier = {
+					add = -20
+					has_trait = poor_meridians
+				}
+				modifier = {
+					add = 5
+					has_trait = good_meridians
+				}
+				modifier = {
+					add = 12
+					has_trait = excellent_meridians
+				}
+				modifier = {
+					add = 20
+					has_trait = heavenly_meridians
+				}
+
 				# SUCCESS
 				add_trait = cultivation_qi_gathering
 				remove_character_flag = can_attempt_qi_gathering_breakthrough
@@ -168,6 +187,24 @@ cultivation_breakthrough.1100 = {
 				}
 				
 				#add_trait = cultivation_qi_refining
+				# Meridian affinity affects breakthrough odds
+				modifier = {
+					add = -20
+					has_trait = poor_meridians
+				}
+				modifier = {
+					add = 5
+					has_trait = good_meridians
+				}
+				modifier = {
+					add = 12
+					has_trait = excellent_meridians
+				}
+				modifier = {
+					add = 20
+					has_trait = heavenly_meridians
+				}
+
 				remove_trait = cultivation_qi_gathering
 				remove_character_flag = can_attempt_qi_refining_breakthrough
 				trigger_event = cultivation_breakthrough.1101
@@ -273,6 +310,24 @@ cultivation_breakthrough.1200 = {
 					learning >= 24
 				}
 				
+				# Meridian affinity affects breakthrough odds
+				modifier = {
+					add = -20
+					has_trait = poor_meridians
+				}
+				modifier = {
+					add = 5
+					has_trait = good_meridians
+				}
+				modifier = {
+					add = 12
+					has_trait = excellent_meridians
+				}
+				modifier = {
+					add = 20
+					has_trait = heavenly_meridians
+				}
+
 				remove_trait = cultivation_qi_refining
 				add_trait = cultivation_qi_building
 				remove_character_flag = can_attempt_qi_building_breakthrough
@@ -378,6 +433,24 @@ cultivation_breakthrough.1300 = {
 					learning >= 26
 				}
 				
+				# Meridian affinity affects breakthrough odds
+				modifier = {
+					add = -20
+					has_trait = poor_meridians
+				}
+				modifier = {
+					add = 5
+					has_trait = good_meridians
+				}
+				modifier = {
+					add = 12
+					has_trait = excellent_meridians
+				}
+				modifier = {
+					add = 20
+					has_trait = heavenly_meridians
+				}
+
 				remove_trait = cultivation_qi_building
 				add_trait = cultivation_core_formation
 				remove_character_flag = can_attempt_core_formation_breakthrough
@@ -483,6 +556,24 @@ cultivation_breakthrough.1400 = {
 					learning >= 28
 				}
 				
+				# Meridian affinity affects breakthrough odds
+				modifier = {
+					add = -20
+					has_trait = poor_meridians
+				}
+				modifier = {
+					add = 5
+					has_trait = good_meridians
+				}
+				modifier = {
+					add = 12
+					has_trait = excellent_meridians
+				}
+				modifier = {
+					add = 20
+					has_trait = heavenly_meridians
+				}
+
 				remove_trait = cultivation_core_formation
 				add_trait = cultivation_nascent_soul
 				remove_character_flag = can_attempt_nascent_soul_breakthrough
@@ -588,6 +679,24 @@ cultivation_breakthrough.1500 = {
 					learning >= 30
 				}
 				
+				# Meridian affinity affects breakthrough odds
+				modifier = {
+					add = -20
+					has_trait = poor_meridians
+				}
+				modifier = {
+					add = 5
+					has_trait = good_meridians
+				}
+				modifier = {
+					add = 12
+					has_trait = excellent_meridians
+				}
+				modifier = {
+					add = 20
+					has_trait = heavenly_meridians
+				}
+
 				remove_trait = cultivation_nascent_soul
 				add_trait = cultivation_heavenly_being
 				remove_character_flag = can_attempt_heavenly_being_breakthrough
@@ -693,6 +802,24 @@ cultivation_breakthrough.1600 = {
 					learning >= 32
 				}
 				
+				# Meridian affinity affects breakthrough odds
+				modifier = {
+					add = -20
+					has_trait = poor_meridians
+				}
+				modifier = {
+					add = 5
+					has_trait = good_meridians
+				}
+				modifier = {
+					add = 12
+					has_trait = excellent_meridians
+				}
+				modifier = {
+					add = 20
+					has_trait = heavenly_meridians
+				}
+
 				remove_trait = cultivation_heavenly_being
 				add_trait = cultivation_four_axis
 				remove_character_flag = can_attempt_four_axis_breakthrough
@@ -798,6 +925,24 @@ cultivation_breakthrough.1700 = {
 					learning >= 34
 				}
 				
+				# Meridian affinity affects breakthrough odds
+				modifier = {
+					add = -20
+					has_trait = poor_meridians
+				}
+				modifier = {
+					add = 5
+					has_trait = good_meridians
+				}
+				modifier = {
+					add = 12
+					has_trait = excellent_meridians
+				}
+				modifier = {
+					add = 20
+					has_trait = heavenly_meridians
+				}
+
 				remove_trait = cultivation_four_axis
 				add_trait = cultivation_integration
 				remove_character_flag = can_attempt_integration_breakthrough
@@ -903,6 +1048,24 @@ cultivation_breakthrough.1800 = {
 					learning >= 36
 				}
 				
+				# Meridian affinity affects breakthrough odds
+				modifier = {
+					add = -20
+					has_trait = poor_meridians
+				}
+				modifier = {
+					add = 5
+					has_trait = good_meridians
+				}
+				modifier = {
+					add = 12
+					has_trait = excellent_meridians
+				}
+				modifier = {
+					add = 20
+					has_trait = heavenly_meridians
+				}
+
 				remove_trait = cultivation_integration
 				add_trait = cultivation_star_shattering
 				remove_character_flag = can_attempt_star_shattering_breakthrough
@@ -1008,6 +1171,24 @@ cultivation_breakthrough.1900 = {
 					learning >= 38
 				}
 				
+				# Meridian affinity affects breakthrough odds
+				modifier = {
+					add = -20
+					has_trait = poor_meridians
+				}
+				modifier = {
+					add = 5
+					has_trait = good_meridians
+				}
+				modifier = {
+					add = 12
+					has_trait = excellent_meridians
+				}
+				modifier = {
+					add = 20
+					has_trait = heavenly_meridians
+				}
+
 				remove_trait = cultivation_star_shattering
 				add_trait = cultivation_sacred_vessel
 				remove_character_flag = can_attempt_sacred_vessel_breakthrough
@@ -1113,6 +1294,24 @@ cultivation_breakthrough.2000 = {
 					learning >= 40
 				}
 				
+				# Meridian affinity affects breakthrough odds
+				modifier = {
+					add = -20
+					has_trait = poor_meridians
+				}
+				modifier = {
+					add = 5
+					has_trait = good_meridians
+				}
+				modifier = {
+					add = 12
+					has_trait = excellent_meridians
+				}
+				modifier = {
+					add = 20
+					has_trait = heavenly_meridians
+				}
+
 				remove_trait = cultivation_sacred_vessel
 				add_trait = cultivation_entering_nirvana
 				remove_character_flag = can_attempt_entering_nirvana_breakthrough
@@ -1217,6 +1416,24 @@ cultivation_breakthrough.2100 = {
 					learning >= 42
 				}
 				
+				# Meridian affinity affects breakthrough odds
+				modifier = {
+					add = -20
+					has_trait = poor_meridians
+				}
+				modifier = {
+					add = 5
+					has_trait = good_meridians
+				}
+				modifier = {
+					add = 12
+					has_trait = excellent_meridians
+				}
+				modifier = {
+					add = 20
+					has_trait = heavenly_meridians
+				}
+
 				remove_trait = cultivation_entering_nirvana
 				add_trait = cultivation_true_immortal
 				remove_character_flag = can_attempt_true_immortal_breakthrough
