@@ -1,0 +1,147 @@
+﻿namespace = cultivation_ai
+
+# AI auto-cultivation progression pulse
+cultivation_ai.0001 = {
+    type = character_event
+    hide_window = yes
+
+    trigger = {
+        is_ai = yes
+        is_alive = yes
+        is_adult = yes
+        NOT = { has_trait = incapable }
+    }
+
+    immediate = {
+        # Awakening
+        if = {
+            limit = {
+                NOT = { is_cultivator = yes }
+                OR = {
+                    has_trait = poor_meridians
+                    has_trait = normal_meridians
+                    has_trait = good_meridians
+                    has_trait = excellent_meridians
+                    has_trait = heavenly_meridians
+                }
+            }
+            random_list = {
+                15 = { add_trait = cultivation_qi_gathering }
+                85 = { }
+            }
+        }
+
+        # Realm progression (small yearly chances)
+        if = {
+            limit = { has_trait = cultivation_qi_gathering }
+            random_list = {
+                12 = { remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                88 = { }
+            }
+        }
+        else_if = {
+            limit = { has_trait = cultivation_qi_refining }
+            random_list = {
+                10 = { remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
+                90 = { }
+            }
+        }
+        else_if = {
+            limit = { has_trait = cultivation_qi_building }
+            random_list = {
+                8 = { remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
+                92 = { }
+            }
+        }
+        else_if = {
+            limit = { has_trait = cultivation_core_formation }
+            random_list = {
+                6 = { remove_trait = cultivation_core_formation add_trait = cultivation_nascent_soul }
+                94 = { }
+            }
+        }
+        else_if = {
+            limit = { has_trait = cultivation_nascent_soul }
+            random_list = {
+                5 = { remove_trait = cultivation_nascent_soul add_trait = cultivation_heavenly_being }
+                95 = { }
+            }
+        }
+        else_if = {
+            limit = { has_trait = cultivation_heavenly_being }
+            random_list = {
+                4 = { remove_trait = cultivation_heavenly_being add_trait = cultivation_four_axis }
+                96 = { }
+            }
+        }
+        else_if = {
+            limit = { has_trait = cultivation_four_axis }
+            random_list = {
+                3 = { remove_trait = cultivation_four_axis add_trait = cultivation_integration }
+                97 = { }
+            }
+        }
+        else_if = {
+            limit = { has_trait = cultivation_integration }
+            random_list = {
+                2 = { remove_trait = cultivation_integration add_trait = cultivation_star_shattering }
+                98 = { }
+            }
+        }
+        else_if = {
+            limit = { has_trait = cultivation_star_shattering }
+            random_list = {
+                2 = { remove_trait = cultivation_star_shattering add_trait = cultivation_sacred_vessel }
+                98 = { }
+            }
+        }
+        else_if = {
+            limit = { has_trait = cultivation_sacred_vessel }
+            random_list = {
+                1 = { remove_trait = cultivation_sacred_vessel add_trait = cultivation_entering_nirvana }
+                99 = { }
+            }
+        }
+        else_if = {
+            limit = { has_trait = cultivation_entering_nirvana }
+            random_list = {
+                1 = { remove_trait = cultivation_entering_nirvana add_trait = cultivation_true_immortal }
+                99 = { }
+            }
+        }
+    }
+}
+
+# AI sect-joining pulse
+cultivation_ai.0002 = {
+    type = character_event
+    hide_window = yes
+
+    trigger = {
+        is_ai = yes
+        is_alive = yes
+        is_adult = yes
+        is_cultivator = yes
+        NOT = { has_character_flag = ai_recently_joined_sect }
+    }
+
+    immediate = {
+        random_list = {
+            18 = {
+                random_list = {
+                    15 = { set_character_faith = faith:mount_hua_sect }
+                    15 = { set_character_faith = faith:wudang_sect }
+                    12 = { set_character_faith = faith:shaolin_temple }
+                    12 = { set_character_faith = faith:jade_cauldron_sect }
+                    12 = { set_character_faith = faith:divine_beast_mountain }
+                    10 = { set_character_faith = faith:crimson_moon_blade_hall }
+                    8 = { set_character_faith = faith:blood_river_sect }
+                    8 = { set_character_faith = faith:five_poison_cult }
+                    8 = { set_character_faith = faith:lone_wolf_wanderers }
+                }
+                add_character_flag = { flag = ai_recently_joined_sect days = 1825 }
+            }
+            82 = { }
+        }
+    }
+}

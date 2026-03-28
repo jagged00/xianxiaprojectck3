@@ -1,0 +1,80 @@
+﻿teach_cultivation_interaction = {
+	category = interaction_category_friendly
+	interface_priority = 100
+	icon = icon_combat
+	desc = teach_cultivation_interaction_desc
+	use_diplomatic_range = yes
+
+	ai_frequency = 120
+	ai_targets = {
+		ai_recipients = courtiers
+		ai_recipients = children
+		ai_recipients = siblings
+		ai_recipients = parents
+	}
+
+	is_shown = {
+		NOT = { scope:actor = scope:recipient }
+		scope:actor = {
+			is_alive = yes
+			is_cultivator = yes
+		}
+		scope:recipient = {
+			is_alive = yes
+			is_adult = yes
+			is_courtier_of = scope:actor
+			NOT = { is_cultivator = yes }
+			OR = {
+				has_trait = poor_meridians
+				has_trait = normal_meridians
+				has_trait = good_meridians
+				has_trait = excellent_meridians
+				has_trait = heavenly_meridians
+			}
+		}
+	}
+
+	ai_will_do = {
+		base = 0
+		modifier = {
+			factor = 100
+			scope:recipient = { is_close_family_of = scope:actor }
+		}
+		modifier = {
+			factor = 20
+			scope:recipient = { has_trait = heavenly_meridians }
+		}
+		modifier = {
+			factor = 10
+			scope:recipient = { has_trait = excellent_meridians }
+		}
+		modifier = {
+			factor = 5
+			scope:recipient = { has_trait = good_meridians }
+		}
+		modifier = {
+			factor = 0
+			scope:recipient = { is_cultivator = yes }
+		}
+	}
+
+	auto_accept = yes
+
+	on_accept = {
+		scope:recipient = {
+			add_trait = cultivation_qi_gathering
+			add_opinion = {
+				target = scope:actor
+				modifier = taught_me_cultivation_opinion
+				years = 20
+			}
+		}
+		scope:actor = {
+			add_opinion = {
+				target = scope:recipient
+				modifier = taught_them_cultivation_opinion
+				years = 20
+			}
+		}
+	}
+}

@@ -10,7 +10,14 @@
 
         scope:actor = {
             is_adult = yes
-            dynasty = { has_dynasty_perk = cultivation_legacy_3 }
+            OR = {
+                dynasty = { has_dynasty_perk = cultivation_legacy_3 }
+                has_faith = faith:pure_yang_palace
+                has_faith = faith:yin_phoenix_sect
+                has_faith = faith:blissful_union_pavilion
+                has_faith = faith:jade_chamber_sect
+                has_faith = faith:eternal_pleasure_hall
+            }
             # Must have at least one cultivation trait
 			OR = {    
 				has_trait = cultivation_mortal

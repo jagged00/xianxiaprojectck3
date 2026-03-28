@@ -98,6 +98,8 @@ cultivation_qi_gathering = {
 	martial = 1
 	prowess = 1
 	learning = 1
+	monthly_lifestyle_experience = 0.02
+	enemy_hostile_scheme_success_chance_add = -5
 	compatibility = {
 		cultivation_qi_refining = @pos_compat_low
 	}
@@ -146,6 +148,9 @@ cultivation_qi_refining = {
 	prowess = 2
 	learning = 2
 	health = 0.5
+	monthly_lifestyle_experience = 0.04
+	enemy_hostile_scheme_success_chance_add = -8
+	knight_effectiveness = 0.05
 	
 
 	# Dummy flags — just here for loc really.
@@ -202,6 +207,9 @@ cultivation_qi_building = {
 	prowess = 3
 	learning = 3
 	health = 1.0
+	monthly_lifestyle_experience = 0.06
+	enemy_hostile_scheme_success_chance_add = -10
+	knight_effectiveness = 0.10
 	
 	compatibility = {
 		cultivation_qi_refining = @pos_compat_low
@@ -252,6 +260,9 @@ cultivation_core_formation = {
 	prowess = 5
 	learning = 4
 	health = 1.5
+	monthly_lifestyle_experience = 0.08
+	enemy_hostile_scheme_success_chance_add = -12
+	knight_effectiveness = 0.15
 	
 	# +15 years lifespan
 	health_penalty_mult = -0.05
@@ -306,6 +317,9 @@ cultivation_nascent_soul = {
 	learning = 5
 	health = 2.0
 	advantage = 10
+	monthly_lifestyle_experience = 0.10
+	enemy_hostile_scheme_success_chance_add = -15
+	knight_effectiveness = 0.20
 	
 	# +40 years lifespan
 	health_penalty_mult = -0.10
@@ -361,6 +375,9 @@ cultivation_heavenly_being = {
 	health = 3.0
 	advantage = 20
 	monthly_prestige = 0.5
+	monthly_lifestyle_experience = 0.12
+	enemy_hostile_scheme_success_chance_add = -20
+	knight_effectiveness = 0.25
 	
 	# +70 years lifespan
 	health_penalty_mult = -0.15
@@ -416,6 +433,9 @@ cultivation_four_axis = {
 	health = 4.0
 	advantage = 30
 	monthly_prestige = 1.0
+	monthly_lifestyle_experience = 0.14
+	enemy_hostile_scheme_success_chance_add = -25
+	knight_effectiveness = 0.30
 	dread_gain_mult = 0.25
 	
 	# +100 years lifespan
@@ -472,6 +492,9 @@ cultivation_integration = {
 	health = 5.0
 	advantage = 50
 	monthly_prestige = 2.0
+	monthly_lifestyle_experience = 0.16
+	enemy_hostile_scheme_success_chance_add = -30
+	knight_effectiveness = 0.35
 	dread_gain_mult = 0.5
 	
 	# +150 years lifespan + Resurrection mechanic
@@ -530,6 +553,9 @@ cultivation_star_shattering = {
 	health = 6.0
 	advantage = 70
 	monthly_prestige = 3.0
+	monthly_lifestyle_experience = 0.18
+	enemy_hostile_scheme_success_chance_add = -35
+	knight_effectiveness = 0.40
 	dread_gain_mult = 0.75
 	
 	# +200 years lifespan
@@ -586,6 +612,9 @@ cultivation_sacred_vessel = {
 	health = 8.0
 	advantage = 90
 	monthly_prestige = 4.0
+	monthly_lifestyle_experience = 0.20
+	enemy_hostile_scheme_success_chance_add = -40
+	knight_effectiveness = 0.45
 	dread_baseline_add = 20
 	
 	# +280 years lifespan
@@ -642,6 +671,9 @@ cultivation_entering_nirvana = {
 	health = 10.0
 	advantage = 100
 	monthly_prestige = 5.0
+	monthly_lifestyle_experience = 0.22
+	enemy_hostile_scheme_success_chance_add = -45
+	knight_effectiveness = 0.50
 	dread_baseline_add = 30
 	stress_loss_mult = 0.5
 	
@@ -697,6 +729,9 @@ cultivation_true_immortal = {
 	martial = 25
 	prowess = 40
 	learning = 20
+	monthly_lifestyle_experience = 0.30
+	enemy_hostile_scheme_success_chance_add = -60
+	knight_effectiveness = 0.60
 	health = 15.0
 	advantage = 150
 	monthly_prestige = 10.0
