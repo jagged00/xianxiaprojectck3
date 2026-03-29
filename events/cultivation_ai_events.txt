@@ -282,7 +282,19 @@ cultivation_ai.0002 = {
                 867 = { }
             }
 
-            add_character_flag = { flag = ai_recently_joined_sect days = 1825 }
+            if = {
+                limit = {
+                    faith = {
+                        OR = {
+                            has_doctrine = tenet_orthodox_cultivation
+                            has_doctrine = tenet_unorthodox_cultivation
+                            has_doctrine = tenet_demonic_cultivation
+                            has_doctrine = tenet_vagrant_cultivation
+                        }
+                    }
+                }
+                add_character_flag = { flag = ai_recently_joined_sect days = 1825 }
+            }
         }
     }
 
