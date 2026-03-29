@@ -45,32 +45,53 @@ cultivation_ai.0001 = {
             }
         }
 
-        # Awakening chance, strongly talent-gated.
+        # Awakening chance: intentionally high so the world fills with cultivators quickly.
         if = {
-            limit = { NOT = { is_cultivator = yes } }
-            random_list = {
-                1 = {
-                    trigger = { has_trait = poor_meridians }
-                    add_trait = cultivation_qi_gathering
-                }
-                6 = {
-                    trigger = { has_trait = normal_meridians }
-                    add_trait = cultivation_qi_gathering
-                }
-                18 = {
-                    trigger = { has_trait = good_meridians }
-                    add_trait = cultivation_qi_gathering
-                }
-                42 = {
-                    trigger = { has_trait = excellent_meridians }
-                    add_trait = cultivation_qi_gathering
-                }
-                75 = {
-                    trigger = { has_trait = heavenly_meridians }
-                    add_trait = cultivation_qi_gathering
-                }
-                858 = { }
+            limit = {
+                NOT = { is_cultivator = yes }
+                has_trait = poor_meridians
             }
+            random_list = {
+                35 = { add_trait = cultivation_qi_gathering }
+                65 = { }
+            }
+        }
+        else_if = {
+            limit = {
+                NOT = { is_cultivator = yes }
+                has_trait = normal_meridians
+            }
+            random_list = {
+                60 = { add_trait = cultivation_qi_gathering }
+                40 = { }
+            }
+        }
+        else_if = {
+            limit = {
+                NOT = { is_cultivator = yes }
+                has_trait = good_meridians
+            }
+            random_list = {
+                85 = { add_trait = cultivation_qi_gathering }
+                15 = { }
+            }
+        }
+        else_if = {
+            limit = {
+                NOT = { is_cultivator = yes }
+                has_trait = excellent_meridians
+            }
+            random_list = {
+                97 = { add_trait = cultivation_qi_gathering }
+                3 = { }
+            }
+        }
+        else_if = {
+            limit = {
+                NOT = { is_cultivator = yes }
+                has_trait = heavenly_meridians
+            }
+            add_trait = cultivation_qi_gathering
         }
 
         # Progression chance scaled by meridian quality (checked every monthly pulse).
