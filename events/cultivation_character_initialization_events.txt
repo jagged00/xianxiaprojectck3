@@ -37,6 +37,8 @@ cultivation_character_initialization.0002 = {
 		if = {
 			limit = {
 				is_child = yes
+				has_mother = yes
+				has_father = yes
 				mother = { has_active_meridians = yes }
 				father = { has_active_meridians = yes }
 			}
@@ -195,13 +197,19 @@ cultivation_character_initialization.0005 = {
 		is_child = yes
 		NOT = { has_cultivation_sect_faith = yes }
 		OR = {
-			mother = {
-				is_alive = yes
-				has_cultivation_sect_faith = yes
+			AND = {
+				has_mother = yes
+				mother = {
+					is_alive = yes
+					has_cultivation_sect_faith = yes
+				}
 			}
-			father = {
-				is_alive = yes
-				has_cultivation_sect_faith = yes
+			AND = {
+				has_father = yes
+				father = {
+					is_alive = yes
+					has_cultivation_sect_faith = yes
+				}
 			}
 		}
 	}
@@ -209,12 +217,14 @@ cultivation_character_initialization.0005 = {
 	immediate = {
 		if = {
 			limit = {
+				has_mother = yes
 				mother = { is_alive = yes has_cultivation_sect_faith = yes }
 			}
 			set_character_faith = mother.faith
 		}
 		else_if = {
 			limit = {
+				has_father = yes
 				father = { is_alive = yes has_cultivation_sect_faith = yes }
 			}
 			set_character_faith = father.faith
