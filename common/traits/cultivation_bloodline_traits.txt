@@ -1090,13 +1090,13 @@ primal_bloodline_1 = {
 	
 	desc = {
 		first_valid = {
-			triggered_desc = {
-				trigger = { NOT = { exists = this } }
-				desc = trait_primal_bloodline_desc
+				triggered_desc = {
+					trigger = { NOT = { exists = this } }
+					desc = trait_primal_bloodline_desc
+				}
+				desc = trait_primal_bloodline_character_desc
 			}
-			desc = trait_primal_bloodline_character_desc
 		}
-	}
 	
 	martial = 1
 	prowess = 5
@@ -1138,13 +1138,13 @@ primal_bloodline_2 = {
 	
 	desc = {
 		first_valid = {
-			triggered_desc = {
-				trigger = { NOT = { exists = this } }
-				desc = trait_primal_bloodline_desc
+				triggered_desc = {
+					trigger = { NOT = { exists = this } }
+					desc = trait_primal_bloodline_desc
+				}
+				desc = trait_primal_bloodline_character_desc
 			}
-			desc = trait_primal_bloodline_character_desc
 		}
-	}
 	
 	martial = 1
 	prowess = 5
@@ -1186,13 +1186,13 @@ primal_bloodline_3 = {
 	
 	desc = {
 		first_valid = {
-			triggered_desc = {
-				trigger = { NOT = { exists = this } }
-				desc = trait_primal_bloodline_desc
+				triggered_desc = {
+					trigger = { NOT = { exists = this } }
+					desc = trait_primal_bloodline_desc
+				}
+				desc = trait_primal_bloodline_character_desc
 			}
-			desc = trait_primal_bloodline_character_desc
 		}
-	}
 	
 	martial = 1
 	prowess = 5
@@ -1372,9 +1372,9 @@ sun_bloodline_1 = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = trait_primal_bloodline_desc
+				desc = trait_sun_bloodline_desc
 			}
-			desc = trait_primal_bloodline_character_desc
+			desc = trait_sun_bloodline_character_desc
 		}
 	}
 	
@@ -1420,9 +1420,9 @@ sun_bloodline_2 = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = trait_primal_bloodline_desc
+				desc = trait_sun_bloodline_desc
 			}
-			desc = trait_primal_bloodline_character_desc
+			desc = trait_sun_bloodline_character_desc
 		}
 	}
 	
@@ -1468,9 +1468,9 @@ sun_bloodline_3 = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = trait_primal_bloodline_desc
+				desc = trait_sun_bloodline_desc
 			}
-			desc = trait_primal_bloodline_character_desc
+			desc = trait_sun_bloodline_character_desc
 		}
 	}
 	
