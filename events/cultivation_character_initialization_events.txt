@@ -281,19 +281,156 @@ cultivation_character_initialization.0006 = {
 
 	immediate = {
 		set_character_flag = bloodline_lottery_checked
-		random_list = {
-			99835 = { }
-			15 = { add_trait = yin_bloodline_1 }
-			15 = { add_trait = yang_bloodline_1 }
-			15 = { add_trait = dragon_bloodline_1 }
-			15 = { add_trait = phoenix_bloodline_1 }
-			15 = { add_trait = anchestor_bloodline_1 }
-			15 = { add_trait = poison_bloodline_1 }
-			15 = { add_trait = cursed_bloodline_1 }
-			15 = { add_trait = demon_bloodline_1 }
-			15 = { add_trait = primal_bloodline_1 }
-			15 = { add_trait = spirit_bloodline_1 }
-			15 = { add_trait = sun_bloodline_1 }
+		# World seeding: ensure each foundation bloodline appears at least once.
+		# This runs before the normal lottery and will fill any missing lineages
+		# across the world one by one as unawakened characters are initialized.
+		if = {
+			limit = { NOT = { any_living_character = { has_trait = yin_bloodline_1 } } }
+			add_trait = yin_bloodline_1
+		}
+		else_if = {
+			limit = { NOT = { any_living_character = { has_trait = yang_bloodline_1 } } }
+			add_trait = yang_bloodline_1
+		}
+		else_if = {
+			limit = { NOT = { any_living_character = { has_trait = dragon_bloodline_1 } } }
+			add_trait = dragon_bloodline_1
+		}
+		else_if = {
+			limit = { NOT = { any_living_character = { has_trait = phoenix_bloodline_1 } } }
+			add_trait = phoenix_bloodline_1
+		}
+		else_if = {
+			limit = { NOT = { any_living_character = { has_trait = anchestor_bloodline_1 } } }
+			add_trait = anchestor_bloodline_1
+		}
+		else_if = {
+			limit = { NOT = { any_living_character = { has_trait = poison_bloodline_1 } } }
+			add_trait = poison_bloodline_1
+		}
+		else_if = {
+			limit = { NOT = { any_living_character = { has_trait = cursed_bloodline_1 } } }
+			add_trait = cursed_bloodline_1
+		}
+		else_if = {
+			limit = { NOT = { any_living_character = { has_trait = demon_bloodline_1 } } }
+			add_trait = demon_bloodline_1
+		}
+		else_if = {
+			limit = { NOT = { any_living_character = { has_trait = primal_bloodline_1 } } }
+			add_trait = primal_bloodline_1
+		}
+		else_if = {
+			limit = { NOT = { any_living_character = { has_trait = spirit_bloodline_1 } } }
+			add_trait = spirit_bloodline_1
+		}
+		else_if = {
+			limit = { NOT = { any_living_character = { has_trait = sun_bloodline_1 } } }
+			add_trait = sun_bloodline_1
+		}
+		else_if = {
+			limit = { is_child = yes }
+			# Children of destiny: tiny odds for one, or very rarely multiple,
+			# bloodline awakenings.
+			random_list = {
+				99784 = { }
+				15 = { add_trait = yin_bloodline_1 }
+				15 = { add_trait = yang_bloodline_1 }
+				15 = { add_trait = dragon_bloodline_1 }
+				15 = { add_trait = phoenix_bloodline_1 }
+				15 = { add_trait = anchestor_bloodline_1 }
+				15 = { add_trait = poison_bloodline_1 }
+				15 = { add_trait = cursed_bloodline_1 }
+				15 = { add_trait = demon_bloodline_1 }
+				15 = { add_trait = primal_bloodline_1 }
+				15 = { add_trait = spirit_bloodline_1 }
+				15 = { add_trait = sun_bloodline_1 }
+				4 = {
+					random_list = {
+						1 = { add_trait = yin_bloodline_1 }
+						1 = { add_trait = yang_bloodline_1 }
+						1 = { add_trait = dragon_bloodline_1 }
+						1 = { add_trait = phoenix_bloodline_1 }
+						1 = { add_trait = anchestor_bloodline_1 }
+						1 = { add_trait = poison_bloodline_1 }
+						1 = { add_trait = cursed_bloodline_1 }
+						1 = { add_trait = demon_bloodline_1 }
+						1 = { add_trait = primal_bloodline_1 }
+						1 = { add_trait = spirit_bloodline_1 }
+						1 = { add_trait = sun_bloodline_1 }
+					}
+					random_list = {
+						1 = { add_trait = yin_bloodline_1 }
+						1 = { add_trait = yang_bloodline_1 }
+						1 = { add_trait = dragon_bloodline_1 }
+						1 = { add_trait = phoenix_bloodline_1 }
+						1 = { add_trait = anchestor_bloodline_1 }
+						1 = { add_trait = poison_bloodline_1 }
+						1 = { add_trait = cursed_bloodline_1 }
+						1 = { add_trait = demon_bloodline_1 }
+						1 = { add_trait = primal_bloodline_1 }
+						1 = { add_trait = spirit_bloodline_1 }
+						1 = { add_trait = sun_bloodline_1 }
+					}
+				}
+				1 = {
+					random_list = {
+						1 = { add_trait = yin_bloodline_1 }
+						1 = { add_trait = yang_bloodline_1 }
+						1 = { add_trait = dragon_bloodline_1 }
+						1 = { add_trait = phoenix_bloodline_1 }
+						1 = { add_trait = anchestor_bloodline_1 }
+						1 = { add_trait = poison_bloodline_1 }
+						1 = { add_trait = cursed_bloodline_1 }
+						1 = { add_trait = demon_bloodline_1 }
+						1 = { add_trait = primal_bloodline_1 }
+						1 = { add_trait = spirit_bloodline_1 }
+						1 = { add_trait = sun_bloodline_1 }
+					}
+					random_list = {
+						1 = { add_trait = yin_bloodline_1 }
+						1 = { add_trait = yang_bloodline_1 }
+						1 = { add_trait = dragon_bloodline_1 }
+						1 = { add_trait = phoenix_bloodline_1 }
+						1 = { add_trait = anchestor_bloodline_1 }
+						1 = { add_trait = poison_bloodline_1 }
+						1 = { add_trait = cursed_bloodline_1 }
+						1 = { add_trait = demon_bloodline_1 }
+						1 = { add_trait = primal_bloodline_1 }
+						1 = { add_trait = spirit_bloodline_1 }
+						1 = { add_trait = sun_bloodline_1 }
+					}
+					random_list = {
+						1 = { add_trait = yin_bloodline_1 }
+						1 = { add_trait = yang_bloodline_1 }
+						1 = { add_trait = dragon_bloodline_1 }
+						1 = { add_trait = phoenix_bloodline_1 }
+						1 = { add_trait = anchestor_bloodline_1 }
+						1 = { add_trait = poison_bloodline_1 }
+						1 = { add_trait = cursed_bloodline_1 }
+						1 = { add_trait = demon_bloodline_1 }
+						1 = { add_trait = primal_bloodline_1 }
+						1 = { add_trait = spirit_bloodline_1 }
+						1 = { add_trait = sun_bloodline_1 }
+					}
+				}
+			}
+		}
+		else = {
+			random_list = {
+				99835 = { }
+				15 = { add_trait = yin_bloodline_1 }
+				15 = { add_trait = yang_bloodline_1 }
+				15 = { add_trait = dragon_bloodline_1 }
+				15 = { add_trait = phoenix_bloodline_1 }
+				15 = { add_trait = anchestor_bloodline_1 }
+				15 = { add_trait = poison_bloodline_1 }
+				15 = { add_trait = cursed_bloodline_1 }
+				15 = { add_trait = demon_bloodline_1 }
+				15 = { add_trait = primal_bloodline_1 }
+				15 = { add_trait = spirit_bloodline_1 }
+				15 = { add_trait = sun_bloodline_1 }
+			}
 		}
 	}
 }

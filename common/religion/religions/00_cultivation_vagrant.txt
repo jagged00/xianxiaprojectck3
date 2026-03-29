@@ -8,7 +8,7 @@ cultivation_vagrant = {
 	doctrine = doctrine_gender_equal
 	doctrine = doctrine_pluralism_fundamentalist
 	doctrine = doctrine_no_head
-	doctrine = doctrine_theocracy_lay_clergy
+	doctrine = doctrine_theocracy_temporal
 	doctrine = doctrine_concubines
 	doctrine = doctrine_divorce_allowed
 	doctrine = doctrine_bastardry_legitimization
@@ -19,7 +19,7 @@ cultivation_vagrant = {
 	doctrine = doctrine_deviancy_accepted
 	doctrine = doctrine_witchcraft_accepted
 	doctrine = doctrine_kinslaying_extended_family_crime
-	doctrine = doctrine_clerical_function_alms_and_pacification
+	doctrine = doctrine_clerical_function_recruitment
 	doctrine = doctrine_clerical_gender_either
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_appointment
@@ -64,7 +64,7 @@ cultivation_vagrant = {
 			holy_site = chang_an
 			holy_site = luoyang
 			doctrine = tenet_adaptive
-			doctrine = tenet_ritual_hospitality
+			doctrine = tenet_warmonger
 			doctrine = tenet_astrology
 			doctrine = tenet_vagrant_cultivation
 		}
@@ -131,7 +131,7 @@ cultivation_vagrant = {
 			holy_site = luoyang
 			doctrine = tenet_sanctity_of_nature
 			doctrine = tenet_astrology
-			doctrine = tenet_divine_marriage
+			doctrine = tenet_adaptive
 			doctrine = tenet_vagrant_cultivation
 		}
 	}

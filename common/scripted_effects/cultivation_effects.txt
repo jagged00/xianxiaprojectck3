@@ -441,6 +441,18 @@ cultivation_ai_grant_next_realm_perk_effect = {
 	}
 }
 
+cultivation_ai_grant_mortal_foundation_perks_effect = {
+	if = {
+		limit = { is_ai = yes is_adult = yes has_trait = cultivation_qi_gathering }
+		if = { limit = { NOT = { has_perk = mortal_muscle_reconstruction_perk } } add_perk = mortal_muscle_reconstruction_perk }
+		if = { limit = { NOT = { has_perk = mortal_bone_reconstruction_perk } } add_perk = mortal_bone_reconstruction_perk }
+		if = { limit = { NOT = { has_perk = mortal_internal_reconstruction_perk } } add_perk = mortal_internal_reconstruction_perk }
+		if = { limit = { NOT = { has_perk = mortal_external_reconstruction_perk } } add_perk = mortal_external_reconstruction_perk }
+		if = { limit = { NOT = { has_perk = mortal_body_reconstruction_perk } } add_perk = mortal_body_reconstruction_perk }
+		if = { limit = { NOT = { has_perk = mortal_qi_gathering_breakthrough_perk } } add_perk = mortal_qi_gathering_breakthrough_perk }
+	}
+}
+
 cultivation_ai_autogrant_realm_perks_effect = {
 	if = {
 		limit = { is_ai = yes is_adult = yes is_cultivator = yes }
