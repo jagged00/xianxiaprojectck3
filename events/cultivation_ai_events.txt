@@ -1,7 +1,7 @@
-namespace = cultivation_ai
+﻿namespace = cultivation_ai
 
 # Startup bootstrap so AI cultivation is never player-gated.
-cultivation_ai.0000 = {
+cultivation_ai.1000 = {
     type = character_event
     hidden = yes
 
@@ -212,6 +212,7 @@ cultivation_ai.0002 = {
         is_alive = yes
         is_adult = yes
         has_active_meridians = yes
+        is_cultivator = yes
         NOT = { has_character_flag = ai_recently_joined_sect }
     }
 

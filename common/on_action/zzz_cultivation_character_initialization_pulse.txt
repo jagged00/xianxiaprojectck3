@@ -33,6 +33,8 @@ on_birth_child = {
 cultivation_character_initialization_pulse = {
 	events = {
 		cultivation_character_initialization.0002
+		cultivation_character_initialization.0003
+		cultivation_character_initialization.0004
 	}
 }
 
