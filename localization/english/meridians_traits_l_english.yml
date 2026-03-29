@@ -24,3 +24,6 @@
  good_meridians_opinion_tooltip:0 "Refined meridians earn clear respect in sect circles."
  excellent_meridians_opinion_tooltip:0 "Spiritborn meridians command admiration and caution."
  heavenly_meridians_opinion_tooltip:0 "Heavenly meridians are revered as destiny made flesh."
+ trait_active_meridians:0 "Active Meridians"
+ trait_cultivation_realm:0 "Cultivation Realm"
+ OK:0 "OK"
