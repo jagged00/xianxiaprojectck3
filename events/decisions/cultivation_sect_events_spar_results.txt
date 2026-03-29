@@ -1,4 +1,6 @@
-﻿cultivation_sect_spar_results.1000 = {
+﻿namespace = cultivation_sect_spar_results
+
+cultivation_sect_spar_results.1000 = {
     type = character_event
 	theme = martial
 	immediate = {
