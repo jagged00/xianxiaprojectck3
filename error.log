@@ -1,0 +1,602 @@
+[15:54:03][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:03][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:03][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:03][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/sea_temple'
+[15:54:03][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:03][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:03][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:03][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/indian_city'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/church_temple'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/church_temple'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/church_temple'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/mosque_temple'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/mosque_temple'
+[15:54:03][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:03][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 24 (on_title_gain)
+    file: common/factions/00_populist_faction.txt line: 933 (populist_faction:demand)
+
+[15:54:03][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:03][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:06][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:06][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:06][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:06][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:06][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:06][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: remove_manual_participant effect [ Scoped object is not valid. Type: (no situation) weak (Situation - 4294967295)! ]
+  Script location: file: common/on_action/title_on_actions.txt line: 3582 (on_title_lost)
+    file: common/on_action/title_on_actions.txt line: 2905 (on_title_lost)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: remove_manual_participant effect [ Scoped object is not valid. Type: (no situation) weak (Situation - 4294967295)! ]
+  Script location: file: common/on_action/title_on_actions.txt line: 3582 (on_title_lost)
+    file: common/on_action/title_on_actions.txt line: 2905 (on_title_lost)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: remove_manual_participant effect [ Scoped object is not valid. Type: (no situation) weak (Situation - 4294967295)! ]
+  Script location: file: common/on_action/title_on_actions.txt line: 3582 (on_title_lost)
+    file: common/on_action/title_on_actions.txt line: 2905 (on_title_lost)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: remove_manual_participant effect [ Scoped object is not valid. Type: (no situation) weak (Situation - 4294967295)! ]
+  Script location: file: common/on_action/title_on_actions.txt line: 3582 (on_title_lost)
+    file: common/on_action/title_on_actions.txt line: 2905 (on_title_lost)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: remove_manual_participant effect [ Scoped object is not valid. Type: (no situation) weak (Situation - 4294967295)! ]
+  Script location: file: common/on_action/title_on_actions.txt line: 3582 (on_title_lost)
+    file: common/on_action/title_on_actions.txt line: 2905 (on_title_lost)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: remove_manual_participant effect [ Scoped object is not valid. Type: (no situation) weak (Situation - 4294967295)! ]
+  Script location: file: common/on_action/title_on_actions.txt line: 3582 (on_title_lost)
+    file: common/on_action/title_on_actions.txt line: 2905 (on_title_lost)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 24 (on_title_gain)
+    file: common/factions/00_peasant_faction_new.txt line: 74 (peasant_faction:demand)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:09][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:14][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:14][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:14][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:14][E][jomini_script_system.cpp:303]: Script system error!
+  Error: global_variable_list_size trigger [ Could not find list from read name flag laamps_tally ]
+  Script location: file: common/story_cycles/ep3_story_cycle_adventurer_ai_contract.txt line: 125 (story_adventurer_ai:trigger)
+
+[15:54:14][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:14][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:14][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:14][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/church_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/orthodox_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/orthodox_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/orthodox_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/orthodox_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/church_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/church_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/mosque_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/mosque_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/mosque_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle'
+[15:54:14][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle'
+[15:54:14][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:15][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:15][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:15][E][jomini_script_system.cpp:303]: Script system error!
+  Error: add_legitimacy effect [ Scoped character 'Beidras iš Kulmas of x_script_1390 (Internal ID 84677)' doesn't have valid legitimacy type ]
+  Script location: file: common/decisions/summon_qi.txt line: 19 (summon_thousand_qi_needles_decision:effect)
+
+[15:54:15][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 24 (on_title_gain)
+    file: common/factions/00_peasant_faction_new.txt line: 74 (peasant_faction:demand)
+
+[15:54:15][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:15][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/dharmic_temple'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city'
+[15:54:15][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city'
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+    file: events/death_events/death_management_events.txt line: 6461 (death_management.9999:immediate)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 24 (on_title_gain)
+    file: common/factions/00_populist_faction.txt line: 933 (populist_faction:demand)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:17][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle'
+[15:54:17][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:17][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle'
+[15:54:17][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:17][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle'
+[15:54:17][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:17][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle'
+[15:54:17][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:17][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Temples/mosque_temple'
+[15:54:17][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle'
+[15:54:17][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city'
+[15:54:17][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle'
+[15:54:17][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city'
+[15:54:17][E][holdinggraphics.cpp:148]: no parameter 'Tier' for audio event 'event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle'
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: remove_manual_participant effect [ Scoped object is not valid. Type: (no situation) weak (Situation - 4294967295)! ]
+  Script location: file: common/on_action/title_on_actions.txt line: 3582 (on_title_lost)
+    file: common/on_action/title_on_actions.txt line: 2905 (on_title_lost)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: remove_manual_participant effect [ Scoped object is not valid. Type: (no situation) weak (Situation - 4294967295)! ]
+  Script location: file: common/on_action/title_on_actions.txt line: 3582 (on_title_lost)
+    file: common/on_action/title_on_actions.txt line: 2905 (on_title_lost)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: remove_manual_participant effect [ Scoped object is not valid. Type: (no situation) weak (Situation - 4294967295)! ]
+  Script location: file: common/on_action/title_on_actions.txt line: 3582 (on_title_lost)
+    file: common/on_action/title_on_actions.txt line: 2905 (on_title_lost)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: remove_manual_participant effect [ Scoped object is not valid. Type: (no situation) weak (Situation - 4294967295)! ]
+  Script location: file: common/on_action/title_on_actions.txt line: 3582 (on_title_lost)
+    file: common/on_action/title_on_actions.txt line: 2905 (on_title_lost)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: remove_manual_participant effect [ Scoped object is not valid. Type: (no situation) weak (Situation - 4294967295)! ]
+  Script location: file: common/on_action/title_on_actions.txt line: 3582 (on_title_lost)
+    file: common/on_action/title_on_actions.txt line: 2905 (on_title_lost)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: remove_manual_participant effect [ Scoped object is not valid. Type: (no situation) weak (Situation - 4294967295)! ]
+  Script location: file: common/on_action/title_on_actions.txt line: 3582 (on_title_lost)
+    file: common/on_action/title_on_actions.txt line: 2905 (on_title_lost)
+
+[15:54:17][E][jomini_script_system.cpp:303]: Script system error!
+  Error: remove_manual_participant effect [ Scoped object is not valid. Type: (no situation) weak (Situation - 4294967295)! ]
+  Script location: file: common/on_action/title_on_actions.txt line: 3582 (on_title_lost)
+    file: common/on_action/title_on_actions.txt line: 2905 (on_title_lost)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 24 (on_title_gain)
+    file: common/factions/00_peasant_faction_new.txt line: 74 (peasant_faction:demand)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 24 (on_title_gain)
+    file: common/factions/00_populist_faction.txt line: 933 (populist_faction:demand)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 198 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: father trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 202 (cultivation_character_initialization.0005:trigger)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+    file: events/siege_events.txt line: 393 (siege.0001:immediate)
+
+[15:54:18][E][jomini_script_system.cpp:303]: Script system error!
+  Error: mother trigger [ Failed context switch ]
+  Script location: file: events/cultivation_character_initialization_events.txt line: 40 (cultivation_character_initialization.0002:immediate)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 33 (cultivation_character_initialization_pulse)
+    file: common/on_action/zzz_cultivation_character_initialization_pulse.txt line: 16 (on_join_court)
+    file: events/siege_events.txt line: 393 (siege.0001:immediate)
