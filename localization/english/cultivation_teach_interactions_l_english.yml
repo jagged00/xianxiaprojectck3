@@ -3,3 +3,6 @@
  teach_cultivation_interaction_desc:0 "Guide [recipient.GetShortUINameNoTooltip] onto the path of cultivation."
  taught_me_cultivation_opinion:0 "Guided My Cultivation"
  taught_them_cultivation_opinion:0 "Guided Their Cultivation"
+
+ cripple_cultivator_interaction:0 "Shatter Cultivation"
+ cripple_cultivator_interaction_desc:0 "Cripple [recipient.GetShortUINameNoTooltip]'s meridians, stripping all cultivation realms and perks and leaving them a powerless mortal."

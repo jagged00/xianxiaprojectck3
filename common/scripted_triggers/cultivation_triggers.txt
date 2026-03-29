@@ -75,3 +75,15 @@ has_active_meridians = {
         has_trait = heavenly_meridians
     }
 }
+
+
+has_cultivation_sect_faith = {
+	faith = {
+		OR = {
+			has_doctrine = tenet_orthodox_cultivation
+			has_doctrine = tenet_unorthodox_cultivation
+			has_doctrine = tenet_demonic_cultivation
+			has_doctrine = tenet_vagrant_cultivation
+		}
+	}
+}

@@ -35,6 +35,7 @@ cultivation_character_initialization_pulse = {
 		cultivation_character_initialization.0002
 		cultivation_character_initialization.0003
 		cultivation_character_initialization.0004
+		cultivation_character_initialization.0005
 	}
 }
 
