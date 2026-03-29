@@ -247,19 +247,26 @@ cleanse_remnant_sects_decision = {
     ai_will_do = { base = 20 }
 
     effect = {
-        faith = { save_scope_as = former_sect_faith }
-
-        cultivation_convert_direct_domain_faith_effect = yes
-
-        every_vassal = {
+        every_domain_county = {
             limit = {
-                faith = scope:former_sect_faith
+                NOT = { faith = root.faith }
             }
-            add_opinion = {
-                target = root
-                modifier = remnant_sect_purged_opinion
+            faith = { save_temporary_scope_as = former_sect_faith }
+
+            root = {
+                every_vassal = {
+                    limit = {
+                        faith = scope:former_sect_faith
+                    }
+                    add_opinion = {
+                        target = root
+                        modifier = remnant_sect_purged_opinion
+                    }
+                }
             }
         }
+
+        cultivation_convert_direct_domain_faith_effect = yes
 
         add_piety = 100
         add_character_flag = { flag = cleanse_remnant_sects_cooldown days = 1825 }
