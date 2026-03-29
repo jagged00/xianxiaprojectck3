@@ -4,8 +4,9 @@
 cultivation_convert_direct_domain_faith_effect = {
 	if = {
 		limit = { is_landed = yes }
-		# Convert only counties in the ruler's direct domain (never vassal-held counties).
-		every_domain_county = {
+		# Convert only personally-held county titles (never vassal-held counties).
+		every_held_title = {
+			limit = { tier = tier_county }
 			set_county_faith = root.faith
 		}
 	}
