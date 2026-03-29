@@ -509,6 +509,33 @@
 			desc = DUAL_CULTIVATION_SECT_FRICTION
 			scope:secondary_actor.faith != scope:secondary_recipient.faith
 		}
+		modifier = {
+			add = 70
+			desc = SAME_SECT_MARRIAGE_OPINION_BONUS
+			scope:secondary_actor.faith = scope:secondary_recipient.faith
+		}
+		modifier = {
+			add = 45
+			desc = SAME_CULTIVATION_PATH_MARRIAGE_BONUS
+			OR = {
+				AND = {
+					scope:secondary_actor.faith = { has_doctrine_parameter = orthodox_cultivation }
+					scope:secondary_recipient.faith = { has_doctrine_parameter = orthodox_cultivation }
+				}
+				AND = {
+					scope:secondary_actor.faith = { has_doctrine_parameter = unorthodox_cultivation }
+					scope:secondary_recipient.faith = { has_doctrine_parameter = unorthodox_cultivation }
+				}
+				AND = {
+					scope:secondary_actor.faith = { has_doctrine_parameter = demonic_cultivation }
+					scope:secondary_recipient.faith = { has_doctrine_parameter = demonic_cultivation }
+				}
+				AND = {
+					scope:secondary_actor.faith = { has_doctrine_parameter = vagrant_cultivation }
+					scope:secondary_recipient.faith = { has_doctrine_parameter = vagrant_cultivation }
+				}
+			}
+		}
 		# Bloodline strategy: sects prize pairings that can produce elite heirs
 		modifier = {
 			add = 110

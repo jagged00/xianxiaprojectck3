@@ -61,6 +61,8 @@
  DUAL_CULTIVATION_REALM_PARITY_HIGH:0 "High-Realm Parity: $VALUE|+0=$"
  DUAL_CULTIVATION_REALM_GAP:0 "Dangerous Realm Imbalance: $VALUE|+0=$"
  DUAL_CULTIVATION_SECT_FRICTION:0 "Cross-Sect Friction: $VALUE|+0=$"
+ SAME_SECT_MARRIAGE_OPINION_BONUS:0 "Same Sect Trust: $VALUE|+0=$"
+ SAME_CULTIVATION_PATH_MARRIAGE_BONUS:0 "Shared Cultivation Path: $VALUE|+0=$"
  MERIDIAN_BLOODLINE_INHERITANCE:0 "Elite Bloodline Prospects: $VALUE|+0=$"
  OPPOSING_DAO_PATHS_MARRIAGE_TABOO:0 "Orthodox and Demonic Paths Are Mortal Enemies: $VALUE|+0=$"
  ORTHODOX_UNORTHODOX_MARRIAGE_RIVALRY:0 "Orthodox and Unorthodox Rivalry: $VALUE|+0=$"
