@@ -253,13 +253,15 @@ cleanse_remnant_sects_decision = {
             }
             faith = { save_temporary_scope_as = former_sect_faith }
 
-            every_vassal = {
-                limit = {
-                    faith = scope:former_sect_faith
-                }
-                add_opinion = {
-                    target = root
-                    modifier = remnant_sect_purged_opinion
+            root = {
+                every_vassal = {
+                    limit = {
+                        faith = scope:former_sect_faith
+                    }
+                    add_opinion = {
+                        target = root
+                        modifier = remnant_sect_purged_opinion
+                    }
                 }
             }
         }
