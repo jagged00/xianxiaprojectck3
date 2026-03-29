@@ -31,6 +31,7 @@ cultivation_sect_join.1000 = {
         show_as_unavailable = { always = yes }
 			
         set_character_faith = faith:mount_hua_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -41,6 +42,7 @@ cultivation_sect_join.1000 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:mount_hua_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -74,6 +76,7 @@ cultivation_sect_join.1003 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:ten_thousand_swords_valley
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -84,6 +87,7 @@ cultivation_sect_join.1003 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:ten_thousand_swords_valley
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -117,6 +121,7 @@ cultivation_sect_join.1004 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:violet_thunder_blade_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -127,6 +132,7 @@ cultivation_sect_join.1004 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:violet_thunder_blade_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -160,6 +166,7 @@ cultivation_sect_join.1052 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:nine_star_formation_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -170,6 +177,7 @@ cultivation_sect_join.1052 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:nine_star_formation_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -203,6 +211,7 @@ cultivation_sect_join.1053 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:mystic_seal_pavilion
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -213,6 +222,7 @@ cultivation_sect_join.1053 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:mystic_seal_pavilion
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -246,6 +256,7 @@ cultivation_sect_join.1100 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:wudang_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -256,6 +267,7 @@ cultivation_sect_join.1100 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:wudang_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -289,6 +301,7 @@ cultivation_sect_join.1101 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:shaolin_temple
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -299,6 +312,7 @@ cultivation_sect_join.1101 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:shaolin_temple
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -332,6 +346,7 @@ cultivation_sect_join.1102 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:eternal_harmony_pavilion
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -342,6 +357,7 @@ cultivation_sect_join.1102 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:eternal_harmony_pavilion
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -375,6 +391,7 @@ cultivation_sect_join.1150 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:divine_beast_mountain
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -385,6 +402,7 @@ cultivation_sect_join.1150 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:divine_beast_mountain
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -418,6 +436,7 @@ cultivation_sect_join.1154 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:thousand_beast_valley
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -428,6 +447,7 @@ cultivation_sect_join.1154 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:thousand_beast_valley
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -463,6 +483,7 @@ cultivation_sect_join.2000 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:crimson_moon_blade_hall
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -473,6 +494,7 @@ cultivation_sect_join.2000 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:crimson_moon_blade_hall
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -506,6 +528,7 @@ cultivation_sect_join.2001 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:tyrant_saber_palace
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -516,6 +539,7 @@ cultivation_sect_join.2001 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:tyrant_saber_palace
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -549,6 +573,7 @@ cultivation_sect_join.2003 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:demon_suppressing_blade_clan
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -559,6 +584,7 @@ cultivation_sect_join.2003 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:demon_suppressing_blade_clan
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -592,6 +618,7 @@ cultivation_sect_join.2051 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:medicine_king_valley
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -602,6 +629,7 @@ cultivation_sect_join.2051 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:medicine_king_valley
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -635,6 +663,7 @@ cultivation_sect_join.2052 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:hundred_herbs_pavilion
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -645,6 +674,7 @@ cultivation_sect_join.2052 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:hundred_herbs_pavilion
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -678,6 +708,7 @@ cultivation_sect_join.2103 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:jade_chamber_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -688,6 +719,7 @@ cultivation_sect_join.2103 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:jade_chamber_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -721,6 +753,7 @@ cultivation_sect_join.2104 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:eternal_pleasure_hall
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -731,6 +764,7 @@ cultivation_sect_join.2104 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:eternal_pleasure_hall
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -766,6 +800,7 @@ cultivation_sect_join.2150 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:moonless_night_pavilion
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -776,6 +811,7 @@ cultivation_sect_join.2150 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:moonless_night_pavilion
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -809,6 +845,7 @@ cultivation_sect_join.2151 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:pale_bone_hall
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -819,6 +856,7 @@ cultivation_sect_join.2151 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:pale_bone_hall
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -852,6 +890,7 @@ cultivation_sect_join.2152 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:eternal_rest_clan
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -862,6 +901,7 @@ cultivation_sect_join.2152 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:eternal_rest_clan
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -895,6 +935,7 @@ cultivation_sect_join.3001 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:ten_thousand_corpse_valley
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -905,6 +946,7 @@ cultivation_sect_join.3001 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:ten_thousand_corpse_valley
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -938,6 +980,7 @@ cultivation_sect_join.3051 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:venomous_serpent_valley
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -948,6 +991,7 @@ cultivation_sect_join.3051 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:venomous_serpent_valley
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -983,6 +1027,7 @@ cultivation_sect_join.3100 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:blood_yin_cult
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -993,6 +1038,7 @@ cultivation_sect_join.3100 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:blood_yin_cult
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1026,6 +1072,7 @@ cultivation_sect_join.3101 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:blood_moon_demonic_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1036,6 +1083,7 @@ cultivation_sect_join.3101 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:blood_moon_demonic_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1069,6 +1117,7 @@ cultivation_sect_join.3150 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:succubus_palace
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1079,6 +1128,7 @@ cultivation_sect_join.3150 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:succubus_palace
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1114,6 +1164,7 @@ cultivation_sect_join.4000 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:lone_wolf_wanderers
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1124,6 +1175,7 @@ cultivation_sect_join.4000 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:lone_wolf_wanderers
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1157,6 +1209,7 @@ cultivation_sect_join.4002 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:vagrant_blade_brotherhood
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1167,6 +1220,7 @@ cultivation_sect_join.4002 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:vagrant_blade_brotherhood
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1202,6 +1256,7 @@ cultivation_sect_join.4050 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:thousand_treasures_pavilion
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1212,6 +1267,7 @@ cultivation_sect_join.4050 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:thousand_treasures_pavilion
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1245,6 +1301,7 @@ cultivation_sect_join.4051 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:mystic_forge_hall
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1255,6 +1312,7 @@ cultivation_sect_join.4051 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:mystic_forge_hall
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1288,6 +1346,7 @@ cultivation_sect_join.4052 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:ancient_relic_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1298,6 +1357,7 @@ cultivation_sect_join.4052 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:ancient_relic_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1331,6 +1391,7 @@ cultivation_sect_join.4101 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:primal_beast_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1341,6 +1402,7 @@ cultivation_sect_join.4101 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:primal_beast_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1374,6 +1436,7 @@ cultivation_sect_join.4102 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:primordial_chaos_hall
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1384,6 +1447,7 @@ cultivation_sect_join.4102 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:primordial_chaos_hall
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1417,6 +1481,7 @@ cultivation_sect_join.4152 = {
 			
         show_as_unavailable = { always = yes }
         set_character_faith = faith:feral_bond_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 
@@ -1427,6 +1492,7 @@ cultivation_sect_join.4152 = {
         show_as_unavailable = { short_term_gold < 200 }
         remove_short_term_gold = 200
         set_character_faith = faith:feral_bond_sect
+        cultivation_convert_direct_domain_faith_effect = yes
         add_character_flag = sect_join_success
     }
 

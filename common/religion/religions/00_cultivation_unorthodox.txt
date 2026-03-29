@@ -10,7 +10,7 @@ cultivation_unorthodox = {
 	pagan_roots = yes
 	
 	doctrine = doctrine_gender_equal
-	doctrine = doctrine_pluralism_pluralistic
+	doctrine = doctrine_pluralism_fundamentalist
 	doctrine = doctrine_no_head
 	doctrine = doctrine_theocracy_lay_clergy
 	doctrine = doctrine_pilgrimage_encouraged
