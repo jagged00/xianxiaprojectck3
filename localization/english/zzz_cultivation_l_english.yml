@@ -358,75 +358,77 @@
  # BLOODLINES
  ##################################################
 
- trait_yin_bloodline:0 "Yin Blood"
- trait_yin_bloodline_1:0 "Yin Blood"
- trait_yin_bloodline_2:0 "Pure Yin Blood"
- trait_yin_bloodline_3:0 "Awakened Yin Blood"
- trait_yang_bloodline:0 "Yang Blood"
- trait_yang_bloodline_1:0 "Yang Blood"
- trait_yang_bloodline_2:0 "Pure Yang Blood"
- trait_yang_bloodline_3:0 "Awakened Yang Blood"
- trait_dragon_bloodline:0 "Dragon Blood"
- trait_dragon_bloodline_1:0 "Dragon Blood"
+ trait_yin_bloodline:0 "Lunar Yin Lineage"
+ trait_yin_bloodline_1:0 "Dormant Lunar Yin"
+ trait_yin_bloodline_2:0 "Pure Lunar Yin"
+ trait_yin_bloodline_3:0 "Awakened Lunar Yin"
+ trait_yang_bloodline:0 "Solar Yang Lineage"
+ trait_yang_bloodline_1:0 "Dormant Solar Yang"
+ trait_yang_bloodline_2:0 "Pure Solar Yang"
+ trait_yang_bloodline_3:0 "Awakened Solar Yang"
+ trait_dragon_bloodline:0 "True Dragon Lineage"
+ trait_dragon_bloodline_1:0 "Dormant Dragon Blood"
  trait_dragon_bloodline_2:0 "Pure Dragon Blood"
- trait_dragon_bloodline_3:0 "Awakened Dragon Blood"
- trait_phoenix_bloodline:0 "Phoenix Blood"
- trait_phoenix_bloodline_1:0 "Phoenix Blood"
+ trait_dragon_bloodline_3:0 "Awakened Dragon Soulblood"
+ trait_phoenix_bloodline:0 "Vermilion Phoenix Lineage"
+ trait_phoenix_bloodline_1:0 "Dormant Phoenix Blood"
  trait_phoenix_bloodline_2:0 "Pure Phoenix Blood"
- trait_phoenix_bloodline_3:0 "Awakened Phoenix Blood"
- trait_anchestor_bloodline:0 "Anchestor Blood"
- trait_anchestor_bloodline_1:0 "Anchestor Blood"
- trait_anchestor_bloodline_2:0 "Pure Anchestor Blood"
- trait_anchestor_bloodline_3:0 "Awakened Anchestor Blood"
- trait_poison_bloodline:0 "Poison Blood"
- trait_poison_bloodline_1:0 "Poison Blood"
- trait_poison_bloodline_2:0 "Pure Poison Blood"
- trait_poison_bloodline_3:0 "Awakened Poison Blood"
- trait_cursed_bloodline:0 "Cursed Blood"
- trait_cursed_bloodline_1:0 "Cursed Blood"
- trait_cursed_bloodline_2:0 "Pure Cursed Blood"
- trait_cursed_bloodline_3:0 "Awakened Cursed Blood"
- trait_demon_bloodline:0 "Demon Blood"
- trait_demon_bloodline_1:0 "Demon Blood"
+ trait_phoenix_bloodline_3:0 "Awakened Phoenix Soulflame"
+ trait_anchestor_bloodline:0 "Ancestral Sage Lineage"
+ trait_anchestor_bloodline_1:0 "Dormant Ancestral Blood"
+ trait_anchestor_bloodline_2:0 "Pure Ancestral Blood"
+ trait_anchestor_bloodline_3:0 "Awakened Ancestral Echo"
+ trait_poison_bloodline:0 "Ten-Thousand Venoms Lineage"
+ trait_poison_bloodline_1:0 "Dormant Venom Blood"
+ trait_poison_bloodline_2:0 "Pure Venom Blood"
+ trait_poison_bloodline_3:0 "Awakened Venomous Heartblood"
+ trait_cursed_bloodline:0 "Calamity-Bound Lineage"
+ trait_cursed_bloodline_1:0 "Dormant Calamity Blood"
+ trait_cursed_bloodline_2:0 "Pure Calamity Blood"
+ trait_cursed_bloodline_3:0 "Awakened Calamity Mark"
+ trait_demon_bloodline:0 "Abyssal Demon Lineage"
+ trait_demon_bloodline_1:0 "Dormant Demon Blood"
  trait_demon_bloodline_2:0 "Pure Demon Blood"
- trait_demon_bloodline_3:0 "Awakened Demon Blood"
- trait_primal_bloodline:0 "Primal Blood"
- trait_primal_bloodline_1:0 "Primal Blood"
- trait_primal_bloodline_2:0 "Pure Primal Blood"
- trait_primal_bloodline_3:0 "Awakened Primal Blood"
- trait_sun_bloodline:0 "Sun Blood"
- trait_sun_bloodline_1:0 "Sun Blood"
- trait_sun_bloodline_2:0 "Pure Sun Blood"
- trait_sun_bloodline_3:0 "Awakened Sun Blood"
- trait_spirit_bloodline:0 "Spirit Blood"
- trait_spirit_bloodline_1:0 "Spirit Blood"
+ trait_demon_bloodline_3:0 "Awakened Demon Heartblood"
+ trait_primal_bloodline:0 "Primordial Chaos Lineage"
+ trait_primal_bloodline_1:0 "Dormant Primordial Blood"
+ trait_primal_bloodline_2:0 "Pure Primordial Blood"
+ trait_primal_bloodline_3:0 "Awakened Primordial Origin"
+ trait_sun_bloodline:0 "Great Sun Lineage"
+ trait_sun_bloodline_1:0 "Dormant Great Sun Blood"
+ trait_sun_bloodline_2:0 "Pure Great Sun Blood"
+ trait_sun_bloodline_3:0 "Awakened Great Sun Essence"
+ trait_spirit_bloodline:0 "Heavenly Spirit Lineage"
+ trait_spirit_bloodline_1:0 "Dormant Spirit Blood"
  trait_spirit_bloodline_2:0 "Pure Spirit Blood"
- trait_spirit_bloodline_3:0 "Awakened Spirit Blood"
+ trait_spirit_bloodline_3:0 "Awakened Spirit Origin"
 
  ##################################################
  # BLOODLINES Desc
  ##################################################
 
- trait_yin_bloodline_desc:0 "Yin Blood"
- trait_yin_bloodline_character_desc:0 "Yin Blood"
- trait_yang_bloodline_desc:0 "Yang Blood"
- trait_yang_bloodline_character_desc:0 "Yang Blood"
- trait_dragon_bloodline_desc:0 "Dragon Blood"
- trait_dragon_bloodline_character_desc:0 "Dragon Blood"
- trait_phoenix_bloodline_desc:0 "Phoenix Blood"
- trait_phoenix_bloodline_character_desc:0 "Phoenix Blood"
- trait_anchestor_bloodline_desc:0 "Anchestor Blood"
- trait_anchestor_bloodline_character_desc:0 "Anchestor Blood"
- trait_poison_bloodline_desc:0 "Poison Blood"
- trait_poison_bloodline_character_desc:0 "Poison Blood"
- trait_cursed_bloodline_desc:0 "Cursed Blood"
- trait_cursed_bloodline_character_desc:0 "Cursed Blood"
- trait_demon_bloodline_desc:0 "Demon Blood"
- trait_demon_bloodline_character_desc:0 "Demon Blood"
- trait_primal_bloodline_desc:0 "Primal Blood"
- trait_primal_bloodline_character_desc:0 "Primal Blood"
- trait_spirit_bloodline_desc:0 "Spirit Blood"
- trait_spirit_bloodline_character_desc:0 "Spirit Blood"
+ trait_yin_bloodline_desc:0 "A naturally cold and moon-aligned bloodline. Yin blood excels in subtle qi circulation, soul arts, and long-form cultivation."
+ trait_yin_bloodline_character_desc:0 "[ROOT.Char.GetFirstName] carries Yin Blood, with calm meridians and an affinity for moonlit and spiritual cultivation."
+ trait_yang_bloodline_desc:0 "A blazing, sun-like bloodline. Yang blood grants fierce vitality, explosive breakthroughs, and domineering offensive qi."
+ trait_yang_bloodline_character_desc:0 "[ROOT.Char.GetFirstName] carries Yang Blood, radiating hot-blooded vitality and forceful cultivation intent."
+ trait_dragon_bloodline_desc:0 "An ancient sovereign bloodline tied to draconic will. Dragon blood strengthens body, authority, and battlefield presence."
+ trait_dragon_bloodline_character_desc:0 "[ROOT.Char.GetFirstName] carries Dragon Blood, bearing a tyrannical aura that bends weaker wills."
+ trait_phoenix_bloodline_desc:0 "A noble flame bloodline associated with rebirth and purification. Phoenix blood grants resilience and recovery after hardship."
+ trait_phoenix_bloodline_character_desc:0 "[ROOT.Char.GetFirstName] carries Phoenix Blood, enduring calamity with unyielding life force."
+ trait_anchestor_bloodline_desc:0 "A lineage blessed by ancestral echoes. This bloodline preserves inherited techniques and stabilizes generational cultivation."
+ trait_anchestor_bloodline_character_desc:0 "[ROOT.Char.GetFirstName] carries Ancestor Blood, with spiritual roots deeply tied to clan legacy."
+ trait_poison_bloodline_desc:0 "A dangerous bloodline infused with venomous essence. Poison blood turns qi into corrosion, toxins, and insidious killing arts."
+ trait_poison_bloodline_character_desc:0 "[ROOT.Char.GetFirstName] carries Poison Blood, and even their qi can erode enemies from within."
+ trait_cursed_bloodline_desc:0 "A burdened lineage marked by fate. Cursed blood grants forbidden power at the cost of ominous karmic consequences."
+ trait_cursed_bloodline_character_desc:0 "[ROOT.Char.GetFirstName] carries Cursed Blood, walking a path of strength shadowed by misfortune."
+ trait_demon_bloodline_desc:0 "A savage bloodline attuned to slaughter and devouring intent. Demon blood favors ruthless growth and fearsome pressure."
+ trait_demon_bloodline_character_desc:0 "[ROOT.Char.GetFirstName] carries Demon Blood, with a sinister aura that unsettles even veteran cultivators."
+ trait_primal_bloodline_desc:0 "A primordial lineage close to the origin of heaven and earth. Primal blood offers raw compatibility with fundamental dao laws."
+ trait_primal_bloodline_character_desc:0 "[ROOT.Char.GetFirstName] carries Primal Blood, resonating with ancient and untamed world qi."
+ trait_spirit_bloodline_desc:0 "A lucid bloodline favored by spirits. Spirit blood sharpens perception, affinity, and control over refined qi techniques."
+ trait_spirit_bloodline_character_desc:0 "[ROOT.Char.GetFirstName] carries Spirit Blood, naturally attuned to subtle fluctuations of heaven and earth."
+ trait_sun_bloodline_desc:0 "A radiant bloodline born from pure solar essence. Sun blood empowers flame arts, purification, and tyrannical daytime cultivation."
+ trait_sun_bloodline_character_desc:0 "[ROOT.Char.GetFirstName] carries Sun Blood, blazing with intense yang radiance."
 
  ##################################################
  # MORTAL REALM PERKS (Y: 0-3)
@@ -436,11 +438,11 @@
 
  mortal_internal_reconstruction_perk:0 "Internal Reconstruction"
  mortal_internal_reconstruction_perk_name:0 "Internal Reconstruction"
- mortal_internal_reconstruction_perk_desc:0 "Reconstruct Internal for greater strength."
+ mortal_internal_reconstruction_perk_desc:0 "Reforge your internal channels to build a stronger cultivation base."
 
  mortal_external_reconstruction_perk:0 "External Reconstruction"
  mortal_external_reconstruction_perk_name:0 "External Reconstruction"
- mortal_external_reconstruction_perk_desc:0 "Reconstruct External for greater strength."
+ mortal_external_reconstruction_perk_desc:0 "Temper your external physique to endure harsher training."
 
  mortal_muscle_reconstruction_perk:0 "Muscle Reconstruction"
  mortal_muscle_reconstruction_perk_name:0 "Muscle Reconstruction"
@@ -456,7 +458,7 @@
 
  mortal_qi_gathering_breakthrough_perk:0 "Breakthrough: Qi Gathering"
  mortal_qi_gathering_breakthrough_perk_name:0 "Breakthrough: Qi Gathering"
- mortal_qi_gathering_breakthrough_perk_desc:0 "Break through to Qi Gathering realm!"
+ mortal_qi_gathering_breakthrough_perk_desc:0 "Break through to the Qi Gathering Realm!"
 
  ##################################################
  # QI GATHERING REALM PERKS (Y: 4-9)
@@ -486,7 +488,7 @@
 
  qi_gathering_qi_refining_breakthrough_perk:0 "Breakthrough: Qi Refining"
  qi_gathering_qi_refining_breakthrough_perk_name:0 "Breakthrough: Qi Refining"
- qi_gathering_qi_refining_breakthrough_perk_desc:0 "Break through to Qi Refining realm!"
+ qi_gathering_qi_refining_breakthrough_perk_desc:0 "Break through to the Qi Refining Realm!"
 
  ##################################################
  # QI REFINING REALM PERKS (Y: 9-20)
@@ -504,7 +506,7 @@
 
  qi_refining_middle_perk:0 "Middle Qi Refining"
  qi_refining_middle_perk_name:0 "Middle Qi Refining"
- qi_refining_middle_perk_desc:0 "Reach middle stage of Qi Refining."
+ qi_refining_middle_perk_desc:0 "Reach the middle stage of Qi Refining."
 
  qi_refining_2a_star_perk:0 "3-Star"
  qi_refining_2a_star_perk_name:0 "3-Star"
@@ -524,7 +526,7 @@
 
  qi_refining_higher_perk:0 "Higher Qi Refining"
  qi_refining_higher_perk_name:0 "Higher Qi Refining"
- qi_refining_higher_perk_desc:0 "Reach higher stage of Qi Refining."
+ qi_refining_higher_perk_desc:0 "Reach the higher stage of Qi Refining."
 
  qi_refining_3a_star_perk:0 "7-Star"
  qi_refining_3a_star_perk_name:0 "7-Star"
@@ -540,11 +542,11 @@
 
  qi_refining_peak_perk:0 "Peak Qi Refining"
  qi_refining_peak_perk_name:0 "Peak Qi Refining"
- qi_refining_peak_perk_desc:0 "Reach peak of Qi Refining realm."
+ qi_refining_peak_perk_desc:0 "Reach the peak of the Qi Refining Realm."
 
  qi_refining_qi_building_breakthrough_perk:0 "Breakthrough: Qi Building"
  qi_refining_qi_building_breakthrough_perk_name:0 "Breakthrough: Qi Building"
- qi_refining_qi_building_breakthrough_perk_desc:0 "Break through to Qi Building realm!"
+ qi_refining_qi_building_breakthrough_perk_desc:0 "Break through to the Qi Building Realm!"
 
  ##################################################
  # QI BUILDING REALM PERKS (Y: 16-20)
@@ -586,7 +588,7 @@
 
  qi_building_peak_perk:0 "Peak Qi Building"
  qi_building_peak_perk_name:0 "Peak Qi Building"
- qi_building_peak_perk_desc:0 "Perfect Qi Building, ready for core."
+ qi_building_peak_perk_desc:0 "Perfect your Qi Building stage and prepare to form a core."
 
  qi_building_core_formation_breakthrough_perk:0 "Breakthrough: Core Formation"
  qi_building_core_formation_breakthrough_perk_name:0 "Breakthrough: Core Formation"
@@ -632,7 +634,7 @@
 
  core_formation_peak_perk:0 "Peak Core Formation"
  core_formation_peak_perk_name:0 "Peak Core Formation"
- core_formation_peak_perk_desc:0 "Achieve peak core formation."
+ core_formation_peak_perk_desc:0 "Reach the peak of Core Formation."
 
  core_formation_nascent_soul_breakthrough_perk:0 "Breakthrough: Nascent Soul"
  core_formation_nascent_soul_breakthrough_perk_name:0 "Breakthrough: Nascent Soul"
@@ -813,7 +815,7 @@
  star_shattering_1c_perk_desc:0 "Gather star fragments."
 
  star_shattering_1d_perk:0 "Fourth Star Fragment"
- star_shattering_1d_perk_name:0 "Fourth StarFragment"
+ star_shattering_1d_perk_name:0 "Fourth Star Fragment"
  star_shattering_1d_perk_desc:0 "Gather star fragments."
 
  star_shattering_1e_perk:0 "Third Star Fragment"
@@ -860,15 +862,15 @@
 
  sacred_vessel_correctness_perk:0 "Correctness"
  sacred_vessel_correctness_perk_name:0 "Correctness"
- sacred_vessel_correctness_perk_desc:0 "Embody correctness."
+ sacred_vessel_correctness_perk_desc:0 "Embody righteous order."
 
- sacred_vessel_strongness_perk:0 "Strongness"
- sacred_vessel_strongness_perk_name:0 "Strongness"
+ sacred_vessel_strongness_perk:0 "Strength"
+ sacred_vessel_strongness_perk_name:0 "Strength"
  sacred_vessel_strongness_perk_desc:0 "Embody strength."
 
  sacred_vessel_mildness_perk:0 "Mildness"
  sacred_vessel_mildness_perk_name:0 "Mildness"
- sacred_vessel_mildness_perk_desc:0 "Embody mildness."
+ sacred_vessel_mildness_perk_desc:0 "Embody gentle restraint."
 
  sacred_vessel_entering_nirvana_breakthrough_perk:0 "Breakthrough: Entering Nirvana"
  sacred_vessel_entering_nirvana_breakthrough_perk_name:0 "Breakthrough: Entering Nirvana"
@@ -1478,7 +1480,7 @@
  ## VISIT EVENTS
 
  visit_cultivation_sect_decision:0 "Visit Cultivation Sect"
- visit_cultivation_sect_decision_desc:0 "In China cultivaters is part of some sects. Some sects has bacground old as this world and some is just founded. Visit a sect to learn more about them. Find out their history, their way of cultivation and maybe you will want to join them or make them Tremble in your presence."
+ visit_cultivation_sect_decision_desc:0 "Cultivators often belong to sects. Some lineages are as old as the world itself, while others are newly founded. Visit a sect to learn its history and cultivation path—then decide whether to join them or make them tremble before your power."
  visit_cultivation_sect_decision_tooltip:0 "Choose a sect to visit."
  visit_cultivation_sect_decision_confirm:0 "Visit Sect"
 

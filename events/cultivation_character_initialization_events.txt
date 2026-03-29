@@ -16,6 +16,7 @@ cultivation_character_initialization.0001 = {
 			trigger_event = cultivation_character_initialization.0003
 			trigger_event = cultivation_character_initialization.0004
 			trigger_event = cultivation_character_initialization.0005
+			trigger_event = cultivation_character_initialization.0006
 		}
 	}
 }
@@ -147,14 +148,14 @@ cultivation_character_initialization.0002 = {
 	}
 }
 
-# Ensure every adult has a cultivation realm (qi gathering+) like education traits.
+# Ensure every character age 14+ with meridians has a cultivation realm (qi gathering+) like education traits.
 cultivation_character_initialization.0003 = {
 	type = character_event
 	hidden = yes
 
 	trigger = {
 		is_alive = yes
-		is_adult = yes
+		age >= 14
 		has_active_meridians = yes
 		NOT = { is_cultivator = yes }
 	}
@@ -217,6 +218,72 @@ cultivation_character_initialization.0005 = {
 				father = { is_alive = yes has_cultivation_sect_faith = yes }
 			}
 			set_character_faith = father.faith
+		}
+	}
+}
+
+# Extremely rare bloodline lottery for world generation and newborns.
+cultivation_character_initialization.0006 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+		NOT = { has_character_flag = bloodline_lottery_checked }
+		NOT = {
+			OR = {
+				has_trait = yin_bloodline_1
+				has_trait = yin_bloodline_2
+				has_trait = yin_bloodline_3
+				has_trait = yang_bloodline_1
+				has_trait = yang_bloodline_2
+				has_trait = yang_bloodline_3
+				has_trait = dragon_bloodline_1
+				has_trait = dragon_bloodline_2
+				has_trait = dragon_bloodline_3
+				has_trait = phoenix_bloodline_1
+				has_trait = phoenix_bloodline_2
+				has_trait = phoenix_bloodline_3
+				has_trait = anchestor_bloodline_1
+				has_trait = anchestor_bloodline_2
+				has_trait = anchestor_bloodline_3
+				has_trait = poison_bloodline_1
+				has_trait = poison_bloodline_2
+				has_trait = poison_bloodline_3
+				has_trait = cursed_bloodline_1
+				has_trait = cursed_bloodline_2
+				has_trait = cursed_bloodline_3
+				has_trait = demon_bloodline_1
+				has_trait = demon_bloodline_2
+				has_trait = demon_bloodline_3
+				has_trait = primal_bloodline_1
+				has_trait = primal_bloodline_2
+				has_trait = primal_bloodline_3
+				has_trait = spirit_bloodline_1
+				has_trait = spirit_bloodline_2
+				has_trait = spirit_bloodline_3
+				has_trait = sun_bloodline_1
+				has_trait = sun_bloodline_2
+				has_trait = sun_bloodline_3
+			}
+		}
+	}
+
+	immediate = {
+		set_character_flag = bloodline_lottery_checked
+		random_list = {
+			99835 = { }
+			15 = { add_trait = yin_bloodline_1 }
+			15 = { add_trait = yang_bloodline_1 }
+			15 = { add_trait = dragon_bloodline_1 }
+			15 = { add_trait = phoenix_bloodline_1 }
+			15 = { add_trait = anchestor_bloodline_1 }
+			15 = { add_trait = poison_bloodline_1 }
+			15 = { add_trait = cursed_bloodline_1 }
+			15 = { add_trait = demon_bloodline_1 }
+			15 = { add_trait = primal_bloodline_1 }
+			15 = { add_trait = spirit_bloodline_1 }
+			15 = { add_trait = sun_bloodline_1 }
 		}
 	}
 }

@@ -276,34 +276,92 @@
 		# Jianghu Sect Calculus: marriage is judged by cultivation potential and bloodline quality
 		modifier = {
 			add = 220
-			desc = PROMISING_PROSPECTS_PERK_MODIFIER
+			desc = MERIDIAN_MARRIAGE_HEAVENLY
 			scope:secondary_recipient = { has_trait = heavenly_meridians }
 		}
 		modifier = {
 			add = 140
-			desc = PROMISING_PROSPECTS_PERK_MODIFIER
+			desc = MERIDIAN_MARRIAGE_EXCELLENT
 			scope:secondary_recipient = { has_trait = excellent_meridians }
 		}
 		modifier = {
 			add = 70
-			desc = PROMISING_PROSPECTS_PERK_MODIFIER
+			desc = MERIDIAN_MARRIAGE_GOOD
 			scope:secondary_recipient = { has_trait = good_meridians }
 		}
 		modifier = {
 			add = -90
-			desc = CLASS_MISMATCH_MARRIAGE
+			desc = MERIDIAN_MARRIAGE_POOR
 			scope:secondary_recipient = { has_trait = poor_meridians }
 		}
 		modifier = {
 			add = -220
-			desc = CLASS_MISMATCH_MARRIAGE
+			desc = MERIDIAN_MARRIAGE_CRIPPLED
 			scope:secondary_recipient = { has_trait = crippled_meridians }
+		}
+		# Rare bloodlines are highly valued in sect marriage politics
+		modifier = {
+			add = 45
+			desc = BLOODLINE_MARRIAGE_AWAKENED
+			scope:secondary_recipient = {
+				OR = {
+					has_trait = yin_bloodline_3
+					has_trait = yang_bloodline_3
+					has_trait = dragon_bloodline_3
+					has_trait = phoenix_bloodline_3
+					has_trait = anchestor_bloodline_3
+					has_trait = poison_bloodline_3
+					has_trait = cursed_bloodline_3
+					has_trait = demon_bloodline_3
+					has_trait = primal_bloodline_3
+					has_trait = spirit_bloodline_3
+					has_trait = sun_bloodline_3
+				}
+			}
+		}
+		modifier = {
+			add = 25
+			desc = BLOODLINE_MARRIAGE_PURE
+			scope:secondary_recipient = {
+				OR = {
+					has_trait = yin_bloodline_2
+					has_trait = yang_bloodline_2
+					has_trait = dragon_bloodline_2
+					has_trait = phoenix_bloodline_2
+					has_trait = anchestor_bloodline_2
+					has_trait = poison_bloodline_2
+					has_trait = cursed_bloodline_2
+					has_trait = demon_bloodline_2
+					has_trait = primal_bloodline_2
+					has_trait = spirit_bloodline_2
+					has_trait = sun_bloodline_2
+				}
+			}
+		}
+		modifier = {
+			add = 10
+			desc = BLOODLINE_MARRIAGE_FOUNDATION
+			scope:secondary_recipient = {
+				OR = {
+					has_trait = yin_bloodline_1
+					has_trait = yang_bloodline_1
+					has_trait = dragon_bloodline_1
+					has_trait = phoenix_bloodline_1
+					has_trait = anchestor_bloodline_1
+					has_trait = poison_bloodline_1
+					has_trait = cursed_bloodline_1
+					has_trait = demon_bloodline_1
+					has_trait = primal_bloodline_1
+					has_trait = spirit_bloodline_1
+					has_trait = sun_bloodline_1
+				}
+			}
 		}
 
 		# Elders pursue dual-cultivation pairings that strengthen sect heirs
 		modifier = {
 			add = 80
-			desc = DESIRES_ALLIANCE
+			desc = DUAL_CULTIVATION_MARRIAGE_BONUS
 			scope:secondary_actor = {
 				OR = {
 					has_trait = cultivation_qi_refining
@@ -333,6 +391,189 @@
 					has_trait = cultivation_entering_nirvana
 					has_trait = cultivation_true_immortal
 				}
+			}
+		}
+		modifier = {
+			add = 90
+			desc = DUAL_CULTIVATION_MARRIAGE_HARMONY
+			scope:secondary_actor = {
+				has_trait = cultivation_core_formation
+			}
+			scope:secondary_recipient = {
+				has_trait = cultivation_core_formation
+			}
+		}
+		modifier = {
+			add = 60
+			desc = DUAL_CULTIVATION_MARRIAGE_HARMONY
+			scope:secondary_actor = {
+				has_trait = cultivation_nascent_soul
+			}
+			scope:secondary_recipient = {
+				has_trait = cultivation_nascent_soul
+			}
+		}
+		modifier = {
+			add = 40
+			desc = DUAL_CULTIVATION_SECT_HARMONY
+			scope:secondary_actor = {
+				faith = scope:secondary_recipient.faith
+			}
+		}
+		modifier = {
+			add = -80
+			desc = DUAL_CULTIVATION_REALM_GAP
+			scope:secondary_actor = { has_trait = cultivation_true_immortal }
+			scope:secondary_recipient = {
+				OR = {
+					has_trait = cultivation_qi_refining
+					has_trait = cultivation_qi_building
+				}
+			}
+		}
+		modifier = {
+			add = -80
+			desc = DUAL_CULTIVATION_REALM_GAP
+			scope:secondary_recipient = { has_trait = cultivation_true_immortal }
+			scope:secondary_actor = {
+				OR = {
+					has_trait = cultivation_qi_refining
+					has_trait = cultivation_qi_building
+				}
+			}
+		}
+		# Realm parity ladder: cultivators prefer partners in roughly similar stages
+		modifier = {
+			add = 35
+			desc = DUAL_CULTIVATION_REALM_PARITY_LOW
+			scope:secondary_actor = {
+				OR = {
+					has_trait = cultivation_qi_gathering
+					has_trait = cultivation_qi_refining
+					has_trait = cultivation_qi_building
+				}
+			}
+			scope:secondary_recipient = {
+				OR = {
+					has_trait = cultivation_qi_gathering
+					has_trait = cultivation_qi_refining
+					has_trait = cultivation_qi_building
+				}
+			}
+		}
+		modifier = {
+			add = 60
+			desc = DUAL_CULTIVATION_REALM_PARITY_MID
+			scope:secondary_actor = {
+				OR = {
+					has_trait = cultivation_core_formation
+					has_trait = cultivation_nascent_soul
+					has_trait = cultivation_heavenly_being
+					has_trait = cultivation_four_axis
+				}
+			}
+			scope:secondary_recipient = {
+				OR = {
+					has_trait = cultivation_core_formation
+					has_trait = cultivation_nascent_soul
+					has_trait = cultivation_heavenly_being
+					has_trait = cultivation_four_axis
+				}
+			}
+		}
+		modifier = {
+			add = 85
+			desc = DUAL_CULTIVATION_REALM_PARITY_HIGH
+			scope:secondary_actor = {
+				OR = {
+					has_trait = cultivation_integration
+					has_trait = cultivation_star_shattering
+					has_trait = cultivation_sacred_vessel
+					has_trait = cultivation_entering_nirvana
+					has_trait = cultivation_true_immortal
+				}
+			}
+			scope:secondary_recipient = {
+				OR = {
+					has_trait = cultivation_integration
+					has_trait = cultivation_star_shattering
+					has_trait = cultivation_sacred_vessel
+					has_trait = cultivation_entering_nirvana
+					has_trait = cultivation_true_immortal
+				}
+			}
+		}
+		# Cross-sect friction: different cultivation faiths are harder to pair politically
+		modifier = {
+			add = -45
+			desc = DUAL_CULTIVATION_SECT_FRICTION
+			scope:secondary_actor.faith != scope:secondary_recipient.faith
+		}
+		# Bloodline strategy: sects prize pairings that can produce elite heirs
+		modifier = {
+			add = 110
+			desc = MERIDIAN_BLOODLINE_INHERITANCE
+			OR = {
+				AND = {
+					scope:secondary_actor = { has_trait = heavenly_meridians }
+					scope:secondary_recipient = {
+						OR = {
+							has_trait = excellent_meridians
+							has_trait = heavenly_meridians
+						}
+					}
+				}
+				AND = {
+					scope:secondary_recipient = { has_trait = heavenly_meridians }
+					scope:secondary_actor = {
+						OR = {
+							has_trait = excellent_meridians
+							has_trait = heavenly_meridians
+						}
+					}
+				}
+			}
+		}
+		# Orthodox and Demonic dao paths are bitter enemies; marriages are almost never accepted
+		modifier = {
+			add = -1000
+			desc = OPPOSING_DAO_PATHS_MARRIAGE_TABOO
+			scope:secondary_actor.faith = {
+				has_doctrine_parameter = orthodox_cultivation
+			}
+			scope:secondary_recipient.faith = {
+				has_doctrine_parameter = demonic_cultivation
+			}
+		}
+		modifier = {
+			add = -1000
+			desc = OPPOSING_DAO_PATHS_MARRIAGE_TABOO
+			scope:secondary_actor.faith = {
+				has_doctrine_parameter = demonic_cultivation
+			}
+			scope:secondary_recipient.faith = {
+				has_doctrine_parameter = orthodox_cultivation
+			}
+		}
+		# Orthodox and Unorthodox sects also rarely accept marriage with each other
+		modifier = {
+			add = -250
+			desc = ORTHODOX_UNORTHODOX_MARRIAGE_RIVALRY
+			scope:secondary_actor.faith = {
+				has_doctrine_parameter = orthodox_cultivation
+			}
+			scope:secondary_recipient.faith = {
+				has_doctrine_parameter = unorthodox_cultivation
+			}
+		}
+		modifier = {
+			add = -250
+			desc = ORTHODOX_UNORTHODOX_MARRIAGE_RIVALRY
+			scope:secondary_actor.faith = {
+				has_doctrine_parameter = unorthodox_cultivation
+			}
+			scope:secondary_recipient.faith = {
+				has_doctrine_parameter = orthodox_cultivation
 			}
 		}
 		
