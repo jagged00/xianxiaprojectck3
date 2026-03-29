@@ -9,11 +9,36 @@ cultivation_ai.0000 = {
         every_living_character = {
             limit = {
                 is_ai = yes
-                is_adult = yes
+                age >= 10
                 NOT = { has_trait = incapable }
             }
             trigger_event = cultivation_ai.0001
+        }
+
+        every_living_character = {
+            limit = {
+                is_ai = yes
+                age >= 10
+                NOT = { has_trait = incapable }
+            }
             trigger_event = cultivation_ai.0002
+        }
+
+        # Seed meridians for AI children at game start so adulthood pulses can progress immediately.
+        every_living_character = {
+            limit = {
+                is_ai = yes
+                NOT = { is_adult = yes }
+                NOT = { has_trait = incapable }
+                NOT = { has_active_meridians = yes }
+            }
+            random_list = {
+                8500 = { add_trait = poor_meridians }
+                1200 = { add_trait = normal_meridians }
+                280 = { add_trait = good_meridians }
+                19 = { add_trait = excellent_meridians }
+                1 = { add_trait = heavenly_meridians }
+            }
         }
     }
 
@@ -28,7 +53,7 @@ cultivation_ai.0001 = {
     trigger = {
         is_ai = yes
         is_alive = yes
-        is_adult = yes
+        age >= 10
         NOT = { has_trait = incapable }
     }
 
@@ -210,7 +235,7 @@ cultivation_ai.0002 = {
     trigger = {
         is_ai = yes
         is_alive = yes
-        is_adult = yes
+        age >= 10
         has_active_meridians = yes
         NOT = { has_character_flag = ai_recently_joined_sect }
     }
