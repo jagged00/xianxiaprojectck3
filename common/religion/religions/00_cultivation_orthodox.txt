@@ -10,7 +10,7 @@ cultivation_orthodox = {
 	pagan_roots = yes
 	
 	doctrine = doctrine_gender_equal
-	doctrine = doctrine_pluralism_fundamentalist
+	doctrine = doctrine_pluralism_righteous
 	doctrine = doctrine_no_head
 	doctrine = doctrine_theocracy_lay_clergy
 	doctrine = doctrine_pilgrimage_encouraged
@@ -22,7 +22,7 @@ cultivation_orthodox = {
 	doctrine = doctrine_adultery_men_shunned
 	doctrine = doctrine_adultery_women_shunned
 	doctrine = doctrine_deviancy_shunned
-	doctrine = doctrine_witchcraft_accepted
+	doctrine = doctrine_witchcraft_shunned
 	doctrine = doctrine_kinslaying_any_dynasty_member_crime
 	doctrine = doctrine_clerical_function_alms_and_pacification
 	doctrine = doctrine_clerical_gender_either
@@ -76,7 +76,7 @@ cultivation_orthodox = {
 			holy_site = luoyang
 			doctrine = tenet_ancestor_worship
 			doctrine = tenet_astrology
-			doctrine = tenet_pursuit_of_power
+			doctrine = tenet_communal_identity
 			doctrine = tenet_orthodox_cultivation
 		}
 
@@ -136,7 +136,7 @@ cultivation_orthodox = {
 			holy_site = luoyang
 			doctrine = tenet_ancestor_worship
 			doctrine = tenet_astrology
-			doctrine = tenet_adaptive
+			doctrine = tenet_sanctity_of_nature
 			doctrine = tenet_orthodox_cultivation
 		}
 
@@ -160,7 +160,7 @@ cultivation_orthodox = {
 			holy_site = luoyang
 			doctrine = tenet_ancestor_worship
 			doctrine = tenet_astrology
-			doctrine = tenet_divine_marriage
+			doctrine = tenet_communal_identity
 			doctrine = tenet_orthodox_cultivation
 		}
 

@@ -23,7 +23,7 @@ cultivation_demonic = {
 	doctrine = doctrine_deviancy_shunned
 	doctrine = doctrine_witchcraft_accepted
 	doctrine = doctrine_kinslaying_accepted
-	doctrine = doctrine_clerical_function_alms_and_pacification
+	doctrine = doctrine_clerical_function_recruitment
 	doctrine = doctrine_clerical_gender_either
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_appointment
@@ -98,7 +98,7 @@ cultivation_demonic = {
 			holy_site = luoyang
 			doctrine = tenet_pursuit_of_power
 			doctrine = tenet_astrology
-			doctrine = tenet_ritual_hospitality
+			doctrine = tenet_human_sacrifice
 			doctrine = tenet_demonic_cultivation
 		}
 

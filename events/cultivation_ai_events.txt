@@ -94,6 +94,12 @@ cultivation_ai.0001 = {
             add_trait = cultivation_qi_gathering
         }
 
+        # AI characters that awaken directly into Qi Gathering should still receive full Mortal foundation perks.
+        if = {
+            limit = { has_trait = cultivation_qi_gathering }
+            cultivation_ai_grant_mortal_foundation_perks_effect = yes
+        }
+
         # Progression chance scaled by meridian quality (checked every monthly pulse).
         if = {
             limit = { has_trait = cultivation_qi_gathering }

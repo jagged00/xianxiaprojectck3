@@ -933,7 +933,7 @@
  cultivation_orthodox_adj:0 "Orthodox"
  cultivation_orthodox_adherent:0 "Orthodox Cultivator"
  cultivation_orthodox_adherent_plural:0 "Orthodox Cultivators"
- cultivation_orthodox_desc:0 "The path of the orthodox cultivation."
+ cultivation_orthodox_desc:0 "The righteous road of law-abiding sects: temper the heart before the blade, honor master-disciple bonds, repay virtue with virtue, and cut down evil without staining one's Dao-Heart."
 
  # ============================================================================
  # UNORTHODOX FAMILY RELIGIONS (4)
@@ -943,7 +943,7 @@
  cultivation_unorthodox_adj:0 "Unorthodox"
  cultivation_unorthodox_adherent:0 "Unorthodox Cultivator"
  cultivation_unorthodox_adherent_plural:0 "Unorthodox Cultivators"
- cultivation_unorthodox_desc:0 "The path of the unorthodox cultivation."
+ cultivation_unorthodox_desc:0 "A gray path of hidden inheritances and irregular methods. Unorthodox sects reject stale orthodoxy, seeking breakthroughs through risk, cunning, and techniques the great sects call heresy."
 
  # ============================================================================
  # DEMONIC FAMILY RELIGIONS (4)
@@ -953,7 +953,7 @@
  cultivation_demonic_adj:0 "Demonic"
  cultivation_demonic_adherent:0 "Demon"
  cultivation_demonic_adherent_plural:0 "Demons"
- cultivation_demonic_desc:0 "The path of massacre."
+ cultivation_demonic_desc:0 "The forbidden way of blood sacrifice, baleful qi, corpse arts, and soul plunder. Demonic cultivators challenge heaven itself, advancing through terror, obsession, and ruthless seizure of destiny."
 
  # ============================================================================
  # VAGRANT FAMILY RELIGIONS (4)
@@ -963,7 +963,7 @@
  cultivation_vagrant_adj:0 "Vagrant"
  cultivation_vagrant_adherent:0 "Vagrant"
  cultivation_vagrant_adherent_plural:0 "Vagrants"
- cultivation_vagrant_desc:0 "The rootless cultivation path - vagrant cultivators who walk alone."
+ cultivation_vagrant_desc:0 "The road of rootless wanderers and rogue inheritances. Vagrant cultivators keep no mountain gate, trading certainty for freedom as they learn from ruins, duels, and the merciless rivers and lakes."
 
  # ============================================================================
  # TOTAL: 16 RELIGIONS x 5 KEYS = 80 LOCALIZATION ENTRIES
@@ -974,13 +974,13 @@
  mount_hua_sect_adj:0 "Mount Hua"
  mount_hua_sect_adherent:0 "Mount Hua Cultivator"
  mount_hua_sect_adherent_plural:0 "Mount Hua Cultivators"
- mount_hua_sect_desc:0 "A prestigious orthodox sect known for their elegant sword techniques and righteous cultivation path."
+ mount_hua_sect_desc:0 "A famed righteous mountain gate whose disciples refine austere sword intent and strict sect discipline, valuing reputation, duty, and clean victories."
 
  heavenly_sword_pavilion:0 "Heavenly Sword Pavilion"
  heavenly_sword_pavilion_adj:0 "Heavenly Sword"
  heavenly_sword_pavilion_adherent:0 "Heavenly Sword Cultivator"
  heavenly_sword_pavilion_adherent_plural:0 "Heavenly Sword Cultivators"
- heavenly_sword_pavilion_desc:0 "Masters of celestial sword arts, they believe in perfecting the union of heaven and blade."
+ heavenly_sword_pavilion_desc:0 "A lofty lineage that studies star charts and heavenly phenomena to temper sword intent, seeking unity between celestial order and mortal technique."
 
  azure_edge_sect:0 "Azure Edge Sect"
  azure_edge_sect_adj:0 "Azure Edge"
@@ -1034,13 +1034,13 @@
  wudang_sect_adj:0 "Wudang"
  wudang_sect_adherent:0 "Wudang Cultivator"
  wudang_sect_adherent_plural:0 "Wudang Cultivators"
- wudang_sect_desc:0 "Founded on Taoist principles, they seek perfect balance between yin and yang, body and mind."
+ wudang_sect_desc:0 "A Daoist mountain tradition of stillness and softness overcoming hardness, harmonizing yin and yang through internal alchemy, measured swordplay, and breath regulation."
 
  shaolin_temple:0 "Shaolin Temple"
  shaolin_temple_adj:0 "Shaolin"
  shaolin_temple_adherent:0 "Shaolin Cultivator"
  shaolin_temple_adherent_plural:0 "Shaolin Cultivators"
- shaolin_temple_desc:0 "Buddhist monks who cultivate both body and spirit through rigorous martial and meditative practices."
+ shaolin_temple_desc:0 "A monastic lineage that tempers fist, staff, and mind together; its disciples pursue compassion, restraint, and unbreakable foundations forged through ascetic training."
 
  eternal_harmony_pavilion:0 "Eternal Harmony Pavilion"
  eternal_harmony_pavilion_adj:0 "Eternal Harmony"
@@ -1154,19 +1154,19 @@
  pure_yang_palace_adj:0 "Pure Yang"
  pure_yang_palace_adherent:0 "Pure Yang Cultivator"
  pure_yang_palace_adherent_plural:0 "Pure Yang Cultivators"
- pure_yang_palace_desc:0 "Pure Yang lineage cultivators who temper blazing yang essence through disciplined body-forging methods."
+ pure_yang_palace_desc:0 "A fire-aspected inheritance where disciples temper blazing yang essence through body-forging and furnace-like circulation methods that burn away impurities."
 
  yin_phoenix_sect:0 "Yin Phoenix Sect"
  yin_phoenix_sect_adj:0 "Yin Phoenix"
  yin_phoenix_sect_adherent:0 "Yin Phoenix Cultivator"
  yin_phoenix_sect_adherent_plural:0 "Yin Phoenix Cultivators"
- yin_phoenix_sect_desc:0 "Female yin cultivation masters who embody feminine power and allure."
+ yin_phoenix_sect_desc:0 "A yin-aspected phoenix lineage famed for graceful yet lethal arts, cold-fire rebirth methods, and refined control over soul and meridian flow."
 
  blissful_union_pavilion:0 "Blissful Union Pavilion"
  blissful_union_pavilion_adj:0 "Blissful Union"
  blissful_union_pavilion_adherent:0 "Blissful Union Cultivator"
  blissful_union_pavilion_adherent_plural:0 "Blissful Union Cultivators"
- blissful_union_pavilion_desc:0 "Balanced dual-cultivation practitioners who seek enlightenment through disciplined yin-yang harmony."
+ blissful_union_pavilion_desc:0 "A dual-cultivation pavilion teaching strict contract-bound yin-yang harmonization, where shared circulation and mutual trust become a path to higher realms."
 
  jade_chamber_sect:0 "Jade Chamber Sect"
  jade_chamber_sect_adj:0 "Jade Chamber"
@@ -1220,7 +1220,7 @@
  ten_thousand_corpse_valley_adj:0 "Ten Thousand Corpse"
  ten_thousand_corpse_valley_adherent:0 "Ten Thousand Corpse Cultivator"
  ten_thousand_corpse_valley_adherent_plural:0 "Ten Thousand Corpse Cultivators"
- ten_thousand_corpse_valley_desc:0 "A valley littered with the remains of their victims, where death fuels power."
+ ten_thousand_corpse_valley_desc:0 "A dread valley of corpse refinement and corpse-qi arts, where the dead are forged into weapons and living disciples cultivate amid miasma and burial fires."
 
  asura_battle_hall:0 "Asura Battle Hall"
  asura_battle_hall_adj:0 "Asura"
@@ -1250,13 +1250,13 @@
  blood_yin_cult_adj:0 "Blood Yin"
  blood_yin_cult_adherent:0 "Blood Yin Cultivator"
  blood_yin_cult_adherent_plural:0 "Blood Yin Cultivators"
- blood_yin_cult_desc:0 "Vampiric cultivators who drain blood essence from their victims."
+ blood_yin_cult_desc:0 "A sinister blood path sect that harvests blood essence and moon-qi, refining stolen vitality into rapid breakthroughs and cruel body arts."
 
  blood_moon_demonic_sect:0 "Blood Moon Demonic Sect"
  blood_moon_demonic_sect_adj:0 "Blood Moon Demonic"
  blood_moon_demonic_sect_adherent:0 "Blood Moon Demonic Cultivator"
  blood_moon_demonic_sect_adherent_plural:0 "Blood Moon Demonic Cultivators"
- blood_moon_demonic_sect_desc:0 "Blood magic practitioners who draw power from the blood moon."
+ blood_moon_demonic_sect_desc:0 "An infamous demonic lineage that performs moonlit blood rites, invoking baleful lunar tides to fuel sacrificial breakthroughs and curse arts."
 
  scarlet_heart_palace:0 "Scarlet Heart Palace"
  scarlet_heart_palace_adj:0 "Scarlet Heart"
@@ -1268,7 +1268,7 @@
  succubus_palace_adj:0 "Nightshade"
  succubus_palace_adherent:0 "Nightshade Cultivator"
  succubus_palace_adherent_plural:0 "Nightshade Cultivators"
- succubus_palace_desc:0 "Shadow-path cultivators who siphon spiritual vitality through forbidden soul-binding arts."
+ succubus_palace_desc:0 "A perilous demonic palace whose disciples practice charm, dream, and soul-binding techniques, siphoning essence through contracts, obsession, and spiritual corrosion."
 
  womb_engraving_sect:0 "Crimson Sigil Sect"
  womb_engraving_sect_adj:0 "Crimson Sigil"
@@ -1316,7 +1316,7 @@
  ancient_bloodline_temple_adj:0 "Ancient Bloodline"
  ancient_bloodline_temple_adherent:0 "Ancient Bloodline Cultivator"
  ancient_bloodline_temple_adherent_plural:0 "Ancient Bloodline Cultivators"
- ancient_bloodline_temple_desc:0 "Cultivators who awaken ancient bloodlines dormant in their bodies."
+ ancient_bloodline_temple_desc:0 "A lineage shrine devoted to awakening primordial ancestries hidden in mortal flesh, using relic rites and inheritance altars to trigger bloodline resonance."
 
  primal_beast_sect:0 "Primal Beast Sect"
  primal_beast_sect_adj:0 "Primal Beast"
@@ -2072,22 +2072,22 @@
 
  # Orthodox Cultivation
  tenet_orthodox_cultivation:0 "Orthodox Cultivation"
- tenet_orthodox_cultivation_desc:0 "This sect follows the righteous orthodox cultivation path, emphasizing moral conduct, honor, and proper techniques passed down through generations. Orthodox cultivators gain respect among their peers."
+ tenet_orthodox_cultivation_desc:0 "This sect walks the righteous path: strict rules, clear karmic conduct, master-disciple orthodoxy, and open-faced conflict. Their disciples prize honor, restraint, and legitimacy in the Jianghu."
  tenet_orthodox_cultivation_name:0 "Orthodox Path"
 
  # Unorthodox Cultivation
  tenet_unorthodox_cultivation:0 "Unorthodox Cultivation"
- tenet_unorthodox_cultivation_desc:0 "This sect practices unorthodox cultivation methods, pursuing alternative paths that deviate from traditional teachings. While not evil, their techniques are unconventional and grant faster cultivation progress."
+ tenet_unorthodox_cultivation_desc:0 "This sect pursues irregular inheritances and unconventional methods that orthodox elders condemn. They are not inherently demonic, but they value results, innovation, and opportunistic breakthroughs."
  tenet_unorthodox_cultivation_name:0 "Unorthodox Path"
 
  # Demonic Cultivation
  tenet_demonic_cultivation:0 "Demonic Cultivation"
- tenet_demonic_cultivation_desc:0 "This sect embraces demonic cultivation, using forbidden techniques that harvest others' essence for power. Demonic cultivators inspire fear and gain cultivation speed at the cost of their humanity."
+ tenet_demonic_cultivation_desc:0 "This sect embraces forbidden arts of devouring, sacrifice, and baleful refinement. Power is seized, not granted; fear is a resource; and each breakthrough risks deeper karmic corruption."
  tenet_demonic_cultivation_name:0 "Demonic Path"
 
  # Vagrant Cultivation
  tenet_vagrant_cultivation:0 "Vagrant Cultivation"
- tenet_vagrant_cultivation_desc:0 "This sect consists of wandering cultivators without fixed traditions, adapting techniques from various sources. Vagrant cultivators are free-spirited and resilient, finding their own path to immortality."
+ tenet_vagrant_cultivation_desc:0 "This sect follows the wandering path, blending fragments of many inheritances without binding itself to a single orthodoxy. Its cultivators survive by adaptability, dueling skill, and hard-won field experience."
  tenet_vagrant_cultivation_name:0 "Vagrant Path"
 
  #######################

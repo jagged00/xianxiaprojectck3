@@ -25,3 +25,8 @@ cleanse_remnant_sects_decision_confirm:0 "Purge the remnant sects."
 cleanse_remnant_sects_decision_tooltip:0 "Convert only your directly held counties to your faith and anger vassals who still follow your former sect."
 
 remnant_sect_purged_opinion:0 "Purged My Sect's Influence"
+
+jianghu_oath_gathering_decision:0 "Convene a Jianghu Oath Gathering"
+jianghu_oath_gathering_decision_desc:0 "Invite wandering swordsmen, sect envoys, alchemists, and rogue cultivators to your court. Over cups of wine and veiled boasts, oaths are sworn, rivalries measured, and your name carried across the rivers and lakes."
+jianghu_oath_gathering_decision_confirm:0 "Let the Jianghu witness me."
+jianghu_oath_gathering_decision_tooltip:0 "Gain [prestige_i] Prestige and [piety_i] Piety, then place this gathering on cooldown for 5 years."
