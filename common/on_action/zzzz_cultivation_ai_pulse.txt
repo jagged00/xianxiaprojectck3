@@ -1,6 +1,13 @@
-﻿on_yearly_playable_pulse = {
-	events = {
-		cultivation_ai.0001
-		cultivation_ai.0002
-	}
+on_game_start_after_lobby = {
+    events = {
+        cultivation_ai.0000
+    }
+}
+
+# Monthly simulation layer for all AI (landed + unlanded)
+on_monthly_pulse = {
+    events = {
+        cultivation_ai.0001
+        cultivation_ai.0002
+    }
 }
