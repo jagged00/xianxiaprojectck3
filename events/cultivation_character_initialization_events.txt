@@ -15,6 +15,7 @@ cultivation_character_initialization.0001 = {
 			trigger_event = cultivation_character_initialization.0002
 			trigger_event = cultivation_character_initialization.0003
 			trigger_event = cultivation_character_initialization.0004
+			trigger_event = cultivation_character_initialization.0005
 		}
 	}
 }
@@ -27,6 +28,7 @@ cultivation_character_initialization.0002 = {
 	trigger = {
 		is_alive = yes
 		NOT = { has_active_meridians = yes }
+		NOT = { has_trait = crippled_meridians }
 	}
 
 	immediate = {
@@ -70,19 +72,48 @@ cultivation_character_initialization.0004 = {
 		is_adult = yes
 		has_active_meridians = yes
 		is_cultivator = yes
-		NOT = {
-			faith = {
-				OR = {
-					has_doctrine = tenet_orthodox_cultivation
-					has_doctrine = tenet_unorthodox_cultivation
-					has_doctrine = tenet_demonic_cultivation
-					has_doctrine = tenet_vagrant_cultivation
-				}
+		NOT = { has_cultivation_sect_faith = yes }
+	}
+
+	immediate = {
+		cultivation_ai_join_any_sect_by_meridian_effect = yes
+	}
+}
+
+
+# Ensure children inherit sect affiliation from living parent when possible.
+cultivation_character_initialization.0005 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+		is_child = yes
+		NOT = { has_cultivation_sect_faith = yes }
+		OR = {
+			mother = {
+				is_alive = yes
+				has_cultivation_sect_faith = yes
+			}
+			father = {
+				is_alive = yes
+				has_cultivation_sect_faith = yes
 			}
 		}
 	}
 
 	immediate = {
-		cultivation_ai_join_any_sect_by_meridian_effect = yes
+		if = {
+			limit = {
+				mother = { is_alive = yes has_cultivation_sect_faith = yes }
+			}
+			set_character_faith = mother.faith
+		}
+		else_if = {
+			limit = {
+				father = { is_alive = yes has_cultivation_sect_faith = yes }
+			}
+			set_character_faith = father.faith
+		}
 	}
 }

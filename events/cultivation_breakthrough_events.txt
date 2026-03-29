@@ -59,19 +59,19 @@ cultivation_breakthrough.1000 = {
 
 				# Meridian affinity affects breakthrough odds
 				modifier = {
-					add = -20
+					add = -45
 					has_trait = poor_meridians
 				}
 				modifier = {
-					add = 5
+					add = 3
 					has_trait = good_meridians
 				}
 				modifier = {
-					add = 12
+					add = 10
 					has_trait = excellent_meridians
 				}
 				modifier = {
-					add = 20
+					add = 25
 					has_trait = heavenly_meridians
 				}
 
@@ -84,6 +84,7 @@ cultivation_breakthrough.1000 = {
 				# FAILURE
 				custom_tooltip = cultivation_breakthrough.1000.f_tt
 				trigger_event = cultivation_breakthrough.1002
+				cultivation_breakthrough_failure_consequence_effect = yes
 				add_stress = 15
 				add_character_modifier = {
 					modifier = failed_breakthrough_attempt
@@ -189,19 +190,19 @@ cultivation_breakthrough.1100 = {
 				#add_trait = cultivation_qi_refining
 				# Meridian affinity affects breakthrough odds
 				modifier = {
-					add = -20
+					add = -45
 					has_trait = poor_meridians
 				}
 				modifier = {
-					add = 5
+					add = 3
 					has_trait = good_meridians
 				}
 				modifier = {
-					add = 12
+					add = 10
 					has_trait = excellent_meridians
 				}
 				modifier = {
-					add = 20
+					add = 25
 					has_trait = heavenly_meridians
 				}
 
@@ -212,6 +213,7 @@ cultivation_breakthrough.1100 = {
 			60 = {
 				custom_tooltip = cultivation_breakthrough.1100.f_tt
 				trigger_event = cultivation_breakthrough.1102
+				cultivation_breakthrough_failure_consequence_effect = yes
 				add_stress = 20
 				add_character_modifier = {
 					modifier = failed_breakthrough_attempt
@@ -312,19 +314,19 @@ cultivation_breakthrough.1200 = {
 				
 				# Meridian affinity affects breakthrough odds
 				modifier = {
-					add = -20
+					add = -45
 					has_trait = poor_meridians
 				}
 				modifier = {
-					add = 5
+					add = 3
 					has_trait = good_meridians
 				}
 				modifier = {
-					add = 12
+					add = 10
 					has_trait = excellent_meridians
 				}
 				modifier = {
-					add = 20
+					add = 25
 					has_trait = heavenly_meridians
 				}
 
@@ -336,6 +338,7 @@ cultivation_breakthrough.1200 = {
 			65 = {
 				custom_tooltip = cultivation_breakthrough.1200.f_tt
 				trigger_event = cultivation_breakthrough.1202
+				cultivation_breakthrough_failure_consequence_effect = yes
 				add_stress = 25
 				add_character_modifier = {
 					modifier = failed_breakthrough_attempt
@@ -435,19 +438,19 @@ cultivation_breakthrough.1300 = {
 				
 				# Meridian affinity affects breakthrough odds
 				modifier = {
-					add = -20
+					add = -45
 					has_trait = poor_meridians
 				}
 				modifier = {
-					add = 5
+					add = 3
 					has_trait = good_meridians
 				}
 				modifier = {
-					add = 12
+					add = 10
 					has_trait = excellent_meridians
 				}
 				modifier = {
-					add = 20
+					add = 25
 					has_trait = heavenly_meridians
 				}
 
@@ -459,6 +462,7 @@ cultivation_breakthrough.1300 = {
 			70 = {
 				custom_tooltip = cultivation_breakthrough.1300.f_tt
 				trigger_event = cultivation_breakthrough.1302
+				cultivation_breakthrough_failure_consequence_effect = yes
 				add_stress = 30
 				add_character_modifier = {
 					modifier = failed_breakthrough_attempt
@@ -558,19 +562,19 @@ cultivation_breakthrough.1400 = {
 				
 				# Meridian affinity affects breakthrough odds
 				modifier = {
-					add = -20
+					add = -45
 					has_trait = poor_meridians
 				}
 				modifier = {
-					add = 5
+					add = 3
 					has_trait = good_meridians
 				}
 				modifier = {
-					add = 12
+					add = 10
 					has_trait = excellent_meridians
 				}
 				modifier = {
-					add = 20
+					add = 25
 					has_trait = heavenly_meridians
 				}
 
@@ -582,6 +586,7 @@ cultivation_breakthrough.1400 = {
 			75 = {
 				custom_tooltip = cultivation_breakthrough.1400.f_tt
 				trigger_event = cultivation_breakthrough.1402
+				cultivation_breakthrough_failure_consequence_effect = yes
 				add_stress = 35
 				add_character_modifier = {
 					modifier = failed_breakthrough_attempt
@@ -681,19 +686,19 @@ cultivation_breakthrough.1500 = {
 				
 				# Meridian affinity affects breakthrough odds
 				modifier = {
-					add = -20
+					add = -45
 					has_trait = poor_meridians
 				}
 				modifier = {
-					add = 5
+					add = 3
 					has_trait = good_meridians
 				}
 				modifier = {
-					add = 12
+					add = 10
 					has_trait = excellent_meridians
 				}
 				modifier = {
-					add = 20
+					add = 25
 					has_trait = heavenly_meridians
 				}
 
@@ -705,6 +710,7 @@ cultivation_breakthrough.1500 = {
 			80 = {
 				custom_tooltip = cultivation_breakthrough.1500.f_tt
 				trigger_event = cultivation_breakthrough.1502
+				cultivation_breakthrough_failure_consequence_effect = yes
 				add_stress = 40
 				add_character_modifier = {
 					modifier = failed_breakthrough_attempt
@@ -804,19 +810,19 @@ cultivation_breakthrough.1600 = {
 				
 				# Meridian affinity affects breakthrough odds
 				modifier = {
-					add = -20
+					add = -45
 					has_trait = poor_meridians
 				}
 				modifier = {
-					add = 5
+					add = 3
 					has_trait = good_meridians
 				}
 				modifier = {
-					add = 12
+					add = 10
 					has_trait = excellent_meridians
 				}
 				modifier = {
-					add = 20
+					add = 25
 					has_trait = heavenly_meridians
 				}
 
@@ -828,6 +834,7 @@ cultivation_breakthrough.1600 = {
 			85 = {
 				custom_tooltip = cultivation_breakthrough.1600.f_tt
 				trigger_event = cultivation_breakthrough.1602
+				cultivation_breakthrough_failure_consequence_effect = yes
 				add_stress = 45
 				add_character_modifier = {
 					modifier = failed_breakthrough_attempt
@@ -927,19 +934,19 @@ cultivation_breakthrough.1700 = {
 				
 				# Meridian affinity affects breakthrough odds
 				modifier = {
-					add = -20
+					add = -45
 					has_trait = poor_meridians
 				}
 				modifier = {
-					add = 5
+					add = 3
 					has_trait = good_meridians
 				}
 				modifier = {
-					add = 12
+					add = 10
 					has_trait = excellent_meridians
 				}
 				modifier = {
-					add = 20
+					add = 25
 					has_trait = heavenly_meridians
 				}
 
@@ -951,6 +958,7 @@ cultivation_breakthrough.1700 = {
 			90 = {
 				custom_tooltip = cultivation_breakthrough.1700.f_tt
 				trigger_event = cultivation_breakthrough.1702
+				cultivation_breakthrough_failure_consequence_effect = yes
 				add_stress = 50
 				add_character_modifier = {
 					modifier = failed_breakthrough_attempt
@@ -1050,19 +1058,19 @@ cultivation_breakthrough.1800 = {
 				
 				# Meridian affinity affects breakthrough odds
 				modifier = {
-					add = -20
+					add = -45
 					has_trait = poor_meridians
 				}
 				modifier = {
-					add = 5
+					add = 3
 					has_trait = good_meridians
 				}
 				modifier = {
-					add = 12
+					add = 10
 					has_trait = excellent_meridians
 				}
 				modifier = {
-					add = 20
+					add = 25
 					has_trait = heavenly_meridians
 				}
 
@@ -1074,6 +1082,7 @@ cultivation_breakthrough.1800 = {
 			90 = {
 				custom_tooltip = cultivation_breakthrough.1800.f_tt
 				trigger_event = cultivation_breakthrough.1802
+				cultivation_breakthrough_failure_consequence_effect = yes
 				add_stress = 55
 				add_character_modifier = {
 					modifier = failed_breakthrough_attempt
@@ -1173,19 +1182,19 @@ cultivation_breakthrough.1900 = {
 				
 				# Meridian affinity affects breakthrough odds
 				modifier = {
-					add = -20
+					add = -45
 					has_trait = poor_meridians
 				}
 				modifier = {
-					add = 5
+					add = 3
 					has_trait = good_meridians
 				}
 				modifier = {
-					add = 12
+					add = 10
 					has_trait = excellent_meridians
 				}
 				modifier = {
-					add = 20
+					add = 25
 					has_trait = heavenly_meridians
 				}
 
@@ -1197,6 +1206,7 @@ cultivation_breakthrough.1900 = {
 			95 = {
 				custom_tooltip = cultivation_breakthrough.1900.f_tt
 				trigger_event = cultivation_breakthrough.1902
+				cultivation_breakthrough_failure_consequence_effect = yes
 				add_stress = 60
 				add_character_modifier = {
 					modifier = failed_breakthrough_attempt
@@ -1296,19 +1306,19 @@ cultivation_breakthrough.2000 = {
 				
 				# Meridian affinity affects breakthrough odds
 				modifier = {
-					add = -20
+					add = -45
 					has_trait = poor_meridians
 				}
 				modifier = {
-					add = 5
+					add = 3
 					has_trait = good_meridians
 				}
 				modifier = {
-					add = 12
+					add = 10
 					has_trait = excellent_meridians
 				}
 				modifier = {
-					add = 20
+					add = 25
 					has_trait = heavenly_meridians
 				}
 
@@ -1320,6 +1330,7 @@ cultivation_breakthrough.2000 = {
 			95 = {
 				custom_tooltip = cultivation_breakthrough.2000.f_tt
 				trigger_event = cultivation_breakthrough.2002
+				cultivation_breakthrough_failure_consequence_effect = yes
 				add_stress = 65
 				add_character_modifier = {
 					modifier = failed_breakthrough_attempt
@@ -1418,19 +1429,19 @@ cultivation_breakthrough.2100 = {
 				
 				# Meridian affinity affects breakthrough odds
 				modifier = {
-					add = -20
+					add = -45
 					has_trait = poor_meridians
 				}
 				modifier = {
-					add = 5
+					add = 3
 					has_trait = good_meridians
 				}
 				modifier = {
-					add = 12
+					add = 10
 					has_trait = excellent_meridians
 				}
 				modifier = {
-					add = 20
+					add = 25
 					has_trait = heavenly_meridians
 				}
 
@@ -1442,6 +1453,7 @@ cultivation_breakthrough.2100 = {
 			95 = {
 				custom_tooltip = cultivation_breakthrough.2100.f_tt
 				trigger_event = cultivation_breakthrough.2102
+				cultivation_breakthrough_failure_consequence_effect = yes
 				add_stress = 70
 				add_character_modifier = {
 					modifier = failed_breakthrough_attempt

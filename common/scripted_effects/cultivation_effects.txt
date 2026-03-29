@@ -4,7 +4,10 @@
 cultivation_convert_direct_domain_faith_effect = {
 	if = {
 		limit = { is_landed = yes }
-		every_domain_county = { set_county_faith = root.faith }
+		every_sub_realm_county = {
+			limit = { holder = root }
+			set_county_faith = root.faith
+		}
 	}
 }
 
@@ -449,4 +452,178 @@ cultivation_ai_autogrant_realm_perks_effect = {
 			875 = { }
 		}
 	}
+}
+
+
+cultivation_breakthrough_failure_consequence_effect = {
+	if = {
+		limit = { has_trait = poor_meridians }
+		random_list = {
+			3 = { death = { death_reason = death_cultivation_failure } }
+			97 = { }
+		}
+	}
+	else_if = {
+		limit = { has_trait = normal_meridians }
+		random_list = {
+			2 = { death = { death_reason = death_cultivation_failure } }
+			98 = { }
+		}
+	}
+	else_if = {
+		limit = { has_trait = good_meridians }
+		random_list = {
+			1 = { death = { death_reason = death_cultivation_failure } }
+			99 = { }
+		}
+	}
+	else_if = {
+		limit = { has_trait = excellent_meridians }
+		random_list = {
+			1 = { death = { death_reason = death_cultivation_failure } }
+			99 = { }
+		}
+	}
+	else_if = {
+		limit = { has_trait = heavenly_meridians }
+		random_list = {
+			100 = { }
+		}
+	}
+}
+
+
+cultivation_cripple_mortalize_effect = {
+	# Break the foundation permanently: remove realms, perks, and progression capability.
+	remove_trait = cultivation_true_immortal
+	remove_trait = cultivation_entering_nirvana
+	remove_trait = cultivation_sacred_vessel
+	remove_trait = cultivation_star_shattering
+	remove_trait = cultivation_integration
+	remove_trait = cultivation_four_axis
+	remove_trait = cultivation_heavenly_being
+	remove_trait = cultivation_nascent_soul
+	remove_trait = cultivation_core_formation
+	remove_trait = cultivation_qi_building
+	remove_trait = cultivation_qi_refining
+	remove_trait = cultivation_qi_gathering
+	remove_trait = heavenly_meridians
+	remove_trait = excellent_meridians
+	remove_trait = good_meridians
+	remove_trait = normal_meridians
+	remove_trait = poor_meridians
+	add_trait = crippled_meridians
+	remove_perk = core_formation_early_perk
+	remove_perk = core_formation_late_perk
+	remove_perk = core_formation_mid_perk
+	remove_perk = core_formation_nascent_soul_breakthrough_perk
+	remove_perk = core_formation_peak_perk
+	remove_perk = core_formation_qi1_perk
+	remove_perk = core_formation_qi2_perk
+	remove_perk = core_formation_qi3_perk
+	remove_perk = core_formation_qi4_perk
+	remove_perk = core_formation_qi5_perk
+	remove_perk = entering_nirvana_death_perk
+	remove_perk = entering_nirvana_life_perk
+	remove_perk = entering_nirvana_reborn_perk
+	remove_perk = four_axis_axis_1a_perk
+	remove_perk = four_axis_axis_1b_perk
+	remove_perk = four_axis_axis_1c_perk
+	remove_perk = four_axis_axis_1d_perk
+	remove_perk = four_axis_axis_2_perk
+	remove_perk = four_axis_integration_breakthrough_perk
+	remove_perk = heavenly_being_1_perk
+	remove_perk = heavenly_being_2_perk
+	remove_perk = heavenly_being_3_perk
+	remove_perk = heavenly_being_4_perk
+	remove_perk = heavenly_being_5_perk
+	remove_perk = heavenly_being_early_perk
+	remove_perk = heavenly_being_four_axis_breakthrough_perk
+	remove_perk = heavenly_being_late_perk
+	remove_perk = heavenly_being_mid_perk
+	remove_perk = heavenly_being_peak_perk
+	remove_perk = integration_1a_perk
+	remove_perk = integration_1b_perk
+	remove_perk = integration_1c_perk
+	remove_perk = integration_1d_perk
+	remove_perk = integration_1e_perk
+	remove_perk = integration_2a_perk
+	remove_perk = integration_2b_perk
+	remove_perk = integration_2c_perk
+	remove_perk = integration_2d_perk
+	remove_perk = integration_2e_perk
+	remove_perk = integration_star_shattering_breakthrough_perk
+	remove_perk = mortal_body_reconstruction_perk
+	remove_perk = mortal_bone_reconstruction_perk
+	remove_perk = mortal_external_reconstruction_perk
+	remove_perk = mortal_internal_reconstruction_perk
+	remove_perk = mortal_muscle_reconstruction_perk
+	remove_perk = mortal_qi_gathering_breakthrough_perk
+	remove_perk = nascent_soul_early_perk
+	remove_perk = nascent_soul_heavenly_being_breakthrough_perk
+	remove_perk = nascent_soul_late_perk
+	remove_perk = nascent_soul_mid_perk
+	remove_perk = nascent_soul_peak_perk
+	remove_perk = qi_building_1_perk
+	remove_perk = qi_building_2_perk
+	remove_perk = qi_building_3_perk
+	remove_perk = qi_building_4_perk
+	remove_perk = qi_building_5_perk
+	remove_perk = qi_building_core_formation_breakthrough_perk
+	remove_perk = qi_building_early_perk
+	remove_perk = qi_building_late_perk
+	remove_perk = qi_building_mid_perk
+	remove_perk = qi_building_peak_perk
+	remove_perk = qi_gathering_meridian_1_perk
+	remove_perk = qi_gathering_meridian_2_perk
+	remove_perk = qi_gathering_meridian_3a_perk
+	remove_perk = qi_gathering_meridian_3b_perk
+	remove_perk = qi_gathering_meridian_4_perk
+	remove_perk = qi_gathering_qi_refining_breakthrough_perk
+	remove_perk = qi_refining_1a_star_perk
+	remove_perk = qi_refining_1b_star_perk
+	remove_perk = qi_refining_2a_star_perk
+	remove_perk = qi_refining_2b_star_perk
+	remove_perk = qi_refining_2c_star_perk
+	remove_perk = qi_refining_2d_star_perk
+	remove_perk = qi_refining_3a_star_perk
+	remove_perk = qi_refining_3b_star_perk
+	remove_perk = qi_refining_3c_star_perk
+	remove_perk = qi_refining_higher_perk
+	remove_perk = qi_refining_middle_perk
+	remove_perk = qi_refining_peak_perk
+	remove_perk = qi_refining_qi_building_breakthrough_perk
+	remove_perk = sacred_vessel_calendar_perk
+	remove_perk = sacred_vessel_correctness_perk
+	remove_perk = sacred_vessel_day_perk
+	remove_perk = sacred_vessel_entering_nirvana_breakthrough_perk
+	remove_perk = sacred_vessel_fixed_star_perk
+	remove_perk = sacred_vessel_hour_perk
+	remove_perk = sacred_vessel_mildness_perk
+	remove_perk = sacred_vessel_month_perk
+	remove_perk = sacred_vessel_strongness_perk
+	remove_perk = sacred_vessel_year_perk
+	remove_perk = star_shattering_1a_perk
+	remove_perk = star_shattering_1b_perk
+	remove_perk = star_shattering_1c_perk
+	remove_perk = star_shattering_1d_perk
+	remove_perk = star_shattering_1e_perk
+	remove_perk = star_shattering_becoming_star_perk
+	remove_perk = star_shattering_explode_perk
+	remove_perk = star_shattering_sacred_vessel_breakthrough_perk
+	remove_perk = true_immortal_final_perk
+	remove_character_flag = can_attempt_qi_gathering_breakthrough
+	remove_character_flag = can_attempt_qi_refining_breakthrough
+	remove_character_flag = can_attempt_qi_building_breakthrough
+	remove_character_flag = can_attempt_core_formation_breakthrough
+	remove_character_flag = can_attempt_nascent_soul_breakthrough
+	remove_character_flag = can_attempt_heavenly_being_breakthrough
+	remove_character_flag = can_attempt_four_axis_breakthrough
+	remove_character_flag = can_attempt_integration_breakthrough
+	remove_character_flag = can_attempt_star_shattering_breakthrough
+	remove_character_flag = can_attempt_sacred_vessel_breakthrough
+	remove_character_flag = can_attempt_entering_nirvana_breakthrough
+	remove_character_flag = can_attempt_true_immortal_breakthrough
+	remove_character_modifier = contemplating_breakthrough
+	remove_character_modifier = failed_breakthrough_attempt
 }

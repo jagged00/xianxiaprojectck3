@@ -116,7 +116,7 @@ cultivation_qi_refining = {
 	
 	opposites = { incapable }
 	
-	life_expectancy = 10
+	life_expectancy = 35
 	
 	shown_in_ruler_designer = no
 	
@@ -157,6 +157,8 @@ cultivation_qi_refining = {
 	flag = immortal_visuals
 	flag = immortal_incapability
 	no_prowess_loss_from_age = yes
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
 	
 	compatibility = {
 		cultivation_qi_gathering = @pos_compat_low
@@ -175,7 +177,7 @@ cultivation_qi_building = {
 	
 	opposites = { incapable }
 	
-	life_expectancy = 15
+	life_expectancy = 80
 	
 	shown_in_ruler_designer = no
 	
@@ -210,6 +212,8 @@ cultivation_qi_building = {
 	monthly_lifestyle_xp_gain_mult = 0.06
 	enemy_hostile_scheme_success_chance_add = -10
 	knight_effectiveness_mult = 0.10
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
 	
 	compatibility = {
 		cultivation_qi_refining = @pos_compat_low
@@ -228,7 +232,7 @@ cultivation_core_formation = {
 	
 	opposites = { incapable }
 	
-	life_expectancy = 40
+	life_expectancy = 180
 	
 	shown_in_ruler_designer = no
 	
@@ -266,6 +270,8 @@ cultivation_core_formation = {
 	
 	# +15 years lifespan
 	health = -0.05
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
 	
 	compatibility = {
 		cultivation_qi_building = @pos_compat_low
@@ -284,7 +290,7 @@ cultivation_nascent_soul = {
 	
 	opposites = { incapable }
 	
-	life_expectancy = 70
+	life_expectancy = 320
 	
 	shown_in_ruler_designer = no
 	
@@ -323,6 +329,8 @@ cultivation_nascent_soul = {
 	
 	# +40 years lifespan
 	health = -0.10
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
 	
 	compatibility = {
 		cultivation_core_formation = @pos_compat_low
@@ -341,7 +349,7 @@ cultivation_heavenly_being = {
 	
 	opposites = { incapable }
 	
-	life_expectancy = 100
+	life_expectancy = 520
 	
 	shown_in_ruler_designer = no
 	
@@ -381,6 +389,8 @@ cultivation_heavenly_being = {
 	
 	# +70 years lifespan
 	health = -0.15
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
 	
 	compatibility = {
 		cultivation_nascent_soul = @pos_compat_low
@@ -399,7 +409,7 @@ cultivation_four_axis = {
 	
 	opposites = { incapable }
 	
-	life_expectancy = 150
+	life_expectancy = 800
 	
 	shown_in_ruler_designer = no
 	
@@ -440,6 +450,8 @@ cultivation_four_axis = {
 	
 	# +100 years lifespan
 	health = -0.20
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
 	
 	compatibility = {
 		cultivation_heavenly_being = @pos_compat_low
@@ -458,7 +470,7 @@ cultivation_integration = {
 	
 	opposites = { incapable }
 	
-	life_expectancy = 200
+	life_expectancy = 1200
 	
 	shown_in_ruler_designer = no
 	
@@ -499,6 +511,8 @@ cultivation_integration = {
 	
 	# +150 years lifespan + Resurrection mechanic
 	health = -0.30
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
 	
 	# Note: Resurrection would need custom on_action event
 	
@@ -519,7 +533,7 @@ cultivation_star_shattering = {
 	
 	opposites = { incapable }
 	
-	life_expectancy = 280
+	life_expectancy = 1700
 	
 	shown_in_ruler_designer = no
 	
@@ -560,6 +574,8 @@ cultivation_star_shattering = {
 	
 	# +200 years lifespan
 	health = -0.40
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
 	
 	compatibility = {
 		cultivation_integration = @pos_compat_low
@@ -578,7 +594,7 @@ cultivation_sacred_vessel = {
 	
 	opposites = { incapable }
 	
-	life_expectancy = 350
+	life_expectancy = 2400
 	
 	shown_in_ruler_designer = no
 	
@@ -619,6 +635,8 @@ cultivation_sacred_vessel = {
 	
 	# +280 years lifespan
 	health = -0.50
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
 	
 	compatibility = {
 		cultivation_star_shattering = @pos_compat_low
@@ -637,7 +655,7 @@ cultivation_entering_nirvana = {
 	
 	opposites = { incapable }
 	
-	life_expectancy = 500
+	life_expectancy = 3200
 	
 	shown_in_ruler_designer = no
 	
@@ -679,6 +697,8 @@ cultivation_entering_nirvana = {
 	
 	# +350 years lifespan
 	health = -0.60
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
 	
 	compatibility = {
 		cultivation_sacred_vessel = @pos_compat_low
@@ -697,7 +717,7 @@ cultivation_true_immortal = {
 	
 	opposites = { incapable }
 	
-	life_expectancy = 1000
+	life_expectancy = 5000
 	
 	shown_in_ruler_designer = no
 	
@@ -741,6 +761,8 @@ cultivation_true_immortal = {
 	
 	# IMMORTAL - no aging!
 	health = -1.0
+	flag = immune_to_disease
+	flag = blocks_getting_non_epidemic_disease
 	
 	compatibility = {
 		cultivation_entering_nirvana = @pos_compat_low
