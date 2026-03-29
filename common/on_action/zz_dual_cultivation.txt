@@ -1,34 +1,20 @@
-﻿on_action = {
-
-	carn_on_sex_v2 = {
-		effect = {
-
-			if = {
-				limit = {
-					OR = {
-
-						# ROOT karakterin dynasty perki
-						dynasty = {
-							has_dynasty_perk = martial_arts_legacy_3
-						}
-
-						# Partner dynasty perki
-						scope:carn_sex_partner = {
-							dynasty = {
-								has_dynasty_perk = martial_arts_legacy_3
-							}
-						}
+carn_on_sex_v2 = {
+	effect = {
+		if = {
+			limit = {
+				OR = {
+					dynasty = { has_dynasty_perk = martial_arts_legacy_3 }
+					scope:carn_sex_partner = {
+						dynasty = { has_dynasty_perk = martial_arts_legacy_3 }
 					}
 				}
-
-				# partner scope'u effecte forward et
-				scope:carn_sex_partner = {
-					save_scope_as = carn_sex_partner_scope
-				}
-
-				dual_cultivation_effect = yes
 			}
 
+			scope:carn_sex_partner = {
+				save_scope_as = carn_sex_partner_scope
+			}
+
+			dual_cultivation_effect = yes
 		}
 	}
 }

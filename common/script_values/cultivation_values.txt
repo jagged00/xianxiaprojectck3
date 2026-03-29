@@ -17,3 +17,6 @@ display_sect_spars_won = {
         add = var:sect_spars_won
     }
 }
+dual_cultivation_cooldown = {
+	value = dual_cultivation_cooldown_base
+}

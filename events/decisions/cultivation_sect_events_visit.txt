@@ -41,7 +41,7 @@ cultivation_sect_visit.1000 = {
     option = {
         name = sect_spar
 		
-		tooltip = sect_spar_option_tooltip
+		custom_tooltip = sect_spar_option_tooltip
 		
         hidden_effect = { root = { set_variable = { name = sect_elder_save value = yes } } }
         open_interaction_window = {
