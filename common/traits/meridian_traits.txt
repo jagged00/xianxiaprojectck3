@@ -1,4 +1,4 @@
-﻿poor_meridians = {
+poor_meridians = {
 	index = 14250
 	group = active_meridians
 	level = 1
@@ -12,6 +12,16 @@
 	monthly_lifestyle_xp_gain_mult = -0.55
 	physical = yes
 	good = no
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = poor_meridians.dds
+			}
+			desc = poor_meridians.dds
+		}
+	}
 }
 
 normal_meridians = {
@@ -27,6 +37,16 @@ normal_meridians = {
 	monthly_lifestyle_xp_gain_mult = -0.15
 	physical = yes
 	good = yes
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = normal_meridians.dds
+			}
+			desc = normal_meridians.dds
+		}
+	}
 }
 
 good_meridians = {

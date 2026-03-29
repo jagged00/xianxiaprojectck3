@@ -449,7 +449,6 @@ cultivation_ai_grant_mortal_foundation_perks_effect = {
 		if = { limit = { NOT = { has_perk = mortal_internal_reconstruction_perk } } add_perk = mortal_internal_reconstruction_perk }
 		if = { limit = { NOT = { has_perk = mortal_external_reconstruction_perk } } add_perk = mortal_external_reconstruction_perk }
 		if = { limit = { NOT = { has_perk = mortal_body_reconstruction_perk } } add_perk = mortal_body_reconstruction_perk }
-		if = { limit = { NOT = { has_perk = mortal_qi_gathering_breakthrough_perk } } add_perk = mortal_qi_gathering_breakthrough_perk }
 	}
 }
 
