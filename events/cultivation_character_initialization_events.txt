@@ -32,14 +32,117 @@ cultivation_character_initialization.0002 = {
 	}
 
 	immediate = {
-		random_list = {
-			# Novel-style rarity curve:
-			# poor ~85%, normal ~12%, good ~2.8%, excellent ~0.19%, heavenly ~0.0001%
-			850000 = { add_trait = poor_meridians }
-			120000 = { add_trait = normal_meridians }
-			28000 = { add_trait = good_meridians }
-			1900 = { add_trait = excellent_meridians }
-			1 = { add_trait = heavenly_meridians }
+		# Child inheritance pass: parent meridians influence newborn/child outcomes.
+		if = {
+			limit = {
+				is_child = yes
+				mother = { has_active_meridians = yes }
+				father = { has_active_meridians = yes }
+			}
+			if = {
+				# Two normal parents: mostly normal, rare upside, rare poor/blocked.
+				limit = {
+					mother = { has_trait = normal_meridians }
+					father = { has_trait = normal_meridians }
+				}
+				random_list = {
+					820 = { add_trait = normal_meridians }
+					130 = { add_trait = good_meridians }
+					35 = { add_trait = excellent_meridians }
+					5 = { add_trait = heavenly_meridians }
+					8 = { add_trait = poor_meridians }
+					2 = { add_trait = crippled_meridians }
+				}
+			}
+			else_if = {
+				# Two strong parents (good+): mostly good/excellent with tiny low-roll risk.
+				limit = {
+					mother = { OR = { has_trait = good_meridians has_trait = excellent_meridians has_trait = heavenly_meridians } }
+					father = { OR = { has_trait = good_meridians has_trait = excellent_meridians has_trait = heavenly_meridians } }
+				}
+				random_list = {
+					540 = { add_trait = good_meridians }
+					320 = { add_trait = excellent_meridians }
+					120 = { add_trait = heavenly_meridians }
+					18 = { add_trait = normal_meridians }
+					1 = { add_trait = poor_meridians }
+					1 = { add_trait = crippled_meridians }
+				}
+			}
+			else_if = {
+				# One normal + one strong parent.
+				limit = {
+					OR = {
+						AND = {
+							mother = { has_trait = normal_meridians }
+							father = { OR = { has_trait = good_meridians has_trait = excellent_meridians has_trait = heavenly_meridians } }
+						}
+						AND = {
+							father = { has_trait = normal_meridians }
+							mother = { OR = { has_trait = good_meridians has_trait = excellent_meridians has_trait = heavenly_meridians } }
+						}
+					}
+				}
+				random_list = {
+					460 = { add_trait = normal_meridians }
+					360 = { add_trait = good_meridians }
+					145 = { add_trait = excellent_meridians }
+					25 = { add_trait = heavenly_meridians }
+					9 = { add_trait = poor_meridians }
+					1 = { add_trait = crippled_meridians }
+				}
+			}
+			else_if = {
+				# Two poor parents: still mostly poor/normal.
+				limit = {
+					mother = { has_trait = poor_meridians }
+					father = { has_trait = poor_meridians }
+				}
+				random_list = {
+					760 = { add_trait = poor_meridians }
+					220 = { add_trait = normal_meridians }
+					18 = { add_trait = good_meridians }
+					1 = { add_trait = excellent_meridians }
+					1 = { add_trait = crippled_meridians }
+				}
+			}
+			else = {
+				# Mixed-parent fallback.
+				random_list = {
+					520 = { add_trait = normal_meridians }
+					300 = { add_trait = good_meridians }
+					120 = { add_trait = excellent_meridians }
+					25 = { add_trait = heavenly_meridians }
+					30 = { add_trait = poor_meridians }
+					5 = { add_trait = crippled_meridians }
+				}
+			}
+		}
+		else_if = {
+			# For already-existing nobles generated without meridians (not newborn assignment),
+			# bias to normal+ so higher-realm cultivators appear in the world more often.
+			limit = {
+				is_lowborn = no
+				NOT = { is_child = yes }
+			}
+			random_list = {
+				# Noble fallback curve: normal-heavy with chances for high talent.
+				700000 = { add_trait = normal_meridians }
+				230000 = { add_trait = good_meridians }
+				68000 = { add_trait = excellent_meridians }
+				2000 = { add_trait = heavenly_meridians }
+			}
+		}
+		else = {
+			random_list = {
+				# Baseline rarity curve:
+				# poor ~85%, normal ~12%, good ~2.8%, excellent ~0.19%, heavenly ~0.0001%
+				850000 = { add_trait = poor_meridians }
+				120000 = { add_trait = normal_meridians }
+				28000 = { add_trait = good_meridians }
+				1900 = { add_trait = excellent_meridians }
+				1 = { add_trait = heavenly_meridians }
+			}
 		}
 	}
 }

@@ -100,10 +100,10 @@ cultivation_ai.0001 = {
             random_list = {
                 1 = { trigger = { has_trait = poor_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
                 3 = { trigger = { has_trait = normal_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
-                8 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
-                16 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
-                28 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
-                944 = { }
+                10 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                24 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                40 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                922 = { }
             }
         }
         else_if = {
@@ -112,9 +112,9 @@ cultivation_ai.0001 = {
                 1 = { trigger = { has_trait = poor_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
                 2 = { trigger = { has_trait = normal_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
                 6 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
-                12 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
-                20 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
-                959 = { }
+                18 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
+                30 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
+                943 = { }
             }
         }
         else_if = {
@@ -123,9 +123,9 @@ cultivation_ai.0001 = {
                 1 = { trigger = { has_trait = poor_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
                 2 = { trigger = { has_trait = normal_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
                 5 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
-                9 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
-                15 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
-                968 = { }
+                14 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
+                22 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
+                956 = { }
             }
         }
         else_if = {
@@ -134,9 +134,9 @@ cultivation_ai.0001 = {
                 1 = { trigger = { has_trait = poor_meridians } remove_trait = cultivation_core_formation add_trait = cultivation_nascent_soul }
                 1 = { trigger = { has_trait = normal_meridians } remove_trait = cultivation_core_formation add_trait = cultivation_nascent_soul }
                 3 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_core_formation add_trait = cultivation_nascent_soul }
-                7 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_core_formation add_trait = cultivation_nascent_soul }
-                12 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_core_formation add_trait = cultivation_nascent_soul }
-                976 = { }
+                12 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_core_formation add_trait = cultivation_nascent_soul }
+                20 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_core_formation add_trait = cultivation_nascent_soul }
+                963 = { }
             }
         }
         else_if = {
@@ -144,57 +144,57 @@ cultivation_ai.0001 = {
             random_list = {
                 1 = { trigger = { has_trait = normal_meridians } remove_trait = cultivation_nascent_soul add_trait = cultivation_heavenly_being }
                 2 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_nascent_soul add_trait = cultivation_heavenly_being }
-                4 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_nascent_soul add_trait = cultivation_heavenly_being }
-                8 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_nascent_soul add_trait = cultivation_heavenly_being }
-                985 = { }
+                7 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_nascent_soul add_trait = cultivation_heavenly_being }
+                14 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_nascent_soul add_trait = cultivation_heavenly_being }
+                976 = { }
             }
         }
         else_if = {
             limit = { has_trait = cultivation_heavenly_being }
             random_list = {
                 1 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_heavenly_being add_trait = cultivation_four_axis }
-                3 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_heavenly_being add_trait = cultivation_four_axis }
-                6 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_heavenly_being add_trait = cultivation_four_axis }
-                990 = { }
+                5 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_heavenly_being add_trait = cultivation_four_axis }
+                10 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_heavenly_being add_trait = cultivation_four_axis }
+                984 = { }
             }
         }
         else_if = {
             limit = { has_trait = cultivation_four_axis }
             random_list = {
                 1 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_four_axis add_trait = cultivation_integration }
-                2 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_four_axis add_trait = cultivation_integration }
-                5 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_four_axis add_trait = cultivation_integration }
-                992 = { }
+                4 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_four_axis add_trait = cultivation_integration }
+                8 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_four_axis add_trait = cultivation_integration }
+                987 = { }
             }
         }
         else_if = {
             limit = { has_trait = cultivation_integration }
             random_list = {
-                1 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_integration add_trait = cultivation_star_shattering }
-                4 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_integration add_trait = cultivation_star_shattering }
-                995 = { }
+                2 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_integration add_trait = cultivation_star_shattering }
+                6 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_integration add_trait = cultivation_star_shattering }
+                992 = { }
             }
         }
         else_if = {
             limit = { has_trait = cultivation_star_shattering }
             random_list = {
-                1 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_star_shattering add_trait = cultivation_sacred_vessel }
-                3 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_star_shattering add_trait = cultivation_sacred_vessel }
-                996 = { }
+                2 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_star_shattering add_trait = cultivation_sacred_vessel }
+                5 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_star_shattering add_trait = cultivation_sacred_vessel }
+                993 = { }
             }
         }
         else_if = {
             limit = { has_trait = cultivation_sacred_vessel }
             random_list = {
-                1 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_sacred_vessel add_trait = cultivation_entering_nirvana }
-                999 = { }
+                2 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_sacred_vessel add_trait = cultivation_entering_nirvana }
+                998 = { }
             }
         }
         else_if = {
             limit = { has_trait = cultivation_entering_nirvana }
             random_list = {
-                1 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_entering_nirvana add_trait = cultivation_true_immortal }
-                999 = { }
+                2 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_entering_nirvana add_trait = cultivation_true_immortal }
+                998 = { }
             }
         }
 

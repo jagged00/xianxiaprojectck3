@@ -446,10 +446,19 @@ cultivation_ai_autogrant_realm_perks_effect = {
 		random_list = {
 			5 = { trigger = { has_trait = poor_meridians } cultivation_ai_grant_next_realm_perk_effect = yes }
 			10 = { trigger = { has_trait = normal_meridians } cultivation_ai_grant_next_realm_perk_effect = yes }
-			20 = { trigger = { has_trait = good_meridians } cultivation_ai_grant_next_realm_perk_effect = yes }
-			35 = { trigger = { has_trait = excellent_meridians } cultivation_ai_grant_next_realm_perk_effect = yes }
-			55 = { trigger = { has_trait = heavenly_meridians } cultivation_ai_grant_next_realm_perk_effect = yes }
-			875 = { }
+			24 = { trigger = { has_trait = good_meridians } cultivation_ai_grant_next_realm_perk_effect = yes }
+			42 = {
+				trigger = { has_trait = excellent_meridians }
+				cultivation_ai_grant_next_realm_perk_effect = yes
+				cultivation_ai_grant_next_realm_perk_effect = yes
+			}
+			64 = {
+				trigger = { has_trait = heavenly_meridians }
+				cultivation_ai_grant_next_realm_perk_effect = yes
+				cultivation_ai_grant_next_realm_perk_effect = yes
+				cultivation_ai_grant_next_realm_perk_effect = yes
+			}
+			855 = { }
 		}
 	}
 }
