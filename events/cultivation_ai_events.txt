@@ -35,7 +35,10 @@ cultivation_ai.0001 = {
     immediate = {
         # Ensure every AI gets exactly one meridian tier.
         if = {
-            limit = { NOT = { has_active_meridians = yes } }
+            limit = {
+                NOT = { has_active_meridians = yes }
+                NOT = { has_trait = crippled_meridians }
+            }
             random_list = {
                 8500 = { add_trait = poor_meridians }
                 1200 = { add_trait = normal_meridians }
