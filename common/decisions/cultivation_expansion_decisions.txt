@@ -216,3 +216,52 @@ awaken_meridian_disciples_decision = {
         add_character_flag = { flag = awaken_meridian_disciples_cooldown days = 1825 }
     }
 }
+
+cleanse_remnant_sects_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_misc.dds" }
+    sort_order = 352
+    decision_group_type = major
+
+    title = cleanse_remnant_sects_decision
+    desc = cleanse_remnant_sects_decision_desc
+    confirm_text = cleanse_remnant_sects_decision_confirm
+    selection_tooltip = cleanse_remnant_sects_decision_tooltip
+
+    is_shown = {
+        is_cultivator = yes
+        is_landed = yes
+        any_domain_county = {
+            NOT = { faith = root.faith }
+        }
+        NOT = { has_character_flag = cleanse_remnant_sects_cooldown }
+    }
+
+    is_valid = {
+        any_domain_county = {
+            NOT = { faith = root.faith }
+        }
+    }
+
+    ai_check_interval = 60
+    ai_potential = { always = yes }
+    ai_will_do = { base = 20 }
+
+    effect = {
+        faith = { save_scope_as = former_sect_faith }
+
+        cultivation_convert_direct_domain_faith_effect = yes
+
+        every_vassal = {
+            limit = {
+                faith = scope:former_sect_faith
+            }
+            add_opinion = {
+                target = root
+                modifier = remnant_sect_purged_opinion
+            }
+        }
+
+        add_piety = 100
+        add_character_flag = { flag = cleanse_remnant_sects_cooldown days = 1825 }
+    }
+}

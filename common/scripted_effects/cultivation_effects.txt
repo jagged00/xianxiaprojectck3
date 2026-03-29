@@ -4,8 +4,8 @@
 cultivation_convert_direct_domain_faith_effect = {
 	if = {
 		limit = { is_landed = yes }
-		every_sub_realm_county = {
-			limit = { holder = root }
+		# Convert only counties in the ruler's direct domain (never vassal-held counties).
+		every_domain_county = {
 			set_county_faith = root.faith
 		}
 	}

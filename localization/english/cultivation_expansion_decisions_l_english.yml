@@ -14,7 +14,14 @@
  claim_superior_realm_liege_confirm:0 "The weak cannot command the strong."
  claim_superior_realm_liege_tooltip:0 "Gain a pressed claim on your liege's primary title."
 
- awaken_meridian_disciples_decision:0 "Awaken Meridian Disciples"
- awaken_meridian_disciples_decision_desc:0 "Gather those with awakened meridian potential and guide them into Qi Gathering, strengthening your court and domain with new disciples."
- awaken_meridian_disciples_decision_confirm:0 "Open their meridians."
- awaken_meridian_disciples_tooltip:0 "Eligible courtiers and vassals with meridian traits begin at Qi Gathering."
+awaken_meridian_disciples_decision:0 "Awaken Meridian Disciples"
+awaken_meridian_disciples_decision_desc:0 "Gather those with awakened meridian potential and guide them into Qi Gathering, strengthening your court and domain with new disciples."
+awaken_meridian_disciples_decision_confirm:0 "Open their meridians."
+awaken_meridian_disciples_tooltip:0 "Eligible courtiers and vassals with meridian traits begin at Qi Gathering."
+
+cleanse_remnant_sects_decision:0 "Cleanse Remnant Sects"
+cleanse_remnant_sects_decision_desc:0 "Purge lingering sect influence from your directly held lands and align your domain with your current cultivation faith. Vassal lands remain unchanged, but offended vassals of your former sect will resent this purge."
+cleanse_remnant_sects_decision_confirm:0 "Purge the remnant sects."
+cleanse_remnant_sects_decision_tooltip:0 "Convert only your directly held counties to your faith and anger vassals who still follow your former sect."
+
+remnant_sect_purged_opinion:0 "Purged My Sect's Influence"
