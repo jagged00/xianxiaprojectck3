@@ -26,7 +26,6 @@ cultivation_ai.0001 = {
     hidden = yes
 
     trigger = {
-        is_ai = yes
         is_alive = yes
         age >= 14
         NOT = { has_trait = incapable }
