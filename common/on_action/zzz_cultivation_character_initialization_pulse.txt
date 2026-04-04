@@ -13,15 +13,7 @@ on_game_start_after_lobby = {
 	}
 }
 
-on_join_court = {
-	on_actions = { cultivation_character_initialization_pulse }
-}
-
 on_birthday = {
-	on_actions = { cultivation_character_initialization_pulse }
-}
-
-on_title_gain = {
 	on_actions = { cultivation_character_initialization_pulse }
 }
 

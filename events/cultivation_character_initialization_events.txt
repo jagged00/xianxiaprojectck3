@@ -164,6 +164,11 @@ cultivation_character_initialization.0003 = {
 
 	immediate = {
 		add_trait = cultivation_qi_gathering
+		cultivation_ai_grant_mortal_foundation_perks_effect = yes
+		if = {
+			limit = { NOT = { has_perk = qi_gathering_meridian_1_perk } }
+			add_perk = qi_gathering_meridian_1_perk
+		}
 	}
 }
 
