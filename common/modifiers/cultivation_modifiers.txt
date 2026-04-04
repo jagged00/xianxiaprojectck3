@@ -259,6 +259,76 @@ realm_stabilization = {
     stress_loss_mult = 0.1
 }
 
+# Sect-specific flavor granted once cultivators begin unlocking realm perks.
+orthodox_realm_insight = {
+    icon = learning_positive
+    learning = 2
+    monthly_piety = 0.25
+    stress_loss_mult = 0.08
+    hostile_scheme_resistance_add = 0.08
+}
+
+unorthodox_realm_insight = {
+    icon = prowess_positive
+    prowess = 2
+    martial = 1
+    monthly_prestige = 0.2
+    knight_effectiveness_mult = 0.1
+}
+
+demonic_realm_insight = {
+    icon = dread_positive
+    prowess = 2
+    intrigue = 2
+    monthly_dread = 10
+    hostile_scheme_success_chance_add = 0.1
+    monthly_piety = -0.2
+}
+
+vagrant_realm_insight = {
+    icon = diplomacy_positive
+    diplomacy = 1
+    learning = 1
+    monthly_prestige = 0.15
+    monthly_lifestyle_xp_gain_mult = 0.05
+    travel_speed_mult = 0.1
+}
+
+# Signature sect legacies (faith-specific flavor).
+divine_beast_spirit_companion = {
+    icon = prowess_positive
+    prowess = 4
+    knight_effectiveness_mult = 0.12
+}
+
+wudang_taiji_harmony = {
+    icon = learning_positive
+    learning = 2
+    stress_loss_mult = 0.1
+    hostile_scheme_resistance_add = 0.05
+}
+
+jade_chamber_alluring_presence = {
+    icon = diplomacy_positive
+    diplomacy = 2
+    attraction_opinion = 15
+    fertility = 0.05
+}
+
+blood_moon_killing_intent = {
+    icon = dread_positive
+    prowess = 3
+    monthly_dread = 12
+    hostile_scheme_success_chance_add = 0.08
+}
+
+ancient_relic_treasure_resonance = {
+    icon = stewardship_positive
+    stewardship = 2
+    learning = 1
+    monthly_prestige = 0.2
+}
+
 # Qi Gathering Focus
 qi_gathering_focus = {
     icon = learning_positive
