@@ -453,6 +453,37 @@ cultivation_ai_grant_mortal_foundation_perks_effect = {
 	}
 }
 
+cultivation_ai_force_cultivation_focus_effect = {
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_focus = cultivation_orthodox_focus
+					has_focus = cultivation_unorthodox_focus
+					has_focus = cultivation_demonic_focus
+					has_focus = cultivation_vagrant_focus
+				}
+			}
+		}
+		if = {
+			limit = { faith = { has_doctrine_parameter = orthodox_cultivation } }
+			set_focus = cultivation_orthodox_focus
+		}
+		else_if = {
+			limit = { faith = { has_doctrine_parameter = unorthodox_cultivation } }
+			set_focus = cultivation_unorthodox_focus
+		}
+		else_if = {
+			limit = { faith = { has_doctrine_parameter = demonic_cultivation } }
+			set_focus = cultivation_demonic_focus
+		}
+		else_if = {
+			limit = { faith = { has_doctrine_parameter = vagrant_cultivation } }
+			set_focus = cultivation_vagrant_focus
+		}
+	}
+}
+
 cultivation_ai_autogrant_realm_perks_effect = {
 	if = {
 		limit = { is_ai = yes is_adult = yes is_cultivator = yes }

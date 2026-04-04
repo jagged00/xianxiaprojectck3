@@ -26,10 +26,10 @@ cultivation_ai.0001 = {
     hidden = yes
 
     trigger = {
-        is_ai = yes
         is_alive = yes
-        is_adult = yes
+        age >= 14
         NOT = { has_trait = incapable }
+        has_active_meridians = yes
     }
 
     immediate = {
@@ -98,29 +98,33 @@ cultivation_ai.0001 = {
         if = {
             limit = { has_trait = cultivation_qi_gathering }
             cultivation_ai_grant_mortal_foundation_perks_effect = yes
+            if = {
+                limit = { NOT = { has_perk = qi_gathering_meridian_1_perk } }
+                add_perk = qi_gathering_meridian_1_perk
+            }
         }
 
         # Progression chance scaled by meridian quality (checked every monthly pulse).
         if = {
             limit = { has_trait = cultivation_qi_gathering }
             random_list = {
-                1 = { trigger = { has_trait = poor_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
-                3 = { trigger = { has_trait = normal_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
-                10 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
-                24 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
-                40 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
-                922 = { }
+                2 = { trigger = { has_trait = poor_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                5 = { trigger = { has_trait = normal_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                12 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                22 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                35 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                924 = { }
             }
         }
         else_if = {
             limit = { has_trait = cultivation_qi_refining }
             random_list = {
                 1 = { trigger = { has_trait = poor_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
-                2 = { trigger = { has_trait = normal_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
-                6 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
-                18 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
-                30 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
-                943 = { }
+                3 = { trigger = { has_trait = normal_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
+                8 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
+                15 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
+                25 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
+                948 = { }
             }
         }
         else_if = {
@@ -128,10 +132,10 @@ cultivation_ai.0001 = {
             random_list = {
                 1 = { trigger = { has_trait = poor_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
                 2 = { trigger = { has_trait = normal_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
-                5 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
-                14 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
-                22 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
-                956 = { }
+                6 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
+                12 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
+                20 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
+                959 = { }
             }
         }
         else_if = {
@@ -205,6 +209,10 @@ cultivation_ai.0001 = {
         }
 
         cultivation_ai_autogrant_realm_perks_effect = yes
+        if = {
+            limit = { is_ai = yes is_adult = yes is_cultivator = yes }
+            cultivation_ai_force_cultivation_focus_effect = yes
+        }
     }
 
     option = { name = OK }
