@@ -488,21 +488,20 @@ cultivation_ai_autogrant_realm_perks_effect = {
 	if = {
 		limit = { is_ai = yes is_adult = yes is_cultivator = yes }
 		random_list = {
-			5 = { trigger = { has_trait = poor_meridians } cultivation_ai_grant_next_realm_perk_effect = yes }
-			10 = { trigger = { has_trait = normal_meridians } cultivation_ai_grant_next_realm_perk_effect = yes }
-			24 = { trigger = { has_trait = good_meridians } cultivation_ai_grant_next_realm_perk_effect = yes }
-			42 = {
+			8 = { trigger = { has_trait = good_meridians } cultivation_ai_grant_next_realm_perk_effect = yes }
+			28 = {
 				trigger = { has_trait = excellent_meridians }
 				cultivation_ai_grant_next_realm_perk_effect = yes
 				cultivation_ai_grant_next_realm_perk_effect = yes
 			}
-			64 = {
+			140 = {
 				trigger = { has_trait = heavenly_meridians }
 				cultivation_ai_grant_next_realm_perk_effect = yes
 				cultivation_ai_grant_next_realm_perk_effect = yes
 				cultivation_ai_grant_next_realm_perk_effect = yes
+				cultivation_ai_grant_next_realm_perk_effect = yes
 			}
-			855 = { }
+			824 = { }
 		}
 	}
 }
@@ -511,37 +510,83 @@ cultivation_ai_autogrant_realm_perks_effect = {
 cultivation_breakthrough_failure_consequence_effect = {
 	if = {
 		limit = { has_trait = poor_meridians }
-		random_list = {
-			3 = { death = { death_reason = death_cultivation_failure } }
-			97 = { }
-		}
+		if = { limit = { has_trait = cultivation_qi_gathering } random_list = { 4 = { death = { death_reason = death_cultivation_failure } } 96 = { } } }
+		else_if = { limit = { has_trait = cultivation_qi_refining } random_list = { 6 = { death = { death_reason = death_cultivation_failure } } 94 = { } } }
+		else_if = { limit = { has_trait = cultivation_qi_building } random_list = { 9 = { death = { death_reason = death_cultivation_failure } } 91 = { } } }
+		else_if = { limit = { has_trait = cultivation_core_formation } random_list = { 12 = { death = { death_reason = death_cultivation_failure } } 88 = { } } }
+		else_if = { limit = { has_trait = cultivation_nascent_soul } random_list = { 16 = { death = { death_reason = death_cultivation_failure } } 84 = { } } }
+		else_if = { limit = { has_trait = cultivation_heavenly_being } random_list = { 22 = { death = { death_reason = death_cultivation_failure } } 78 = { } } }
+		else_if = { limit = { has_trait = cultivation_four_axis } random_list = { 30 = { death = { death_reason = death_cultivation_failure } } 70 = { } } }
+		else_if = { limit = { has_trait = cultivation_integration } random_list = { 38 = { death = { death_reason = death_cultivation_failure } } 62 = { } } }
+		else_if = { limit = { has_trait = cultivation_star_shattering } random_list = { 48 = { death = { death_reason = death_cultivation_failure } } 52 = { } } }
+		else_if = { limit = { has_trait = cultivation_sacred_vessel } random_list = { 60 = { death = { death_reason = death_cultivation_failure } } 40 = { } } }
+		else_if = { limit = { has_trait = cultivation_entering_nirvana } random_list = { 72 = { death = { death_reason = death_cultivation_failure } } 28 = { } } }
+		else_if = { limit = { has_trait = cultivation_true_immortal } random_list = { 85 = { death = { death_reason = death_cultivation_failure } } 15 = { } } }
+		else = { random_list = { 3 = { death = { death_reason = death_cultivation_failure } } 97 = { } } }
 	}
 	else_if = {
 		limit = { has_trait = normal_meridians }
-		random_list = {
-			2 = { death = { death_reason = death_cultivation_failure } }
-			98 = { }
-		}
+		if = { limit = { has_trait = cultivation_qi_gathering } random_list = { 3 = { death = { death_reason = death_cultivation_failure } } 97 = { } } }
+		else_if = { limit = { has_trait = cultivation_qi_refining } random_list = { 4 = { death = { death_reason = death_cultivation_failure } } 96 = { } } }
+		else_if = { limit = { has_trait = cultivation_qi_building } random_list = { 6 = { death = { death_reason = death_cultivation_failure } } 94 = { } } }
+		else_if = { limit = { has_trait = cultivation_core_formation } random_list = { 8 = { death = { death_reason = death_cultivation_failure } } 92 = { } } }
+		else_if = { limit = { has_trait = cultivation_nascent_soul } random_list = { 11 = { death = { death_reason = death_cultivation_failure } } 89 = { } } }
+		else_if = { limit = { has_trait = cultivation_heavenly_being } random_list = { 15 = { death = { death_reason = death_cultivation_failure } } 85 = { } } }
+		else_if = { limit = { has_trait = cultivation_four_axis } random_list = { 20 = { death = { death_reason = death_cultivation_failure } } 80 = { } } }
+		else_if = { limit = { has_trait = cultivation_integration } random_list = { 26 = { death = { death_reason = death_cultivation_failure } } 74 = { } } }
+		else_if = { limit = { has_trait = cultivation_star_shattering } random_list = { 32 = { death = { death_reason = death_cultivation_failure } } 68 = { } } }
+		else_if = { limit = { has_trait = cultivation_sacred_vessel } random_list = { 40 = { death = { death_reason = death_cultivation_failure } } 60 = { } } }
+		else_if = { limit = { has_trait = cultivation_entering_nirvana } random_list = { 50 = { death = { death_reason = death_cultivation_failure } } 50 = { } } }
+		else_if = { limit = { has_trait = cultivation_true_immortal } random_list = { 65 = { death = { death_reason = death_cultivation_failure } } 35 = { } } }
+		else = { random_list = { 2 = { death = { death_reason = death_cultivation_failure } } 98 = { } } }
 	}
 	else_if = {
 		limit = { has_trait = good_meridians }
-		random_list = {
-			1 = { death = { death_reason = death_cultivation_failure } }
-			99 = { }
-		}
+		if = { limit = { has_trait = cultivation_qi_gathering } random_list = { 2 = { death = { death_reason = death_cultivation_failure } } 98 = { } } }
+		else_if = { limit = { has_trait = cultivation_qi_refining } random_list = { 3 = { death = { death_reason = death_cultivation_failure } } 97 = { } } }
+		else_if = { limit = { has_trait = cultivation_qi_building } random_list = { 4 = { death = { death_reason = death_cultivation_failure } } 96 = { } } }
+		else_if = { limit = { has_trait = cultivation_core_formation } random_list = { 6 = { death = { death_reason = death_cultivation_failure } } 94 = { } } }
+		else_if = { limit = { has_trait = cultivation_nascent_soul } random_list = { 8 = { death = { death_reason = death_cultivation_failure } } 92 = { } } }
+		else_if = { limit = { has_trait = cultivation_heavenly_being } random_list = { 11 = { death = { death_reason = death_cultivation_failure } } 89 = { } } }
+		else_if = { limit = { has_trait = cultivation_four_axis } random_list = { 15 = { death = { death_reason = death_cultivation_failure } } 85 = { } } }
+		else_if = { limit = { has_trait = cultivation_integration } random_list = { 19 = { death = { death_reason = death_cultivation_failure } } 81 = { } } }
+		else_if = { limit = { has_trait = cultivation_star_shattering } random_list = { 24 = { death = { death_reason = death_cultivation_failure } } 76 = { } } }
+		else_if = { limit = { has_trait = cultivation_sacred_vessel } random_list = { 30 = { death = { death_reason = death_cultivation_failure } } 70 = { } } }
+		else_if = { limit = { has_trait = cultivation_entering_nirvana } random_list = { 38 = { death = { death_reason = death_cultivation_failure } } 62 = { } } }
+		else_if = { limit = { has_trait = cultivation_true_immortal } random_list = { 50 = { death = { death_reason = death_cultivation_failure } } 50 = { } } }
+		else = { random_list = { 1 = { death = { death_reason = death_cultivation_failure } } 99 = { } } }
 	}
 	else_if = {
 		limit = { has_trait = excellent_meridians }
-		random_list = {
-			1 = { death = { death_reason = death_cultivation_failure } }
-			99 = { }
-		}
+		if = { limit = { has_trait = cultivation_qi_gathering } random_list = { 1 = { death = { death_reason = death_cultivation_failure } } 99 = { } } }
+		else_if = { limit = { has_trait = cultivation_qi_refining } random_list = { 2 = { death = { death_reason = death_cultivation_failure } } 98 = { } } }
+		else_if = { limit = { has_trait = cultivation_qi_building } random_list = { 3 = { death = { death_reason = death_cultivation_failure } } 97 = { } } }
+		else_if = { limit = { has_trait = cultivation_core_formation } random_list = { 4 = { death = { death_reason = death_cultivation_failure } } 96 = { } } }
+		else_if = { limit = { has_trait = cultivation_nascent_soul } random_list = { 6 = { death = { death_reason = death_cultivation_failure } } 94 = { } } }
+		else_if = { limit = { has_trait = cultivation_heavenly_being } random_list = { 8 = { death = { death_reason = death_cultivation_failure } } 92 = { } } }
+		else_if = { limit = { has_trait = cultivation_four_axis } random_list = { 11 = { death = { death_reason = death_cultivation_failure } } 89 = { } } }
+		else_if = { limit = { has_trait = cultivation_integration } random_list = { 14 = { death = { death_reason = death_cultivation_failure } } 86 = { } } }
+		else_if = { limit = { has_trait = cultivation_star_shattering } random_list = { 18 = { death = { death_reason = death_cultivation_failure } } 82 = { } } }
+		else_if = { limit = { has_trait = cultivation_sacred_vessel } random_list = { 22 = { death = { death_reason = death_cultivation_failure } } 78 = { } } }
+		else_if = { limit = { has_trait = cultivation_entering_nirvana } random_list = { 28 = { death = { death_reason = death_cultivation_failure } } 72 = { } } }
+		else_if = { limit = { has_trait = cultivation_true_immortal } random_list = { 38 = { death = { death_reason = death_cultivation_failure } } 62 = { } } }
+		else = { random_list = { 1 = { death = { death_reason = death_cultivation_failure } } 99 = { } } }
 	}
 	else_if = {
 		limit = { has_trait = heavenly_meridians }
-		random_list = {
-			100 = { }
-		}
+		if = { limit = { has_trait = cultivation_qi_gathering } random_list = { 1 = { death = { death_reason = death_cultivation_failure } } 99 = { } } }
+		else_if = { limit = { has_trait = cultivation_qi_refining } random_list = { 1 = { death = { death_reason = death_cultivation_failure } } 99 = { } } }
+		else_if = { limit = { has_trait = cultivation_qi_building } random_list = { 2 = { death = { death_reason = death_cultivation_failure } } 98 = { } } }
+		else_if = { limit = { has_trait = cultivation_core_formation } random_list = { 3 = { death = { death_reason = death_cultivation_failure } } 97 = { } } }
+		else_if = { limit = { has_trait = cultivation_nascent_soul } random_list = { 4 = { death = { death_reason = death_cultivation_failure } } 96 = { } } }
+		else_if = { limit = { has_trait = cultivation_heavenly_being } random_list = { 6 = { death = { death_reason = death_cultivation_failure } } 94 = { } } }
+		else_if = { limit = { has_trait = cultivation_four_axis } random_list = { 8 = { death = { death_reason = death_cultivation_failure } } 92 = { } } }
+		else_if = { limit = { has_trait = cultivation_integration } random_list = { 10 = { death = { death_reason = death_cultivation_failure } } 90 = { } } }
+		else_if = { limit = { has_trait = cultivation_star_shattering } random_list = { 13 = { death = { death_reason = death_cultivation_failure } } 87 = { } } }
+		else_if = { limit = { has_trait = cultivation_sacred_vessel } random_list = { 16 = { death = { death_reason = death_cultivation_failure } } 84 = { } } }
+		else_if = { limit = { has_trait = cultivation_entering_nirvana } random_list = { 20 = { death = { death_reason = death_cultivation_failure } } 80 = { } } }
+		else_if = { limit = { has_trait = cultivation_true_immortal } random_list = { 28 = { death = { death_reason = death_cultivation_failure } } 72 = { } } }
+		else = { random_list = { 100 = { } } }
 	}
 }
 
