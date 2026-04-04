@@ -114,6 +114,12 @@ cultivation_ai.0001 = {
                 35 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
                 140 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
                 811 = { }
+                2 = { trigger = { has_trait = poor_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                5 = { trigger = { has_trait = normal_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                12 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                22 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                35 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_gathering add_trait = cultivation_qi_refining }
+                924 = { }
             }
         }
         else_if = {
@@ -125,6 +131,11 @@ cultivation_ai.0001 = {
                 24 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
                 110 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
                 856 = { }
+                3 = { trigger = { has_trait = normal_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
+                8 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
+                15 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
+                25 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_refining add_trait = cultivation_qi_building }
+                948 = { }
             }
         }
         else_if = {
@@ -136,6 +147,11 @@ cultivation_ai.0001 = {
                 20 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
                 90 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
                 882 = { }
+                2 = { trigger = { has_trait = normal_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
+                6 = { trigger = { has_trait = good_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
+                12 = { trigger = { has_trait = excellent_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
+                20 = { trigger = { has_trait = heavenly_meridians } remove_trait = cultivation_qi_building add_trait = cultivation_core_formation }
+                959 = { }
             }
         }
         else_if = {
