@@ -15,7 +15,7 @@ heavenly_being_1_perk = {
 
 	
 	character_modifier = {
-		prowess = 15
+		prowess = 48
 		learning = 8
 		health = 4.5
 		advantage = 40
@@ -34,7 +34,7 @@ heavenly_being_early_perk = {
 	parent = heavenly_being_1_perk
 	
 	character_modifier = {
-		prowess = 15
+		prowess = 48
 		learning = 8
 		health = 4.5
 		advantage = 40
@@ -53,7 +53,7 @@ heavenly_being_2_perk = {
 	parent = heavenly_being_early_perk
 	
 	character_modifier = {
-		prowess = 15
+		prowess = 48
 		learning = 8
 		health = 4.5
 		advantage = 40
@@ -72,7 +72,7 @@ heavenly_being_mid_perk = {
 	parent = heavenly_being_2_perk
 	
 	character_modifier = {
-		prowess = 15
+		prowess = 48
 		learning = 9
 		health = 5.0
 		advantage = 40
@@ -92,7 +92,7 @@ heavenly_being_3_perk = {
 	parent = heavenly_being_mid_perk
 	
 	character_modifier = {
-		prowess = 15
+		prowess = 48
 		learning = 8
 		health = 4.5
 		advantage = 40
@@ -111,7 +111,7 @@ heavenly_being_late_perk = {
 	parent = heavenly_being_3_perk
 	
 	character_modifier = {
-		prowess = 18
+		prowess = 57
 		learning = 9
 		health = 5.0
 		advantage = 45
@@ -131,7 +131,7 @@ heavenly_being_4_perk = {
 	parent = heavenly_being_late_perk
 	
 	character_modifier = {
-		prowess = 15
+		prowess = 48
 		learning = 8
 		health = 4.5
 		advantage = 40
@@ -150,7 +150,7 @@ heavenly_being_peak_perk = {
 	parent = heavenly_being_4_perk
 	
 	character_modifier = {
-		prowess = 18
+		prowess = 57
 		learning = 10
 		health = 5.5
 		advantage = 50
@@ -171,7 +171,7 @@ heavenly_being_5_perk = {
 	parent = heavenly_being_peak_perk
 	
 	character_modifier = {
-		prowess = 15
+		prowess = 48
 		learning = 8
 		health = 4.5
 		advantage = 40
@@ -197,7 +197,7 @@ heavenly_being_four_axis_breakthrough_perk = {
 	}
 	
 	character_modifier = {
-		prowess = 20
+		prowess = 63
 		learning = 10
 		health = 6.0
 		advantage = 50

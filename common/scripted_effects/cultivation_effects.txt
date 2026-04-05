@@ -727,40 +727,40 @@ cultivation_cripple_mortalize_effect = {
 }
 
 cultivation_assign_high_realm_sect_nickname_effect = {
-	if = { limit = { faith = faith:mount_hua_sect } add_nickname = nick_the_mount_hua_sword_sage }
-	else_if = { limit = { faith = faith:heavenly_sword_pavilion } add_nickname = nick_the_heavenly_sword_lord }
-	else_if = { limit = { faith = faith:ten_thousand_swords_valley } add_nickname = nick_the_ten_thousand_blades }
-	else_if = { limit = { faith = faith:violet_thunder_blade_sect } add_nickname = nick_the_violet_thunder_blade }
-	else_if = { limit = { faith = faith:nine_star_formation_sect } add_nickname = nick_the_nine_star_array_master }
-	else_if = { limit = { faith = faith:mystic_seal_pavilion } add_nickname = nick_the_mystic_seal_warden }
-	else_if = { limit = { faith = faith:wudang_sect } add_nickname = nick_the_wudang_trueperson }
-	else_if = { limit = { faith = faith:shaolin_temple } add_nickname = nick_the_shaolin_vajra }
-	else_if = { limit = { faith = faith:eternal_harmony_pavilion } add_nickname = nick_the_eternal_harmony_master }
-	else_if = { limit = { faith = faith:divine_beast_mountain } add_nickname = nick_the_divine_beast_tamer }
-	else_if = { limit = { faith = faith:thousand_beast_valley } add_nickname = nick_the_thousand_beast_sovereign }
-	else_if = { limit = { faith = faith:crimson_moon_blade_hall } add_nickname = nick_the_crimson_moon_blade }
-	else_if = { limit = { faith = faith:tyrant_saber_palace } add_nickname = nick_the_tyrant_saber_overlord }
-	else_if = { limit = { faith = faith:demon_suppressing_blade_clan } add_nickname = nick_the_demon_suppressing_edge }
-	else_if = { limit = { faith = faith:medicine_king_valley } add_nickname = nick_the_medicine_king }
-	else_if = { limit = { faith = faith:hundred_herbs_pavilion } add_nickname = nick_the_hundred_herbs_alchemist }
-	else_if = { limit = { faith = faith:jade_chamber_sect } add_nickname = nick_the_jade_chamber_enchantress }
-	else_if = { limit = { faith = faith:eternal_pleasure_hall } add_nickname = nick_the_eternal_serenity_master }
-	else_if = { limit = { faith = faith:moonless_night_pavilion } add_nickname = nick_the_moonless_night_revenant }
-	else_if = { limit = { faith = faith:pale_bone_hall } add_nickname = nick_the_pale_bone_necromancer }
-	else_if = { limit = { faith = faith:eternal_rest_clan } add_nickname = nick_the_eternal_rest_keeper }
-	else_if = { limit = { faith = faith:ten_thousand_corpse_valley } add_nickname = nick_the_ten_thousand_corpse_lord }
-	else_if = { limit = { faith = faith:venomous_serpent_valley } add_nickname = nick_the_venomous_serpent_sovereign }
-	else_if = { limit = { faith = faith:blood_yin_cult } add_nickname = nick_the_blood_yin_ancestor }
-	else_if = { limit = { faith = faith:blood_moon_demonic_sect } add_nickname = nick_the_heavenly_demon }
-	else_if = { limit = { faith = faith:succubus_palace } add_nickname = nick_the_nightshade_tempter }
-	else_if = { limit = { faith = faith:lone_wolf_wanderers } add_nickname = nick_the_lone_wolf_immortal }
-	else_if = { limit = { faith = faith:vagrant_blade_brotherhood } add_nickname = nick_the_vagrant_blade_brother }
-	else_if = { limit = { faith = faith:thousand_treasures_pavilion } add_nickname = nick_the_thousand_treasures_curator }
-	else_if = { limit = { faith = faith:mystic_forge_hall } add_nickname = nick_the_mystic_forge_artificer }
-	else_if = { limit = { faith = faith:ancient_relic_sect } add_nickname = nick_the_ancient_relic_seeker }
-	else_if = { limit = { faith = faith:primal_beast_sect } add_nickname = nick_the_primal_beast_lord }
-	else_if = { limit = { faith = faith:primordial_chaos_hall } add_nickname = nick_the_primordial_chaos_ascendant }
-	else_if = { limit = { faith = faith:feral_bond_sect } add_nickname = nick_the_feral_bond_master }
+	if = { limit = { faith = faith:mount_hua_sect } add_nickname = nick_the_mount_hua_sword_sage add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:heavenly_sword_pavilion } add_nickname = nick_the_heavenly_sword_lord add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:ten_thousand_swords_valley } add_nickname = nick_the_ten_thousand_blades add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:violet_thunder_blade_sect } add_nickname = nick_the_violet_thunder_blade add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:nine_star_formation_sect } add_nickname = nick_the_nine_star_array_master add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:mystic_seal_pavilion } add_nickname = nick_the_mystic_seal_warden add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:wudang_sect } add_nickname = nick_the_wudang_trueperson add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:shaolin_temple } add_nickname = nick_the_shaolin_vajra add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:eternal_harmony_pavilion } add_nickname = nick_the_eternal_harmony_master add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:divine_beast_mountain } add_nickname = nick_the_divine_beast_tamer add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:thousand_beast_valley } add_nickname = nick_the_thousand_beast_sovereign add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:crimson_moon_blade_hall } add_nickname = nick_the_crimson_moon_blade add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:tyrant_saber_palace } add_nickname = nick_the_tyrant_saber_overlord add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:demon_suppressing_blade_clan } add_nickname = nick_the_demon_suppressing_edge add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:medicine_king_valley } add_nickname = nick_the_medicine_king add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:hundred_herbs_pavilion } add_nickname = nick_the_hundred_herbs_alchemist add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:jade_chamber_sect } add_nickname = nick_the_jade_chamber_enchantress add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:eternal_pleasure_hall } add_nickname = nick_the_eternal_serenity_master add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:moonless_night_pavilion } add_nickname = nick_the_moonless_night_revenant add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:pale_bone_hall } add_nickname = nick_the_pale_bone_necromancer add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:eternal_rest_clan } add_nickname = nick_the_eternal_rest_keeper add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:ten_thousand_corpse_valley } add_nickname = nick_the_ten_thousand_corpse_lord add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:venomous_serpent_valley } add_nickname = nick_the_venomous_serpent_sovereign add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:blood_yin_cult } add_nickname = nick_the_blood_yin_ancestor add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:blood_moon_demonic_sect } add_nickname = nick_the_heavenly_demon add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:succubus_palace } add_nickname = nick_the_nightshade_tempter add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:lone_wolf_wanderers } add_nickname = nick_the_lone_wolf_immortal add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:vagrant_blade_brotherhood } add_nickname = nick_the_vagrant_blade_brother add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:thousand_treasures_pavilion } add_nickname = nick_the_thousand_treasures_curator add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:mystic_forge_hall } add_nickname = nick_the_mystic_forge_artificer add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:ancient_relic_sect } add_nickname = nick_the_ancient_relic_seeker add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:primal_beast_sect } add_nickname = nick_the_primal_beast_lord add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:primordial_chaos_hall } add_nickname = nick_the_primordial_chaos_ascendant add_character_flag = cultivation_sect_nickname_newly_assigned }
+	else_if = { limit = { faith = faith:feral_bond_sect } add_nickname = nick_the_feral_bond_master add_character_flag = cultivation_sect_nickname_newly_assigned }
 }
 
 

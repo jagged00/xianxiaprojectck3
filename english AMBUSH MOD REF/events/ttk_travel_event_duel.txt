@@ -477,3 +477,166 @@ ttk_travel_event_duel.0020 = {
 
 
 
+
+#war opening challenge between cultivators
+ttk_travel_event_duel.0100 = {
+	type = character_event
+	theme = rival_relation
+	title = ttk_travel_event_duel.0100.t
+	desc = ttk_travel_event_duel.0100.desc
+	override_background = { reference = battlefield }
+	left_portrait = {
+		character = scope:ttk_war_duel_challenger
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:ttk_war_duel_target
+		animation = idle
+	}
+	trigger = {
+		scope:ttk_war_duel_challenger = { is_alive = yes }
+		scope:ttk_war_duel_target = { is_alive = yes }
+	}
+	option = {
+		name = ttk_travel_event_duel.0100.a
+		hidden_effect = {
+			scope:ttk_war_duel_target = {
+				trigger_event = ttk_travel_event_duel.0101
+			}
+		}
+	}
+	option = {
+		name = ttk_travel_event_duel.0100.b
+	}
+}
+
+ttk_travel_event_duel.0101 = {
+	hidden = yes
+	trigger = {
+		scope:ttk_war_duel_challenger = { is_alive = yes }
+		scope:ttk_war_duel_target = { is_alive = yes }
+	}
+	option = {
+		configure_start_single_combat_effect = {
+			SC_INITIATOR = scope:ttk_war_duel_challenger
+			SC_ATTACKER = scope:ttk_war_duel_challenger
+			SC_DEFENDER = scope:ttk_war_duel_target
+			FATALITY = yes
+			FIXED = yes
+			LOCALE = battlefield
+			OUTPUT_EVENT = ttk_travel_event_duel.0110
+			INVALIDATION_EVENT = ttk_travel_event_duel.0008
+		}
+		hidden_effect = {
+			scope:ttk_war_duel_challenger = {
+				add_character_flag = { flag = need_military_outfit days = 3 }
+			}
+			scope:ttk_war_duel_target = {
+				add_character_flag = { flag = need_military_outfit days = 3 }
+			}
+		}
+		ai_chance = {
+			base = 60
+			modifier = {
+				factor = 0
+				has_trait = craven
+			}
+			modifier = {
+				factor = 1.75
+				has_trait = brave
+			}
+			modifier = {
+				factor = 0.5
+				scope:ttk_war_duel_challenger.prowess > scope:ttk_war_duel_target.prowess
+			}
+		}
+	}
+	option = {
+		trigger_event = ttk_travel_event_duel.0102
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 2
+				has_trait = craven
+			}
+			modifier = {
+				factor = 0.25
+				has_trait = brave
+			}
+		}
+	}
+}
+
+ttk_travel_event_duel.0102 = {
+	type = character_event
+	theme = rival_relation
+	title = ttk_travel_event_duel.0102.t
+	desc = ttk_travel_event_duel.0102.desc
+	override_background = { reference = battlefield }
+	left_portrait = {
+		character = scope:ttk_war_duel_challenger
+		animation = personality_righteous
+	}
+	right_portrait = {
+		character = scope:ttk_war_duel_target
+		animation = personality_coward
+	}
+	option = {
+		name = ttk_travel_event_duel.0102.a
+		scope:ttk_war_duel_challenger = { add_prestige = medium_prestige_gain }
+		scope:ttk_war_duel_target = { add_prestige = medium_prestige_loss }
+	}
+}
+
+ttk_travel_event_duel.0110 = {
+	hidden = yes
+	immediate = {
+		if = {
+			limit = { scope:sc_victor = scope:ttk_war_duel_challenger }
+			trigger_event = ttk_travel_event_duel.0111
+		}
+		else = {
+			trigger_event = ttk_travel_event_duel.0112
+		}
+	}
+}
+
+ttk_travel_event_duel.0111 = {
+	type = character_event
+	theme = rival_relation
+	title = ttk_travel_event_duel.0111.t
+	desc = ttk_travel_event_duel.0111.desc
+	override_background = { reference = battlefield }
+	left_portrait = {
+		character = scope:ttk_war_duel_challenger
+		scripted_animation = duel_celebrate
+	}
+	right_portrait = {
+		character = scope:ttk_war_duel_target
+		animation = loss_1
+	}
+	option = {
+		name = ttk_travel_event_duel.0111.a
+		scope:ttk_war_duel_challenger = { add_prestige = massive_prestige_gain }
+	}
+}
+
+ttk_travel_event_duel.0112 = {
+	type = character_event
+	theme = rival_relation
+	title = ttk_travel_event_duel.0112.t
+	desc = ttk_travel_event_duel.0112.desc
+	override_background = { reference = battlefield }
+	left_portrait = {
+		character = scope:ttk_war_duel_target
+		scripted_animation = duel_celebrate
+	}
+	right_portrait = {
+		character = scope:ttk_war_duel_challenger
+		animation = loss_1
+	}
+	option = {
+		name = ttk_travel_event_duel.0112.a
+		scope:ttk_war_duel_target = { add_prestige = massive_prestige_gain }
+	}
+}
