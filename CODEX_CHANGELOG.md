@@ -217,3 +217,26 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Expand faith-specific signature modifiers to all sect faiths (not only current keyed examples).
 - Move large realm-comparison trigger ladders to reusable scripted effects/values for maintainability.
 - Add dedicated debug decision/event to print current cultivation state (realm, meridian, sect flavor modifiers, pulse eligibility).
+
+### 22) Jianghu activity integration + Xianxia world-system scaffold (2026-04-05)
+- **Reference policy added:** `xianxiaprojectck3/activities/` is the local vanilla-reference mirror and must be cross-checked for **any gameplay/content change where vanilla parity might matter** (not only explicit activity files), together with Paradox documentation.
+- `jianghu_oath_gathering_decision` now triggers `xianxia_world.1100`, which attempts to host a real vanilla `activity_tournament` (instead of only granting placeholder prestige/piety).
+- Added new xianxia world decisions for sect domain founding, spirit-pill alchemy, martial-manual comprehension (weapon paths), secret-realm expeditions, and heavenly tribulation risk.
+- Added supporting world events and modifiers to implement risk/reward loops (backlash, cultivation deviation, inheritance rewards, tribulation survival/death outcomes).
+- Added sect hierarchy and jianghu identity traits (disciple/elder/leader, righteous/demonic, weapon-path identity traits).
+- Added periodic government adaptation pass that applies xianxia-oriented modifiers to feudal/republic rulers to better fit sect-era world logic.
+- Added high-realm longevity support modifier via monthly orchestration to reduce mundane health-event pressure on higher cultivators.
+
+
+### 23) Activity-reference scope correction + /common/activities index (2026-04-05)
+- Clarified policy scope: `activities/` is now a required vanilla comparison reference for **all mod changes with potential structure/path mismatch risk**, not only activity-specific edits.
+- Added `/common/activities/00_xianxia_activity_map.txt` as a canonical in-repo index of real in-game files that drive Xianxia activity behavior.
+- Added `/common/activities/jianghu_tournament_activity_bridge.txt` as a concise bridge snapshot mapping the Jianghu decision hook to the tournament-hosting event path.
+- Workflow requirement: whenever activity-adjacent behavior changes, update both `/common/activities/` index files and `CODEX_CHANGELOG.md` in the same commit.
+
+### 24) Existing-government Xianxia adaptation pass (2026-04-05)
+- Implemented broader adaptation of **existing** vanilla governments (feudal, clan, tribal, theocracy, administrative, republic) through `xianxia_apply_government_adaptation_effect`.
+- Added dedicated per-government Xianxia modifiers so each vanilla government family receives sect-era fitting bonuses rather than a single generic treatment.
+- Added `jianghu_realm_friction` for landed non-cultivator rulers under major temporal governments to reinforce Jianghu-world mismatch pressure.
+- Updated `xianxia_world.1000` maintenance event to run adaptation for all landed adult rulers, while retaining high-realm longevity handling for cultivators.
+- Added English localization for the new government-adaptation and friction modifiers.

@@ -30,8 +30,7 @@ jianghu_oath_gathering_decision = {
     ai_will_do = { base = 30 }
 
     effect = {
-        add_prestige = 300
-        add_piety = 200
         add_character_flag = { flag = jianghu_oath_gathering_cooldown days = 1825 }
+        trigger_event = xianxia_world.1100
     }
 }

@@ -1,0 +1,149 @@
+found_sect_domain_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_found_holy_order.dds" }
+    decision_group_type = major
+    sort_order = 521
+
+    title = found_sect_domain_decision
+    desc = found_sect_domain_decision_desc
+    selection_tooltip = found_sect_domain_decision_tooltip
+    confirm_text = found_sect_domain_decision_confirm
+
+    is_shown = {
+        is_adult = yes
+        is_cultivator = yes
+        is_independent_ruler = yes
+    }
+
+    is_valid = {
+        realm_size >= 3
+        NOT = { has_character_flag = founded_sect_domain }
+    }
+
+    ai_check_interval = 24
+    ai_potential = { always = yes }
+    ai_will_do = { base = 20 }
+
+    effect = {
+        add_character_flag = founded_sect_domain
+        trigger_event = xianxia_world.1200
+    }
+}
+
+refine_spirit_pill_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_dose_self.dds" }
+    decision_group_type = major
+    sort_order = 522
+
+    title = refine_spirit_pill_decision
+    desc = refine_spirit_pill_decision_desc
+    selection_tooltip = refine_spirit_pill_decision_tooltip
+    confirm_text = refine_spirit_pill_decision_confirm
+
+    is_shown = {
+        is_adult = yes
+        is_cultivator = yes
+    }
+
+    is_valid = {
+        gold >= 75
+        NOT = { has_character_flag = spirit_pill_refining_cooldown }
+    }
+
+    effect = {
+        add_gold = -75
+        add_character_flag = { flag = spirit_pill_refining_cooldown days = 365 }
+        trigger_event = xianxia_world.1300
+    }
+
+    ai_check_interval = 18
+    ai_will_do = { base = 25 }
+}
+
+comprehend_martial_manual_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_write_diplomatic_treatise.dds" }
+    decision_group_type = major
+    sort_order = 523
+
+    title = comprehend_martial_manual_decision
+    desc = comprehend_martial_manual_decision_desc
+    selection_tooltip = comprehend_martial_manual_decision_tooltip
+    confirm_text = comprehend_martial_manual_decision_confirm
+
+    is_shown = {
+        is_adult = yes
+        is_cultivator = yes
+    }
+
+    is_valid = {
+        NOT = { has_character_flag = manual_comprehension_cooldown }
+    }
+
+    effect = {
+        add_character_flag = { flag = manual_comprehension_cooldown days = 730 }
+        trigger_event = xianxia_world.1400
+    }
+
+    ai_check_interval = 18
+    ai_will_do = { base = 30 }
+}
+
+enter_secret_realm_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_search_for_secrets.dds" }
+    decision_group_type = major
+    sort_order = 524
+
+    title = enter_secret_realm_decision
+    desc = enter_secret_realm_decision_desc
+    selection_tooltip = enter_secret_realm_decision_tooltip
+    confirm_text = enter_secret_realm_decision_confirm
+
+    is_shown = { is_adult = yes is_cultivator = yes }
+    is_valid = {
+        NOT = { has_character_flag = secret_realm_expedition_cooldown }
+    }
+
+    effect = {
+        add_character_flag = { flag = secret_realm_expedition_cooldown days = 1095 }
+        trigger_event = xianxia_world.1500
+    }
+
+    ai_check_interval = 24
+    ai_will_do = { base = 15 }
+}
+
+undergo_heavenly_tribulation_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_become_chakravarti.dds" }
+    decision_group_type = major
+    sort_order = 525
+
+    title = undergo_heavenly_tribulation_decision
+    desc = undergo_heavenly_tribulation_decision_desc
+    selection_tooltip = undergo_heavenly_tribulation_decision_tooltip
+    confirm_text = undergo_heavenly_tribulation_decision_confirm
+
+    is_shown = {
+        is_adult = yes
+        is_cultivator = yes
+        OR = {
+            has_trait = cultivation_nascent_soul
+            has_trait = cultivation_heavenly_being
+            has_trait = cultivation_four_axis
+            has_trait = cultivation_integration
+            has_trait = cultivation_star_shattering
+            has_trait = cultivation_sacred_vessel
+            has_trait = cultivation_entering_nirvana
+        }
+    }
+
+    is_valid = {
+        NOT = { has_character_flag = heavenly_tribulation_cooldown }
+    }
+
+    effect = {
+        add_character_flag = { flag = heavenly_tribulation_cooldown days = 1825 }
+        trigger_event = xianxia_world.1600
+    }
+
+    ai_check_interval = 36
+    ai_will_do = { base = 10 }
+}

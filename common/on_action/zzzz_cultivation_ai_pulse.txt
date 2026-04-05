@@ -2,6 +2,7 @@
     events = {
         cultivation_ai.1000
         cultivation_ai.3000
+        xianxia_world.1000
     }
 }
 
@@ -15,6 +16,7 @@ on_monthly_pulse = {
         cultivation_ai.2220
         cultivation_ai.2230
         cultivation_ai.3000
+        xianxia_world.1000
     }
 }
 
@@ -22,5 +24,6 @@ on_monthly_pulse = {
 on_yearly_pulse = {
     events = {
         cultivation_ai.3000
+        xianxia_world.1000
     }
 }
