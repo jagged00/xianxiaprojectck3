@@ -240,3 +240,41 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Added `jianghu_realm_friction` for landed non-cultivator rulers under major temporal governments to reinforce Jianghu-world mismatch pressure.
 - Updated `xianxia_world.1000` maintenance event to run adaptation for all landed adult rulers, while retaining high-realm longevity handling for cultivators.
 - Added English localization for the new government-adaptation and friction modifiers.
+
+### 25) Sect institutions, staged activities, lineage systems, and fodder sync baseline (2026-04-05)
+- Added a fuller sect office layer: new role traits for Inner Hall Elder, Outer Hall Elder, Enforcement Elder, and Lineage Heir, plus periodic assignment flow for landed sect rulers.
+- Added sect-internal governance pressure pulses with dispute/power-struggle/resource-obligation outcomes and sect resource stockpile/obligation modifiers tied to realm gameplay.
+- Extended Jianghu tournament behavior into a multi-stage chain (`xianxia_world.1100 -> 1110 -> 1120`) with injuries, rivalry generation, and scaled rewards.
+- Extended secret-realm expeditions into a progression chain (`xianxia_world.1500 -> 1510 -> 1520`) with staged setbacks and final inheritance outcomes.
+- Added a full master-disciple interaction suite: recruit disciple, teach technique, inherit manuals, and expel/betray disciple; added lineage prestige/disciple growth modifiers tied to mentor office traits.
+- Reworked alchemy into a two-step pipeline (`xianxia_world.1300 -> 1310 -> 1320`) including furnace-quality scaling (learning gate), failure states, and reward gradients.
+- Added a player-facing debug decision/event (`xianxia_debug_state_decision`, `xianxia_world.1900`) that surfaces cultivation stage/sect-role/modifier/cooldown inspection tooltips.
+- Performance pass: replaced `every_living_character` loops in cultivation/world orchestration with narrower ruler-scoped iteration and reduced heavy world-adaptation cadence to yearly pulse.
+- Added Common-Fodder sync scaffold (`common/fodder/events|gui|localization`) plus `common/fodder/00_runtime_sync_map.txt` and an explicit per-commit mirror update rule.
+
+### 26) Governance deepening, lineage graphing, branching arcs, and sync enforcement (2026-04-05)
+- Added council-driven sect politics decisions/events (`convene_sect_council_decision`, `xianxia_world.1720/1730`) with consensus vs deadlock outcomes and downstream struggle pressure.
+- Deepened mentor-disciple flow with lineage-oriented flags/variables/opinions and fracture/favor modifier states (`mentor_guidance_opinion`, `lineage_betrayal_opinion`, `sect_lineage_favor`, `sect_lineage_fracture`).
+- Upgraded staged chains from single-option flow to branch choices in tournament and expedition mid-stage events (aggressive vs stable tournament bracket; safe vs risky expedition route).
+- Added pre-refinement alchemy resource acquisition (`gather_alchemy_resources_decision`, `xianxia_world.1330`) and tied result scaling in refinement outcomes to stocked resource flags.
+- Upgraded debug event behavior from static generic tooltips to conditional state readouts keyed to active stage/role/cooldown flags.
+- Added automated fodder sync enforcement script (`scripts/check_fodder_sync.py`) and documented the command in the sync map header.
+
+### 27) Review-fix hotpatch: startup initialization scope + sect office scope correctness (2026-04-05)
+- Restored startup initialization sweep in `cultivation_character_initialization.0001` from ruler-only to `every_living_character` so unlanded courtiers/children receive immediate meridian/cultivation setup at lobby start.
+- Fixed yearly sect office pass faith comparison in `xianxia_world.1700` to compare courtiers against the current iterated ruler scope (`faith = prev.faith`) rather than invalid `root` assumptions under `scope = none`.
+- Hardened office reroll exclusivity by explicitly removing all conflicting elder office traits before assigning a new one, preventing trait stacking across yearly rerolls.
+
+### 28) Decision visibility/localization/picture hotfix + sect-founding constraints (2026-04-05)
+- Fixed interaction-load blocker in `cultivation_teach_interactions` by replacing invalid AI recipient buckets (`siblings`/`parents`) with valid `family`, restoring disciple interaction registration in game.
+- Added missing decision picture references for all `summon_qi` decisions to stop decision-picture missing-entry errors.
+- Added UTF-8 BOM where missing in key cultivation files (including `xianxia_world_l_english.yml` and cultivation script files flagged by lexer warnings) to stabilize localization/script loading.
+- Updated `found_sect_domain_decision` to enforce county/duchy-tier-only eligibility and set governance to `clan_government` on successful sect founding as a sect-government approximation.
+
+### 29) AI disciple recruitment weight + lineage-heir persistence hotfix (2026-04-05)
+- Fixed `recruit_disciple_interaction` AI willingness from zeroed baseline to a non-zero base with meridian-sensitive weighting, so AI courts can actually recruit disciples in play.
+- Moved `sect_lineage_heir` out of the mutually-exclusive `education` group into `personality` to preserve inheritance outcomes across yearly sect office reassignment pulses.
+
+### 30) Teach-technique anti-spam cooldown guard (2026-04-05)
+- Added explicit validity/cooldown gating to `teach_technique_interaction` so a disciple with `teach_technique_cooldown` cannot be repeatedly farmed for immediate XP/prowess/prestige loops.
+- Added a 1-year recipient cooldown flag application on successful teach-technique acceptance.

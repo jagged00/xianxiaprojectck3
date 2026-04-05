@@ -1,4 +1,5 @@
 ﻿summon_thousand_qi_needles_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_call_hunt_2.dds" }
 	decision_group_type = major
 	title = summon_thousand_qi_needles_decision
 	desc = summon_thousand_qi_needles_decision_desc
@@ -54,6 +55,7 @@
 
 
 summon_nine_heavens_sword_intent_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_martial_lifestyle.dds" }
 	decision_group_type = major
 	title = summon_nine_heavens_sword_intent_decision
 	desc = summon_nine_heavens_sword_intent_decision_desc
@@ -108,6 +110,7 @@ summon_nine_heavens_sword_intent_decision = {
 }
 
 summon_golden_core_flame_lotus_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_dose_self.dds" }
 	decision_group_type = major
 	title = summon_golden_core_flame_lotus_decision
 	desc = summon_golden_core_flame_lotus_decision_desc
@@ -162,6 +165,7 @@ summon_golden_core_flame_lotus_decision = {
 }
 
 summon_nascent_soul_phantom_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_mystic_communion.dds" }
 	decision_group_type = major
 	title = summon_nascent_soul_phantom_decision
 	desc = summon_nascent_soul_phantom_decision_desc
@@ -216,6 +220,7 @@ summon_nascent_soul_phantom_decision = {
 }
 
 summon_heaven_severing_blade_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_martial_lifestyle.dds" }
 	decision_group_type = major
 	title = summon_heaven_severing_blade_decision
 	desc = summon_heaven_severing_blade_decision_desc
@@ -270,6 +275,7 @@ summon_heaven_severing_blade_decision = {
 }
 
 summon_myriad_dao_suppression_domain_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_found_holy_order.dds" }
 	decision_group_type = major
 	title = summon_myriad_dao_suppression_domain_decision
 	desc = summon_myriad_dao_suppression_domain_decision_desc
@@ -324,6 +330,7 @@ summon_myriad_dao_suppression_domain_decision = {
 }
 
 summon_heavenly_tribulation_descent_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_become_chakravarti.dds" }
 	decision_group_type = major
 	title = summon_heavenly_tribulation_descent_decision
 	desc = summon_heavenly_tribulation_descent_decision_desc

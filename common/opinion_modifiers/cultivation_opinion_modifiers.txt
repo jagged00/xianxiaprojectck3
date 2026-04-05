@@ -1,4 +1,4 @@
-remnant_sect_purged_opinion = {
+﻿remnant_sect_purged_opinion = {
 	opinion = -20
 	months = 120
 }
@@ -16,4 +16,14 @@ cultivation_views_me_as_future_threat_opinion = {
 cultivation_invests_in_my_talent_opinion = {
 	opinion = 35
 	months = 120
+}
+
+mentor_guidance_opinion = {
+	opinion = 30
+	months = 180
+}
+
+lineage_betrayal_opinion = {
+	opinion = -60
+	months = 240
 }

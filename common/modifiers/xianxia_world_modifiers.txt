@@ -100,3 +100,106 @@ jianghu_realm_friction = {
     vassal_opinion = -4
 }
 
+
+sect_resource_obligations = {
+    monthly_income_mult = -0.08
+    monthly_prestige = 0.1
+    vassal_opinion = -3
+}
+
+sect_resource_stockpile = {
+    monthly_income_mult = 0.12
+    monthly_prestige = 0.2
+    monthly_piety = 0.1
+}
+
+sect_internal_dispute = {
+    vassal_opinion = -8
+    levy_size = -0.08
+    tyranny_gain_mult = 0.1
+}
+
+sect_power_struggle = {
+    hostile_scheme_success_chance_add = 10
+    personal_scheme_success_chance_add = 8
+    stress_gain_mult = 0.1
+}
+
+tournament_chain_momentum = {
+    martial = 2
+    prowess = 2
+    monthly_prestige = 0.25
+}
+
+tournament_chain_injury = {
+    health = -0.5
+    prowess = -1
+}
+
+expedition_progress = {
+    monthly_lifestyle_xp = 120
+    prowess = 1
+}
+
+expedition_setback = {
+    health = -0.4
+    travel_speed_mult = -0.15
+}
+
+lineage_prestige_mentor = {
+    monthly_dynasty_prestige = 0.2
+    monthly_prestige = 0.15
+}
+
+lineage_marked_disciple = {
+    monthly_lifestyle_xp = 100
+    monthly_piety = 0.1
+}
+
+alchemy_furnace_masterwork = {
+    learning = 3
+    prowess = 2
+    monthly_income_mult = 0.05
+}
+
+alchemy_qi_deviation_wound = {
+    health = -0.7
+    prowess = -2
+}
+
+sect_council_consensus = {
+    vassal_opinion = 6
+    monthly_prestige = 0.2
+    monthly_piety = 0.1
+}
+
+sect_council_deadlock = {
+    vassal_opinion = -10
+    monthly_prestige = -0.15
+    stress_gain_mult = 0.15
+}
+
+sect_lineage_favor = {
+    monthly_dynasty_prestige = 0.25
+    same_faith_opinion = 4
+}
+
+sect_lineage_fracture = {
+    same_faith_opinion = -8
+    hostile_scheme_success_chance_add = 8
+}
+
+alchemy_herb_stockpile = {
+    monthly_income_mult = 0.04
+    learning = 1
+}
+
+alchemy_ore_stockpile = {
+    monthly_income_mult = 0.05
+    stewardship = 1
+}
+
+alchemy_core_stockpile = {
+    prowess = 1
+    monthly_piety = 0.1
+}
