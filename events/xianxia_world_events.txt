@@ -6,7 +6,7 @@ xianxia_world.1000 = {
     hidden = yes
 
     immediate = {
-        every_living_character = {
+        every_ruler = {
             limit = {
                 is_alive = yes
                 is_landed = yes
@@ -15,7 +15,7 @@ xianxia_world.1000 = {
             xianxia_apply_government_adaptation_effect = yes
         }
 
-        every_living_character = {
+        every_ruler = {
             limit = {
                 is_alive = yes
                 is_adult = yes
@@ -59,6 +59,7 @@ xianxia_world.1100 = {
         }
         add_character_modifier = { modifier = sect_resource_surplus days = 730 }
         add_prestige = 250
+        trigger_event = { id = xianxia_world.1110 days = 15 }
     }
 }
 
@@ -81,31 +82,7 @@ xianxia_world.1300 = {
 
     option = {
         name = xianxia_world.1300.a
-        random_list = {
-            60 = {
-                add_character_modifier = { modifier = perfected_spirit_pill days = 1825 }
-                add_lifestyle_xp = 500
-            }
-            30 = {
-                add_character_modifier = { modifier = alchemy_backlash days = 365 }
-            }
-            10 = {
-                add_character_modifier = { modifier = cultivation_deviation days = 730 }
-                if = {
-                    limit = {
-                        OR = {
-                            has_trait = cultivation_qi_refining
-                            has_trait = cultivation_qi_building
-                            has_trait = cultivation_core_formation
-                        }
-                    }
-                    random = {
-                        chance = 30
-                        death = { death_reason = death_cultivation_failure }
-                    }
-                }
-            }
-        }
+        trigger_event = xianxia_world.1310
     }
 }
 
@@ -128,20 +105,7 @@ xianxia_world.1500 = {
 
     option = {
         name = xianxia_world.1500.a
-        random_list = {
-            50 = {
-                add_character_modifier = { modifier = secret_realm_inheritance days = 1825 }
-                add_gold = 150
-            }
-            30 = {
-                add_artifact = famed_tapestry
-                add_lifestyle_xp = 400
-            }
-            20 = {
-                add_stress = 50
-                add_character_modifier = { modifier = cultivation_deviation days = 365 }
-            }
-        }
+        trigger_event = xianxia_world.1510
     }
 }
 
@@ -166,5 +130,204 @@ xianxia_world.1600 = {
                 death = { death_reason = death_cultivation_failure }
             }
         }
+    }
+}
+
+# Sect institutions and internal governance maintenance.
+xianxia_world.1700 = {
+    type = character_event
+    scope = none
+    hidden = yes
+
+    immediate = {
+        every_ruler = {
+            limit = {
+                is_alive = yes
+                is_adult = yes
+                is_landed = yes
+                is_cultivator = yes
+                has_cultivation_sect_faith = yes
+            }
+
+            if = {
+                limit = { NOT = { has_trait = sect_leader } }
+                add_trait = sect_leader
+            }
+
+            every_courtier = {
+                limit = {
+                    is_alive = yes
+                    is_adult = yes
+                    is_cultivator = yes
+                    faith = root.faith
+                    NOT = { has_trait = sect_leader }
+                }
+                random_list = {
+                    10 = { add_trait = sect_inner_hall_elder remove_trait = sect_outer_hall_elder remove_trait = sect_disciple }
+                    14 = { add_trait = sect_outer_hall_elder remove_trait = sect_inner_hall_elder remove_trait = sect_disciple }
+                    6 = { add_trait = sect_enforcement_elder remove_trait = sect_disciple }
+                    70 = { add_trait = sect_disciple }
+                }
+            }
+
+            random = {
+                chance = 28
+                add_character_modifier = { modifier = sect_resource_stockpile days = 365 }
+            }
+            random = {
+                chance = 20
+                add_character_modifier = { modifier = sect_resource_obligations days = 365 }
+            }
+        }
+    }
+    option = { name = OK }
+}
+
+# Sect factional disputes and discipline crises.
+xianxia_world.1710 = {
+    type = character_event
+    scope = none
+    hidden = yes
+
+    immediate = {
+        every_ruler = {
+            limit = {
+                is_alive = yes
+                is_landed = yes
+                has_cultivation_sect_faith = yes
+            }
+            random = {
+                chance = 18
+                random_list = {
+                    45 = { add_character_modifier = { modifier = sect_internal_dispute days = 365 } }
+                    35 = { add_character_modifier = { modifier = sect_power_struggle days = 365 } }
+                    20 = {
+                        add_character_modifier = { modifier = sect_resource_obligations days = 365 }
+                        add_stress = 35
+                    }
+                }
+            }
+        }
+    }
+    option = { name = OK }
+}
+
+# Multi-stage Jianghu tournament chain.
+xianxia_world.1110 = {
+    type = character_event
+    title = xianxia_world.1110.t
+    desc = xianxia_world.1110.desc
+
+    option = {
+        name = xianxia_world.1110.a
+        add_character_modifier = { modifier = tournament_chain_momentum days = 365 }
+        random = {
+            chance = 35
+            add_character_modifier = { modifier = tournament_chain_injury days = 240 }
+        }
+        random = {
+            chance = 45
+            random_living_character = {
+                limit = { is_adult = yes is_alive = yes NOT = { this = root } has_cultivation_sect_faith = yes }
+                add_rival = root
+            }
+        }
+        trigger_event = { id = xianxia_world.1120 days = 20 }
+    }
+}
+
+xianxia_world.1120 = {
+    type = character_event
+    title = xianxia_world.1120.t
+    desc = xianxia_world.1120.desc
+
+    option = {
+        name = xianxia_world.1120.a
+        add_prestige = 350
+        add_character_modifier = { modifier = sect_resource_surplus days = 730 }
+        add_dynasty_prestige = 120
+    }
+}
+
+# Multi-stage expedition/trial chain.
+xianxia_world.1510 = {
+    type = character_event
+    title = xianxia_world.1510.t
+    desc = xianxia_world.1510.desc
+
+    option = {
+        name = xianxia_world.1510.a
+        add_character_modifier = { modifier = expedition_progress days = 365 }
+        random_list = {
+            60 = { trigger_event = { id = xianxia_world.1520 days = 25 } }
+            40 = {
+                add_character_modifier = { modifier = expedition_setback days = 240 }
+                trigger_event = { id = xianxia_world.1520 days = 25 }
+            }
+        }
+    }
+}
+
+xianxia_world.1520 = {
+    type = character_event
+    title = xianxia_world.1520.t
+    desc = xianxia_world.1520.desc
+
+    option = {
+        name = xianxia_world.1520.a
+        random_list = {
+            50 = { add_character_modifier = { modifier = secret_realm_inheritance days = 1825 } add_gold = 120 }
+            35 = { add_lifestyle_xp = 500 add_piety = 150 }
+            15 = { add_character_modifier = { modifier = cultivation_deviation days = 730 } add_stress = 80 }
+        }
+    }
+}
+
+# Alchemy pipeline with tier + furnace quality and failure states.
+xianxia_world.1310 = {
+    type = character_event
+    title = xianxia_world.1310.t
+    desc = xianxia_world.1310.desc
+
+    option = {
+        name = xianxia_world.1310.a
+        if = {
+            limit = { learning >= 16 }
+            add_character_modifier = { modifier = alchemy_furnace_masterwork days = 1095 }
+            trigger_event = { id = xianxia_world.1320 days = 10 }
+        }
+        else = {
+            trigger_event = { id = xianxia_world.1320 days = 10 }
+        }
+    }
+}
+
+xianxia_world.1320 = {
+    type = character_event
+    title = xianxia_world.1320.t
+    desc = xianxia_world.1320.desc
+
+    option = {
+        name = xianxia_world.1320.a
+        random_list = {
+            55 = { add_character_modifier = { modifier = perfected_spirit_pill days = 1825 } add_gold = 40 }
+            25 = { add_character_modifier = { modifier = alchemy_backlash days = 365 } }
+            20 = { add_character_modifier = { modifier = alchemy_qi_deviation_wound days = 730 } add_stress = 60 }
+        }
+    }
+}
+
+# Debug visibility toolkit.
+xianxia_world.1900 = {
+    type = character_event
+    title = xianxia_world.1900.t
+    desc = xianxia_world.1900.desc
+
+    option = {
+        name = xianxia_world.1900.a
+        custom_tooltip = xianxia_debug_stage_tt
+        custom_tooltip = xianxia_debug_sect_role_tt
+        custom_tooltip = xianxia_debug_modifiers_tt
+        custom_tooltip = xianxia_debug_cooldowns_tt
     }
 }
