@@ -11,7 +11,7 @@ cultivation_character_initialization.0001 = {
 	hidden = yes
 
 	immediate = {
-		every_living_character = {
+		every_ruler = {
 			trigger_event = cultivation_character_initialization.0002
 			trigger_event = cultivation_character_initialization.0003
 			trigger_event = cultivation_character_initialization.0004

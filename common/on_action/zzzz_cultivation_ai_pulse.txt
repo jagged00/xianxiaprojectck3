@@ -3,10 +3,11 @@
         cultivation_ai.1000
         cultivation_ai.3000
         xianxia_world.1000
+        xianxia_world.1700
     }
 }
 
-# Monthly simulation layer for all AI (landed + unlanded)
+# Monthly simulation layer for AI cultivation and social dynamics.
 on_monthly_pulse = {
     events = {
         cultivation_ai.2000
@@ -16,14 +17,15 @@ on_monthly_pulse = {
         cultivation_ai.2220
         cultivation_ai.2230
         cultivation_ai.3000
-        xianxia_world.1000
+        xianxia_world.1710
     }
 }
 
-
+# Lower-frequency heavy realm adaptation / institution refresh.
 on_yearly_pulse = {
     events = {
         cultivation_ai.3000
         xianxia_world.1000
+        xianxia_world.1700
     }
 }

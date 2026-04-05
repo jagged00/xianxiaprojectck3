@@ -147,3 +147,76 @@ undergo_heavenly_tribulation_decision = {
     ai_check_interval = 36
     ai_will_do = { base = 10 }
 }
+
+xianxia_debug_state_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_study_culture.dds" }
+    decision_group_type = major
+    sort_order = 526
+
+    title = xianxia_debug_state_decision
+    desc = xianxia_debug_state_decision_desc
+    selection_tooltip = xianxia_debug_state_decision_tooltip
+    confirm_text = xianxia_debug_state_decision_confirm
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    ai_check_interval = 0
+    ai_potential = { always = no }
+
+    effect = {
+        trigger_event = xianxia_world.1900
+    }
+}
+
+convene_sect_council_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_hold_court.dds" }
+    decision_group_type = major
+    sort_order = 527
+
+    title = convene_sect_council_decision
+    desc = convene_sect_council_decision_desc
+    selection_tooltip = convene_sect_council_decision_tooltip
+    confirm_text = convene_sect_council_decision_confirm
+
+    is_shown = {
+        is_adult = yes
+        is_landed = yes
+        is_cultivator = yes
+        has_cultivation_sect_faith = yes
+    }
+
+    is_valid = {
+        NOT = { has_character_flag = sect_council_cooldown }
+    }
+
+    effect = {
+        add_character_flag = { flag = sect_council_cooldown days = 365 }
+        trigger_event = xianxia_world.1720
+    }
+
+    ai_check_interval = 24
+    ai_will_do = { base = 20 }
+}
+
+gather_alchemy_resources_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_search_for_secrets.dds" }
+    decision_group_type = major
+    sort_order = 528
+
+    title = gather_alchemy_resources_decision
+    desc = gather_alchemy_resources_decision_desc
+    selection_tooltip = gather_alchemy_resources_decision_tooltip
+    confirm_text = gather_alchemy_resources_decision_confirm
+
+    is_shown = { is_adult = yes is_cultivator = yes }
+    is_valid = { NOT = { has_character_flag = gather_alchemy_resources_cooldown } }
+
+    effect = {
+        add_character_flag = { flag = gather_alchemy_resources_cooldown days = 180 }
+        trigger_event = xianxia_world.1330
+    }
+
+    ai_check_interval = 24
+    ai_will_do = { base = 25 }
+}
