@@ -544,3 +544,44 @@ xianxia_world.1330 = {
         add_stress = 20
     }
 }
+
+# Fox-spirit predation path: willingly embrace mortal-flesh feeding.
+xianxia_world.2260 = {
+    type = character_event
+    title = xianxia_world.2260.t
+    desc = xianxia_world.2260.desc
+
+    option = {
+        name = xianxia_world.2260.a
+        add_prestige = 100
+        add_character_modifier = { modifier = fox_spirit_awakened days = 365 }
+    }
+}
+
+# Cannibal fox spirits hunt mortals for power and social risk.
+xianxia_world.2261 = {
+    type = character_event
+    title = xianxia_world.2261.t
+    desc = xianxia_world.2261.desc
+
+    option = {
+        name = xianxia_world.2261.a
+        add_character_modifier = { modifier = fox_spirit_mortal_hunt_frenzy days = 730 }
+        add_dread = 20
+        add_stress = -35
+
+        every_living_character = {
+            limit = {
+                is_alive = yes
+                is_adult = yes
+                NOT = { this = root }
+                NOT = { has_character_flag = fox_spirit_awakening_complete }
+                NOR = {
+                    faith = { has_doctrine_parameter = demonic_cultivation }
+                    faith = { has_doctrine_parameter = unorthodox_cultivation }
+                }
+            }
+            add_opinion = { target = root modifier = opinion_fox_spirit_mortal_hunter years = 20 }
+        }
+    }
+}

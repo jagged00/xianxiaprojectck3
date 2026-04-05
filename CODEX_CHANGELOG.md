@@ -325,3 +325,9 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Added periodic fox-spirit purge pressure event (`cultivation_ai.2260`) so orthodox sword/order-formation lieges can lethally purge exposed fox spirits over time.
 - Added fox-spirit-specific dual cultivation AI acceptance tuning so aligned demonic/yin/unorthodox paths are more willing while orthodox/order paths strongly refuse.
 - Added beauty enforcement for awakened fox spirits: `beauty_good_3` is now auto-applied (removing lower beauty tiers) to reflect fox-spirit allure fantasy.
+
+### 29) Fox-spirit cannibal predation branch + mortal hunt backlash (2026-04-05)
+- Added `embrace_fox_spirit_predation_decision` so awakened fox spirits can opt into `cannibal` as a dedicated taboo progression branch.
+- Added `hunt_mortals_fox_spirit_decision` for landed cannibal fox spirits, triggering `xianxia_world.2261` to grant a strong temporary lifestyle-speed buff (`fox_spirit_mortal_hunt_frenzy`).
+- Mortal hunt now applies a major opinion penalty (`opinion_fox_spirit_mortal_hunter`) from all non-fox-spirit characters who are not demonic or unorthodox aligned.
+- Added supporting xianxia world event text/modifier localization and data definitions for the predation loop.

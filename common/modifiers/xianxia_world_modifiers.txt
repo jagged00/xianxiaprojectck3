@@ -219,3 +219,11 @@ formation_warded_county = {
     fort_level = 1
     garrison_size = 0.15
 }
+
+fox_spirit_mortal_hunt_frenzy = {
+    monthly_lifestyle_xp_gain_mult = 0.25
+    intrigue = 2
+    prowess = 1
+    monthly_dread = 8
+    stress_loss_mult = 0.1
+}
