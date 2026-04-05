@@ -324,7 +324,7 @@ purge_mortal_afflictions_decision = {
         }
     }
 
-    ai_check_interval = 120
+    ai_check_interval = 6
     ai_potential = { always = yes }
     ai_will_do = { base = 1000 }
 

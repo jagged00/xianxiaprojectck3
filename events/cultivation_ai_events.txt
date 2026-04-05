@@ -47,6 +47,92 @@ cultivation_ai.2100 = {
     option = { name = OK }
 }
 
+# High-realm sect elders earn lore-appropriate honorific nicknames.
+cultivation_ai.2200 = {
+    type = character_event
+    scope = none
+    hidden = yes
+
+    immediate = {
+        every_living_character = {
+            limit = {
+                is_alive = yes
+                is_adult = yes
+                has_cultivation_sect_faith = yes
+                NOT = { has_character_flag = cultivation_sect_nickname_assigned }
+                OR = {
+                    has_trait = cultivation_nascent_soul
+                    has_trait = cultivation_heavenly_being
+                    has_trait = cultivation_four_axis
+                    has_trait = cultivation_integration
+                    has_trait = cultivation_star_shattering
+                    has_trait = cultivation_sacred_vessel
+                    has_trait = cultivation_entering_nirvana
+                    has_trait = cultivation_true_immortal
+                }
+            }
+
+            cultivation_assign_high_realm_sect_nickname_effect = yes
+            add_character_flag = cultivation_sect_nickname_assigned
+        }
+    }
+
+    option = { name = OK }
+}
+
+# Lesser-known cultivators can gain smaller jianghu epithets over time.
+cultivation_ai.2210 = {
+    type = character_event
+    scope = none
+    hidden = yes
+
+    immediate = {
+        every_living_character = {
+            limit = {
+                is_alive = yes
+                is_adult = yes
+                is_cultivator = yes
+                NOT = { has_character_flag = cultivation_sect_nickname_assigned }
+                NOT = { has_character_flag = cultivation_minor_nickname_assigned }
+                OR = {
+                    has_trait = cultivation_qi_refining
+                    has_trait = cultivation_qi_building
+                    has_trait = cultivation_core_formation
+                }
+            }
+
+            random = {
+                chance = 3
+                random_list = {
+                    5 = { add_nickname = nick_the_river_wanderer }
+                    5 = { add_nickname = nick_the_cloud_sword }
+                    5 = { add_nickname = nick_the_jade_mantis }
+                    5 = { add_nickname = nick_the_bamboo_shadow }
+                    5 = { add_nickname = nick_the_iron_palm }
+                    5 = { add_nickname = nick_the_broken_spear }
+                    5 = { add_nickname = nick_the_mountain_fox }
+                    5 = { add_nickname = nick_the_white_crane }
+                    5 = { add_nickname = nick_the_ember_adept }
+                    5 = { add_nickname = nick_the_frost_edge }
+                    5 = { add_nickname = nick_the_silent_qi }
+                    5 = { add_nickname = nick_the_drunk_blade }
+                    5 = { add_nickname = nick_the_hidden_talisman }
+                    5 = { add_nickname = nick_the_night_reed }
+                    5 = { add_nickname = nick_the_wind_stepper }
+                    5 = { add_nickname = nick_the_stone_heart }
+                    5 = { add_nickname = nick_the_lotus_watcher }
+                    5 = { add_nickname = nick_the_red_cinnabar }
+                    4 = { add_nickname = nick_the_ghost_lantern }
+                    1 = { add_nickname = nick_the_swamp_viper }
+                }
+                add_character_flag = cultivation_minor_nickname_assigned
+            }
+        }
+    }
+
+    option = { name = OK }
+}
+
 # Startup bootstrap so AI cultivation is never player-gated.
 cultivation_ai.1000 = {
     type = character_event
@@ -297,6 +383,7 @@ cultivation_ai.0002 = {
         is_adult = yes
         has_active_meridians = yes
         is_cultivator = yes
+        NOT = { government_has_flag = government_is_theocracy }
         NOT = { has_character_flag = ai_recently_joined_sect }
     }
 

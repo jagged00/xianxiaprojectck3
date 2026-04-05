@@ -10,6 +10,9 @@ on_monthly_pulse = {
     events = {
         cultivation_ai.2000
         cultivation_ai.2100
+        cultivation_ai.2200
+        cultivation_ai.2210
+        cultivation_ai.3000
     }
 }
 
