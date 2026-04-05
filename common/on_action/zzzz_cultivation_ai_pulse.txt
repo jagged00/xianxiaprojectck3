@@ -7,10 +7,6 @@ on_game_start_after_lobby = {
 # Monthly simulation layer for all AI (landed + unlanded)
 on_monthly_pulse = {
     events = {
-        cultivation_ai.0001
-        cultivation_ai.0002
-        cultivation_ai.0003
-        cultivation_ai.0004
-        cultivation_ai.0005
+        cultivation_ai.0000
     }
 }
