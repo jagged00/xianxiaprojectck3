@@ -240,3 +240,14 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Added `jianghu_realm_friction` for landed non-cultivator rulers under major temporal governments to reinforce Jianghu-world mismatch pressure.
 - Updated `xianxia_world.1000` maintenance event to run adaptation for all landed adult rulers, while retaining high-realm longevity handling for cultivators.
 - Added English localization for the new government-adaptation and friction modifiers.
+
+### 25) Sect institutions, staged activities, lineage systems, and fodder sync baseline (2026-04-05)
+- Added a fuller sect office layer: new role traits for Inner Hall Elder, Outer Hall Elder, Enforcement Elder, and Lineage Heir, plus periodic assignment flow for landed sect rulers.
+- Added sect-internal governance pressure pulses with dispute/power-struggle/resource-obligation outcomes and sect resource stockpile/obligation modifiers tied to realm gameplay.
+- Extended Jianghu tournament behavior into a multi-stage chain (`xianxia_world.1100 -> 1110 -> 1120`) with injuries, rivalry generation, and scaled rewards.
+- Extended secret-realm expeditions into a progression chain (`xianxia_world.1500 -> 1510 -> 1520`) with staged setbacks and final inheritance outcomes.
+- Added a full master-disciple interaction suite: recruit disciple, teach technique, inherit manuals, and expel/betray disciple; added lineage prestige/disciple growth modifiers tied to mentor office traits.
+- Reworked alchemy into a two-step pipeline (`xianxia_world.1300 -> 1310 -> 1320`) including furnace-quality scaling (learning gate), failure states, and reward gradients.
+- Added a player-facing debug decision/event (`xianxia_debug_state_decision`, `xianxia_world.1900`) that surfaces cultivation stage/sect-role/modifier/cooldown inspection tooltips.
+- Performance pass: replaced `every_living_character` loops in cultivation/world orchestration with narrower ruler-scoped iteration and reduced heavy world-adaptation cadence to yearly pulse.
+- Added Common-Fodder sync scaffold (`common/fodder/events|gui|localization`) plus `common/fodder/00_runtime_sync_map.txt` and an explicit per-commit mirror update rule.

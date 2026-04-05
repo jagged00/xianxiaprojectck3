@@ -23,5 +23,11 @@ xianxia_world.1100 = {
         }
         add_character_modifier = { modifier = sect_resource_surplus days = 730 }
         add_prestige = 250
+        trigger_event = { id = xianxia_world.1110 days = 15 }
     }
 }
+
+
+# Canonical file: /events/xianxia_world_events.txt
+# Stage continuation hooks
+xianxia_world.1110 = { option = { trigger_event = { id = xianxia_world.1120 days = 20 } } }

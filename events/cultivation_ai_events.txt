@@ -8,7 +8,7 @@ cultivation_ai.2000 = {
     hidden = yes
 
     immediate = {
-        every_living_character = {
+        every_ruler = {
             limit = {
                 is_ai = yes
                 is_alive = yes
@@ -34,7 +34,7 @@ cultivation_ai.2100 = {
     hidden = yes
 
     immediate = {
-        every_living_character = {
+        every_ruler = {
             limit = {
                 is_alive = yes
                 is_cultivator = yes
@@ -54,7 +54,7 @@ cultivation_ai.2200 = {
     hidden = yes
 
     immediate = {
-        every_living_character = {
+        every_ruler = {
             limit = {
                 is_alive = yes
                 is_adult = yes
@@ -91,7 +91,7 @@ cultivation_ai.2210 = {
     hidden = yes
 
     immediate = {
-        every_living_character = {
+        every_ruler = {
             limit = {
                 is_alive = yes
                 is_adult = yes
@@ -144,7 +144,7 @@ cultivation_ai.2220 = {
     hidden = yes
 
     immediate = {
-        every_living_character = {
+        every_ruler = {
             limit = {
                 is_alive = yes
                 is_adult = yes
@@ -184,7 +184,7 @@ cultivation_ai.2230 = {
     hidden = yes
 
     immediate = {
-        every_living_character = {
+        every_ruler = {
             limit = {
                 is_alive = yes
                 is_adult = yes
@@ -229,7 +229,7 @@ cultivation_ai.1000 = {
     hidden = yes
 
     immediate = {
-        every_living_character = {
+        every_ruler = {
             limit = {
                 is_ai = yes
                 is_adult = yes

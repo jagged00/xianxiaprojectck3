@@ -147,3 +147,24 @@ undergo_heavenly_tribulation_decision = {
     ai_check_interval = 36
     ai_will_do = { base = 10 }
 }
+
+xianxia_debug_state_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_study_culture.dds" }
+    decision_group_type = major
+    sort_order = 526
+
+    title = xianxia_debug_state_decision
+    desc = xianxia_debug_state_decision_desc
+    selection_tooltip = xianxia_debug_state_decision_tooltip
+    confirm_text = xianxia_debug_state_decision_confirm
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    ai_check_interval = 0
+    ai_potential = { always = no }
+
+    effect = {
+        trigger_event = xianxia_world.1900
+    }
+}

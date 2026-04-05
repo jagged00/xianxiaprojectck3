@@ -1,0 +1,8 @@
+# Runtime mirror snapshot for fodder sync.
+# Source of truth remains localization/english/*.yml; update this mirror in the same commit.
+
+mirror_localization = {
+    source = "localization/english/xianxia_world_l_english.yml"
+    source = "localization/english/cultivation_expansion_decisions_l_english.yml"
+    source = "localization/english/cultivation_teach_interactions_l_english.yml"
+}

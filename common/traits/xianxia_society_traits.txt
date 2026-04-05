@@ -84,3 +84,42 @@ weapon_path_fist = {
     ai_value = 20
     prowess = 4
 }
+
+sect_inner_hall_elder = {
+    icon = "gfx/interface/icons/traits/education_learning_4.dds"
+    desc = trait_sect_inner_hall_elder_desc
+    group = education
+    ai_value = 70
+    learning = 2
+    stewardship = 2
+    monthly_piety = 0.2
+}
+
+sect_outer_hall_elder = {
+    icon = "gfx/interface/icons/traits/education_martial_3.dds"
+    desc = trait_sect_outer_hall_elder_desc
+    group = education
+    ai_value = 55
+    martial = 2
+    prowess = 2
+    monthly_prestige = 0.15
+}
+
+sect_enforcement_elder = {
+    icon = "gfx/interface/icons/traits/just.dds"
+    desc = trait_sect_enforcement_elder_desc
+    group = education
+    ai_value = 60
+    martial = 1
+    intrigue = 1
+    dread_gain_mult = 0.15
+}
+
+sect_lineage_heir = {
+    icon = "gfx/interface/icons/traits/diligent.dds"
+    desc = trait_sect_lineage_heir_desc
+    group = education
+    ai_value = 45
+    learning = 2
+    prowess = 1
+}
