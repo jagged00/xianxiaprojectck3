@@ -190,7 +190,7 @@ cultivation_breakthrough.1100 = {
 				#add_trait = cultivation_qi_refining
 				# Meridian affinity affects breakthrough odds
 				modifier = {
-					add = -45
+					add = -20
 					has_trait = poor_meridians
 				}
 				modifier = {
@@ -207,6 +207,7 @@ cultivation_breakthrough.1100 = {
 				}
 
 				remove_trait = cultivation_qi_gathering
+				add_trait = cultivation_qi_refining
 				remove_character_flag = can_attempt_qi_refining_breakthrough
 				trigger_event = cultivation_breakthrough.1101
 			}
@@ -245,7 +246,6 @@ cultivation_breakthrough.1101 = {
 	
 	option = {
 		name = cultivation_breakthrough.1101.a
-		add_trait = cultivation_qi_refining
 		add_prestige = 300
 		add_piety = 150
 		stress_impact = {
