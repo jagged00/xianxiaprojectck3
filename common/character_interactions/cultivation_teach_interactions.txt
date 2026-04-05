@@ -137,10 +137,17 @@ teach_technique_interaction = {
 			is_cultivator = yes
 		}
 	}
+
+	is_valid_showing_failures_only = {
+		scope:recipient = {
+			NOT = { has_character_flag = teach_technique_cooldown }
+		}
+	}
 	auto_accept = yes
 	on_accept = {
 		scope:recipient = {
 			add_lifestyle_xp = 350
+			add_character_flag = { flag = teach_technique_cooldown days = 365 }
 			if = {
 				limit = { has_character_flag = has_lineage_mentor }
 				change_variable = { name = lineage_techniques_learned value = 1 }

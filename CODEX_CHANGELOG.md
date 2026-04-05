@@ -274,3 +274,7 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 ### 29) AI disciple recruitment weight + lineage-heir persistence hotfix (2026-04-05)
 - Fixed `recruit_disciple_interaction` AI willingness from zeroed baseline to a non-zero base with meridian-sensitive weighting, so AI courts can actually recruit disciples in play.
 - Moved `sect_lineage_heir` out of the mutually-exclusive `education` group into `personality` to preserve inheritance outcomes across yearly sect office reassignment pulses.
+
+### 30) Teach-technique anti-spam cooldown guard (2026-04-05)
+- Added explicit validity/cooldown gating to `teach_technique_interaction` so a disciple with `teach_technique_cooldown` cannot be repeatedly farmed for immediate XP/prowess/prestige loops.
+- Added a 1-year recipient cooldown flag application on successful teach-technique acceptance.
