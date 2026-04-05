@@ -73,7 +73,11 @@ cultivation_ai.2200 = {
             }
 
             cultivation_assign_high_realm_sect_nickname_effect = yes
-            add_character_flag = cultivation_sect_nickname_assigned
+            if = {
+                limit = { has_character_flag = cultivation_sect_nickname_newly_assigned }
+                add_character_flag = cultivation_sect_nickname_assigned
+                remove_character_flag = cultivation_sect_nickname_newly_assigned
+            }
         }
     }
 
@@ -132,6 +136,91 @@ cultivation_ai.2210 = {
 
     option = { name = OK }
 }
+
+# Allied cultivators should build bonds quickly in a xianxia world.
+cultivation_ai.2220 = {
+    type = character_event
+    scope = none
+    hidden = yes
+
+    immediate = {
+        every_living_character = {
+            limit = {
+                is_alive = yes
+                is_adult = yes
+                is_cultivator = yes
+            }
+
+            random = {
+                chance = 12
+                random_living_character = {
+                    limit = {
+                        is_alive = yes
+                        is_adult = yes
+                        is_cultivator = yes
+                        NOT = { this = root }
+                        has_alliance_with = root
+                        NOT = { has_relation_friend = root }
+                        NOT = { has_relation_best_friend = root }
+                    }
+                    save_scope_as = cultivation_friend_target
+                }
+
+                if = {
+                    limit = { exists = scope:cultivation_friend_target }
+                    add_friend = scope:cultivation_friend_target
+                }
+            }
+        }
+    }
+
+    option = { name = OK }
+}
+
+# Cultivators who fight each other should develop grudges and rivalries quickly.
+cultivation_ai.2230 = {
+    type = character_event
+    scope = none
+    hidden = yes
+
+    immediate = {
+        every_living_character = {
+            limit = {
+                is_alive = yes
+                is_adult = yes
+                is_cultivator = yes
+                is_at_war = yes
+            }
+
+            random = {
+                chance = 22
+                random_living_character = {
+                    limit = {
+                        is_alive = yes
+                        is_adult = yes
+                        is_cultivator = yes
+                        NOT = { this = root }
+                        is_at_war_with = root
+                        NOT = { has_relation_nemesis = root }
+                        NOT = { has_relation_rival = root }
+                    }
+                    save_scope_as = cultivation_war_grudge_target
+                }
+
+                if = {
+                    limit = { exists = scope:cultivation_war_grudge_target }
+                    random_list = {
+                        75 = { add_rival = scope:cultivation_war_grudge_target }
+                        25 = { add_nemesis = scope:cultivation_war_grudge_target }
+                    }
+                }
+            }
+        }
+    }
+
+    option = { name = OK }
+}
+
 
 # Startup bootstrap so AI cultivation is never player-gated.
 cultivation_ai.1000 = {

@@ -17,7 +17,7 @@ qi_gathering_meridian_1_perk = {
 	
 	character_modifier = {
 		learning = 1
-		martial = 1
+		martial = 2
 	}
 }
 
@@ -34,7 +34,7 @@ qi_gathering_meridian_2_perk = {
 	
 	character_modifier = {
 		learning = 1
-		prowess = 1
+		prowess = 6
 	}
 }
 
@@ -69,7 +69,7 @@ qi_gathering_meridian_3b_perk = {
 	parent = qi_gathering_meridian_2_perk
 	
 	character_modifier = {
-		prowess = 1
+		prowess = 6
 		health = 0.25
 	}
 }
@@ -89,7 +89,7 @@ qi_gathering_meridian_4_perk = {
 	
 	character_modifier = {
 		learning = 2
-		prowess = 1
+		prowess = 6
 		health = 0.5
 	}
 }
@@ -116,7 +116,7 @@ qi_gathering_qi_refining_breakthrough_perk = {
 	
 	character_modifier = {
 		learning = 2
-		prowess = 2
+		prowess = 9
 		monthly_lifestyle_xp_gain_mult = 0.05
 	}
 }

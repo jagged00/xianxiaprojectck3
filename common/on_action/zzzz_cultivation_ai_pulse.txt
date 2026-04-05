@@ -12,6 +12,8 @@ on_monthly_pulse = {
         cultivation_ai.2100
         cultivation_ai.2200
         cultivation_ai.2210
+        cultivation_ai.2220
+        cultivation_ai.2230
         cultivation_ai.3000
     }
 }

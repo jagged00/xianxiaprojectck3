@@ -12,8 +12,7 @@ on_travel_plan_complete = {
 	
 ttk_travel_event_duel = {
 	trigger = {
-		is_ai = no
-		is_adult = yes
+				is_adult = yes
 		is_alive = yes
 		is_incapable = no
 		NOT = { has_trait = infirm }
@@ -97,7 +96,7 @@ ttk_travel_event_duel = {
 			}
 		}
 		random = {
-			chance = 25
+			chance = 60
 			scope:ttk_duel_init = {
 				trigger_event = ttk_travel_event_duel.0001
 			}
@@ -107,10 +106,43 @@ ttk_travel_event_duel = {
 
 ttk_travel_event_duel_clear = {
 	trigger = {
-		is_ai = no
-		has_character_flag = ttk_duel_can_pass
+				has_character_flag = ttk_duel_can_pass
 	}
 	effect = {
 		remove_character_flag = ttk_duel_can_pass
+	}
+}
+
+on_war_started = {
+	on_actions = {
+		ttk_war_opening_duel_on_action
+	}
+}
+
+ttk_war_opening_duel_on_action = {
+	trigger = {
+		exists = scope:attacker
+		exists = scope:defender
+		scope:attacker = {
+			is_alive = yes
+			is_adult = yes
+			NOT = { has_trait = incapable }
+		}
+		scope:defender = {
+			is_alive = yes
+			is_adult = yes
+			NOT = { has_trait = incapable }
+		}
+	}
+	effect = {
+		save_scope_as = ttk_war_scope
+		scope:attacker = { save_scope_as = ttk_war_duel_challenger }
+		scope:defender = { save_scope_as = ttk_war_duel_target }
+		random = {
+			chance = 75
+			scope:ttk_war_duel_challenger = {
+				trigger_event = ttk_travel_event_duel.0100
+			}
+		}
 	}
 }

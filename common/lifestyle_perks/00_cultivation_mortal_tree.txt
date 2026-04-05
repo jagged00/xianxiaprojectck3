@@ -36,7 +36,7 @@ mortal_muscle_reconstruction_perk = {
 	}
 	
 	character_modifier = {
-		prowess = 1
+		prowess = 6
 		health = 0.25
 	}
 }
@@ -59,7 +59,7 @@ mortal_bone_reconstruction_perk = {
 	icon = node_cultivation
 	
 	character_modifier = {
-		prowess = 1
+		prowess = 6
 		health = 0.25
 	}
 }
@@ -83,7 +83,7 @@ mortal_internal_reconstruction_perk = {
 	parent = mortal_muscle_reconstruction_perk
 	
 	character_modifier = {
-		prowess = 2
+		prowess = 9
 		health = 0.5
 	}
 }
@@ -107,7 +107,7 @@ mortal_external_reconstruction_perk = {
 	parent = mortal_bone_reconstruction_perk
 	
 	character_modifier = {
-		prowess = 2
+		prowess = 9
 		health = 0.5
 	}
 }
@@ -132,7 +132,7 @@ mortal_body_reconstruction_perk = {
 	parent = mortal_external_reconstruction_perk
 	
 	character_modifier = {
-		prowess = 2
+		prowess = 9
 		health = 0.5
 	}
 }
@@ -165,7 +165,7 @@ mortal_qi_gathering_breakthrough_perk = {
 	}
 	
 	character_modifier = {
-		prowess = 2
+		prowess = 9
 		learning = 1
 	}
 }

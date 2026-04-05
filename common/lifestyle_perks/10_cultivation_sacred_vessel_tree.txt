@@ -15,7 +15,7 @@ sacred_vessel_hour_perk = {
 
 	
 	character_modifier = {
-		prowess = 5
+		prowess = 18
 		learning = 3
 		health = 1.0
 	}
@@ -33,7 +33,7 @@ sacred_vessel_day_perk = {
 	parent = sacred_vessel_hour_perk
 	
 	character_modifier = {
-		prowess = 5
+		prowess = 18
 		learning = 3
 		health = 1.0
 		advantage = 10
@@ -52,7 +52,7 @@ sacred_vessel_month_perk = {
 	parent = sacred_vessel_day_perk
 	
 	character_modifier = {
-		prowess = 6
+		prowess = 21
 		learning = 4
 		health = 1.5
 		advantage = 10
@@ -71,7 +71,7 @@ sacred_vessel_year_perk = {
 	parent = sacred_vessel_month_perk
 	
 	character_modifier = {
-		prowess = 6
+		prowess = 21
 		learning = 4
 		health = 1.5
 		advantage = 15
@@ -90,7 +90,7 @@ sacred_vessel_calendar_perk = {
 	parent = sacred_vessel_year_perk
 	
 	character_modifier = {
-		prowess = 7
+		prowess = 24
 		learning = 5
 		health = 2.0
 		advantage = 15
@@ -110,7 +110,7 @@ sacred_vessel_fixed_star_perk = {
 	parent = sacred_vessel_calendar_perk
 	
 	character_modifier = {
-		prowess = 8
+		prowess = 27
 		learning = 6
 		health = 2.5
 		advantage = 20
@@ -148,8 +148,8 @@ sacred_vessel_strongness_perk = {
 	parent = sacred_vessel_fixed_star_perk
 	
 	character_modifier = {
-		prowess = 5
-		martial = 5
+		prowess = 18
+		martial = 10
 		advantage = 10
 	}
 }
@@ -193,7 +193,7 @@ sacred_vessel_entering_nirvana_breakthrough_perk = {
 	}
 	
 	character_modifier = {
-		prowess = 30
+		prowess = 93
 		learning = 18
 		health = 12.0
 		advantage = 100
