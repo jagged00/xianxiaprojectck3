@@ -259,3 +259,8 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Added pre-refinement alchemy resource acquisition (`gather_alchemy_resources_decision`, `xianxia_world.1330`) and tied result scaling in refinement outcomes to stocked resource flags.
 - Upgraded debug event behavior from static generic tooltips to conditional state readouts keyed to active stage/role/cooldown flags.
 - Added automated fodder sync enforcement script (`scripts/check_fodder_sync.py`) and documented the command in the sync map header.
+
+### 27) Review-fix hotpatch: startup initialization scope + sect office scope correctness (2026-04-05)
+- Restored startup initialization sweep in `cultivation_character_initialization.0001` from ruler-only to `every_living_character` so unlanded courtiers/children receive immediate meridian/cultivation setup at lobby start.
+- Fixed yearly sect office pass faith comparison in `xianxia_world.1700` to compare courtiers against the current iterated ruler scope (`faith = prev.faith`) rather than invalid `root` assumptions under `scope = none`.
+- Hardened office reroll exclusivity by explicitly removing all conflicting elder office traits before assigning a new one, preventing trait stacking across yearly rerolls.

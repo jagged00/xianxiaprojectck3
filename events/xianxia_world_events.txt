@@ -159,14 +159,34 @@ xianxia_world.1700 = {
                     is_alive = yes
                     is_adult = yes
                     is_cultivator = yes
-                    faith = root.faith
+                    faith = prev.faith
                     NOT = { has_trait = sect_leader }
                 }
                 random_list = {
-                    10 = { add_trait = sect_inner_hall_elder remove_trait = sect_outer_hall_elder remove_trait = sect_disciple }
-                    14 = { add_trait = sect_outer_hall_elder remove_trait = sect_inner_hall_elder remove_trait = sect_disciple }
-                    6 = { add_trait = sect_enforcement_elder remove_trait = sect_disciple }
-                    70 = { add_trait = sect_disciple }
+                    10 = {
+                        remove_trait = sect_outer_hall_elder
+                        remove_trait = sect_enforcement_elder
+                        remove_trait = sect_disciple
+                        add_trait = sect_inner_hall_elder
+                    }
+                    14 = {
+                        remove_trait = sect_inner_hall_elder
+                        remove_trait = sect_enforcement_elder
+                        remove_trait = sect_disciple
+                        add_trait = sect_outer_hall_elder
+                    }
+                    6 = {
+                        remove_trait = sect_inner_hall_elder
+                        remove_trait = sect_outer_hall_elder
+                        remove_trait = sect_disciple
+                        add_trait = sect_enforcement_elder
+                    }
+                    70 = {
+                        remove_trait = sect_inner_hall_elder
+                        remove_trait = sect_outer_hall_elder
+                        remove_trait = sect_enforcement_elder
+                        add_trait = sect_disciple
+                    }
                 }
             }
 
