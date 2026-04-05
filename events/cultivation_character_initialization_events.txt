@@ -183,6 +183,7 @@ cultivation_character_initialization.0004 = {
 		is_adult = yes
 		has_active_meridians = yes
 		is_cultivator = yes
+		NOT = { government_has_flag = government_is_theocracy }
 		NOT = { has_cultivation_sect_faith = yes }
 	}
 

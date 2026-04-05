@@ -123,6 +123,37 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Nascent Soul (and higher realms) now no longer carry hidden secondary health penalties from duplicate health entries.
 - Added explicit recipient `ai_accept` logic for `dual_cultivation_interaction` so acceptance behavior is deterministic and relationship-driven (favoring positive opinion/intimacy; refusing rivals/nemeses).
 
+### 16) AI cleanse cadence hotfix (2026-04-05)
+- Reduced `purge_mortal_afflictions_decision` AI evaluation cadence from 120 to 6 (decision ticks), so afflicted cultivator AI will actually fire the self-heal decision in practical play windows.
+
+### 17) Symmetric blocked-meridian marriage enforcement (2026-04-05)
+- Extended meridian marriage scoring in `00_marriage_scripted_modifiers` so blocked-meridian taboo and bloodline exception logic applies to both betrothed scopes (`secondary_actor` and `secondary_recipient`), not only one side.
+- Added mirrored crippled-meridian baseline penalty for both sides to keep "better options" ranking consistent regardless of proposer/receiver scope direction.
+
+### 18) Sect-alliance reliability fix (2026-04-05)
+- Replaced fragile `is_independent_ruler` limit usage in the defensive-pact scripted effect with `NOT = { exists = liege }` to avoid false negatives in scope validation.
+- Added `cultivation_ai.3000` to monthly pulse alongside startup/yearly hooks so same-sect alliance formation is continuously repaired after deaths, wars, and title changes.
+
+### 19) Religious-head sect-join error suppression (2026-04-05)
+- Added a theocracy-government exclusion to initialization sect-join trigger (`cultivation_character_initialization.0004`) so characters who cannot legally change faith stop throwing cultivation-related `set_character_faith` runtime errors.
+- Added the same exclusion to monthly sect-join pulse (`cultivation_ai.0002`) so runtime error suppression persists after startup bootstrap.
+
+### 20) Demonic sect localization rename (2026-04-05)
+- Updated `blood_moon_demonic_sect` localization display strings to use "Heavenly Demon Sect" naming (including adjective/adherent forms) so UI text shows the intended sect identity.
+- Updated visit decision localization (`visit_blood_moon_demonic_sect` + tooltip) to the same "Heavenly Demon Sect" naming so menu labels are consistent.
+
+### 21) Sect high-realm nickname framework (2026-04-05)
+- Added a cultivation nickname registry file with sect-specific nickname keys for currently selectable sect faiths, including good/neutral/ominous tone tags via `is_bad` where appropriate.
+- Added dedicated English localization for each new sect nickname and description to keep epithet flavor lore-consistent across orthodox, unorthodox, demonic, and vagrant paths.
+- Added scripted effect `cultivation_assign_high_realm_sect_nickname_effect` that maps each sect faith to its corresponding lore-aware nickname key.
+- Added monthly event `cultivation_ai.2200` that grants sect nicknames to high-realm sect cultivators (Nascent Soul+) and marks recipients with `cultivation_sect_nickname_assigned` to prevent repeat assignment churn.
+- Hooked `cultivation_ai.2200` into monthly cultivation on_action orchestration so nickname assignment is automatic in active saves.
+- Performed script block formatting cleanup in cultivation effects after nickname mapping insertion to keep indentation/style consistent for future maintenance.
+- Expanded nickname registry with a separate pool of lower-prestige jianghu/xianxia-style random epithets for lesser cultivators.
+- Added localization entries for the new lesser-cultivator nickname pool so random minor epithets display with matching flavor descriptions.
+- Added monthly event `cultivation_ai.2210` that can randomly grant minor epithets to lower-realm cultivators (Qi Refining/Core Formation tier) with low chance and one-time assignment flagging.
+- Hooked `cultivation_ai.2210` into monthly cultivation on_action orchestration so minor nickname progression occurs naturally over campaign time.
+
 ---
 
 ## Practical guidance for future Codex instances

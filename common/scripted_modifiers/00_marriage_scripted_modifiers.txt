@@ -299,6 +299,11 @@
 			desc = MERIDIAN_MARRIAGE_CRIPPLED
 			scope:secondary_actor = { has_trait = crippled_meridians }
 		}
+		modifier = {
+			add = -220
+			desc = MERIDIAN_MARRIAGE_CRIPPLED
+			scope:secondary_recipient = { has_trait = crippled_meridians }
+		}
 		# Rare bloodlines are highly valued in sect marriage politics
 		modifier = {
 			add = 220
@@ -571,9 +576,25 @@
 				}
 			}
 			modifier = {
+				add = -12000
+				desc = CULTIVATION_MARRIAGE_BLOCKED_MERIDIANS_TABOO
+				scope:secondary_actor = {
+					has_trait = crippled_meridians
+					NOT = { has_any_cultivation_bloodline_trait = yes }
+				}
+			}
+			modifier = {
 				add = 6200
 				desc = BLOODLINE_MARRIAGE_AWAKENED
 				scope:secondary_recipient = {
+					has_trait = crippled_meridians
+					has_any_cultivation_bloodline_trait = yes
+				}
+			}
+			modifier = {
+				add = 6200
+				desc = BLOODLINE_MARRIAGE_AWAKENED
+				scope:secondary_actor = {
 					has_trait = crippled_meridians
 					has_any_cultivation_bloodline_trait = yes
 				}
