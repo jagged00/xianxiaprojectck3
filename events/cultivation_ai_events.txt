@@ -2,7 +2,7 @@
 
 # Monthly orchestrator: iterate all living AI cultivators so progression does not
 # depend on implicit on_action character scope behavior.
-cultivation_ai.0000 = {
+cultivation_ai.2000 = {
     type = character_event
     scope = none
     hidden = yes
@@ -27,9 +27,30 @@ cultivation_ai.0000 = {
     option = { name = OK }
 }
 
+# Monthly fertility safeguard: cultivators should never remain infertile.
+cultivation_ai.2100 = {
+    type = character_event
+    scope = none
+    hidden = yes
+
+    immediate = {
+        every_living_character = {
+            limit = {
+                is_alive = yes
+                is_cultivator = yes
+                has_trait = infertile
+            }
+            remove_trait = infertile
+        }
+    }
+
+    option = { name = OK }
+}
+
 # Startup bootstrap so AI cultivation is never player-gated.
 cultivation_ai.1000 = {
     type = character_event
+    scope = none
     hidden = yes
 
     immediate = {
@@ -312,7 +333,7 @@ cultivation_ai.0003 = {
         is_alive = yes
         age >= 14
         is_cultivator = yes
-        has_liege = yes
+        exists = liege
         has_higher_cultivation_realm_than_liege = yes
         NOT = {
             OR = {
@@ -607,6 +628,28 @@ cultivation_ai.0005 = {
                 modifier = vagrant_realm_insight
                 days = 730
             }
+        }
+    }
+
+    option = { name = OK }
+}
+
+
+# Sect solidarity pulse: same-sect independent cultivators form defensive pacts.
+cultivation_ai.3000 = {
+    type = character_event
+    scope = none
+    hidden = yes
+
+    immediate = {
+        every_independent_ruler = {
+            limit = {
+                is_alive = yes
+                is_adult = yes
+                is_cultivator = yes
+                has_cultivation_sect_faith = yes
+            }
+            cultivation_form_sect_defensive_pacts_effect = yes
         }
     }
 

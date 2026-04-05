@@ -230,14 +230,16 @@ cleanse_remnant_sects_decision = {
     is_shown = {
         is_cultivator = yes
         is_landed = yes
-        any_domain_county = {
+        any_held_title = {
+            tier = tier_county
             NOT = { faith = root.faith }
         }
         NOT = { has_character_flag = cleanse_remnant_sects_cooldown }
     }
 
     is_valid = {
-        any_domain_county = {
+        any_held_title = {
+            tier = tier_county
             NOT = { faith = root.faith }
         }
     }
@@ -247,8 +249,9 @@ cleanse_remnant_sects_decision = {
     ai_will_do = { base = 20 }
 
     effect = {
-        every_domain_county = {
+        every_held_title = {
             limit = {
+                tier = tier_county
                 NOT = { faith = root.faith }
             }
             faith = { save_temporary_scope_as = former_sect_faith }
@@ -270,5 +273,86 @@ cleanse_remnant_sects_decision = {
 
         add_piety = 100
         add_character_flag = { flag = cleanse_remnant_sects_cooldown days = 1825 }
+    }
+}
+
+purge_mortal_afflictions_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_hold_court.dds" }
+    sort_order = 360
+    decision_group_type = major
+
+    title = purge_mortal_afflictions_decision
+    desc = purge_mortal_afflictions_decision_desc
+    confirm_text = purge_mortal_afflictions_decision_confirm
+    selection_tooltip = purge_mortal_afflictions_decision_tooltip
+
+    is_shown = {
+        is_cultivator = yes
+        OR = {
+            has_trait = cultivation_qi_refining
+            has_trait = cultivation_qi_building
+            has_trait = cultivation_core_formation
+            has_trait = cultivation_nascent_soul
+            has_trait = cultivation_heavenly_being
+            has_trait = cultivation_four_axis
+            has_trait = cultivation_integration
+            has_trait = cultivation_star_shattering
+            has_trait = cultivation_sacred_vessel
+            has_trait = cultivation_entering_nirvana
+            has_trait = cultivation_true_immortal
+        }
+    }
+
+    is_valid = {
+        NOT = { has_character_flag = purge_mortal_afflictions_cooldown }
+        OR = {
+            has_trait = ill
+            has_trait = pneumonic
+            has_trait = great_pox
+            has_trait = lovers_pox
+            has_trait = leper
+            has_trait = cancer
+            has_trait = wounded_1
+            has_trait = wounded_2
+            has_trait = wounded_3
+            has_trait = maimed
+            has_trait = one_eyed
+            has_trait = one_legged
+            has_trait = disfigured
+            has_trait = infirm
+            has_trait = gout_ridden
+        }
+    }
+
+    ai_check_interval = 120
+    ai_potential = { always = yes }
+    ai_will_do = { base = 1000 }
+
+    effect = {
+        # Diseases and bodily trauma are burned away with circulating qi.
+        remove_trait = ill
+        remove_trait = pneumonic
+        remove_trait = great_pox
+        remove_trait = lovers_pox
+        remove_trait = leper
+        remove_trait = cancer
+        remove_trait = wounded_1
+        remove_trait = wounded_2
+        remove_trait = wounded_3
+        remove_trait = maimed
+        remove_trait = one_eyed
+        remove_trait = one_legged
+        remove_trait = disfigured
+        remove_trait = infirm
+        remove_trait = gout_ridden
+
+        add_character_modifier = {
+            modifier = realm_stabilization
+            months = 24
+        }
+
+        add_stress = -50
+        add_prestige = 100
+        add_character_flag = { flag = purge_mortal_afflictions_cooldown days = 30 }
     }
 }

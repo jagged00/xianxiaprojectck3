@@ -597,7 +597,7 @@ cultivation_breakthrough.1400 = {
 	}
 	
 	option = {
-		name = cultivation_breakthrough.1401.wait
+		name = cultivation_breakthrough.1400.wait
 		add_character_modifier = {
 			modifier = contemplating_breakthrough
 			months = 6

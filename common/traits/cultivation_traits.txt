@@ -99,7 +99,8 @@ cultivation_qi_gathering = {
 	prowess = 1
 	learning = 1
 	monthly_lifestyle_xp_gain_mult = 0.02
-	enemy_hostile_scheme_success_chance_add = -5
+	enemy_hostile_scheme_success_chance_add = 20
+	owned_personal_scheme_success_chance_add = 5
 	compatibility = {
 		cultivation_qi_refining = @pos_compat_low
 	}
@@ -149,7 +150,8 @@ cultivation_qi_refining = {
 	learning = 2
 	health = 0.5
 	monthly_lifestyle_xp_gain_mult = 0.04
-	enemy_hostile_scheme_success_chance_add = -8
+	enemy_hostile_scheme_success_chance_add = 10
+	owned_personal_scheme_success_chance_add = 8
 	knight_effectiveness_mult = 0.05
 	
 
@@ -210,7 +212,8 @@ cultivation_qi_building = {
 	learning = 3
 	health = 1.0
 	monthly_lifestyle_xp_gain_mult = 0.06
-	enemy_hostile_scheme_success_chance_add = -10
+	enemy_hostile_scheme_success_chance_add = 0
+	owned_personal_scheme_success_chance_add = 12
 	knight_effectiveness_mult = 0.10
 	flag = immune_to_disease
 	flag = blocks_getting_non_epidemic_disease
@@ -265,7 +268,8 @@ cultivation_core_formation = {
 	learning = 4
 	health = 1.5
 	monthly_lifestyle_xp_gain_mult = 0.08
-	enemy_hostile_scheme_success_chance_add = -12
+	enemy_hostile_scheme_success_chance_add = -10
+	owned_personal_scheme_success_chance_add = 16
 	knight_effectiveness_mult = 0.15
 	
 	# +15 years lifespan
@@ -329,7 +333,8 @@ cultivation_nascent_soul = {
 	ai_vengefulness = 10
 	ai_rationality = 5
 	monthly_lifestyle_xp_gain_mult = 0.10
-	enemy_hostile_scheme_success_chance_add = -15
+	enemy_hostile_scheme_success_chance_add = -25
+	owned_personal_scheme_success_chance_add = 22
 	knight_effectiveness_mult = 0.20
 	
 	# +40 years lifespan
@@ -398,7 +403,8 @@ cultivation_heavenly_being = {
 	ai_zeal = 5
 	monthly_prestige = 0.5
 	monthly_lifestyle_xp_gain_mult = 0.12
-	enemy_hostile_scheme_success_chance_add = -20
+	enemy_hostile_scheme_success_chance_add = -60
+	owned_personal_scheme_success_chance_add = 30
 	knight_effectiveness_mult = 0.25
 	
 	# +70 years lifespan
@@ -468,7 +474,8 @@ cultivation_four_axis = {
 	ai_zeal = 10
 	monthly_prestige = 1.0
 	monthly_lifestyle_xp_gain_mult = 0.14
-	enemy_hostile_scheme_success_chance_add = -25
+	enemy_hostile_scheme_success_chance_add = -90
+	owned_personal_scheme_success_chance_add = 40
 	knight_effectiveness_mult = 0.30
 	dread_gain_mult = 0.25
 	
@@ -540,7 +547,8 @@ cultivation_integration = {
 	ai_zeal = 15
 	monthly_prestige = 2.0
 	monthly_lifestyle_xp_gain_mult = 0.16
-	enemy_hostile_scheme_success_chance_add = -30
+	enemy_hostile_scheme_success_chance_add = -120
+	owned_personal_scheme_success_chance_add = 52
 	knight_effectiveness_mult = 0.35
 	dread_gain_mult = 0.5
 	
@@ -615,7 +623,8 @@ cultivation_star_shattering = {
 	ai_zeal = 20
 	monthly_prestige = 3.0
 	monthly_lifestyle_xp_gain_mult = 0.18
-	enemy_hostile_scheme_success_chance_add = -35
+	enemy_hostile_scheme_success_chance_add = -150
+	owned_personal_scheme_success_chance_add = 66
 	knight_effectiveness_mult = 0.40
 	dread_gain_mult = 0.75
 	
@@ -689,7 +698,8 @@ cultivation_sacred_vessel = {
 	ai_zeal = 25
 	monthly_prestige = 4.0
 	monthly_lifestyle_xp_gain_mult = 0.20
-	enemy_hostile_scheme_success_chance_add = -40
+	enemy_hostile_scheme_success_chance_add = -180
+	owned_personal_scheme_success_chance_add = 82
 	knight_effectiveness_mult = 0.45
 	dread_baseline_add = 20
 	
@@ -764,7 +774,8 @@ cultivation_entering_nirvana = {
 	ai_zeal = 30
 	monthly_prestige = 5.0
 	monthly_lifestyle_xp_gain_mult = 0.22
-	enemy_hostile_scheme_success_chance_add = -45
+	enemy_hostile_scheme_success_chance_add = -210
+	owned_personal_scheme_success_chance_add = 100
 	knight_effectiveness_mult = 0.50
 	dread_baseline_add = 30
 	stress_loss_mult = 0.5
@@ -833,7 +844,8 @@ cultivation_true_immortal = {
 	prowess = 40
 	learning = 20
 	monthly_lifestyle_xp_gain_mult = 0.30
-	enemy_hostile_scheme_success_chance_add = -60
+	enemy_hostile_scheme_success_chance_add = -260
+	owned_personal_scheme_success_chance_add = 130
 	knight_effectiveness_mult = 0.60
 	health = 15.0
 	advantage = 150
@@ -846,7 +858,7 @@ cultivation_true_immortal = {
 	monthly_prestige = 10.0
 	dread_baseline_add = 50
 	stress_loss_mult = 0.75
-	fertility = -0.75
+	fertility = 1.0
 	
 	# IMMORTAL - no aging!
 	health = -1.0

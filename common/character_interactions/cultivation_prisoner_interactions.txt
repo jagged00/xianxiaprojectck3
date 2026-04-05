@@ -30,7 +30,19 @@
 	}
 
 	ai_will_do = {
-		base = 0
+		base = 5
+		modifier = {
+			add = 60
+			scope:actor = { OR = { has_trait = sadistic has_trait = callous has_trait = wrathful } }
+		}
+		modifier = {
+			add = 40
+			scope:actor = { has_trait = cultivation_heavenly_being }
+		}
+		modifier = {
+			add = 80
+			scope:actor = { has_trait = cultivation_true_immortal }
+		}
 	}
 
 	auto_accept = yes
