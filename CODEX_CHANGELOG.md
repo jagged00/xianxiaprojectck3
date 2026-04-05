@@ -118,6 +118,11 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Added monthly fertility safeguard event (`cultivation_ai.2100`) that strips `infertile` from cultivators.
 - Removed the True Immortal fertility penalty (`fertility = 1.0`) to avoid top-realm sterility by trait balance.
 
+### 15) Realm health cleanup + deterministic dual-cultivation acceptance (2026-04-05)
+- Removed unintended negative `health = -...` lines from cultivation realm traits (Core Formation through True Immortal), which were suppressing survivability despite positive realm-health values.
+- Nascent Soul (and higher realms) now no longer carry hidden secondary health penalties from duplicate health entries.
+- Added explicit recipient `ai_accept` logic for `dual_cultivation_interaction` so acceptance behavior is deterministic and relationship-driven (favoring positive opinion/intimacy; refusing rivals/nemeses).
+
 ---
 
 ## Practical guidance for future Codex instances
@@ -169,6 +174,10 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 12. **When safeguarding cultivator fertility:**
    - Keep a recurring cleanup pass for hard infertility traits (currently monthly `cultivation_ai.2100`).
    - Avoid fertility penalties on late-realm cultivation traits unless explicit design requires sterility.
+
+13. **When editing interactions with AI initiation:**
+   - Pair `ai_will_do` with explicit `ai_accept` (or explicit `auto_accept`) to avoid ambiguous engine-default recipient behavior.
+   - Prefer clear relationship gates (friend/lover/soulmate vs rival/nemesis) when designing cultivation social actions.
 
 ---
 

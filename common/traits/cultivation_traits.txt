@@ -273,7 +273,6 @@ cultivation_core_formation = {
 	knight_effectiveness_mult = 0.15
 	
 	# +15 years lifespan
-	health = -0.05
 	flag = immune_to_disease
 	flag = blocks_getting_non_epidemic_disease
 	
@@ -338,7 +337,6 @@ cultivation_nascent_soul = {
 	knight_effectiveness_mult = 0.20
 	
 	# +40 years lifespan
-	health = -0.10
 	flag = immune_to_disease
 	flag = blocks_getting_non_epidemic_disease
 	
@@ -408,7 +406,6 @@ cultivation_heavenly_being = {
 	knight_effectiveness_mult = 0.25
 	
 	# +70 years lifespan
-	health = -0.15
 	flag = immune_to_disease
 	flag = blocks_getting_non_epidemic_disease
 	
@@ -480,7 +477,6 @@ cultivation_four_axis = {
 	dread_gain_mult = 0.25
 	
 	# +100 years lifespan
-	health = -0.20
 	flag = immune_to_disease
 	flag = blocks_getting_non_epidemic_disease
 	
@@ -553,7 +549,6 @@ cultivation_integration = {
 	dread_gain_mult = 0.5
 	
 	# +150 years lifespan + Resurrection mechanic
-	health = -0.30
 	flag = immune_to_disease
 	flag = blocks_getting_non_epidemic_disease
 	
@@ -629,7 +624,6 @@ cultivation_star_shattering = {
 	dread_gain_mult = 0.75
 	
 	# +200 years lifespan
-	health = -0.40
 	flag = immune_to_disease
 	flag = blocks_getting_non_epidemic_disease
 	
@@ -704,7 +698,6 @@ cultivation_sacred_vessel = {
 	dread_baseline_add = 20
 	
 	# +280 years lifespan
-	health = -0.50
 	flag = immune_to_disease
 	flag = blocks_getting_non_epidemic_disease
 	
@@ -781,7 +774,6 @@ cultivation_entering_nirvana = {
 	stress_loss_mult = 0.5
 	
 	# +350 years lifespan
-	health = -0.60
 	flag = immune_to_disease
 	flag = blocks_getting_non_epidemic_disease
 	
@@ -861,7 +853,6 @@ cultivation_true_immortal = {
 	fertility = 1.0
 	
 	# IMMORTAL - no aging!
-	health = -1.0
 	flag = immune_to_disease
 	flag = blocks_getting_non_epidemic_disease
 	
