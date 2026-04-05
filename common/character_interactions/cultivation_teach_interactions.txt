@@ -97,8 +97,10 @@ recruit_disciple_interaction = {
 
 	auto_accept = yes
 	ai_will_do = {
-		base = 0
+		base = 5
 		modifier = { factor = 20 scope:recipient = { has_trait = heavenly_meridians } }
+		modifier = { factor = 3 scope:recipient = { has_trait = excellent_meridians } }
+		modifier = { factor = 0 scope:recipient = { has_trait = poor_meridians } }
 	}
 
 	on_accept = {

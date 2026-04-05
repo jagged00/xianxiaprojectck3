@@ -270,3 +270,7 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Added missing decision picture references for all `summon_qi` decisions to stop decision-picture missing-entry errors.
 - Added UTF-8 BOM where missing in key cultivation files (including `xianxia_world_l_english.yml` and cultivation script files flagged by lexer warnings) to stabilize localization/script loading.
 - Updated `found_sect_domain_decision` to enforce county/duchy-tier-only eligibility and set governance to `clan_government` on successful sect founding as a sect-government approximation.
+
+### 29) AI disciple recruitment weight + lineage-heir persistence hotfix (2026-04-05)
+- Fixed `recruit_disciple_interaction` AI willingness from zeroed baseline to a non-zero base with meridian-sensitive weighting, so AI courts can actually recruit disciples in play.
+- Moved `sect_lineage_heir` out of the mutually-exclusive `education` group into `personality` to preserve inheritance outcomes across yearly sect office reassignment pulses.
