@@ -230,14 +230,16 @@ cleanse_remnant_sects_decision = {
     is_shown = {
         is_cultivator = yes
         is_landed = yes
-        any_domain_county = {
+        any_held_title = {
+            tier = tier_county
             NOT = { faith = root.faith }
         }
         NOT = { has_character_flag = cleanse_remnant_sects_cooldown }
     }
 
     is_valid = {
-        any_domain_county = {
+        any_held_title = {
+            tier = tier_county
             NOT = { faith = root.faith }
         }
     }
@@ -247,8 +249,9 @@ cleanse_remnant_sects_decision = {
     ai_will_do = { base = 20 }
 
     effect = {
-        every_domain_county = {
+        every_held_title = {
             limit = {
+                tier = tier_county
                 NOT = { faith = root.faith }
             }
             faith = { save_temporary_scope_as = former_sect_faith }
