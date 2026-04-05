@@ -1,0 +1,27 @@
+﻿l_english:
+
+ ttk_travel_event_duel.0001.t: "Duel On The Road"
+ ttk_travel_event_duel.0001.nemesis: "As I travel along the road my eyes catch sight of a familiar figure travelling in the distance. This is my [nemesis|E] [ttk_duel_target.GetFirstName]. \n\nFate has placed [ttk_duel_target.GetHerHim] within my reach. I could ignore [ttk_duel_target.GetHerHim] and continue my journey... or seize this golden opportunity to settle the score. \n\nShall I challenge [ttk_duel_target.GetHerHim] on the spot, or let this chance slip through my fingers ?"
+ ttk_travel_event_duel.0001.rival: "As I travel along the road my eyes catch sight of a familiar figure travelling in the distance. This is my [rival|E] [ttk_duel_target.GetFirstName]. \n\nFate has placed [ttk_duel_target.GetHerHim] within my reach. I could ignore [ttk_duel_target.GetHerHim] and continue my journey... or seize this golden opportunity to settle the score. \n\nShall I challenge [ttk_duel_target.GetHerHim] on the spot, or let this chance slip through my fingers ?"
+ ttk_travel_event_duel.0001.a: "A duel, here and now"
+ ttk_travel_event_duel.0001.a.ct.beware:0 "Beware, this can lead you to your death @death_icon!"
+ ttk_travel_event_duel.0001.b: "Let [ttk_duel_target.GetHerHim] pass"
+ 
+ ttk_travel_event_duel.0004.t: "Duel On The Road: Victory"
+ ttk_travel_event_duel.0004.desc: "After an arsh fight, I have finally overwhelmed [ttk_duel_target.GetFirstName]. \n\n[ttk_duel_target.GetFirstName] is now begging me to spare [ttk_duel_target.GetHerHis] life. \n\n Will I end [ttk_duel_target.GetHerHis] life, sealing my triumph in blood? Or will I show mercy, letting [ttk_duel_target.GetHerHim] live with the shame of [ttk_duel_target.GetHerHis] defeat ?"
+  ttk_travel_event_duel.0004.a: "I shall end [ttk_duel_target.GetHerHis] life right now"
+  ttk_travel_event_duel.0004.b: "let [ttk_duel_target.GetHerHim] go"
+  
+  ttk_travel_event_duel.0006.t: "Duel On The Road: Defeat"
+  ttk_travel_event_duel.0006.desc: "After an arsh fight, I have been overwhelmed by [ttk_duel_target.GetFirstName]. \n\n[ttk_duel_target.GetSheHe|U] is now approaching me without a word and start raising [ttk_duel_init.GetHerHis] weapon..."
+  ttk_travel_event_duel.0006.a: "My end is near"
+  
+  ttk_travel_event_duel.0007.t: "Duel On The Road: Defeat"
+  ttk_travel_event_duel.0007.desc: "After an arsh fight, I have been overwhelmed by [ttk_duel_target.GetFirstName]. \n\n[ttk_duel_target.GetSheHe|U] is now approaching an say: "Now leave and do not cross my road again""
+  ttk_travel_event_duel.0007.a: "Let's leave quickly"
+  
+  ttk_travel_event_duel.0009.t: "Duel On The Road: The Coward"
+  ttk_travel_event_duel.0009.desc: "[ttk_duel_target.GetFirstName] has refused to settle the duel. \n\n[ttk_duel_target.GetSheHe|U] claimed [ttk_duel_target.GetSheHe] has no time and that [ttk_duel_target.GetSheHe] is expected, but I can read in [ttk_duel_init.GetHerHis] eyes thats it's just a cowardly move."
+  ttk_travel_event_duel.0009.a: "You won't escape next time"
+
+ 
