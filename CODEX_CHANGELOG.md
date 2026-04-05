@@ -303,3 +303,25 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 
 ### Changelog rules
 - **Encoding rule:** Always save newly edited cultivation mod script/localization files in **UTF-8-BOM** encoding.
+
+### 27) Huxian fox-spirit compatch baseline (2026-04-05)
+- Added AI pulse `cultivation_ai.2250` to support fox-demon (`huxian`) compatibility behavior.
+- All landed adult Huxian rulers are force-synced to top Yin body tier via `yin_bloodline_3` (with lower Yin tiers removed).
+- Added low-frequency AI fox-spirit awakening flow gated by personality (deceptive/seductive/ambitious tendencies), cultivation status, and sect alignment.
+- Hard-blocked awakening for orthodox sword and order/formations sect identities (Mount Hua, Heavenly Sword Pavilion, Azure Edge, Ten Thousand Swords Valley, Violet Thunder Blade, Eight Trigrams Palace, Celestial Talisman Hall).
+- Added doctrine/sect-scaled fox-spirit reaction mapping through new opinion modifiers:
+  - orthodox hate (`-100`),
+  - order/formation rejection (`-60`),
+  - unorthodox caution (`-20`),
+  - vagrant swing (small conditional positive),
+  - demonic alliance (`+65`),
+  - yin/spirit affinity (`+40`).
+- Added persistent character modifier `fox_spirit_awakened` and localization keys for fox-spirit state/opinion feedback.
+
+### 28) Huxian fox-spirit child/meridian/dualcultivation expansion (2026-04-05)
+- Expanded `cultivation_ai.2250` so Huxian handling includes children (not only adults), enabling youth fox-spirit awakenings when AI personality/sect gates fit.
+- Added spiritborn-or-better guarantee for all Huxian meridians (minimum excellent meridians) and post-awakening spiritual temptation package (`spirit_bloodline_3` plus chance for heavenly meridians / extra spirit body traits).
+- Added player parent choice event (`cultivation_ai.2261`) on fox-spirit child awakening: accept or disown; disown path attempts to sever parent relation and applies a permanent disowned-child status modifier.
+- Added periodic fox-spirit purge pressure event (`cultivation_ai.2260`) so orthodox sword/order-formation lieges can lethally purge exposed fox spirits over time.
+- Added fox-spirit-specific dual cultivation AI acceptance tuning so aligned demonic/yin/unorthodox paths are more willing while orthodox/order paths strongly refuse.
+- Added beauty enforcement for awakened fox spirits: `beauty_good_3` is now auto-applied (removing lower beauty tiers) to reflect fox-spirit allure fantasy.
