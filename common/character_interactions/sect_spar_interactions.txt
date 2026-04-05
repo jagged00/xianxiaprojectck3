@@ -45,7 +45,7 @@
 		scope:actor = {
 			# The actor themselves
 			add_to_list = characters
-			
+
 			# Actor's courtiers
 			every_courtier = {
 				limit = {
@@ -56,7 +56,7 @@
 				}
 				add_to_list = characters
 			}
-			
+
 			# Actor's children
 			every_child = {
 				limit = {
@@ -76,9 +76,9 @@
 		scope:recipient = {
 			# The recipient themselves
 			add_to_list = characters
-			
+
 			# Recipient's courtiers
-			every_living_character = {
+			every_courtier = {
 				limit = {
 					is_adult = yes
 					is_alive = yes
@@ -98,7 +98,7 @@
 			scope:recipient = {
 				save_scope_as = sparring_partner
 			}
-			
+
 			# Initialize variables if they don't exist
 			if = {
 				limit = { NOT = { exists = var:sect_spars_won } }
@@ -113,7 +113,7 @@
 				set_variable = { name = sect_spars_total value = 0 }
 			}
 			custom_tooltip = cultivation_spar_effect.tt
-			
+
 			# Same for opponent
 			scope:sparring_partner = {
 				if = {
@@ -130,7 +130,7 @@
 				}
 				custom_tooltip = cultivation_spar_effect.ttt
 			}
-			
+
 			# Trigger the sparring event
 			trigger_event = cultivation_sect_spar.1000
 		}
@@ -152,7 +152,7 @@
 		flag = send_own_court
 		localization = SECT_SPAR_SEND_OWN_COURT
 	}
-	
+
 	send_option = {
 		is_shown = {
 			NOT = { scope:actor = scope:recipient }
@@ -170,7 +170,7 @@
 
 	ai_accept = {
 		base = 50
-		
+
 		# More likely to accept if good fighter
 		modifier = {
 			add = 25
@@ -179,7 +179,7 @@
 			}
 			desc = AI_PROWESS_REASON
 		}
-		
+
 		# Less likely if weak
 		modifier = {
 			add = -25
