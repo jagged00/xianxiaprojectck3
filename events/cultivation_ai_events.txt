@@ -2,7 +2,7 @@
 
 # Monthly orchestrator: iterate all living AI cultivators so progression does not
 # depend on implicit on_action character scope behavior.
-cultivation_ai.0000 = {
+cultivation_ai.2000 = {
     type = character_event
     scope = none
     hidden = yes
@@ -30,6 +30,7 @@ cultivation_ai.0000 = {
 # Startup bootstrap so AI cultivation is never player-gated.
 cultivation_ai.1000 = {
     type = character_event
+    scope = none
     hidden = yes
 
     immediate = {
@@ -312,7 +313,7 @@ cultivation_ai.0003 = {
         is_alive = yes
         age >= 14
         is_cultivator = yes
-        has_liege = yes
+        exists = liege
         has_higher_cultivation_realm_than_liege = yes
         NOT = {
             OR = {

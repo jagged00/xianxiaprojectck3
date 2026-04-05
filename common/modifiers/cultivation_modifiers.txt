@@ -94,7 +94,6 @@ forbidden_technique = {
     intrigue = 4
     prowess = 3
     monthly_dread = 15
-    hostile_scheme_success_chance_add = 0.25
     monthly_prestige_gain_mult = -0.1
 }
 
@@ -125,15 +124,12 @@ tang_poison_arts = {
     icon = intrigue_positive
     intrigue = 4
     learning = 2
-    hostile_scheme_success_chance_add = 0.2
     owned_personal_scheme_success_chance_add = 10
 }
 
 exotic_poisons = {
     icon = intrigue_positive
     intrigue = 2
-    hostile_scheme_success_chance_add = 0.15
-    hostile_scheme_resistance_add = 0.1
 }
 
 # Dual Cultivation Modifiers
@@ -224,7 +220,6 @@ zombie_master = {
     icon = dread_positive
     monthly_dread = 10
     monthly_prestige = 0.2
-    hostile_scheme_success_chance_add = 0.1
     monthly_piety = -0.3
 }
 
@@ -265,7 +260,6 @@ orthodox_realm_insight = {
     learning = 2
     monthly_piety = 0.25
     stress_loss_mult = 0.08
-    hostile_scheme_resistance_add = 0.08
 }
 
 unorthodox_realm_insight = {
@@ -281,7 +275,6 @@ demonic_realm_insight = {
     prowess = 2
     intrigue = 2
     monthly_dread = 10
-    hostile_scheme_success_chance_add = 0.1
     monthly_piety = -0.2
 }
 
@@ -305,7 +298,6 @@ wudang_taiji_harmony = {
     icon = learning_positive
     learning = 2
     stress_loss_mult = 0.1
-    hostile_scheme_resistance_add = 0.05
 }
 
 jade_chamber_alluring_presence = {
@@ -319,7 +311,6 @@ blood_moon_killing_intent = {
     icon = dread_positive
     prowess = 3
     monthly_dread = 12
-    hostile_scheme_success_chance_add = 0.08
 }
 
 ancient_relic_treasure_resonance = {
@@ -409,7 +400,6 @@ forbidden_technique = {
     intrigue = 4
     prowess = 3
     monthly_dread = 15
-    hostile_scheme_success_chance_add = 0.25
     monthly_prestige_gain_mult = -0.1
 }
 
@@ -440,13 +430,10 @@ tang_poison_arts = {
     icon = intrigue_positive
     intrigue = 4
     learning = 2
-    hostile_scheme_success_chance_add = 0.2
     owned_personal_scheme_success_chance_add = 10
 }
 
 exotic_poisons = {
     icon = intrigue_positive
     intrigue = 2
-    hostile_scheme_success_chance_add = 0.15
-    hostile_scheme_resistance_add = 0.1
 }

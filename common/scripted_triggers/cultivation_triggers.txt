@@ -137,7 +137,7 @@ has_any_cultivation_realm_perk = {
 
 # Character has a strictly higher cultivation realm than their current liege.
 has_higher_cultivation_realm_than_liege = {
-	has_liege = yes
+	exists = liege
 	OR = {
 		AND = {
 			has_trait = cultivation_true_immortal
