@@ -1,4 +1,4 @@
-# Codex Changelog & Handoff Notes
+﻿# Codex Changelog & Handoff Notes
 
 This file is for future Codex instances working on this CK3 xianxia/cultivation mod.
 It summarizes *what has been changed recently*, *why*, and *what constraints to preserve*.
@@ -278,3 +278,28 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 ### 30) Teach-technique anti-spam cooldown guard (2026-04-05)
 - Added explicit validity/cooldown gating to `teach_technique_interaction` so a disciple with `teach_technique_cooldown` cannot be repeatedly farmed for immediate XP/prowess/prestige loops.
 - Added a 1-year recipient cooldown flag application on successful teach-technique acceptance.
+
+
+### 22) Cultivation maintenance + alchemy expansion + UTF-8-BOM policy (2026-04-05)
+- Added a repository rule for cultivation content: save edited mod files in UTF-8-BOM encoding to avoid parser/localization loader errors.
+- Fixed multiple cultivation script/runtime errors reported in `error.log` (invalid opinion triggers, invalid lifestyle/prowess effects, invalid nickname effect usage, invalid alliance trigger usage, and malformed trait variable increments).
+- Fixed disciple recruitment flow so already-awakened courtiers can still be recruited into the sect disciple system, restoring mentor/disciple progression interactions.
+- Updated awaken-meridians decision so awakened courtiers/vassals are converted into the awakener's sect faith.
+- Restricted elder-role assignment to higher cultivation realms (Core Formation and above); lower-realm cultivators are forced into disciple track.
+- Added three-tier alchemy body traits (`alchemy_body_tier_1/2/3`) and tied tier scaling directly into spirit pill success chances.
+- Added pill economy decisions to sell refined pills for spirit stones (gold) and buy breakthrough pills (with chance for a lifestyle-speed buff via Enlightenment Pill).
+- Added AI pre-breakthrough pill support event that has weaker AI cultivators seek pill support from more learned in-court cultivators.
+- Updated sect council / alchemy gathering flows to initiate real activities when hostable (feast/hunt) while preserving existing xianxia event chains.
+- Added missing localization coverage for weapon path traits, sect role character descriptions, and new alchemy content.
+
+- Added crafted-pill enlightenment chance: successful spirit pill refinement can now also roll `alchemy_enlightenment_pill` (temporary lifestyle-speed gain).
+- Added alchemy body tiers into the initialization special-lottery pools so alchemy physiques can appear naturally like other rare innate gifts.
+
+- Added alchemy lifestyle mastery tiers (XP from repeated pill crafting) with intentionally minor craft-boost behavior compared to innate alchemy-body tiers.
+- Added formation mastery system (3 trait tiers + XP progression) and new formation-body tiers; integrated formation bodies into initialization lottery pools.
+- Added `raise_formation_barriers_decision` to deploy lore-accurate defensive arrays that improve county fortification and army defensive battlefield advantage.
+
+- Added marriage AI valuation boosts for alchemy/formation body and mastery traits so these new cultivation paths are preferred in sect matchmaking.
+
+### Changelog rules
+- **Encoding rule:** Always save newly edited cultivation mod script/localization files in **UTF-8-BOM** encoding.

@@ -1,4 +1,4 @@
-﻿marriage_ai_accept_modifier = {
+﻿﻿marriage_ai_accept_modifier = {
 	###MARRIAGE SCRIPTED MODIFIERS###
 
 	modifier = {
@@ -73,14 +73,13 @@
 			scope:recipient = {
 				OR = {
 					exists = liege
-					exists = guardian
-				}
+									}
 				OR = {
 					liege = {
-						negative_opinion_of = scope:actor
+						opinion = { target = scope:actor value <= -1 }
 					}
 					guardian = {
-						negative_opinion_of = scope:actor
+						opinion = { target = scope:actor value <= -1 }
 					}
 				}
 			}
@@ -268,7 +267,7 @@
 			desc = PARENTS_DISAPPROVE_MARRIAGE
 			scope:secondary_recipient = {
 				any_parent = {
-					negative_opinion_of = scope:actor
+					opinion = { target = scope:actor value <= -1 }
 				}
 			}
 		}
@@ -359,6 +358,68 @@
 					has_trait = primal_bloodline_1
 					has_trait = spirit_bloodline_1
 					has_trait = sun_bloodline_1
+				}
+			}
+		}
+
+		# Alchemy and formation paths are also desirable in sect marriage politics.
+		modifier = {
+			add = 65
+			desc = DUAL_CULTIVATION_MARRIAGE_BONUS
+			scope:secondary_recipient = {
+				OR = {
+					has_trait = alchemy_body_tier_3
+					has_trait = formation_body_tier_3
+				}
+			}
+		}
+		modifier = {
+			add = 45
+			desc = DUAL_CULTIVATION_MARRIAGE_BONUS
+			scope:secondary_recipient = {
+				OR = {
+					has_trait = alchemy_body_tier_2
+					has_trait = formation_body_tier_2
+				}
+			}
+		}
+		modifier = {
+			add = 25
+			desc = DUAL_CULTIVATION_MARRIAGE_BONUS
+			scope:secondary_recipient = {
+				OR = {
+					has_trait = alchemy_body_tier_1
+					has_trait = formation_body_tier_1
+				}
+			}
+		}
+		modifier = {
+			add = 30
+			desc = DUAL_CULTIVATION_MARRIAGE_BONUS
+			scope:secondary_recipient = {
+				OR = {
+					has_trait = alchemy_lifestyle_tier_3
+					has_trait = formation_master_tier_3
+				}
+			}
+		}
+		modifier = {
+			add = 20
+			desc = DUAL_CULTIVATION_MARRIAGE_BONUS
+			scope:secondary_recipient = {
+				OR = {
+					has_trait = alchemy_lifestyle_tier_2
+					has_trait = formation_master_tier_2
+				}
+			}
+		}
+		modifier = {
+			add = 10
+			desc = DUAL_CULTIVATION_MARRIAGE_BONUS
+			scope:secondary_recipient = {
+				OR = {
+					has_trait = alchemy_lifestyle_tier_1
+					has_trait = formation_master_tier_1
 				}
 			}
 		}

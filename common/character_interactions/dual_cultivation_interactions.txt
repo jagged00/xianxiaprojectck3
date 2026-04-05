@@ -56,7 +56,7 @@
         base = 0
         modifier = {
             add = 80
-            scope:recipient = { positive_opinion_of = scope:actor }
+            scope:recipient = { opinion = { target = scope:actor value >= 50 } }
         }
         modifier = {
             add = 40
@@ -68,7 +68,7 @@
         }
         modifier = {
             add = -60
-            scope:recipient = { negative_opinion_of = scope:actor }
+            scope:recipient = { opinion = { target = scope:actor value <= -25 } }
         }
         modifier = {
             add = -1000

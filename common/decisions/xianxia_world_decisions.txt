@@ -1,4 +1,4 @@
-found_sect_domain_decision = {
+﻿found_sect_domain_decision = {
     picture = { reference = "gfx/interface/illustrations/decisions/decision_found_holy_order.dds" }
     decision_group_type = major
     sort_order = 521
@@ -33,10 +33,6 @@ found_sect_domain_decision = {
 
     effect = {
         add_character_flag = founded_sect_domain
-        if = {
-            limit = { NOT = { has_government = clan_government } }
-            set_government_type = clan_government
-        }
         trigger_event = xianxia_world.1200
     }
 }
@@ -62,7 +58,6 @@ refine_spirit_pill_decision = {
     }
 
     effect = {
-        add_gold = -75
         add_character_flag = { flag = spirit_pill_refining_cooldown days = 365 }
         trigger_event = xianxia_world.1300
     }
@@ -205,6 +200,10 @@ convene_sect_council_decision = {
     effect = {
         add_character_flag = { flag = sect_council_cooldown days = 365 }
         trigger_event = xianxia_world.1720
+        if = {
+            limit = { can_host_activity = activity_feast }
+            ai_attempt_to_host_activity = activity_feast
+        }
     }
 
     ai_check_interval = 24
@@ -227,8 +226,123 @@ gather_alchemy_resources_decision = {
     effect = {
         add_character_flag = { flag = gather_alchemy_resources_cooldown days = 180 }
         trigger_event = xianxia_world.1330
+        if = {
+            limit = { can_host_activity = activity_hunt }
+            ai_attempt_to_host_activity = activity_hunt
+        }
     }
 
     ai_check_interval = 24
     ai_will_do = { base = 25 }
+}
+
+
+sell_spirit_pill_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_ask_for_gold.dds" }
+    decision_group_type = major
+    sort_order = 529
+
+    title = sell_spirit_pill_decision
+    desc = sell_spirit_pill_decision_desc
+    selection_tooltip = sell_spirit_pill_decision_tooltip
+    confirm_text = sell_spirit_pill_decision_confirm
+
+    is_shown = { is_adult = yes is_cultivator = yes }
+    is_valid = {
+        has_character_modifier = perfected_spirit_pill
+        NOT = { has_character_flag = sell_spirit_pill_cooldown }
+    }
+
+    effect = {
+        remove_character_modifier = perfected_spirit_pill
+        add_gold = 100
+        add_character_flag = { flag = sell_spirit_pill_cooldown days = 365 }
+    }
+
+    ai_check_interval = 24
+    ai_will_do = { base = 15 }
+}
+
+buy_breakthrough_pill_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_dose_self.dds" }
+    decision_group_type = major
+    sort_order = 530
+
+    title = buy_breakthrough_pill_decision
+    desc = buy_breakthrough_pill_decision_desc
+    selection_tooltip = buy_breakthrough_pill_decision_tooltip
+    confirm_text = buy_breakthrough_pill_decision_confirm
+
+    is_shown = { is_adult = yes is_cultivator = yes }
+    is_valid = {
+        gold >= 120
+        NOT = { has_character_flag = buy_breakthrough_pill_cooldown }
+    }
+
+    effect = {
+        add_gold = { add = 120 multiply = -1 }
+        add_character_modifier = { modifier = perfected_spirit_pill days = 1095 }
+        random = {
+            chance = 30
+            add_character_modifier = { modifier = alchemy_enlightenment_pill days = 730 }
+        }
+        add_character_flag = { flag = buy_breakthrough_pill_cooldown days = 365 }
+    }
+
+    ai_check_interval = 24
+    ai_will_do = {
+        base = 5
+        modifier = {
+            add = 30
+            OR = {
+                has_character_flag = can_attempt_qi_refining_breakthrough
+                has_character_flag = can_attempt_qi_building_breakthrough
+                has_character_flag = can_attempt_core_formation_breakthrough
+                has_character_flag = can_attempt_nascent_soul_breakthrough
+            }
+        }
+    }
+}
+
+
+raise_formation_barriers_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_prepare_for_war.dds" }
+    decision_group_type = major
+    sort_order = 531
+
+    title = raise_formation_barriers_decision
+    desc = raise_formation_barriers_decision_desc
+    selection_tooltip = raise_formation_barriers_decision_tooltip
+    confirm_text = raise_formation_barriers_decision_confirm
+
+    is_shown = {
+        is_adult = yes
+        is_landed = yes
+        is_cultivator = yes
+        OR = {
+            has_trait = formation_master_tier_1
+            has_trait = formation_master_tier_2
+            has_trait = formation_master_tier_3
+            has_trait = formation_body_tier_1
+            has_trait = formation_body_tier_2
+            has_trait = formation_body_tier_3
+        }
+    }
+
+    is_valid = {
+        NOT = { has_character_flag = raise_formation_barriers_cooldown }
+        exists = capital_county
+    }
+
+    effect = {
+        add_character_flag = { flag = raise_formation_barriers_cooldown days = 365 }
+        add_character_modifier = { modifier = formation_barrier_network days = 730 }
+        capital_county = { add_county_modifier = { name = formation_warded_county duration = 1825 } }
+
+        change_variable = { name = formation_mastery_xp add = 1 }
+        xianxia_update_formation_master_trait_effect = yes
+    }
+
+    ai_check_interval = 24
+    ai_will_do = { base = 15 }
 }

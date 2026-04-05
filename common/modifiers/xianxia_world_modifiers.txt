@@ -1,4 +1,4 @@
-sect_headquarters_realm = {
+﻿sect_headquarters_realm = {
     monthly_prestige = 0.3
     monthly_piety = 0.3
     knight_effectiveness_mult = 0.1
@@ -22,7 +22,7 @@ perfected_spirit_pill = {
 
 manual_comprehension = {
     lifestyle_experience_gain_mult = 0.15
-    monthly_lifestyle_xp = 100
+    monthly_lifestyle_xp_gain_mult = 0.08
 }
 
 tribulation_survivor = {
@@ -39,14 +39,13 @@ cultivation_deviation = {
 }
 
 secret_realm_inheritance = {
-    monthly_lifestyle_xp = 150
+    monthly_lifestyle_xp_gain_mult = 0.10
     monthly_prestige = 0.3
 }
 
 high_realm_longevity = {
     health = 1.5
     disease_resistance = 0.5
-    minor_health_chance = -0.8
     prowess = 2
 }
 
@@ -58,7 +57,7 @@ jianghu_reputation_righteous = {
 jianghu_reputation_demonic = {
     same_faith_opinion = -5
     dread_gain_mult = 0.3
-    hostile_scheme_success_chance_add = 10
+    enemy_hostile_scheme_success_chance_add = 10
 }
 
 sect_governance_feudal_adapted = {
@@ -86,7 +85,7 @@ sect_governance_tribal_adapted = {
 sect_governance_theocracy_adapted = {
     monthly_piety = 0.4
     clergy_opinion = 8
-    monthly_lifestyle_xp = 50
+    monthly_lifestyle_xp_gain_mult = 0.04
 }
 
 sect_governance_administrative_adapted = {
@@ -96,7 +95,6 @@ sect_governance_administrative_adapted = {
 }
 
 jianghu_realm_friction = {
-    popular_opinion = -5
     vassal_opinion = -4
 }
 
@@ -120,8 +118,8 @@ sect_internal_dispute = {
 }
 
 sect_power_struggle = {
-    hostile_scheme_success_chance_add = 10
-    personal_scheme_success_chance_add = 8
+    enemy_hostile_scheme_success_chance_add = 10
+    owned_personal_scheme_success_chance_add = 8
     stress_gain_mult = 0.1
 }
 
@@ -137,7 +135,7 @@ tournament_chain_injury = {
 }
 
 expedition_progress = {
-    monthly_lifestyle_xp = 120
+    monthly_lifestyle_xp_gain_mult = 0.08
     prowess = 1
 }
 
@@ -152,7 +150,7 @@ lineage_prestige_mentor = {
 }
 
 lineage_marked_disciple = {
-    monthly_lifestyle_xp = 100
+    monthly_lifestyle_xp_gain_mult = 0.08
     monthly_piety = 0.1
 }
 
@@ -186,7 +184,7 @@ sect_lineage_favor = {
 
 sect_lineage_fracture = {
     same_faith_opinion = -8
-    hostile_scheme_success_chance_add = 8
+    enemy_hostile_scheme_success_chance_add = 8
 }
 
 alchemy_herb_stockpile = {
@@ -202,4 +200,22 @@ alchemy_ore_stockpile = {
 alchemy_core_stockpile = {
     prowess = 1
     monthly_piety = 0.1
+}
+
+
+alchemy_enlightenment_pill = {
+    monthly_lifestyle_xp_gain_mult = 0.20
+    learning = 1
+}
+
+
+formation_barrier_network = {
+    advantage = 4
+    controlled_province_advantage = 4
+    levy_size = 0.08
+}
+
+formation_warded_county = {
+    fort_level = 1
+    garrison_size = 0.15
 }
