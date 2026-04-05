@@ -9,8 +9,7 @@
 	ai_targets = {
 		ai_recipients = courtiers
 		ai_recipients = children
-		ai_recipients = siblings
-		ai_recipients = parents
+		ai_recipients = family
 	}
 
 	is_shown = {

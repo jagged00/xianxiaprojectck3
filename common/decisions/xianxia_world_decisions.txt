@@ -12,11 +12,19 @@ found_sect_domain_decision = {
         is_adult = yes
         is_cultivator = yes
         is_independent_ruler = yes
+        OR = {
+            highest_held_title_tier = tier_county
+            highest_held_title_tier = tier_duchy
+        }
     }
 
     is_valid = {
         realm_size >= 3
         NOT = { has_character_flag = founded_sect_domain }
+        OR = {
+            highest_held_title_tier = tier_county
+            highest_held_title_tier = tier_duchy
+        }
     }
 
     ai_check_interval = 24
@@ -25,6 +33,10 @@ found_sect_domain_decision = {
 
     effect = {
         add_character_flag = founded_sect_domain
+        if = {
+            limit = { NOT = { has_government = clan_government } }
+            set_government_type = clan_government
+        }
         trigger_event = xianxia_world.1200
     }
 }

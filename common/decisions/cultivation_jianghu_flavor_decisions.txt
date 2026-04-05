@@ -1,4 +1,4 @@
-jianghu_oath_gathering_decision = {
+﻿jianghu_oath_gathering_decision = {
     picture = { reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds" }
     sort_order = 520
     decision_group_type = major

@@ -264,3 +264,9 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Restored startup initialization sweep in `cultivation_character_initialization.0001` from ruler-only to `every_living_character` so unlanded courtiers/children receive immediate meridian/cultivation setup at lobby start.
 - Fixed yearly sect office pass faith comparison in `xianxia_world.1700` to compare courtiers against the current iterated ruler scope (`faith = prev.faith`) rather than invalid `root` assumptions under `scope = none`.
 - Hardened office reroll exclusivity by explicitly removing all conflicting elder office traits before assigning a new one, preventing trait stacking across yearly rerolls.
+
+### 28) Decision visibility/localization/picture hotfix + sect-founding constraints (2026-04-05)
+- Fixed interaction-load blocker in `cultivation_teach_interactions` by replacing invalid AI recipient buckets (`siblings`/`parents`) with valid `family`, restoring disciple interaction registration in game.
+- Added missing decision picture references for all `summon_qi` decisions to stop decision-picture missing-entry errors.
+- Added UTF-8 BOM where missing in key cultivation files (including `xianxia_world_l_english.yml` and cultivation script files flagged by lexer warnings) to stabilize localization/script loading.
+- Updated `found_sect_domain_decision` to enforce county/duchy-tier-only eligibility and set governance to `clan_government` on successful sect founding as a sect-government approximation.

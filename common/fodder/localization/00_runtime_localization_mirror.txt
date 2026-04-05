@@ -7,3 +7,4 @@ mirror_localization = {
     source = "localization/english/cultivation_teach_interactions_l_english.yml"
 }
 # sync_update: added council/resource/debug dynamic localization keys
+# sync_update: added BOM + decision/government visibility localization hotfixes for xianxia world decisions

@@ -1,4 +1,4 @@
-carn_on_sex_v2 = {
+﻿carn_on_sex_v2 = {
 	effect = {
 		if = {
 			limit = {

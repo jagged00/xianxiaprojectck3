@@ -1,4 +1,4 @@
-remnant_sect_purged_opinion = {
+﻿remnant_sect_purged_opinion = {
 	opinion = -20
 	months = 120
 }
