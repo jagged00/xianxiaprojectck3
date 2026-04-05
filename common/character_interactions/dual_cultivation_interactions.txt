@@ -52,4 +52,30 @@
 
     ai_potential = { always = yes }
     ai_will_do = { base = 15 }
+    ai_accept = {
+        base = 0
+        modifier = {
+            add = 80
+            scope:recipient = { positive_opinion_of = scope:actor }
+        }
+        modifier = {
+            add = 40
+            OR = {
+                scope:recipient = { has_relation_lover = scope:actor }
+                scope:recipient = { has_relation_soulmate = scope:actor }
+                scope:recipient = { has_relation_friend = scope:actor }
+            }
+        }
+        modifier = {
+            add = -60
+            scope:recipient = { negative_opinion_of = scope:actor }
+        }
+        modifier = {
+            add = -1000
+            OR = {
+                scope:recipient = { has_relation_rival = scope:actor }
+                scope:recipient = { has_relation_nemesis = scope:actor }
+            }
+        }
+    }
 }

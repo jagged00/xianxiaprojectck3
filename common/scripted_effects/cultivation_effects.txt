@@ -725,3 +725,30 @@ cultivation_cripple_mortalize_effect = {
 	remove_character_modifier = contemplating_breakthrough
 	remove_character_modifier = failed_breakthrough_attempt
 }
+
+
+# Build same-sect defensive pacts among independent cultivator rulers.
+cultivation_form_sect_defensive_pacts_effect = {
+    if = {
+        limit = {
+            is_alive = yes
+            is_adult = yes
+            is_independent_ruler = yes
+            is_cultivator = yes
+            has_cultivation_sect_faith = yes
+        }
+
+        every_independent_ruler = {
+            limit = {
+                is_alive = yes
+                is_adult = yes
+                is_cultivator = yes
+                has_cultivation_sect_faith = yes
+                faith = root.faith
+                NOT = { this = root }
+                NOT = { has_alliance_with = root }
+            }
+            add_alliance = root
+        }
+    }
+}

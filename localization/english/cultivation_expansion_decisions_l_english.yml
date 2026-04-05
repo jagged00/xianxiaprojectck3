@@ -51,3 +51,8 @@ jianghu_oath_gathering_decision:0 "Convene a Jianghu Oath Gathering"
 jianghu_oath_gathering_decision_desc:0 "Invite wandering swordsmen, sect envoys, alchemists, and rogue cultivators to your court. Over cups of wine and veiled boasts, oaths are sworn, rivalries measured, and your name carried across the rivers and lakes."
 jianghu_oath_gathering_decision_confirm:0 "Let the Jianghu witness me."
 jianghu_oath_gathering_decision_tooltip:0 "Gain [prestige_i] Prestige and [piety_i] Piety, then place this gathering on cooldown for 5 years."
+
+purge_mortal_afflictions_decision:0 "Purge Mortal Afflictions"
+purge_mortal_afflictions_decision_desc:0 "By circulating your refined qi through every meridian and organ, you expel mortal diseases, stabilize your body, and mend lingering injuries that would cripple ordinary people."
+purge_mortal_afflictions_decision_confirm:0 "Circulate qi through every channel."
+purge_mortal_afflictions_decision_tooltip:0 "Requires at least one major disease or injury. Cleanse afflictions, gain stress relief, and enter a 1-month cooldown."

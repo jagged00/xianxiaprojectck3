@@ -27,6 +27,26 @@ cultivation_ai.2000 = {
     option = { name = OK }
 }
 
+# Monthly fertility safeguard: cultivators should never remain infertile.
+cultivation_ai.2100 = {
+    type = character_event
+    scope = none
+    hidden = yes
+
+    immediate = {
+        every_living_character = {
+            limit = {
+                is_alive = yes
+                is_cultivator = yes
+                has_trait = infertile
+            }
+            remove_trait = infertile
+        }
+    }
+
+    option = { name = OK }
+}
+
 # Startup bootstrap so AI cultivation is never player-gated.
 cultivation_ai.1000 = {
     type = character_event
@@ -608,6 +628,28 @@ cultivation_ai.0005 = {
                 modifier = vagrant_realm_insight
                 days = 730
             }
+        }
+    }
+
+    option = { name = OK }
+}
+
+
+# Sect solidarity pulse: same-sect independent cultivators form defensive pacts.
+cultivation_ai.3000 = {
+    type = character_event
+    scope = none
+    hidden = yes
+
+    immediate = {
+        every_independent_ruler = {
+            limit = {
+                is_alive = yes
+                is_adult = yes
+                is_cultivator = yes
+                has_cultivation_sect_faith = yes
+            }
+            cultivation_form_sect_defensive_pacts_effect = yes
         }
     }
 

@@ -2139,3 +2139,9 @@
  trait_6_xp_tt:0 "Gain trait experience."
  trait_6_xp_desc:0 "Your sixth trait gains experience."
  cultivation_breakthrough.1400.wait:0 "Wait for a better moment"
+
+ CULTIVATION_MARRIAGE_BLOCKED_MERIDIANS_TABOO:0 "Blocked Meridians Are a Marriage Taboo"
+ CULTIVATION_MARRIAGE_POOR_MERIDIANS_PENALTY:0 "Poor Meridian Foundation"
+ CULTIVATION_MARRIAGE_STRONG_MERIDIANS_PRIORITY:0 "Prioritizes Strong Meridians"
+ CULTIVATION_MARRIAGE_HEAVENLY_MERIDIANS_PRIORITY:0 "Seeks Heavenly Meridian Heirs"
+ CULTIVATION_MARRIAGE_HEAVENLY_MERIDIAN_PURITY:0 "Heavenly Meridian Purity Standard"

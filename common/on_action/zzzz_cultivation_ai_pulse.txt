@@ -1,6 +1,7 @@
 ﻿on_game_start_after_lobby = {
     events = {
         cultivation_ai.1000
+        cultivation_ai.3000
     }
 }
 
@@ -8,5 +9,13 @@
 on_monthly_pulse = {
     events = {
         cultivation_ai.2000
+        cultivation_ai.2100
+    }
+}
+
+
+on_yearly_pulse = {
+    events = {
+        cultivation_ai.3000
     }
 }

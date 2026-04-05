@@ -301,7 +301,7 @@
 		}
 		# Rare bloodlines are highly valued in sect marriage politics
 		modifier = {
-			add = 45
+			add = 220
 			desc = BLOODLINE_MARRIAGE_AWAKENED
 			scope:secondary_recipient = {
 				OR = {
@@ -320,7 +320,7 @@
 			}
 		}
 		modifier = {
-			add = 25
+			add = 140
 			desc = BLOODLINE_MARRIAGE_PURE
 			scope:secondary_recipient = {
 				OR = {
@@ -339,7 +339,7 @@
 			}
 		}
 		modifier = {
-			add = 10
+			add = 80
 			desc = BLOODLINE_MARRIAGE_FOUNDATION
 			scope:secondary_recipient = {
 				OR = {
@@ -537,9 +537,9 @@
 			}
 		}
 		# Bloodline strategy: sects prize pairings that can produce elite heirs
-		modifier = {
-			add = 110
-			desc = MERIDIAN_BLOODLINE_INHERITANCE
+			modifier = {
+				add = 110
+				desc = MERIDIAN_BLOODLINE_INHERITANCE
 			OR = {
 				AND = {
 					scope:secondary_actor = { has_trait = heavenly_meridians }
@@ -558,12 +558,61 @@
 							has_trait = heavenly_meridians
 						}
 					}
+					}
 				}
 			}
-		}
-		# Orthodox and Demonic dao paths are bitter enemies; marriages are almost never accepted
-		modifier = {
-			add = -1000
+			# Meridian-first dynasty policy: blocked meridians are near-absolute marriage taboo
+			modifier = {
+				add = -12000
+				desc = CULTIVATION_MARRIAGE_BLOCKED_MERIDIANS_TABOO
+				scope:secondary_recipient = {
+					has_trait = crippled_meridians
+					NOT = { has_any_cultivation_bloodline_trait = yes }
+				}
+			}
+			modifier = {
+				add = 6200
+				desc = BLOODLINE_MARRIAGE_AWAKENED
+				scope:secondary_recipient = {
+					has_trait = crippled_meridians
+					has_any_cultivation_bloodline_trait = yes
+				}
+			}
+			modifier = {
+				add = -300
+				desc = CULTIVATION_MARRIAGE_POOR_MERIDIANS_PENALTY
+				scope:secondary_recipient = { has_trait = poor_meridians }
+			}
+			modifier = {
+				add = 140
+				desc = CULTIVATION_MARRIAGE_STRONG_MERIDIANS_PRIORITY
+				scope:secondary_recipient = {
+					OR = {
+						has_trait = good_meridians
+						has_trait = excellent_meridians
+						has_trait = heavenly_meridians
+					}
+				}
+			}
+			modifier = {
+				add = 320
+				desc = CULTIVATION_MARRIAGE_HEAVENLY_MERIDIANS_PRIORITY
+				scope:secondary_recipient = { has_trait = heavenly_meridians }
+			}
+			modifier = {
+				add = -900
+				desc = CULTIVATION_MARRIAGE_HEAVENLY_MERIDIAN_PURITY
+				scope:secondary_actor = { has_trait = heavenly_meridians }
+				scope:secondary_recipient = {
+					NOR = {
+						has_trait = excellent_meridians
+						has_trait = heavenly_meridians
+					}
+				}
+			}
+			# Orthodox and Demonic dao paths are bitter enemies; marriages are almost never accepted
+			modifier = {
+				add = -1000
 			desc = OPPOSING_DAO_PATHS_MARRIAGE_TABOO
 			scope:secondary_actor.faith = {
 				has_doctrine_parameter = orthodox_cultivation
