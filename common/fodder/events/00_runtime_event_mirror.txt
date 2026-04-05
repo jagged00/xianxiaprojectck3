@@ -1,4 +1,4 @@
-# Runtime mirror snapshot for fodder sync.
+﻿﻿# Runtime mirror snapshot for fodder sync.
 # Source of truth remains events/*.txt; update this mirror in the same commit.
 
 mirror_events = {
@@ -8,3 +8,10 @@ mirror_events = {
 }
 # sync_update: added sect council + alchemy resource + branching arc events
 # sync_update: review hotpatch for startup init scope and sect office reroll exclusivity
+
+# sync_update: alchemy body tiers, elder realm gating, AI pill-request pulse, and council/resource activity bridge updates
+# sync_update: appended cultivation_ai.2240 AI breakthrough pill-request event
+
+# sync_update: alchemy craft enlightenment proc + alchemy body lottery integration in initialization event
+
+# sync_update: added alchemy lifestyle xp progression and formation mastery/defense-array event hooks

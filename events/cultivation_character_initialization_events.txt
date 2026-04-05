@@ -351,6 +351,12 @@ cultivation_character_initialization.0006 = {
 				15 = { add_trait = primal_bloodline_1 }
 				15 = { add_trait = spirit_bloodline_1 }
 				15 = { add_trait = sun_bloodline_1 }
+				10 = { add_trait = alchemy_body_tier_1 }
+				4 = { add_trait = alchemy_body_tier_2 }
+				2 = { add_trait = alchemy_body_tier_3 }
+				8 = { add_trait = formation_body_tier_1 }
+				3 = { add_trait = formation_body_tier_2 }
+				1 = { add_trait = formation_body_tier_3 }
 				4 = {
 					random_list = {
 						1 = { add_trait = yin_bloodline_1 }
@@ -364,6 +370,12 @@ cultivation_character_initialization.0006 = {
 						1 = { add_trait = primal_bloodline_1 }
 						1 = { add_trait = spirit_bloodline_1 }
 						1 = { add_trait = sun_bloodline_1 }
+						1 = { add_trait = alchemy_body_tier_1 }
+						1 = { add_trait = alchemy_body_tier_2 }
+						1 = { add_trait = alchemy_body_tier_3 }
+						1 = { add_trait = formation_body_tier_1 }
+						1 = { add_trait = formation_body_tier_2 }
+						1 = { add_trait = formation_body_tier_3 }
 					}
 					random_list = {
 						1 = { add_trait = yin_bloodline_1 }
@@ -377,6 +389,12 @@ cultivation_character_initialization.0006 = {
 						1 = { add_trait = primal_bloodline_1 }
 						1 = { add_trait = spirit_bloodline_1 }
 						1 = { add_trait = sun_bloodline_1 }
+						1 = { add_trait = alchemy_body_tier_1 }
+						1 = { add_trait = alchemy_body_tier_2 }
+						1 = { add_trait = alchemy_body_tier_3 }
+						1 = { add_trait = formation_body_tier_1 }
+						1 = { add_trait = formation_body_tier_2 }
+						1 = { add_trait = formation_body_tier_3 }
 					}
 				}
 				1 = {
@@ -392,6 +410,12 @@ cultivation_character_initialization.0006 = {
 						1 = { add_trait = primal_bloodline_1 }
 						1 = { add_trait = spirit_bloodline_1 }
 						1 = { add_trait = sun_bloodline_1 }
+						1 = { add_trait = alchemy_body_tier_1 }
+						1 = { add_trait = alchemy_body_tier_2 }
+						1 = { add_trait = alchemy_body_tier_3 }
+						1 = { add_trait = formation_body_tier_1 }
+						1 = { add_trait = formation_body_tier_2 }
+						1 = { add_trait = formation_body_tier_3 }
 					}
 					random_list = {
 						1 = { add_trait = yin_bloodline_1 }
@@ -405,6 +429,12 @@ cultivation_character_initialization.0006 = {
 						1 = { add_trait = primal_bloodline_1 }
 						1 = { add_trait = spirit_bloodline_1 }
 						1 = { add_trait = sun_bloodline_1 }
+						1 = { add_trait = alchemy_body_tier_1 }
+						1 = { add_trait = alchemy_body_tier_2 }
+						1 = { add_trait = alchemy_body_tier_3 }
+						1 = { add_trait = formation_body_tier_1 }
+						1 = { add_trait = formation_body_tier_2 }
+						1 = { add_trait = formation_body_tier_3 }
 					}
 					random_list = {
 						1 = { add_trait = yin_bloodline_1 }
@@ -418,6 +448,12 @@ cultivation_character_initialization.0006 = {
 						1 = { add_trait = primal_bloodline_1 }
 						1 = { add_trait = spirit_bloodline_1 }
 						1 = { add_trait = sun_bloodline_1 }
+						1 = { add_trait = alchemy_body_tier_1 }
+						1 = { add_trait = alchemy_body_tier_2 }
+						1 = { add_trait = alchemy_body_tier_3 }
+						1 = { add_trait = formation_body_tier_1 }
+						1 = { add_trait = formation_body_tier_2 }
+						1 = { add_trait = formation_body_tier_3 }
 					}
 				}
 			}
@@ -436,6 +472,12 @@ cultivation_character_initialization.0006 = {
 				15 = { add_trait = primal_bloodline_1 }
 				15 = { add_trait = spirit_bloodline_1 }
 				15 = { add_trait = sun_bloodline_1 }
+				10 = { add_trait = alchemy_body_tier_1 }
+				4 = { add_trait = alchemy_body_tier_2 }
+				2 = { add_trait = alchemy_body_tier_3 }
+				8 = { add_trait = formation_body_tier_1 }
+				3 = { add_trait = formation_body_tier_2 }
+				1 = { add_trait = formation_body_tier_3 }
 			}
 		}
 	}

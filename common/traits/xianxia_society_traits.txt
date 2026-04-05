@@ -1,30 +1,30 @@
-sect_disciple = {
+﻿sect_disciple = {
+    category = lifestyle
     icon = "gfx/interface/icons/traits/education_diplomacy_1.dds"
     desc = trait_sect_disciple_desc
     group = education
     ruler_designer_cost = 0
-    ai_value = 30
     diplomacy = 1
     learning = 1
 }
 
 sect_elder = {
+    category = lifestyle
     icon = "gfx/interface/icons/traits/education_learning_3.dds"
     desc = trait_sect_elder_desc
     group = education
     ruler_designer_cost = 15
-    ai_value = 60
     learning = 3
     prowess = 2
     monthly_piety = 0.25
 }
 
 sect_leader = {
+    category = lifestyle
     icon = "gfx/interface/icons/traits/education_martial_4.dds"
     desc = trait_sect_leader_desc
     group = education
     ruler_designer_cost = 30
-    ai_value = 80
     diplomacy = 2
     martial = 2
     stewardship = 1
@@ -32,94 +32,217 @@ sect_leader = {
 }
 
 jianghu_righteous = {
+    category = lifestyle
     icon = "gfx/interface/icons/traits/compassionate.dds"
     desc = trait_jianghu_righteous_desc
     group = personality
-    ai_value = 40
     same_trait_opinion = 10
     opposite_trait_opinion = -20
 }
 
 jianghu_demonic = {
+    category = lifestyle
     icon = "gfx/interface/icons/traits/sadistic.dds"
     desc = trait_jianghu_demonic_desc
     group = personality
-    ai_value = 40
     same_trait_opinion = 10
     opposite_trait_opinion = -20
     dread_gain_mult = 0.2
 }
 
 weapon_path_sword = {
+    category = lifestyle
     icon = "gfx/interface/icons/traits/blademaster_1.dds"
     desc = trait_weapon_path_sword_desc
     group = commander
-    ai_value = 25
     prowess = 3
     martial = 1
 }
 
 weapon_path_saber = {
+    category = lifestyle
     icon = "gfx/interface/icons/traits/blademaster_2.dds"
     desc = trait_weapon_path_saber_desc
     group = commander
-    ai_value = 25
     prowess = 3
     martial = 1
 }
 
 weapon_path_spear = {
+    category = lifestyle
     icon = "gfx/interface/icons/traits/strategist.dds"
     desc = trait_weapon_path_spear_desc
     group = commander
-    ai_value = 20
     prowess = 2
     martial = 2
 }
 
 weapon_path_fist = {
+    category = lifestyle
     icon = "gfx/interface/icons/traits/athletic.dds"
     desc = trait_weapon_path_fist_desc
     group = physical
-    ai_value = 20
     prowess = 4
 }
 
 sect_inner_hall_elder = {
+    category = lifestyle
     icon = "gfx/interface/icons/traits/education_learning_4.dds"
     desc = trait_sect_inner_hall_elder_desc
     group = education
-    ai_value = 70
     learning = 2
     stewardship = 2
     monthly_piety = 0.2
 }
 
 sect_outer_hall_elder = {
+    category = lifestyle
     icon = "gfx/interface/icons/traits/education_martial_3.dds"
     desc = trait_sect_outer_hall_elder_desc
     group = education
-    ai_value = 55
     martial = 2
     prowess = 2
     monthly_prestige = 0.15
 }
 
 sect_enforcement_elder = {
+    category = lifestyle
     icon = "gfx/interface/icons/traits/just.dds"
     desc = trait_sect_enforcement_elder_desc
     group = education
-    ai_value = 60
     martial = 1
     intrigue = 1
     dread_gain_mult = 0.15
 }
 
 sect_lineage_heir = {
+    category = lifestyle
     icon = "gfx/interface/icons/traits/diligent.dds"
     desc = trait_sect_lineage_heir_desc
     group = personality
-    ai_value = 45
     learning = 2
     prowess = 1
+}
+
+alchemy_body_tier_1 = {
+    category = lifestyle
+    icon = "gfx/interface/icons/traits/education_learning_1.dds"
+    desc = trait_alchemy_body_tier_1_desc
+    group = alchemy_body
+    level = 1
+    learning = 1
+    monthly_lifestyle_xp_gain_mult = 0.02
+}
+
+alchemy_body_tier_2 = {
+    category = lifestyle
+    icon = "gfx/interface/icons/traits/education_learning_2.dds"
+    desc = trait_alchemy_body_tier_2_desc
+    group = alchemy_body
+    level = 2
+    learning = 2
+    monthly_lifestyle_xp_gain_mult = 0.04
+}
+
+alchemy_body_tier_3 = {
+    category = lifestyle
+    icon = "gfx/interface/icons/traits/education_learning_3.dds"
+    desc = trait_alchemy_body_tier_3_desc
+    group = alchemy_body
+    level = 3
+    learning = 3
+    monthly_lifestyle_xp_gain_mult = 0.06
+}
+
+
+alchemy_lifestyle_tier_1 = {
+    category = lifestyle
+    icon = "gfx/interface/icons/traits/education_learning_1.dds"
+    desc = trait_alchemy_lifestyle_tier_1_desc
+    group = alchemy_lifestyle
+    level = 1
+    learning = 1
+    monthly_lifestyle_xp_gain_mult = 0.01
+}
+
+alchemy_lifestyle_tier_2 = {
+    category = lifestyle
+    icon = "gfx/interface/icons/traits/education_learning_2.dds"
+    desc = trait_alchemy_lifestyle_tier_2_desc
+    group = alchemy_lifestyle
+    level = 2
+    learning = 2
+    monthly_lifestyle_xp_gain_mult = 0.02
+}
+
+alchemy_lifestyle_tier_3 = {
+    category = lifestyle
+    icon = "gfx/interface/icons/traits/education_learning_3.dds"
+    desc = trait_alchemy_lifestyle_tier_3_desc
+    group = alchemy_lifestyle
+    level = 3
+    learning = 3
+    monthly_lifestyle_xp_gain_mult = 0.03
+}
+
+formation_master_tier_1 = {
+    category = lifestyle
+    icon = "gfx/interface/icons/traits/strategist.dds"
+    desc = trait_formation_master_tier_1_desc
+    group = formation_mastery
+    level = 1
+    martial = 1
+    advantage = 2
+}
+
+formation_master_tier_2 = {
+    category = lifestyle
+    icon = "gfx/interface/icons/traits/strategist.dds"
+    desc = trait_formation_master_tier_2_desc
+    group = formation_mastery
+    level = 2
+    martial = 2
+    advantage = 4
+    controlled_province_advantage = 2
+}
+
+formation_master_tier_3 = {
+    category = lifestyle
+    icon = "gfx/interface/icons/traits/strategist.dds"
+    desc = trait_formation_master_tier_3_desc
+    group = formation_mastery
+    level = 3
+    martial = 3
+    advantage = 6
+    controlled_province_advantage = 4
+}
+
+formation_body_tier_1 = {
+    category = lifestyle
+    icon = "gfx/interface/icons/traits/stalwart_leader.dds"
+    desc = trait_formation_body_tier_1_desc
+    group = formation_body
+    level = 1
+    prowess = 1
+    advantage = 1
+}
+
+formation_body_tier_2 = {
+    category = lifestyle
+    icon = "gfx/interface/icons/traits/stalwart_leader.dds"
+    desc = trait_formation_body_tier_2_desc
+    group = formation_body
+    level = 2
+    prowess = 2
+    advantage = 2
+}
+
+formation_body_tier_3 = {
+    category = lifestyle
+    icon = "gfx/interface/icons/traits/stalwart_leader.dds"
+    desc = trait_formation_body_tier_3_desc
+    group = formation_body
+    level = 3
+    prowess = 3
+    advantage = 3
 }

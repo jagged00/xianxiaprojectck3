@@ -1,4 +1,4 @@
-xianxia_assign_sect_hierarchy_effect = {
+﻿xianxia_assign_sect_hierarchy_effect = {
     if = {
         limit = {
             is_landed = yes
@@ -110,4 +110,19 @@ xianxia_pick_weapon_path_effect = {
             20 = { add_trait = weapon_path_fist }
         }
     }
+}
+
+
+xianxia_update_alchemy_lifestyle_trait_effect = {
+    if = { limit = { NOT = { exists = var:alchemy_lifestyle_xp } } set_variable = { name = alchemy_lifestyle_xp value = 0 } }
+    if = { limit = { var:alchemy_lifestyle_xp >= 40 } add_trait = alchemy_lifestyle_tier_3 }
+    else_if = { limit = { var:alchemy_lifestyle_xp >= 20 } add_trait = alchemy_lifestyle_tier_2 }
+    else_if = { limit = { var:alchemy_lifestyle_xp >= 8 } add_trait = alchemy_lifestyle_tier_1 }
+}
+
+xianxia_update_formation_master_trait_effect = {
+    if = { limit = { NOT = { exists = var:formation_mastery_xp } } set_variable = { name = formation_mastery_xp value = 0 } }
+    if = { limit = { var:formation_mastery_xp >= 36 } add_trait = formation_master_tier_3 }
+    else_if = { limit = { var:formation_mastery_xp >= 18 } add_trait = formation_master_tier_2 }
+    else_if = { limit = { var:formation_mastery_xp >= 6 } add_trait = formation_master_tier_1 }
 }

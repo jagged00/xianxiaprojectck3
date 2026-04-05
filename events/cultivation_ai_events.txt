@@ -1,4 +1,4 @@
-﻿namespace = cultivation_ai
+﻿﻿namespace = cultivation_ai
 
 # Monthly orchestrator: iterate all living AI cultivators so progression does not
 # depend on implicit on_action character scope behavior.
@@ -20,7 +20,9 @@ cultivation_ai.2000 = {
             trigger_event = cultivation_ai.0002
             trigger_event = cultivation_ai.0003
             trigger_event = cultivation_ai.0004
+
             trigger_event = cultivation_ai.0005
+            trigger_event = cultivation_ai.2240
         }
     }
 
@@ -108,26 +110,26 @@ cultivation_ai.2210 = {
             random = {
                 chance = 3
                 random_list = {
-                    5 = { add_nickname = nick_the_river_wanderer }
-                    5 = { add_nickname = nick_the_cloud_sword }
-                    5 = { add_nickname = nick_the_jade_mantis }
-                    5 = { add_nickname = nick_the_bamboo_shadow }
-                    5 = { add_nickname = nick_the_iron_palm }
-                    5 = { add_nickname = nick_the_broken_spear }
-                    5 = { add_nickname = nick_the_mountain_fox }
-                    5 = { add_nickname = nick_the_white_crane }
-                    5 = { add_nickname = nick_the_ember_adept }
-                    5 = { add_nickname = nick_the_frost_edge }
-                    5 = { add_nickname = nick_the_silent_qi }
-                    5 = { add_nickname = nick_the_drunk_blade }
-                    5 = { add_nickname = nick_the_hidden_talisman }
-                    5 = { add_nickname = nick_the_night_reed }
-                    5 = { add_nickname = nick_the_wind_stepper }
-                    5 = { add_nickname = nick_the_stone_heart }
-                    5 = { add_nickname = nick_the_lotus_watcher }
-                    5 = { add_nickname = nick_the_red_cinnabar }
-                    4 = { add_nickname = nick_the_ghost_lantern }
-                    1 = { add_nickname = nick_the_swamp_viper }
+                    5 = { give_nickname = nick_the_river_wanderer }
+                    5 = { give_nickname = nick_the_cloud_sword }
+                    5 = { give_nickname = nick_the_jade_mantis }
+                    5 = { give_nickname = nick_the_bamboo_shadow }
+                    5 = { give_nickname = nick_the_iron_palm }
+                    5 = { give_nickname = nick_the_broken_spear }
+                    5 = { give_nickname = nick_the_mountain_fox }
+                    5 = { give_nickname = nick_the_white_crane }
+                    5 = { give_nickname = nick_the_ember_adept }
+                    5 = { give_nickname = nick_the_frost_edge }
+                    5 = { give_nickname = nick_the_silent_qi }
+                    5 = { give_nickname = nick_the_drunk_blade }
+                    5 = { give_nickname = nick_the_hidden_talisman }
+                    5 = { give_nickname = nick_the_night_reed }
+                    5 = { give_nickname = nick_the_wind_stepper }
+                    5 = { give_nickname = nick_the_stone_heart }
+                    5 = { give_nickname = nick_the_lotus_watcher }
+                    5 = { give_nickname = nick_the_red_cinnabar }
+                    4 = { give_nickname = nick_the_ghost_lantern }
+                    1 = { give_nickname = nick_the_swamp_viper }
                 }
                 add_character_flag = cultivation_minor_nickname_assigned
             }
@@ -159,7 +161,7 @@ cultivation_ai.2220 = {
                         is_adult = yes
                         is_cultivator = yes
                         NOT = { this = root }
-                        has_alliance_with = root
+                        is_allied_to = root
                         NOT = { has_relation_friend = root }
                         NOT = { has_relation_best_friend = root }
                     }
@@ -168,7 +170,7 @@ cultivation_ai.2220 = {
 
                 if = {
                     limit = { exists = scope:cultivation_friend_target }
-                    add_friend = scope:cultivation_friend_target
+                    add_opinion = { target = scope:cultivation_friend_target modifier = taught_me_cultivation_opinion years = 10 }
                 }
             }
         }
@@ -210,8 +212,8 @@ cultivation_ai.2230 = {
                 if = {
                     limit = { exists = scope:cultivation_war_grudge_target }
                     random_list = {
-                        75 = { add_rival = scope:cultivation_war_grudge_target }
-                        25 = { add_nemesis = scope:cultivation_war_grudge_target }
+                        75 = { add_opinion = { target = scope:cultivation_war_grudge_target modifier = lineage_betrayal_opinion years = 10 } }
+                        25 = { add_stress = 25 }
                     }
                 }
             }
@@ -826,6 +828,42 @@ cultivation_ai.3000 = {
                 has_cultivation_sect_faith = yes
             }
             cultivation_form_sect_defensive_pacts_effect = yes
+        }
+    }
+
+    option = { name = OK }
+}
+
+
+# AI requests breakthrough pills from better alchemists before breakthroughs.
+cultivation_ai.2240 = {
+    type = character_event
+    hidden = yes
+
+    trigger = {
+        is_ai = yes
+        is_cultivator = yes
+        OR = {
+            has_character_flag = can_attempt_qi_refining_breakthrough
+            has_character_flag = can_attempt_qi_building_breakthrough
+            has_character_flag = can_attempt_core_formation_breakthrough
+            has_character_flag = can_attempt_nascent_soul_breakthrough
+        }
+    }
+
+    immediate = {
+        random_courtier = {
+            limit = {
+                is_adult = yes
+                is_cultivator = yes
+                learning > root.learning
+            }
+            add_character_modifier = { modifier = perfected_spirit_pill days = 365 }
+            if = {
+                limit = { gold >= 80 }
+                add_gold = { add = 80 multiply = -1 }
+                root = { add_gold = 80 }
+            }
         }
     }
 

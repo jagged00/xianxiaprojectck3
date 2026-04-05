@@ -1,4 +1,4 @@
-# Runtime mirror snapshot for fodder sync.
+﻿# Runtime mirror snapshot for fodder sync.
 # Source of truth remains localization/english/*.yml; update this mirror in the same commit.
 
 mirror_localization = {
@@ -8,3 +8,7 @@ mirror_localization = {
 }
 # sync_update: added council/resource/debug dynamic localization keys
 # sync_update: added BOM + decision/government visibility localization hotfixes for xianxia world decisions
+
+# sync_update: added weapon/trait character desc keys plus alchemy body and pill economy localization
+
+# sync_update: added localization for alchemy lifestyle + formation mastery/body traits and formation barrier decision/modifiers

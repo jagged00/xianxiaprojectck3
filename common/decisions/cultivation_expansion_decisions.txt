@@ -201,6 +201,7 @@ awaken_meridian_disciples_decision = {
                 OR = { has_trait = poor_meridians has_trait = normal_meridians has_trait = good_meridians has_trait = excellent_meridians has_trait = heavenly_meridians }
             }
             add_trait = cultivation_qi_gathering
+            set_character_faith = root.faith
         }
         every_vassal = {
             limit = {
@@ -209,6 +210,7 @@ awaken_meridian_disciples_decision = {
                 OR = { has_trait = poor_meridians has_trait = normal_meridians has_trait = good_meridians has_trait = excellent_meridians has_trait = heavenly_meridians }
             }
             add_trait = cultivation_qi_gathering
+            set_character_faith = root.faith
         }
 
         add_piety = 150

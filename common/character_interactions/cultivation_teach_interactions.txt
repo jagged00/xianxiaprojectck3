@@ -89,8 +89,11 @@ recruit_disciple_interaction = {
 		scope:actor = { is_cultivator = yes is_adult = yes }
 		scope:recipient = {
 			is_adult = yes
-			NOT = { is_cultivator = yes }
 			is_courtier_of = scope:actor
+			NOT = { has_trait = sect_disciple }
+			NOT = { has_trait = sect_inner_hall_elder }
+			NOT = { has_trait = sect_outer_hall_elder }
+			NOT = { has_trait = sect_enforcement_elder }
 			OR = { has_trait = good_meridians has_trait = excellent_meridians has_trait = heavenly_meridians }
 		}
 	}
@@ -117,7 +120,7 @@ recruit_disciple_interaction = {
 			add_character_modifier = { modifier = lineage_prestige_mentor days = 1825 }
 			add_character_modifier = { modifier = sect_lineage_favor days = 1095 }
 			add_dynasty_prestige = 150
-			change_variable = { name = disciples_recruited value = 1 }
+			change_variable = { name = disciples_recruited add = 1 }
 		}
 	}
 }
@@ -146,11 +149,11 @@ teach_technique_interaction = {
 	auto_accept = yes
 	on_accept = {
 		scope:recipient = {
-			add_lifestyle_xp = 350
+			add_learning_lifestyle_xp = medium_lifestyle_xp
 			add_character_flag = { flag = teach_technique_cooldown days = 365 }
 			if = {
 				limit = { has_character_flag = has_lineage_mentor }
-				change_variable = { name = lineage_techniques_learned value = 1 }
+				change_variable = { name = lineage_techniques_learned add = 1 }
 			}
 			if = {
 				limit = { scope:actor = { has_trait = sect_inner_hall_elder } }
@@ -158,7 +161,7 @@ teach_technique_interaction = {
 			}
 			if = {
 				limit = { scope:actor = { has_trait = sect_enforcement_elder } }
-				add_prowess = 1
+				add_prowess_skill = 1
 			}
 		}
 		scope:actor = {
@@ -188,7 +191,7 @@ inherit_manuals_interaction = {
 			add_character_modifier = { modifier = secret_realm_inheritance days = 1095 }
 			add_trait = sect_lineage_heir
 			add_character_modifier = { modifier = sect_lineage_favor days = 1825 }
-			change_variable = { name = lineage_generation value = 1 }
+			change_variable = { name = lineage_generation add = 1 }
 			add_opinion = { target = scope:actor modifier = mentor_guidance_opinion years = 20 }
 		}
 		scope:actor = {
