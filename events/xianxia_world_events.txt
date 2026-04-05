@@ -1,0 +1,170 @@
+﻿namespace = xianxia_world
+
+xianxia_world.1000 = {
+    type = character_event
+    scope = none
+    hidden = yes
+
+    immediate = {
+        every_living_character = {
+            limit = {
+                is_alive = yes
+                is_landed = yes
+                is_adult = yes
+            }
+            xianxia_apply_government_adaptation_effect = yes
+        }
+
+        every_living_character = {
+            limit = {
+                is_alive = yes
+                is_adult = yes
+                is_cultivator = yes
+            }
+
+            if = {
+                limit = {
+                    OR = {
+                        has_trait = cultivation_nascent_soul
+                        has_trait = cultivation_heavenly_being
+                        has_trait = cultivation_four_axis
+                        has_trait = cultivation_integration
+                        has_trait = cultivation_star_shattering
+                        has_trait = cultivation_sacred_vessel
+                        has_trait = cultivation_entering_nirvana
+                        has_trait = cultivation_true_immortal
+                    }
+                }
+                add_character_modifier = {
+                    modifier = high_realm_longevity
+                    days = 365
+                }
+            }
+        }
+    }
+
+    option = { name = OK }
+}
+
+xianxia_world.1100 = {
+    type = character_event
+    title = xianxia_world.1100.t
+    desc = xianxia_world.1100.desc
+
+    option = {
+        name = xianxia_world.1100.a
+        if = {
+            limit = { can_host_activity = activity_tournament }
+            ai_attempt_to_host_activity = activity_tournament
+        }
+        add_character_modifier = { modifier = sect_resource_surplus days = 730 }
+        add_prestige = 250
+    }
+}
+
+xianxia_world.1200 = {
+    type = character_event
+    title = xianxia_world.1200.t
+    desc = xianxia_world.1200.desc
+
+    option = {
+        name = xianxia_world.1200.a
+        xianxia_assign_sect_hierarchy_effect = yes
+        add_character_modifier = { modifier = sect_headquarters_realm days = 1825 }
+    }
+}
+
+xianxia_world.1300 = {
+    type = character_event
+    title = xianxia_world.1300.t
+    desc = xianxia_world.1300.desc
+
+    option = {
+        name = xianxia_world.1300.a
+        random_list = {
+            60 = {
+                add_character_modifier = { modifier = perfected_spirit_pill days = 1825 }
+                add_lifestyle_xp = 500
+            }
+            30 = {
+                add_character_modifier = { modifier = alchemy_backlash days = 365 }
+            }
+            10 = {
+                add_character_modifier = { modifier = cultivation_deviation days = 730 }
+                if = {
+                    limit = {
+                        OR = {
+                            has_trait = cultivation_qi_refining
+                            has_trait = cultivation_qi_building
+                            has_trait = cultivation_core_formation
+                        }
+                    }
+                    random = {
+                        chance = 30
+                        death = { death_reason = death_cultivation_failure }
+                    }
+                }
+            }
+        }
+    }
+}
+
+xianxia_world.1400 = {
+    type = character_event
+    title = xianxia_world.1400.t
+    desc = xianxia_world.1400.desc
+
+    option = {
+        name = xianxia_world.1400.a
+        xianxia_pick_weapon_path_effect = yes
+        add_character_modifier = { modifier = manual_comprehension days = 1095 }
+    }
+}
+
+xianxia_world.1500 = {
+    type = character_event
+    title = xianxia_world.1500.t
+    desc = xianxia_world.1500.desc
+
+    option = {
+        name = xianxia_world.1500.a
+        random_list = {
+            50 = {
+                add_character_modifier = { modifier = secret_realm_inheritance days = 1825 }
+                add_gold = 150
+            }
+            30 = {
+                add_artifact = famed_tapestry
+                add_lifestyle_xp = 400
+            }
+            20 = {
+                add_stress = 50
+                add_character_modifier = { modifier = cultivation_deviation days = 365 }
+            }
+        }
+    }
+}
+
+xianxia_world.1600 = {
+    type = character_event
+    title = xianxia_world.1600.t
+    desc = xianxia_world.1600.desc
+
+    option = {
+        name = xianxia_world.1600.a
+        random_list = {
+            45 = {
+                add_character_modifier = { modifier = tribulation_survivor days = 3650 }
+                add_prestige = 500
+                add_trait = jianghu_righteous
+            }
+            35 = {
+                add_character_modifier = { modifier = cultivation_deviation days = 1095 }
+                add_stress = 120
+            }
+            20 = {
+                death = { death_reason = death_cultivation_failure }
+            }
+        }
+    }
+}

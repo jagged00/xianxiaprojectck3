@@ -1,0 +1,102 @@
+sect_headquarters_realm = {
+    monthly_prestige = 0.3
+    monthly_piety = 0.3
+    knight_effectiveness_mult = 0.1
+}
+
+sect_resource_surplus = {
+    monthly_income_mult = 0.1
+    monthly_prestige = 0.15
+}
+
+alchemy_backlash = {
+    health = -0.6
+    learning = -2
+}
+
+perfected_spirit_pill = {
+    health = 0.6
+    prowess = 2
+    learning = 2
+}
+
+manual_comprehension = {
+    lifestyle_experience_gain_mult = 0.15
+    monthly_lifestyle_xp = 100
+}
+
+tribulation_survivor = {
+    health = 1.0
+    prowess = 4
+    monthly_prestige = 0.5
+}
+
+cultivation_deviation = {
+    health = -0.8
+    diplomacy = -2
+    stewardship = -2
+    martial = -2
+}
+
+secret_realm_inheritance = {
+    monthly_lifestyle_xp = 150
+    monthly_prestige = 0.3
+}
+
+high_realm_longevity = {
+    health = 1.5
+    disease_resistance = 0.5
+    minor_health_chance = -0.8
+    prowess = 2
+}
+
+jianghu_reputation_righteous = {
+    general_opinion = 5
+    clergy_opinion = 8
+}
+
+jianghu_reputation_demonic = {
+    same_faith_opinion = -5
+    dread_gain_mult = 0.3
+    hostile_scheme_success_chance_add = 10
+}
+
+sect_governance_feudal_adapted = {
+    monthly_prestige = 0.2
+    short_reign_duration_mult = -0.1
+}
+
+sect_governance_republic_adapted = {
+    monthly_income_mult = 0.08
+    vassal_opinion = 4
+}
+
+sect_governance_clan_adapted = {
+    monthly_prestige = 0.25
+    monthly_income_mult = 0.05
+    powerful_vassal_opinion = 5
+}
+
+sect_governance_tribal_adapted = {
+    knight_effectiveness_mult = 0.12
+    monthly_prestige = 0.25
+    levy_size = 0.1
+}
+
+sect_governance_theocracy_adapted = {
+    monthly_piety = 0.4
+    clergy_opinion = 8
+    monthly_lifestyle_xp = 50
+}
+
+sect_governance_administrative_adapted = {
+    domain_limit = 1
+    monthly_income_mult = 0.06
+    monthly_prestige = 0.2
+}
+
+jianghu_realm_friction = {
+    popular_opinion = -5
+    vassal_opinion = -4
+}
+

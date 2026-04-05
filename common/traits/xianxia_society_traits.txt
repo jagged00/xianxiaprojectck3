@@ -1,0 +1,86 @@
+sect_disciple = {
+    icon = "gfx/interface/icons/traits/education_diplomacy_1.dds"
+    desc = trait_sect_disciple_desc
+    group = education
+    ruler_designer_cost = 0
+    ai_value = 30
+    diplomacy = 1
+    learning = 1
+}
+
+sect_elder = {
+    icon = "gfx/interface/icons/traits/education_learning_3.dds"
+    desc = trait_sect_elder_desc
+    group = education
+    ruler_designer_cost = 15
+    ai_value = 60
+    learning = 3
+    prowess = 2
+    monthly_piety = 0.25
+}
+
+sect_leader = {
+    icon = "gfx/interface/icons/traits/education_martial_4.dds"
+    desc = trait_sect_leader_desc
+    group = education
+    ruler_designer_cost = 30
+    ai_value = 80
+    diplomacy = 2
+    martial = 2
+    stewardship = 1
+    monthly_prestige = 0.4
+}
+
+jianghu_righteous = {
+    icon = "gfx/interface/icons/traits/compassionate.dds"
+    desc = trait_jianghu_righteous_desc
+    group = personality
+    ai_value = 40
+    same_trait_opinion = 10
+    opposite_trait_opinion = -20
+}
+
+jianghu_demonic = {
+    icon = "gfx/interface/icons/traits/sadistic.dds"
+    desc = trait_jianghu_demonic_desc
+    group = personality
+    ai_value = 40
+    same_trait_opinion = 10
+    opposite_trait_opinion = -20
+    dread_gain_mult = 0.2
+}
+
+weapon_path_sword = {
+    icon = "gfx/interface/icons/traits/blademaster_1.dds"
+    desc = trait_weapon_path_sword_desc
+    group = commander
+    ai_value = 25
+    prowess = 3
+    martial = 1
+}
+
+weapon_path_saber = {
+    icon = "gfx/interface/icons/traits/blademaster_2.dds"
+    desc = trait_weapon_path_saber_desc
+    group = commander
+    ai_value = 25
+    prowess = 3
+    martial = 1
+}
+
+weapon_path_spear = {
+    icon = "gfx/interface/icons/traits/strategist.dds"
+    desc = trait_weapon_path_spear_desc
+    group = commander
+    ai_value = 20
+    prowess = 2
+    martial = 2
+}
+
+weapon_path_fist = {
+    icon = "gfx/interface/icons/traits/athletic.dds"
+    desc = trait_weapon_path_fist_desc
+    group = physical
+    ai_value = 20
+    prowess = 4
+}
