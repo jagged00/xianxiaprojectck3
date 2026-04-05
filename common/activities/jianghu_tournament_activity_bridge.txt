@@ -31,3 +31,5 @@ xianxia_world.1100 = {
 # Canonical file: /events/xianxia_world_events.txt
 # Stage continuation hooks
 xianxia_world.1110 = { option = { trigger_event = { id = xianxia_world.1120 days = 20 } } }
+
+# Branch note: xianxia_world.1110 now offers stable (a) and aggressive rivalry (b) tournament paths before finals.

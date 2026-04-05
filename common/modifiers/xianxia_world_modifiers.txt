@@ -166,3 +166,40 @@ alchemy_qi_deviation_wound = {
     health = -0.7
     prowess = -2
 }
+
+sect_council_consensus = {
+    vassal_opinion = 6
+    monthly_prestige = 0.2
+    monthly_piety = 0.1
+}
+
+sect_council_deadlock = {
+    vassal_opinion = -10
+    monthly_prestige = -0.15
+    stress_gain_mult = 0.15
+}
+
+sect_lineage_favor = {
+    monthly_dynasty_prestige = 0.25
+    same_faith_opinion = 4
+}
+
+sect_lineage_fracture = {
+    same_faith_opinion = -8
+    hostile_scheme_success_chance_add = 8
+}
+
+alchemy_herb_stockpile = {
+    monthly_income_mult = 0.04
+    learning = 1
+}
+
+alchemy_ore_stockpile = {
+    monthly_income_mult = 0.05
+    stewardship = 1
+}
+
+alchemy_core_stockpile = {
+    prowess = 1
+    monthly_piety = 0.1
+}

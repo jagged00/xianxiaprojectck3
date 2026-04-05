@@ -17,3 +17,13 @@ cultivation_invests_in_my_talent_opinion = {
 	opinion = 35
 	months = 120
 }
+
+mentor_guidance_opinion = {
+	opinion = 30
+	months = 180
+}
+
+lineage_betrayal_opinion = {
+	opinion = -60
+	months = 240
+}

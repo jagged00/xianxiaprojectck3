@@ -251,3 +251,16 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Added a player-facing debug decision/event (`xianxia_debug_state_decision`, `xianxia_world.1900`) that surfaces cultivation stage/sect-role/modifier/cooldown inspection tooltips.
 - Performance pass: replaced `every_living_character` loops in cultivation/world orchestration with narrower ruler-scoped iteration and reduced heavy world-adaptation cadence to yearly pulse.
 - Added Common-Fodder sync scaffold (`common/fodder/events|gui|localization`) plus `common/fodder/00_runtime_sync_map.txt` and an explicit per-commit mirror update rule.
+
+### 26) Governance deepening, lineage graphing, branching arcs, and sync enforcement (2026-04-05)
+- Added council-driven sect politics decisions/events (`convene_sect_council_decision`, `xianxia_world.1720/1730`) with consensus vs deadlock outcomes and downstream struggle pressure.
+- Deepened mentor-disciple flow with lineage-oriented flags/variables/opinions and fracture/favor modifier states (`mentor_guidance_opinion`, `lineage_betrayal_opinion`, `sect_lineage_favor`, `sect_lineage_fracture`).
+- Upgraded staged chains from single-option flow to branch choices in tournament and expedition mid-stage events (aggressive vs stable tournament bracket; safe vs risky expedition route).
+- Added pre-refinement alchemy resource acquisition (`gather_alchemy_resources_decision`, `xianxia_world.1330`) and tied result scaling in refinement outcomes to stocked resource flags.
+- Upgraded debug event behavior from static generic tooltips to conditional state readouts keyed to active stage/role/cooldown flags.
+- Added automated fodder sync enforcement script (`scripts/check_fodder_sync.py`) and documented the command in the sync map header.
+
+### 27) Review-fix hotpatch: startup initialization scope + sect office scope correctness (2026-04-05)
+- Restored startup initialization sweep in `cultivation_character_initialization.0001` from ruler-only to `every_living_character` so unlanded courtiers/children receive immediate meridian/cultivation setup at lobby start.
+- Fixed yearly sect office pass faith comparison in `xianxia_world.1700` to compare courtiers against the current iterated ruler scope (`faith = prev.faith`) rather than invalid `root` assumptions under `scope = none`.
+- Hardened office reroll exclusivity by explicitly removing all conflicting elder office traits before assigning a new one, preventing trait stacking across yearly rerolls.

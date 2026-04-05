@@ -1,5 +1,6 @@
 # Common-Fodder Sync Map
 # Rule: any commit that changes runtime events/gui/localization must also update the matching common/fodder mirror file.
+# Enforcement command: python3 scripts/check_fodder_sync.py
 
 sync_pairs = {
     events = {

@@ -6,3 +6,5 @@ mirror_events = {
     source = "events/cultivation_character_initialization_events.txt"
     source = "events/xianxia_world_events.txt"
 }
+# sync_update: added sect council + alchemy resource + branching arc events
+# sync_update: review hotpatch for startup init scope and sect office reroll exclusivity
