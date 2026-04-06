@@ -27,3 +27,4 @@ mirror_events = {
 # sync_update: fox-spirit vessel spawning now prioritizes noble children of rulers and uses higher follow-up cadence
 # sync_update: added cultivation_ai.3001 lightweight monthly sect-pact maintenance pulse to restore alliances without full monthly global sweep
 # sync_update: increased cultivation_ai.3001 monthly pact maintenance attempts per pulse to improve visible sect alliance formation
+# sync_update: forced fox-spirit vessel awakenings now invoke shared parent accept/disown flow (including player-parent event trigger)
