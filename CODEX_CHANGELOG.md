@@ -374,4 +374,5 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
   - `cultivation_reincarnation_active` while a living holder exists,
   - `cultivation_reincarnation_holder` on the chosen ruler,
   - `cultivation_reincarnation_cooldown_anchor` (200 years on a random living anchor character) applied only after holder death before next roll.
+- Reincarnation lottery winners now receive dedicated nickname `the Reincarnator` (`nick_the_reincarnator`) on assignment for immediate world readability.
 - Hooked `cultivation_ai.2270` into `on_monthly_pulse` for continuous world-state maintenance.

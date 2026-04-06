@@ -1449,6 +1449,7 @@ cultivation_ai.2270 = {
                 add_perk = entering_nirvana_reborn_perk
                 add_perk = true_immortal_final_perk
 
+                give_nickname = nick_the_reincarnator
                 add_character_flag = cultivation_reincarnation_holder
             }
 
