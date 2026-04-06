@@ -362,3 +362,16 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Tuned same-sect defensive-pact formation so rulers form cross-realm confederation-style alliances when either:
   - they are within diplomatic range, or
   - both rulers are above Qi Gathering (Qi Refining+), effectively granting long-range sect coalition behavior to higher realms.
+
+### 31) Fox-spirit disown parser hotfix (2026-04-06)
+- Removed unsupported `remove_relation` effects from fox-spirit parent disown branches in `cultivation_ai.2250` / `cultivation_ai.2261`.
+- Disown outcomes now apply the permanent `fox_spirit_disowned_child` modifier and clear pending/waiting flags without invoking invalid effects, preventing parser cascade errors that hid downstream fox-spirit events.
+
+### 32) Singular reincarnation lottery ruler system (2026-04-06)
+- Added monthly global event `cultivation_ai.2270` that creates exactly one active "reincarnation monster" among landed count+ rulers when no active holder/cooldown exists.
+- Selected ruler is forced to `cultivation_true_immortal`, upgraded to `heavenly_meridians`, and granted the full cultivation perk chain to simulate a maxed-out xianxia reincarnator.
+- Added singleton control flags:
+  - `cultivation_reincarnation_active` while a living holder exists,
+  - `cultivation_reincarnation_holder` on the chosen ruler,
+  - `cultivation_reincarnation_cooldown_anchor` (200 years on a random living anchor character) applied only after holder death before next roll.
+- Hooked `cultivation_ai.2270` into `on_monthly_pulse` for continuous world-state maintenance.
