@@ -428,5 +428,5 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Ran a repository-side localization audit comparing decision `title/desc/selection_tooltip/confirm_text` bindings and modifier keys against `localization/english`; audit now reports zero missing entries for those categories.
 
 ### 39) Reincarnation startup safety + ruler-tier scope correction (2026-04-06)
-- Fixed startup cleanup in `cultivation_ai.2270` so trait/perk removal is now limited to characters already marked `cultivation_reincarnation_holder`, avoiding demotion of legitimate non-lottery true immortals in existing saves.
+- Reworked first-run migration behavior in `cultivation_ai.2270` to only set `cultivation_reincarnation_initialized`, preserving active holders/cooldown anchors in pre-patch saves instead of force-clearing state.
 - Restricted reincarnation holder candidate/validation tiers to landed count/duke rulers (excluded kingdom/emperor tiers) to prevent higher-rank rulers from being selected in the singleton lottery flow.
