@@ -80,6 +80,78 @@ cultivation_ai_join_fox_spirit_sect_effect = {
 	}
 }
 
+# Shared child-handling flow for fox-spirit awakenings that need parent response logic.
+cultivation_fox_spirit_child_parent_resolution_effect = {
+	if = {
+		limit = { is_adult = no }
+		add_character_flag = fox_spirit_parent_decision_pending
+
+		if = {
+			limit = { exists = father father = { is_alive = yes is_ai = no } }
+			add_character_flag = fox_spirit_waiting_player_parent
+			father = { trigger_event = cultivation_ai.2261 }
+		}
+		if = {
+			limit = { exists = mother mother = { is_alive = yes is_ai = no } }
+			add_character_flag = fox_spirit_waiting_player_parent
+			mother = { trigger_event = cultivation_ai.2261 }
+		}
+
+		# AI parents auto-resolve by personality when no player-parent response is pending.
+		if = {
+			limit = {
+				exists = father
+				father = { is_alive = yes is_ai = yes }
+				has_character_flag = fox_spirit_parent_decision_pending
+				NOT = { has_character_flag = fox_spirit_waiting_player_parent }
+			}
+			if = {
+				limit = {
+					father = {
+						OR = {
+							has_trait = just
+							has_trait = honest
+							has_trait = zealous
+						}
+					}
+				}
+				add_character_modifier = { modifier = fox_spirit_disowned_child days = -1 }
+				remove_character_flag = fox_spirit_parent_decision_pending
+			}
+			else = {
+				add_opinion = { target = father modifier = opinion_fox_spirit_accepted_child years = 30 }
+				remove_character_flag = fox_spirit_parent_decision_pending
+			}
+		}
+
+		if = {
+			limit = {
+				exists = mother
+				mother = { is_alive = yes is_ai = yes }
+				has_character_flag = fox_spirit_parent_decision_pending
+				NOT = { has_character_flag = fox_spirit_waiting_player_parent }
+			}
+			if = {
+				limit = {
+					mother = {
+						OR = {
+							has_trait = just
+							has_trait = honest
+							has_trait = zealous
+						}
+					}
+				}
+				add_character_modifier = { modifier = fox_spirit_disowned_child days = -1 }
+				remove_character_flag = fox_spirit_parent_decision_pending
+			}
+			else = {
+				add_opinion = { target = mother modifier = opinion_fox_spirit_accepted_child years = 30 }
+				remove_character_flag = fox_spirit_parent_decision_pending
+			}
+		}
+	}
+}
+
 cultivation_ai_join_any_sect_by_meridian_effect = {
 	if = {
 		limit = {
