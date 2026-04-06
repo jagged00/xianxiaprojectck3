@@ -416,3 +416,17 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Fixed fox portrait scripted-trigger errors by removing unsupported dynamic clothing-gfx flag usage in `portrait_fox_ears_trigger`.
 - Fixed malformed fox-name localization ingestion by adding missing `l_english:` language scope to `fox_character_names_l_english.yml`.
 - Simplified fox dynasty localization lines to remove parser-breaking inline comment content that produced unexpected localization-token errors.
+
+### 37) Decision cooldown localization follow-up (2026-04-06)
+- Added missing localization key for `spirit_pill_refining_cooldown` so refine-spirit-pill invalid-state text no longer shows raw flag key.
+- Added missing localization key for `jianghu_oath_gathering_cooldown` so Jianghu Oath Gathering cooldown failures display proper user-facing text.
+- Re-ran decision localization key audit for xianxia/cultivation decision files to confirm title/desc/tooltip/confirm bindings are present.
+
+### 38) Full decision/modifier localization coverage sweep (2026-04-06)
+- Added alias localization keys for `visit_cultivation_sect_desc`, `visit_cultivation_sect_tooltip`, and `visit_cultivation_sect_confirm` to match decision-script references.
+- Added missing English localization (name + description) for cultivation modifier entries referenced in `common/modifiers/cultivation_modifiers.txt` (sect, demonic path, poison arts, dual-cultivation resonance, martial-training, breakthrough, and realm-stabilization groups).
+- Ran a repository-side localization audit comparing decision `title/desc/selection_tooltip/confirm_text` bindings and modifier keys against `localization/english`; audit now reports zero missing entries for those categories.
+
+### 39) Reincarnation startup safety + ruler-tier scope correction (2026-04-06)
+- Fixed startup cleanup in `cultivation_ai.2270` so trait/perk removal is now limited to characters already marked `cultivation_reincarnation_holder`, avoiding demotion of legitimate non-lottery true immortals in existing saves.
+- Restricted reincarnation holder candidate/validation tiers to landed count/duke rulers (excluded kingdom/emperor tiers) to prevent higher-rank rulers from being selected in the singleton lottery flow.

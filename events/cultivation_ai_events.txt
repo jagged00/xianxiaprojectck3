@@ -1491,28 +1491,13 @@ cultivation_ai.2270 = {
 
             every_living_character = {
                 limit = { has_character_flag = cultivation_reincarnation_holder }
+                remove_trait = cultivation_true_immortal
+                remove_perk = true_immortal_final_perk
                 remove_character_flag = cultivation_reincarnation_holder
             }
             every_living_character = {
                 limit = { has_character_flag = cultivation_reincarnation_cooldown_anchor }
                 remove_character_flag = cultivation_reincarnation_cooldown_anchor
-            }
-
-            # Enforce singular "true immortal reincarnator" on setup.
-            every_ruler = {
-                limit = {
-                    is_alive = yes
-                    is_landed = yes
-                    OR = {
-                        highest_held_title_tier = tier_county
-                        highest_held_title_tier = tier_duchy
-                        highest_held_title_tier = tier_kingdom
-                        highest_held_title_tier = tier_empire
-                    }
-                    has_trait = cultivation_true_immortal
-                }
-                remove_trait = cultivation_true_immortal
-                remove_perk = true_immortal_final_perk
             }
 
             random_ruler = {
@@ -1523,8 +1508,6 @@ cultivation_ai.2270 = {
                     OR = {
                         highest_held_title_tier = tier_county
                         highest_held_title_tier = tier_duchy
-                        highest_held_title_tier = tier_kingdom
-                        highest_held_title_tier = tier_empire
                     }
                     NOT = { has_trait = incapable }
                 }
@@ -1620,8 +1603,6 @@ cultivation_ai.2270 = {
                         OR = {
                             highest_held_title_tier = tier_county
                             highest_held_title_tier = tier_duchy
-                            highest_held_title_tier = tier_kingdom
-                            highest_held_title_tier = tier_empire
                         }
                     }
                 }
@@ -1661,8 +1642,6 @@ cultivation_ai.2270 = {
                     OR = {
                         highest_held_title_tier = tier_county
                         highest_held_title_tier = tier_duchy
-                        highest_held_title_tier = tier_kingdom
-                        highest_held_title_tier = tier_empire
                     }
                     NOT = { has_trait = incapable }
                 }
