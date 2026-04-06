@@ -444,7 +444,7 @@ fox_spirit_awakened = {
     diplomacy = 1
     attraction_opinion = 15
     monthly_prestige = 0.2
-    hostile_scheme_success_chance_add = 10
+    owned_personal_scheme_success_chance_add = 10
 }
 
 fox_spirit_disowned_child = {
