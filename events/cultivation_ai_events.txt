@@ -1480,6 +1480,16 @@ cultivation_ai.2270 = {
     hidden = yes
 
     immediate = {
+        # One-time game-start setup: ensure only one landed count+ ruler is the
+        # reincarnated true immortal package holder.
+        if = {
+            limit = { NOT = { has_global_variable = cultivation_reincarnation_initialized } }
+            set_global_variable = {
+                name = cultivation_reincarnation_initialized
+                value = 1
+            }
+        }
+
         # If no eligible reincarnation holder remains, start global cooldown.
         if = {
             limit = {
@@ -1495,8 +1505,6 @@ cultivation_ai.2270 = {
                         OR = {
                             highest_held_title_tier = tier_county
                             highest_held_title_tier = tier_duchy
-                            highest_held_title_tier = tier_kingdom
-                            highest_held_title_tier = tier_empire
                         }
                     }
                 }
@@ -1536,8 +1544,6 @@ cultivation_ai.2270 = {
                     OR = {
                         highest_held_title_tier = tier_county
                         highest_held_title_tier = tier_duchy
-                        highest_held_title_tier = tier_kingdom
-                        highest_held_title_tier = tier_empire
                     }
                     NOT = { has_trait = incapable }
                 }
