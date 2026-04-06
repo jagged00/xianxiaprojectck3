@@ -1,4 +1,4 @@
-﻿﻿# Cultivation Scripted Effects
+﻿# Cultivation Scripted Effects
 # Path: common/scripted_effects/cultivation_effects.txt
 
 cultivation_convert_direct_domain_faith_effect = {

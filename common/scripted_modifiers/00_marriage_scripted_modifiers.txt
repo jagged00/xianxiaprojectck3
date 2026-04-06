@@ -1,4 +1,4 @@
-﻿﻿marriage_ai_accept_modifier = {
+﻿marriage_ai_accept_modifier = {
 	###MARRIAGE SCRIPTED MODIFIERS###
 
 	modifier = {

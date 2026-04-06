@@ -3,10 +3,10 @@
     ############################################
     # SAFETY — partner scope yoksa ROOT yap
     ############################################
-#    if = {
-#        limit = { NOT = { exists = scope:carn_sex_partner_scope } }
-#        save_scope_as = carn_sex_partner_scope
-#    }
+    if = {
+        limit = { NOT = { exists = scope:carn_sex_partner_scope } }
+        save_scope_as = carn_sex_partner_scope
+    }
 
     ############################################
     # ROOT XP
