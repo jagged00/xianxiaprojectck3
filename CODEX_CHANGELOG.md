@@ -337,3 +337,4 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Added missing AI-mother auto-resolution branch for fox-spirit child awakening pending state so children without an eligible AI father no longer remain stuck with `fox_spirit_parent_decision_pending`.
 - Corrected AI parent-resolution scope targets so disown/accept outcomes now target the actual AI parent (father/mother), not the awakened child scope.
 - Added explicit `title`/`desc` bindings to visible player event `cultivation_ai.2261` so parent accept/disown prompts render narrative localization correctly.
+- Added player-notification guard flag (`fox_spirit_waiting_player_parent`) so AI parent auto-resolution does not consume pending state after a human parent has already been notified.
