@@ -381,3 +381,9 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Replaced invalid reincarnation candidate tier filter with explicit `highest_held_title_tier` checks (count/duchy/kingdom/empire) so landed count+ rulers are selected correctly.
 - Tightened active-holder teardown to require a *living, landed, count+* holder; if holder is dead/unlanded/ineligible, singleton state now clears and cooldown begins.
 - Added candidate scope save + existence guard before applying reincarnation package/global-active flag to prevent active-state flips when no valid candidate exists.
+
+### 34) High-realm portrait transformation pass + fox-spirit white hair (2026-04-06)
+- Added `activities/trait_portrait_modifiers/zz_xianxia_trait_modifiers.txt` to introduce visible, lore-style physical progression for high cultivation realms.
+- High realm portrait shaping now ramps from Heavenly Being through True Immortal with gradual height increase and progressively more refined/slender immortal body silhouettes.
+- Added hair-color whitening at Entering Nirvana and full silver-white hair at True Immortal to reinforce ascension fantasy.
+- Added universal white-hair portrait override for `huxian_blood` so fox demons consistently present the requested fox-spirit appearance.

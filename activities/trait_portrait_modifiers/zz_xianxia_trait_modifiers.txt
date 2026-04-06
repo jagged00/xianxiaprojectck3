@@ -1,0 +1,137 @@
+xianxia_realm_transformation = {
+	heavenly_being_transformation = {
+		traits = { cultivation_heavenly_being }
+		dna_modifiers = {
+			human = {
+				morph = {
+					mode = modify
+					gene = gene_height
+					value = 0.06
+				}
+				morph = {
+					mode = modify_multiply
+					gene = gene_bs_body_type
+					value = 0.94
+				}
+			}
+		}
+	}
+
+	integration_transformation = {
+		traits = { cultivation_integration }
+		dna_modifiers = {
+			human = {
+				morph = {
+					mode = modify
+					gene = gene_height
+					value = 0.1
+				}
+				morph = {
+					mode = modify_multiply
+					gene = gene_bs_body_type
+					value = 0.9
+				}
+			}
+		}
+	}
+
+	star_shattering_transformation = {
+		traits = { cultivation_star_shattering }
+		dna_modifiers = {
+			human = {
+				morph = {
+					mode = modify
+					gene = gene_height
+					value = 0.15
+				}
+				morph = {
+					mode = modify_multiply
+					gene = gene_bs_body_type
+					value = 0.86
+				}
+			}
+		}
+	}
+
+	sacred_vessel_transformation = {
+		traits = { cultivation_sacred_vessel }
+		dna_modifiers = {
+			human = {
+				morph = {
+					mode = modify
+					gene = gene_height
+					value = 0.18
+				}
+				morph = {
+					mode = modify_multiply
+					gene = gene_bs_body_type
+					value = 0.82
+				}
+			}
+		}
+	}
+
+	entering_nirvana_transformation = {
+		traits = { cultivation_entering_nirvana }
+		dna_modifiers = {
+			human = {
+				morph = {
+					mode = modify
+					gene = gene_height
+					value = 0.2
+				}
+				morph = {
+					mode = modify_multiply
+					gene = gene_bs_body_type
+					value = 0.78
+				}
+				color = {
+					gene = hair_color
+					mode = modify
+					x = -0.8
+					y = -0.8
+				}
+			}
+		}
+	}
+
+	true_immortal_transformation = {
+		traits = { cultivation_true_immortal }
+		dna_modifiers = {
+			human = {
+				morph = {
+					mode = modify
+					gene = gene_height
+					value = 0.24
+				}
+				morph = {
+					mode = modify_multiply
+					gene = gene_bs_body_type
+					value = 0.72
+				}
+				color = {
+					gene = hair_color
+					mode = modify
+					x = -1.0
+					y = -1.0
+				}
+			}
+		}
+	}
+}
+
+xianxia_fox_spirit_appearance = {
+	huxian_white_hair = {
+		traits = { huxian_blood }
+		dna_modifiers = {
+			human = {
+				color = {
+					gene = hair_color
+					mode = modify
+					x = -1.0
+					y = -1.0
+				}
+			}
+		}
+	}
+}
