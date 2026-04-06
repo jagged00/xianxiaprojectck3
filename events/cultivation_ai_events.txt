@@ -1022,8 +1022,47 @@ cultivation_ai.2250 = {
                             limit = {
                                 exists = father
                                 father = { is_alive = yes is_ai = yes }
+                                has_character_flag = fox_spirit_parent_decision_pending
                             }
                             father = {
+                                if = {
+                                    limit = {
+                                        OR = {
+                                            has_trait = just
+                                            has_trait = honest
+                                            has_trait = zealous
+                                        }
+                                    }
+                                    random_child = {
+                                        limit = {
+                                            has_character_flag = fox_spirit_parent_decision_pending
+                                            this = root
+                                        }
+                                        remove_relation = { target = root relation = parent }
+                                        add_character_modifier = { modifier = fox_spirit_disowned_child days = -1 }
+                                        remove_character_flag = fox_spirit_parent_decision_pending
+                                    }
+                                }
+                                else = {
+                                    random_child = {
+                                        limit = {
+                                            has_character_flag = fox_spirit_parent_decision_pending
+                                            this = root
+                                        }
+                                        add_opinion = { target = root modifier = opinion_fox_spirit_accepted_child years = 30 }
+                                        remove_character_flag = fox_spirit_parent_decision_pending
+                                    }
+                                }
+                            }
+                        }
+
+                        if = {
+                            limit = {
+                                exists = mother
+                                mother = { is_alive = yes is_ai = yes }
+                                has_character_flag = fox_spirit_parent_decision_pending
+                            }
+                            mother = {
                                 if = {
                                     limit = {
                                         OR = {

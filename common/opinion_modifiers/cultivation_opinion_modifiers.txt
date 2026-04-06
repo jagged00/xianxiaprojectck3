@@ -62,3 +62,8 @@ opinion_fox_spirit_accepted_child = {
 	opinion = 30
 	months = 360
 }
+
+opinion_fox_spirit_mortal_hunter = {
+	opinion = -80
+	months = 240
+}
