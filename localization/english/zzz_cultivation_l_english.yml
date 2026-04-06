@@ -253,9 +253,20 @@
  cultivation_demonic_focus_effect_desc:0 ""
 
  cultivation_vagrant_focus:0 "Vagrant Cultivation"
+ cultivation_vagrant_focus_name:0 "Vagrant Cultivation"
  cultivation_rogue_focus_name:0 "Vagrant Cultivation"
  cultivation_vagrant_focus_desc:0 "Walk your own independent path of cultivation, beholden to no sect or tradition."
  cultivation_vagrant_focus_effect_desc:0 ""
+
+ # Focus modifier localization (shown in character modifier list while a focus is active)
+ cultivation_orthodox_focus_modifier:0 "Orthodox Cultivation Focus"
+ cultivation_orthodox_focus_modifier_desc:0 "This character is focused on orthodox methods: disciplined cultivation, righteous conduct, and stable progress."
+ cultivation_unorthodox_focus_modifier:0 "Unorthodox Cultivation Focus"
+ cultivation_unorthodox_focus_modifier_desc:0 "This character is focused on unorthodox methods: adaptive techniques, rivalry-driven growth, and pragmatic insight."
+ cultivation_demonic_focus_modifier:0 "Demonic Cultivation Focus"
+ cultivation_demonic_focus_modifier_desc:0 "This character is focused on demonic methods: ruthless power, dangerous momentum, and fear-driven dominance."
+ cultivation_vagrant_focus_modifier:0 "Vagrant Cultivation Focus"
+ cultivation_vagrant_focus_modifier_desc:0 "This character is focused on an independent wandering path: flexible insight and freedom from sect orthodoxy."
 
  ##################################################
  # PERK TREES (REALMS)

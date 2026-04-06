@@ -388,6 +388,13 @@ raise_formation_barriers_decision = {
             has_trait = formation_body_tier_1
             has_trait = formation_body_tier_2
             has_trait = formation_body_tier_3
+            has_trait = cultivation_qi_refining
+            has_trait = cultivation_qi_building
+            has_trait = cultivation_core_formation
+            has_trait = cultivation_nascent_soul
+            has_trait = cultivation_soul_formation
+            has_trait = cultivation_saint_realm
+            has_trait = cultivation_true_immortal
         }
     }
 
