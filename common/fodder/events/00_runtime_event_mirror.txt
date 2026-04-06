@@ -1,4 +1,4 @@
-﻿﻿# Runtime mirror snapshot for fodder sync.
+﻿# Runtime mirror snapshot for fodder sync.
 # Source of truth remains events/*.txt; update this mirror in the same commit.
 
 mirror_events = {

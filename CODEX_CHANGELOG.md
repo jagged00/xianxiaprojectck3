@@ -338,3 +338,22 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Corrected AI parent-resolution scope targets so disown/accept outcomes now target the actual AI parent (father/mother), not the awakened child scope.
 - Added explicit `title`/`desc` bindings to visible player event `cultivation_ai.2261` so parent accept/disown prompts render narrative localization correctly.
 - Added player-notification guard flag (`fox_spirit_waiting_player_parent`) so AI parent auto-resolution does not consume pending state after a human parent has already been notified.
+
+### 25) Fox-demon integration + sect-join recovery hotfix (2026-04-06)
+- Normalized duplicated UTF-8 BOM headers in key cultivation script files (`cultivation_ai_events`, `cultivation_effects`, marriage scripted modifiers mirror) to prevent parser misreads that could cascade into missing cultivation effects/events.
+- Restored broad AI sect-join coverage by making startup/monthly cultivation orchestration iterate `every_living_character` (AI adults with active meridians), not only rulers.
+- Fixed fox-spirit compatibility trigger to key off the actual fox trait (`huxian_blood`), replacing invalid `has_trait = huxian` usage.
+- Added a fox-demon possession pulse in `cultivation_ai.2250` so awakened fox demons can occasionally seize random AI children as vessels, immediately binding them into the existing meridian/cultivator/perk pipeline (no separate fox-only progression track).
+- Removed the malformed compatch culture definition `fox demon spirits compatch/common/culture/cultures/00_huxian.txt` that was generating parser errors and blocking related fox-demon content from loading reliably.
+- Follow-up sect-join reliability tweak (same date): `cultivation_ai.0002` no longer requires pre-existing cultivator trait; it now bootstraps Qi Gathering + first meridian perk for eligible meridianed AI before sect assignment, and checks `has_cultivation_sect_faith` directly to force vanilla-faith ruler conversion into sect faiths.
+- Follow-up interaction/fox reliability fix (2026-04-06): `dual_cultivation_interaction` now requires both participants to be adult cultivator lovers/soulmates, includes proper interaction-name localization key, and no longer references Carnalitas scope plumbing. Fox possession now targets only children (age 6-13), guarantees missing-meridian recovery to excellent+, and immediately applies top beauty tier on possession.
+- Removed legacy `common/character_interactions/carn_sex_interaction.txt` from core mod load to eliminate unresolved Carnalitas trigger/effect parser errors in `error.log` when external dependency scripts are absent.
+- Error-log cleanup follow-up (2026-04-06): added missing BOM to `cultivation_sect_nicknames_l_english.yml` and `20_cultivation_sect_nicknames.txt`, and removed duplicate `cultivation_breakthrough.1400.wait` localization definition.
+- Dual-cultivation scope regression fix (2026-04-06): restored `scope:recipient -> carn_sex_partner_scope` save before `dual_cultivation_effect`, and re-enabled scripted-effect fallback scope initialization to avoid undefined-partner runtime failures.
+
+### 24) Fox possession sect-join dead-branch fix + sect confederation range tuning (2026-04-06)
+- Fixed an unreachable branch in fox-vessel possession follow-up: possessed targets are children (age 6–13), so sect conversion bootstrap now no longer hard-requires `is_adult = yes`.
+- Possessed hosts now always receive `cultivation_qi_gathering` if missing before sect assignment checks, ensuring the possession flow can route into sect faith conversion logic.
+- Tuned same-sect defensive-pact formation so rulers form cross-realm confederation-style alliances when either:
+  - they are within diplomatic range, or
+  - both rulers are above Qi Gathering (Qi Refining+), effectively granting long-range sect coalition behavior to higher realms.

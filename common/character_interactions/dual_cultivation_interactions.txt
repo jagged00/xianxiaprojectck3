@@ -10,6 +10,10 @@
         scope:actor = {
             is_adult = yes
             is_cultivator = yes
+            OR = {
+                has_relation_lover = scope:recipient
+                has_relation_soulmate = scope:recipient
+            }
         }
         scope:recipient = {
             is_adult = yes
@@ -20,6 +24,10 @@
     is_valid_showing_failures_only = {
         scope:actor = { NOT = { has_character_modifier = qi_deviation } }
         scope:recipient = { NOT = { has_character_modifier = qi_deviation } }
+        OR = {
+            scope:recipient = { has_relation_lover = scope:actor }
+            scope:recipient = { has_relation_soulmate = scope:actor }
+        }
     }
 
     cooldown = { months = 3 }
@@ -94,7 +102,6 @@
             OR = {
                 scope:recipient = { has_relation_lover = scope:actor }
                 scope:recipient = { has_relation_soulmate = scope:actor }
-                scope:recipient = { has_relation_friend = scope:actor }
             }
         }
         modifier = {
