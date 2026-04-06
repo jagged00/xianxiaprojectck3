@@ -66,6 +66,20 @@ cultivation_ai_join_vagrant_sect_effect = {
 	}
 }
 
+
+
+cultivation_ai_join_fox_spirit_sect_effect = {
+	random_list = {
+		20 = { set_character_faith = faith:yin_phoenix_sect cultivation_convert_direct_domain_faith_effect = yes }
+		18 = { set_character_faith = faith:succubus_palace cultivation_convert_direct_domain_faith_effect = yes }
+		16 = { set_character_faith = faith:spirit_communion_temple cultivation_convert_direct_domain_faith_effect = yes }
+		14 = { set_character_faith = faith:blood_moon_demonic_sect cultivation_convert_direct_domain_faith_effect = yes }
+		12 = { set_character_faith = faith:blood_yin_cult cultivation_convert_direct_domain_faith_effect = yes }
+		10 = { set_character_faith = faith:jade_chamber_sect cultivation_convert_direct_domain_faith_effect = yes }
+		10 = { set_character_faith = faith:eternal_pleasure_hall cultivation_convert_direct_domain_faith_effect = yes }
+	}
+}
+
 cultivation_ai_join_any_sect_by_meridian_effect = {
 	if = {
 		limit = {

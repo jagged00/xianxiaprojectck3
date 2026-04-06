@@ -222,6 +222,10 @@ cultivation_character_initialization.0005 = {
 
 	immediate = {
 		if = {
+			limit = { has_trait = huxian_blood }
+			cultivation_ai_join_fox_spirit_sect_effect = yes
+		}
+		else_if = {
 			limit = {
 				exists = mother
 				mother = { is_alive = yes has_cultivation_sect_faith = yes }

@@ -161,6 +161,14 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 
 ---
 
+### 23) Reincarnation lottery + fox-spirit sect routing hotfix (2026-04-06)
+- Reworked the reincarnation lottery gate in `cultivation_ai.2270` to remove invalid global-flag trigger usage and rely on living holder/cooldown-character flags instead.
+- Added explicit cleanup of stale `cultivation_reincarnation_holder` flags when the current holder pool becomes invalid, then starts cooldown anchoring.
+- Added `cultivation_ai_join_fox_spirit_sect_effect` and switched forced fox-spirit child vessel generation to that path so huxian children no longer roll orthodox sects like Mount Hua.
+- Updated child-sect inheritance bootstrap to route `huxian_blood` children through fox-spirit sect assignment instead of parental orthodox inheritance.
+- Marked `cultivation_sect_spar_results.1000` hidden to suppress missing desc/options event errors for this internal resolution event.
+- Removed duplicate `FOUNDER_BASED_NAME_POSTFIX` localization override from fox-spirit compatch dynasty names.
+
 ## Practical guidance for future Codex instances
 
 1. **Before changing progression logic:**
