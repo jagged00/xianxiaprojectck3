@@ -2120,6 +2120,7 @@
  CULTIVATION_LEFT_PARTNER_SELECTED:0 "Left partner selected."
  find_cultivation_right_partner_desc:0 "Select a right-side dual cultivation partner."
  CULTIVATION_RIGHT_PARTNER_SELECTED:0 "Right partner selected."
+ dual_cultivation_interaction:0 "Dual Cultivation"
  dual_cultivation_interaction_desc:0 "Cultivate together to harmonize yin and yang."
  visit_mount_hua_sect_decision_tooltip:0 "Travel to Mount Hua Sect."
  visit_heavenly_sword_pavilion_decision_tooltip:0 "Travel to Heavenly Sword Pavilion."
@@ -2138,7 +2139,6 @@
  trait_5_xp_desc:0 "Your fifth trait gains experience."
  trait_6_xp_tt:0 "Gain trait experience."
  trait_6_xp_desc:0 "Your sixth trait gains experience."
- cultivation_breakthrough.1400.wait:0 "Wait for a better moment"
 
  CULTIVATION_MARRIAGE_BLOCKED_MERIDIANS_TABOO:0 "Blocked Meridians Are a Marriage Taboo"
  CULTIVATION_MARRIAGE_POOR_MERIDIANS_PENALTY:0 "Poor Meridian Foundation"
