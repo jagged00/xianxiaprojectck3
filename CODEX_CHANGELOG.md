@@ -387,3 +387,16 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - High realm portrait shaping now ramps from Heavenly Being through True Immortal with gradual height increase and progressively more refined/slender immortal body silhouettes.
 - Added hair-color whitening at Entering Nirvana and full silver-white hair at True Immortal to reinforce ascension fantasy.
 - Added universal white-hair portrait override for `huxian_blood` so fox demons consistently present the requested fox-spirit appearance.
+- Follow-up fix: inserted missing `cultivation_four_axis` portrait stage between Heavenly Being and Integration to prevent mid-realm visual regression during breakthrough progression.
+- Added escalating golden-eye portrait tint (`eye_color`) for high-realm cultivators from Heavenly Being through True Immortal.
+- Added faith-aspected eye overrides for cultivators: demonic-faith cultivators now tint red eyes, and unorthodox-faith cultivators tint purple eyes.
+- Scoped all white-hair portrait overrides (Nirvana/True Immortal + `huxian_blood`) to demonic or unorthodox faith cultivators only.
+- Added a demonic-path blood-red hair variant (wrathful/sadistic/vengeful archetypes) for Entering Nirvana/True Immortal and `huxian_blood`, while preserving white hair for unorthodox and non-bloodthirsty demonic cultivators.
+
+### 35) Cultivator body archetype pass from personality/education/lifestyle (2026-04-06)
+- Added a new portrait modifier group `xianxia_cultivator_body_archetypes` to map body-shape DNA toward lore-style xianxia ideals based on character identity traits.
+- Added `xianxia_disciplined_immortal_frame` for temperate/diligent/athletic and high learning/stewardship cultivators, nudging bodies toward a leaner disciplined silhouette.
+- Added `xianxia_martial_hero_frame` for martial-focused personalities/education/traits (brave, wrathful, blademaster, hunter, high martial education), with a taller and stronger heroic frame.
+- Added `xianxia_refined_sage_frame` for calm/patient/humble/scholar-theologian-mystic leaning cultivators, emphasizing an elegant refined immortal body line.
+- Added `xianxia_indulgent_deviation_frame` so indulgent paths (gluttonous/lazy/drunkard/hashishiyah/reveler) visibly diverge from orthodox cultivation physiques unless counterbalanced by elite body-discipline traits.
+- Follow-up regression fix (same date): moved Nirvana/True Immortal demonic/unorthodox white-hair gating into dedicated hair-aspect modifiers so high-realm eye/body/height transformation progression now applies to all faith paths again.
