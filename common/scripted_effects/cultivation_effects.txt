@@ -784,6 +784,15 @@ cultivation_form_sect_defensive_pacts_effect = {
                 faith = root.faith
                 NOT = { this = root }
                 NOT = { is_allied_to = root }
+                OR = {
+                    is_within_diplo_range = root
+                    AND = {
+                        root = {
+                            NOT = { has_trait = cultivation_qi_gathering }
+                        }
+                        NOT = { has_trait = cultivation_qi_gathering }
+                    }
+                }
             }
             add_alliance = root
         }

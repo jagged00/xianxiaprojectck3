@@ -350,3 +350,10 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Removed legacy `common/character_interactions/carn_sex_interaction.txt` from core mod load to eliminate unresolved Carnalitas trigger/effect parser errors in `error.log` when external dependency scripts are absent.
 - Error-log cleanup follow-up (2026-04-06): added missing BOM to `cultivation_sect_nicknames_l_english.yml` and `20_cultivation_sect_nicknames.txt`, and removed duplicate `cultivation_breakthrough.1400.wait` localization definition.
 - Dual-cultivation scope regression fix (2026-04-06): restored `scope:recipient -> carn_sex_partner_scope` save before `dual_cultivation_effect`, and re-enabled scripted-effect fallback scope initialization to avoid undefined-partner runtime failures.
+
+### 24) Fox possession sect-join dead-branch fix + sect confederation range tuning (2026-04-06)
+- Fixed an unreachable branch in fox-vessel possession follow-up: possessed targets are children (age 6–13), so sect conversion bootstrap now no longer hard-requires `is_adult = yes`.
+- Possessed hosts now always receive `cultivation_qi_gathering` if missing before sect assignment checks, ensuring the possession flow can route into sect faith conversion logic.
+- Tuned same-sect defensive-pact formation so rulers form cross-realm confederation-style alliances when either:
+  - they are within diplomatic range, or
+  - both rulers are above Qi Gathering (Qi Refining+), effectively granting long-range sect coalition behavior to higher realms.

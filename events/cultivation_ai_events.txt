@@ -1175,12 +1175,11 @@ cultivation_ai.2250 = {
                             add_perk = qi_gathering_meridian_1_perk
                         }
                         if = {
-                            limit = {
-                                is_adult = yes
-                                is_cultivator = yes
-                                NOT = { has_cultivation_sect_faith = yes }
-                                NOT = { government_has_flag = government_is_theocracy }
-                            }
+                            limit = { NOT = { has_trait = cultivation_qi_gathering } }
+                            add_trait = cultivation_qi_gathering
+                        }
+                        if = {
+                            limit = { NOT = { has_cultivation_sect_faith = yes } }
                             cultivation_ai_join_any_sect_by_meridian_effect = yes
                         }
                         add_character_flag = fox_spirit_awakening_complete
