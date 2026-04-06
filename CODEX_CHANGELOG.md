@@ -376,3 +376,8 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
   - `cultivation_reincarnation_cooldown_anchor` (200 years on a random living anchor character) applied only after holder death before next roll.
 - Reincarnation lottery winners now receive dedicated nickname `the Reincarnator` (`nick_the_reincarnator`) on assignment for immediate world readability.
 - Hooked `cultivation_ai.2270` into `on_monthly_pulse` for continuous world-state maintenance.
+
+### 33) Reincarnation lottery eligibility/teardown correctness fix (2026-04-06)
+- Replaced invalid reincarnation candidate tier filter with explicit `highest_held_title_tier` checks (count/duchy/kingdom/empire) so landed count+ rulers are selected correctly.
+- Tightened active-holder teardown to require a *living, landed, count+* holder; if holder is dead/unlanded/ineligible, singleton state now clears and cooldown begins.
+- Added candidate scope save + existence guard before applying reincarnation package/global-active flag to prevent active-state flips when no valid candidate exists.

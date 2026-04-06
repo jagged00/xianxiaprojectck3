@@ -1345,14 +1345,21 @@ cultivation_ai.2270 = {
     hidden = yes
 
     immediate = {
-        # If the current reincarnation holder is gone (dead), start global cooldown.
+        # If no eligible reincarnation holder remains, start global cooldown.
         if = {
             limit = {
                 has_global_flag = cultivation_reincarnation_active
                 NOT = {
                     any_living_character = {
                         is_alive = yes
+                        is_landed = yes
                         has_character_flag = cultivation_reincarnation_holder
+                        OR = {
+                            highest_held_title_tier = tier_county
+                            highest_held_title_tier = tier_duchy
+                            highest_held_title_tier = tier_kingdom
+                            highest_held_title_tier = tier_empire
+                        }
                     }
                 }
             }
@@ -1380,10 +1387,20 @@ cultivation_ai.2270 = {
                     is_alive = yes
                     is_adult = yes
                     is_landed = yes
-                    tier >= tier_count
+                    OR = {
+                        highest_held_title_tier = tier_county
+                        highest_held_title_tier = tier_duchy
+                        highest_held_title_tier = tier_kingdom
+                        highest_held_title_tier = tier_empire
+                    }
                     NOT = { has_trait = incapable }
                 }
+                save_scope_as = cultivation_reincarnation_candidate
+            }
 
+            if = {
+                limit = { exists = scope:cultivation_reincarnation_candidate }
+                scope:cultivation_reincarnation_candidate = {
                 # Realm cleanup -> max realm assignment.
                 remove_trait = cultivation_qi_gathering
                 remove_trait = cultivation_qi_refining
@@ -1451,9 +1468,9 @@ cultivation_ai.2270 = {
 
                 give_nickname = nick_the_reincarnator
                 add_character_flag = cultivation_reincarnation_holder
+                }
+                add_global_flag = cultivation_reincarnation_active
             }
-
-            add_global_flag = cultivation_reincarnation_active
         }
     }
 
