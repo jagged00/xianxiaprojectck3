@@ -21,7 +21,6 @@ perfected_spirit_pill = {
 }
 
 manual_comprehension = {
-    lifestyle_experience_gain_mult = 0.15
     monthly_lifestyle_xp_gain_mult = 0.08
 }
 
@@ -45,7 +44,6 @@ secret_realm_inheritance = {
 
 high_realm_longevity = {
     health = 1.5
-    disease_resistance = 0.5
     prowess = 2
 }
 

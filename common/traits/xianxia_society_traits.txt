@@ -36,8 +36,7 @@ jianghu_righteous = {
     icon = superior_root.dds
     desc = trait_jianghu_righteous_desc
     group = personality
-    same_trait_opinion = 10
-    opposite_trait_opinion = -20
+    general_opinion = 5
 }
 
 jianghu_demonic = {
@@ -45,8 +44,7 @@ jianghu_demonic = {
     icon = variant_root.dds
     desc = trait_jianghu_demonic_desc
     group = personality
-    same_trait_opinion = 10
-    opposite_trait_opinion = -20
+    general_opinion = -5
     dread_gain_mult = 0.2
 }
 
