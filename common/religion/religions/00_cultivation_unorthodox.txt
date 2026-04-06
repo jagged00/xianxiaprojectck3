@@ -54,7 +54,7 @@ cultivation_unorthodox = {
 	faiths = {
 		crimson_moon_blade_hall = {
 			color = { 0.6 0.1 0.1 }
-			icon = crimson_moon_blade_hall
+			icon = qingcheng_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -66,7 +66,7 @@ cultivation_unorthodox = {
 
 		tyrant_saber_palace = {
 			color = { 0.7 0.2 0.0 }
-			icon = tyrant_saber_palace
+			icon = tang_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -78,7 +78,7 @@ cultivation_unorthodox = {
 
 		demon_suppressing_blade_clan = {
 			color = { 0.8 0.7 0.3 }
-			icon = demon_suppressing_blade_clan
+			icon = kunlun_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -90,7 +90,7 @@ cultivation_unorthodox = {
 
 		medicine_king_valley = {
 			color = { 0.5 0.7 0.3 }
-			icon = medicine_king_valley
+			icon = hainan_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -102,7 +102,7 @@ cultivation_unorthodox = {
 
 		hundred_herbs_pavilion = {
 			color = { 0.6 0.8 0.4 }
-			icon = hundred_herbs_pavilion
+			icon = diancang_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -114,7 +114,7 @@ cultivation_unorthodox = {
 
 		jade_chamber_sect = {
 			color = { 0.6 0.8 0.7 }
-			icon = jade_chamber_sect
+			icon = mount_hua_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -126,7 +126,7 @@ cultivation_unorthodox = {
 
 		eternal_pleasure_hall = {
 			color = { 0.7 0.4 0.5 }
-			icon = eternal_pleasure_hall
+			icon = zhongnan_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -138,7 +138,7 @@ cultivation_unorthodox = {
 
 		moonless_night_pavilion = {
 			color = { 0.1 0.1 0.2 }
-			icon = moonless_night_pavilion
+			icon = kongtong_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -150,7 +150,7 @@ cultivation_unorthodox = {
 
 		pale_bone_hall = {
 			color = { 0.9 0.9 0.8 }
-			icon = pale_bone_hall
+			icon = shaolin_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -162,7 +162,7 @@ cultivation_unorthodox = {
 
 		eternal_rest_clan = {
 			color = { 0.3 0.3 0.4 }
-			icon = eternal_rest_clan
+			icon = wudang_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang

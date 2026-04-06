@@ -64,6 +64,16 @@ good_meridians = {
 	attraction_opinion = 10
 	physical = yes
 	good = yes
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = good_meridians.dds
+			}
+			desc = good_meridians.dds
+		}
+	}
 }
 
 excellent_meridians = {
@@ -83,6 +93,16 @@ excellent_meridians = {
 	monthly_prestige = 2
 	physical = yes
 	good = yes
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = excellent_meridians.dds
+			}
+			desc = excellent_meridians.dds
+		}
+	}
 }
 
 heavenly_meridians = {
@@ -105,6 +125,16 @@ heavenly_meridians = {
 	dread_baseline_add = 40
 	physical = yes
 	good = yes
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = heavenly_meridians.dds
+			}
+			desc = heavenly_meridians.dds
+		}
+	}
 }
 
 
@@ -123,4 +153,14 @@ crippled_meridians = {
 	attraction_opinion = -30
 	physical = yes
 	good = no
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = poor_meridians.dds
+			}
+			desc = poor_meridians.dds
+		}
+	}
 }

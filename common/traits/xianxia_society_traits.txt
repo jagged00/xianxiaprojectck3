@@ -1,6 +1,6 @@
 ﻿sect_disciple = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/education_diplomacy_1.dds"
+    icon = first_rate.dds
     desc = trait_sect_disciple_desc
     group = education
     ruler_designer_cost = 0
@@ -10,7 +10,7 @@
 
 sect_elder = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/education_learning_3.dds"
+    icon = second_rate.dds
     desc = trait_sect_elder_desc
     group = education
     ruler_designer_cost = 15
@@ -21,7 +21,7 @@ sect_elder = {
 
 sect_leader = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/education_martial_4.dds"
+    icon = third_rate.dds
     desc = trait_sect_leader_desc
     group = education
     ruler_designer_cost = 30
@@ -33,7 +33,7 @@ sect_leader = {
 
 jianghu_righteous = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/compassionate.dds"
+    icon = superior_root.dds
     desc = trait_jianghu_righteous_desc
     group = personality
     same_trait_opinion = 10
@@ -42,7 +42,7 @@ jianghu_righteous = {
 
 jianghu_demonic = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/sadistic.dds"
+    icon = variant_root.dds
     desc = trait_jianghu_demonic_desc
     group = personality
     same_trait_opinion = 10
@@ -52,7 +52,7 @@ jianghu_demonic = {
 
 weapon_path_sword = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/blademaster_1.dds"
+    icon = dao_seeking.dds
     desc = trait_weapon_path_sword_desc
     group = commander
     prowess = 3
@@ -61,7 +61,7 @@ weapon_path_sword = {
 
 weapon_path_saber = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/blademaster_2.dds"
+    icon = profound_realm.dds
     desc = trait_weapon_path_saber_desc
     group = commander
     prowess = 3
@@ -70,7 +70,7 @@ weapon_path_saber = {
 
 weapon_path_spear = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/strategist.dds"
+    icon = peak_realm.dds
     desc = trait_weapon_path_spear_desc
     group = commander
     prowess = 2
@@ -79,7 +79,7 @@ weapon_path_spear = {
 
 weapon_path_fist = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/athletic.dds"
+    icon = golden_core.dds
     desc = trait_weapon_path_fist_desc
     group = physical
     prowess = 4
@@ -87,7 +87,7 @@ weapon_path_fist = {
 
 sect_inner_hall_elder = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/education_learning_4.dds"
+    icon = excellent_meridians.dds
     desc = trait_sect_inner_hall_elder_desc
     group = education
     learning = 2
@@ -97,7 +97,7 @@ sect_inner_hall_elder = {
 
 sect_outer_hall_elder = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/education_martial_3.dds"
+    icon = good_meridians.dds
     desc = trait_sect_outer_hall_elder_desc
     group = education
     martial = 2
@@ -107,7 +107,7 @@ sect_outer_hall_elder = {
 
 sect_enforcement_elder = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/just.dds"
+    icon = lightning_constitution.dds
     desc = trait_sect_enforcement_elder_desc
     group = education
     martial = 1
@@ -117,7 +117,7 @@ sect_enforcement_elder = {
 
 sect_lineage_heir = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/diligent.dds"
+    icon = heavenly_root.dds
     desc = trait_sect_lineage_heir_desc
     group = personality
     learning = 2
@@ -126,7 +126,7 @@ sect_lineage_heir = {
 
 alchemy_body_tier_1 = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/education_learning_1.dds"
+    icon = poor_meridians.dds
     desc = trait_alchemy_body_tier_1_desc
     group = alchemy_body
     level = 1
@@ -136,7 +136,7 @@ alchemy_body_tier_1 = {
 
 alchemy_body_tier_2 = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/education_learning_2.dds"
+    icon = normal_meridians.dds
     desc = trait_alchemy_body_tier_2_desc
     group = alchemy_body
     level = 2
@@ -146,7 +146,7 @@ alchemy_body_tier_2 = {
 
 alchemy_body_tier_3 = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/education_learning_3.dds"
+    icon = second_rate.dds
     desc = trait_alchemy_body_tier_3_desc
     group = alchemy_body
     level = 3
@@ -157,7 +157,7 @@ alchemy_body_tier_3 = {
 
 alchemy_lifestyle_tier_1 = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/education_learning_1.dds"
+    icon = poor_meridians.dds
     desc = trait_alchemy_lifestyle_tier_1_desc
     group = alchemy_lifestyle
     level = 1
@@ -167,7 +167,7 @@ alchemy_lifestyle_tier_1 = {
 
 alchemy_lifestyle_tier_2 = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/education_learning_2.dds"
+    icon = normal_meridians.dds
     desc = trait_alchemy_lifestyle_tier_2_desc
     group = alchemy_lifestyle
     level = 2
@@ -177,7 +177,7 @@ alchemy_lifestyle_tier_2 = {
 
 alchemy_lifestyle_tier_3 = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/education_learning_3.dds"
+    icon = second_rate.dds
     desc = trait_alchemy_lifestyle_tier_3_desc
     group = alchemy_lifestyle
     level = 3
@@ -187,7 +187,7 @@ alchemy_lifestyle_tier_3 = {
 
 formation_master_tier_1 = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/strategist.dds"
+    icon = peak_realm.dds
     desc = trait_formation_master_tier_1_desc
     group = formation_mastery
     level = 1
@@ -197,7 +197,7 @@ formation_master_tier_1 = {
 
 formation_master_tier_2 = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/strategist.dds"
+    icon = peak_realm.dds
     desc = trait_formation_master_tier_2_desc
     group = formation_mastery
     level = 2
@@ -208,7 +208,7 @@ formation_master_tier_2 = {
 
 formation_master_tier_3 = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/strategist.dds"
+    icon = peak_realm.dds
     desc = trait_formation_master_tier_3_desc
     group = formation_mastery
     level = 3
@@ -219,7 +219,7 @@ formation_master_tier_3 = {
 
 formation_body_tier_1 = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/stalwart_leader.dds"
+    icon = core_formation.dds
     desc = trait_formation_body_tier_1_desc
     group = formation_body
     level = 1
@@ -229,7 +229,7 @@ formation_body_tier_1 = {
 
 formation_body_tier_2 = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/stalwart_leader.dds"
+    icon = core_formation.dds
     desc = trait_formation_body_tier_2_desc
     group = formation_body
     level = 2
@@ -239,7 +239,7 @@ formation_body_tier_2 = {
 
 formation_body_tier_3 = {
     category = lifestyle
-    icon = "gfx/interface/icons/traits/stalwart_leader.dds"
+    icon = core_formation.dds
     desc = trait_formation_body_tier_3_desc
     group = formation_body
     level = 3

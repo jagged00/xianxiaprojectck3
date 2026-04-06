@@ -70,7 +70,7 @@ cultivation_orthodox = {
 
 		heavenly_sword_pavilion = {
 			color = { 0.7 0.7 0.9 }
-			icon = heavenly_sword_pavilion
+			icon = wudang_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -82,7 +82,7 @@ cultivation_orthodox = {
 
 		ten_thousand_swords_valley = {
 			color = { 0.5 0.5 0.5 }
-			icon = ten_thousand_swords_valley
+			icon = kunlun_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -94,7 +94,7 @@ cultivation_orthodox = {
 
 		violet_thunder_blade_sect = {
 			color = { 0.5 0.2 0.7 }
-			icon = violet_thunder_blade_sect
+			icon = qingcheng_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -106,7 +106,7 @@ cultivation_orthodox = {
 		
 		nine_star_formation_sect = {
 			color = { 0.2 0.2 0.5 }
-			icon = nine_star_formation_sect
+			icon = zhongnan_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -118,7 +118,7 @@ cultivation_orthodox = {
 
 		mystic_seal_pavilion = {
 			color = { 0.5 0.3 0.6 }
-			icon = mystic_seal_pavilion
+			icon = kongtong_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -142,7 +142,7 @@ cultivation_orthodox = {
 
 		shaolin_temple = {
 			color = { 0.8 0.5 0.2 }
-			icon = shaolin_temple
+			icon = shaolin_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -154,7 +154,7 @@ cultivation_orthodox = {
 
 		eternal_harmony_pavilion = {
 			color = { 0.9 0.7 0.8 }
-			icon = eternal_harmony_pavilion
+			icon = diancang_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -166,7 +166,7 @@ cultivation_orthodox = {
 
 		divine_beast_mountain = {
 			color = { 0.7 0.6 0.4 }
-			icon = divine_beast_mountain
+			icon = hainan_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -178,7 +178,7 @@ cultivation_orthodox = {
 
 		thousand_beast_valley = {
 			color = { 0.5 0.6 0.3 }
-			icon = thousand_beast_valley
+			icon = tang_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
