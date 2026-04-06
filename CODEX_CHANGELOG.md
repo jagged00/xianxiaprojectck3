@@ -154,6 +154,11 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Added monthly event `cultivation_ai.2210` that can randomly grant minor epithets to lower-realm cultivators (Qi Refining/Core Formation tier) with low chance and one-time assignment flagging.
 - Hooked `cultivation_ai.2210` into monthly cultivation on_action orchestration so minor nickname progression occurs naturally over campaign time.
 
+### 22) Xianxia icon path backfill for traits + sect decision options (2026-04-06)
+- Audited icon/picture references and found missing custom faith icon assets used by `cultivation_sect_decisions` option rows.
+- Repointed sect decision option icon paths to existing in-repo faith icon assets (`faith/*.dds`) instead of unresolved `gfx/interface/icons/faith/*.dds` paths.
+- This keeps the icon fix text-only (script path updates) with no additional DDS asset files added in this pass.
+
 ---
 
 ## Practical guidance for future Codex instances
