@@ -1024,35 +1024,23 @@ cultivation_ai.2250 = {
                                 father = { is_alive = yes is_ai = yes }
                                 has_character_flag = fox_spirit_parent_decision_pending
                             }
-                            father = {
-                                if = {
-                                    limit = {
+                            if = {
+                                limit = {
+                                    father = {
                                         OR = {
                                             has_trait = just
                                             has_trait = honest
                                             has_trait = zealous
                                         }
                                     }
-                                    random_child = {
-                                        limit = {
-                                            has_character_flag = fox_spirit_parent_decision_pending
-                                            this = root
-                                        }
-                                        remove_relation = { target = root relation = parent }
-                                        add_character_modifier = { modifier = fox_spirit_disowned_child days = -1 }
-                                        remove_character_flag = fox_spirit_parent_decision_pending
-                                    }
                                 }
-                                else = {
-                                    random_child = {
-                                        limit = {
-                                            has_character_flag = fox_spirit_parent_decision_pending
-                                            this = root
-                                        }
-                                        add_opinion = { target = root modifier = opinion_fox_spirit_accepted_child years = 30 }
-                                        remove_character_flag = fox_spirit_parent_decision_pending
-                                    }
-                                }
+                                remove_relation = { target = father relation = parent }
+                                add_character_modifier = { modifier = fox_spirit_disowned_child days = -1 }
+                                remove_character_flag = fox_spirit_parent_decision_pending
+                            }
+                            else = {
+                                add_opinion = { target = father modifier = opinion_fox_spirit_accepted_child years = 30 }
+                                remove_character_flag = fox_spirit_parent_decision_pending
                             }
                         }
 
@@ -1062,35 +1050,23 @@ cultivation_ai.2250 = {
                                 mother = { is_alive = yes is_ai = yes }
                                 has_character_flag = fox_spirit_parent_decision_pending
                             }
-                            mother = {
-                                if = {
-                                    limit = {
+                            if = {
+                                limit = {
+                                    mother = {
                                         OR = {
                                             has_trait = just
                                             has_trait = honest
                                             has_trait = zealous
                                         }
                                     }
-                                    random_child = {
-                                        limit = {
-                                            has_character_flag = fox_spirit_parent_decision_pending
-                                            this = root
-                                        }
-                                        remove_relation = { target = root relation = parent }
-                                        add_character_modifier = { modifier = fox_spirit_disowned_child days = -1 }
-                                        remove_character_flag = fox_spirit_parent_decision_pending
-                                    }
                                 }
-                                else = {
-                                    random_child = {
-                                        limit = {
-                                            has_character_flag = fox_spirit_parent_decision_pending
-                                            this = root
-                                        }
-                                        add_opinion = { target = root modifier = opinion_fox_spirit_accepted_child years = 30 }
-                                        remove_character_flag = fox_spirit_parent_decision_pending
-                                    }
-                                }
+                                remove_relation = { target = mother relation = parent }
+                                add_character_modifier = { modifier = fox_spirit_disowned_child days = -1 }
+                                remove_character_flag = fox_spirit_parent_decision_pending
+                            }
+                            else = {
+                                add_opinion = { target = mother modifier = opinion_fox_spirit_accepted_child years = 30 }
+                                remove_character_flag = fox_spirit_parent_decision_pending
                             }
                         }
                     }

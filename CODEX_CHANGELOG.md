@@ -335,3 +335,4 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 ### 30) Fox-spirit pulse/performance + parent-resolution hotfix (2026-04-06)
 - Removed `cultivation_ai.2250` and `cultivation_ai.2260` from per-ruler orchestrator/bootstrapping triggers to avoid multiplicative full-world loops; these events now rely on their global on_action scheduling only.
 - Added missing AI-mother auto-resolution branch for fox-spirit child awakening pending state so children without an eligible AI father no longer remain stuck with `fox_spirit_parent_decision_pending`.
+- Corrected AI parent-resolution scope targets so disown/accept outcomes now target the actual AI parent (father/mother), not the awakened child scope.
