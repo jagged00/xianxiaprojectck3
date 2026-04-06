@@ -835,6 +835,46 @@ cultivation_ai.3000 = {
     option = { name = OK }
 }
 
+# Light monthly sect-pact maintenance to avoid alliance decay without full-world O(n^2) spikes.
+cultivation_ai.3001 = {
+    type = character_event
+    scope = none
+    hidden = yes
+
+    immediate = {
+        # Run multiple light repairs per month so sect pacts visibly recover in active games.
+        random_independent_ruler = {
+            limit = {
+                is_alive = yes
+                is_adult = yes
+                is_cultivator = yes
+                has_cultivation_sect_faith = yes
+            }
+            cultivation_form_sect_defensive_pacts_effect = yes
+        }
+        random_independent_ruler = {
+            limit = {
+                is_alive = yes
+                is_adult = yes
+                is_cultivator = yes
+                has_cultivation_sect_faith = yes
+            }
+            cultivation_form_sect_defensive_pacts_effect = yes
+        }
+        random_independent_ruler = {
+            limit = {
+                is_alive = yes
+                is_adult = yes
+                is_cultivator = yes
+                has_cultivation_sect_faith = yes
+            }
+            cultivation_form_sect_defensive_pacts_effect = yes
+        }
+    }
+
+    option = { name = OK }
+}
+
 
 # AI requests breakthrough pills from better alchemists before breakthroughs.
 cultivation_ai.2240 = {

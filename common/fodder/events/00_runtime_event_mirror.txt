@@ -25,3 +25,5 @@ mirror_events = {
 # sync_update: defer AI parent auto-resolution when player-parent event notification is pending
 # sync_update: fixed reincarnation holder lottery gating + fox-spirit sect routing for huxian children
 # sync_update: fox-spirit vessel spawning now prioritizes noble children of rulers and uses higher follow-up cadence
+# sync_update: added cultivation_ai.3001 lightweight monthly sect-pact maintenance pulse to restore alliances without full monthly global sweep
+# sync_update: increased cultivation_ai.3001 monthly pact maintenance attempts per pulse to improve visible sect alliance formation
