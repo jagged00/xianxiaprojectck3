@@ -437,3 +437,19 @@ exotic_poisons = {
     icon = intrigue_positive
     intrigue = 2
 }
+
+fox_spirit_awakened = {
+    icon = intrigue_positive
+    intrigue = 3
+    diplomacy = 1
+    attraction_opinion = 15
+    monthly_prestige = 0.2
+    hostile_scheme_success_chance_add = 10
+}
+
+fox_spirit_disowned_child = {
+    icon = diplomacy_negative
+    diplomacy = -3
+    monthly_prestige = -0.2
+    stress_gain_mult = 0.1
+}
