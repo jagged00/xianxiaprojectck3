@@ -1010,10 +1010,12 @@ cultivation_ai.2250 = {
 
                         if = {
                             limit = { exists = father father = { is_alive = yes is_ai = no } }
+                            add_character_flag = fox_spirit_waiting_player_parent
                             father = { trigger_event = cultivation_ai.2261 }
                         }
                         if = {
                             limit = { exists = mother mother = { is_alive = yes is_ai = no } }
+                            add_character_flag = fox_spirit_waiting_player_parent
                             mother = { trigger_event = cultivation_ai.2261 }
                         }
 
@@ -1023,6 +1025,7 @@ cultivation_ai.2250 = {
                                 exists = father
                                 father = { is_alive = yes is_ai = yes }
                                 has_character_flag = fox_spirit_parent_decision_pending
+                                NOT = { has_character_flag = fox_spirit_waiting_player_parent }
                             }
                             if = {
                                 limit = {
@@ -1049,6 +1052,7 @@ cultivation_ai.2250 = {
                                 exists = mother
                                 mother = { is_alive = yes is_ai = yes }
                                 has_character_flag = fox_spirit_parent_decision_pending
+                                NOT = { has_character_flag = fox_spirit_waiting_player_parent }
                             }
                             if = {
                                 limit = {
@@ -1179,6 +1183,8 @@ cultivation_ai.2260 = {
 # Player parent response to fox-spirit child awakening.
 cultivation_ai.2261 = {
     type = character_event
+    title = cultivation_ai.2261.t
+    desc = cultivation_ai.2261.desc
 
     trigger = {
         is_alive = yes
@@ -1202,6 +1208,7 @@ cultivation_ai.2261 = {
         scope:fox_spirit_child_target = {
             add_opinion = { target = root modifier = opinion_fox_spirit_accepted_child years = 30 }
             remove_character_flag = fox_spirit_parent_decision_pending
+            remove_character_flag = fox_spirit_waiting_player_parent
         }
     }
 
@@ -1213,6 +1220,7 @@ cultivation_ai.2261 = {
             remove_relation = { target = root relation = parent }
             add_character_modifier = { modifier = fox_spirit_disowned_child days = -1 }
             remove_character_flag = fox_spirit_parent_decision_pending
+            remove_character_flag = fox_spirit_waiting_player_parent
         }
         add_stress = -30
     }

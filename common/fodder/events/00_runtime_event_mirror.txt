@@ -21,3 +21,5 @@ mirror_events = {
 # sync_update: added xianxia_world.2260/2261 fox-spirit predation and mortal-hunt backlash events
 # sync_update: fixed duplicated fox-spirit global pulse triggering and added AI-mother pending-state resolution
 # sync_update: fixed AI parent disown/accept scope targets to reference actual parent scope
+# sync_update: bound cultivation_ai.2261 title/desc keys for visible parent response event UI
+# sync_update: defer AI parent auto-resolution when player-parent event notification is pending
