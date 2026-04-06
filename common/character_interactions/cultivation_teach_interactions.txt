@@ -222,13 +222,15 @@ expel_or_betray_disciple_interaction = {
 			remove_trait = sect_disciple
 			remove_trait = sect_lineage_heir
 			add_trait = jianghu_demonic
-			add_character_modifier = { modifier = sect_internal_dispute days = 1095 }
+			add_character_modifier = { modifier = sect_internal_dispute days = 1825 }
 			add_character_modifier = { modifier = sect_lineage_fracture days = 1460 }
 			add_opinion = { target = scope:actor modifier = lineage_betrayal_opinion years = 20 }
 			remove_character_flag = disciple_of_current_mentor
 		}
 		scope:actor = {
 			add_dread = 15
+			add_stress = 40
+			add_character_modifier = { modifier = sect_internal_dispute days = 1095 }
 			add_character_modifier = { modifier = sect_power_struggle days = 730 }
 			add_character_modifier = { modifier = sect_lineage_fracture days = 730 }
 		}
