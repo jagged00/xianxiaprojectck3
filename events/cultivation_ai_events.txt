@@ -23,6 +23,8 @@ cultivation_ai.2000 = {
 
             trigger_event = cultivation_ai.0005
             trigger_event = cultivation_ai.2240
+            trigger_event = cultivation_ai.2250
+            trigger_event = cultivation_ai.2260
         }
     }
 
@@ -239,6 +241,7 @@ cultivation_ai.1000 = {
             }
             trigger_event = cultivation_ai.0001
             trigger_event = cultivation_ai.0002
+            trigger_event = cultivation_ai.2250
         }
     }
 
