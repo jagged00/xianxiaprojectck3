@@ -27,3 +27,43 @@ lineage_betrayal_opinion = {
 	opinion = -60
 	months = 240
 }
+
+opinion_fox_spirit_orthodox_hate = {
+	opinion = -100
+	months = 360
+}
+
+opinion_fox_spirit_order_hate = {
+	opinion = -60
+	months = 360
+}
+
+opinion_fox_spirit_unorthodox_wary = {
+	opinion = -20
+	months = 240
+}
+
+opinion_fox_spirit_vagrant_swing = {
+	opinion = 12
+	months = 180
+}
+
+opinion_fox_spirit_demonic_ally = {
+	opinion = 65
+	months = 360
+}
+
+opinion_fox_spirit_yin_affinity = {
+	opinion = 40
+	months = 300
+}
+
+opinion_fox_spirit_accepted_child = {
+	opinion = 30
+	months = 360
+}
+
+opinion_fox_spirit_mortal_hunter = {
+	opinion = -80
+	months = 240
+}

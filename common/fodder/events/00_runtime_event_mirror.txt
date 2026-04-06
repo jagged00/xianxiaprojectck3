@@ -15,3 +15,10 @@ mirror_events = {
 # sync_update: alchemy craft enlightenment proc + alchemy body lottery integration in initialization event
 
 # sync_update: added alchemy lifestyle xp progression and formation mastery/defense-array event hooks
+# sync_update: added cultivation_ai.2250 huxian yin-body sync + fox-spirit awakening/reaction mapping pulse
+# sync_update: expanded fox-spirit compatch with child awakening/disown event + purge pulse
+# sync_update: fox spirits now auto-upgrade to beauty_good_3 on awakening
+# sync_update: added xianxia_world.2260/2261 fox-spirit predation and mortal-hunt backlash events
+# sync_update: fixed duplicated fox-spirit global pulse triggering and added AI-mother pending-state resolution
+# sync_update: fixed AI parent disown/accept scope targets to reference actual parent scope
+# sync_update: bound cultivation_ai.2261 title/desc keys for visible parent response event UI

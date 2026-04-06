@@ -296,10 +296,33 @@
 
  formation_body_tier_1:0 "Pattern-Sensing Body"
  formation_body_tier_2:0 "Array-Conduction Body"
- formation_body_tier_3:0 "Heavenly Formation Body"
- trait_formation_body_tier_1_desc:0 "An innate physique suited to sensing formation lines and directional qi flow."
- trait_formation_body_tier_2_desc:0 "A refined physique that conducts formation qi with high stability."
- trait_formation_body_tier_3_desc:0 "A supreme physique born for large-scale heavenly formation control."
- trait_formation_body_tier_1_character_desc:0 "[ROOT.GetFirstNameNoTooltip] has an innate body suited for basic formation arts."
- trait_formation_body_tier_2_character_desc:0 "[ROOT.GetFirstNameNoTooltip] has a physique naturally tuned for advanced arrays."
- trait_formation_body_tier_3_character_desc:0 "[ROOT.GetFirstNameNoTooltip] possesses a heavenly body made for grand formations."
+formation_body_tier_3:0 "Heavenly Formation Body"
+trait_formation_body_tier_1_desc:0 "An innate physique suited to sensing formation lines and directional qi flow."
+trait_formation_body_tier_2_desc:0 "A refined physique that conducts formation qi with high stability."
+trait_formation_body_tier_3_desc:0 "A supreme physique born for large-scale heavenly formation control."
+trait_formation_body_tier_1_character_desc:0 "[ROOT.GetFirstNameNoTooltip] has an innate body suited for basic formation arts."
+trait_formation_body_tier_2_character_desc:0 "[ROOT.GetFirstNameNoTooltip] has a physique naturally tuned for advanced arrays."
+trait_formation_body_tier_3_character_desc:0 "[ROOT.GetFirstNameNoTooltip] possesses a heavenly body made for grand formations."
+
+embrace_fox_spirit_predation_decision:0 "Embrace Fox-Spirit Predation"
+embrace_fox_spirit_predation_decision_desc:0 "Fully accept the hunger side of your fox-spirit nature and step onto a taboo predation path."
+embrace_fox_spirit_predation_decision_tooltip:0 "Gain the Cannibal trait as a fox spirit and begin walking a feared predation dao."
+embrace_fox_spirit_predation_decision_confirm:0 "Accept the hunger."
+
+hunt_mortals_fox_spirit_decision:0 "Hunt Mortals in Your Domain"
+hunt_mortals_fox_spirit_decision_desc:0 "You stalk weak mortals in your lands to harvest vitality and sharpen your predatory arts."
+hunt_mortals_fox_spirit_decision_tooltip:0 "Gain a strong lifestyle-speed boost, but non-fox and non-demonic/unorthodox cultivators will loathe you."
+hunt_mortals_fox_spirit_decision_confirm:0 "Begin the night hunt."
+
+fox_spirit_mortal_hunt_frenzy:0 "Fox-Spirit Mortal Hunt Frenzy"
+fox_spirit_mortal_hunt_frenzy_desc:0 "This fox spirit has recently hunted mortal prey, accelerating insight through ruthless predation."
+
+opinion_fox_spirit_mortal_hunter:0 "Hunts Mortals for Cultivation"
+
+xianxia_world.2260.t:0 "Predator's Oath"
+xianxia_world.2260.desc:0 "You no longer deny what your fox-spirit blood craves. Mortal essence becomes fuel, and your path darkens."
+xianxia_world.2260.a:0 "I accept the predation dao."
+
+xianxia_world.2261.t:0 "Moonlit Mortal Hunt"
+xianxia_world.2261.desc:0 "Under cover of night, you harvest mortal vitality in your own domain. Power surges, but rumors spread like wildfire."
+xianxia_world.2261.a:0 "Let fear feed my path."

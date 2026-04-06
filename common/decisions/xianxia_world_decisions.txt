@@ -236,6 +236,68 @@ gather_alchemy_resources_decision = {
     ai_will_do = { base = 25 }
 }
 
+embrace_fox_spirit_predation_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_torture_prisoner.dds" }
+    decision_group_type = major
+    sort_order = 529
+
+    title = embrace_fox_spirit_predation_decision
+    desc = embrace_fox_spirit_predation_decision_desc
+    selection_tooltip = embrace_fox_spirit_predation_decision_tooltip
+    confirm_text = embrace_fox_spirit_predation_decision_confirm
+
+    is_shown = {
+        is_adult = yes
+        has_character_flag = fox_spirit_awakening_complete
+    }
+
+    is_valid = {
+        NOT = { has_trait = cannibal }
+        NOT = { has_character_flag = fox_spirit_predation_choice_cooldown }
+    }
+
+    effect = {
+        add_trait = cannibal
+        add_character_flag = { flag = fox_spirit_predation_choice_cooldown days = 3650 }
+        add_dread = 15
+        add_stress = -20
+        trigger_event = xianxia_world.2260
+    }
+
+    ai_check_interval = 48
+    ai_will_do = { base = 10 }
+}
+
+hunt_mortals_fox_spirit_decision = {
+    picture = { reference = "gfx/interface/illustrations/decisions/decision_hunt_animal.dds" }
+    decision_group_type = major
+    sort_order = 530
+
+    title = hunt_mortals_fox_spirit_decision
+    desc = hunt_mortals_fox_spirit_decision_desc
+    selection_tooltip = hunt_mortals_fox_spirit_decision_tooltip
+    confirm_text = hunt_mortals_fox_spirit_decision_confirm
+
+    is_shown = {
+        is_adult = yes
+        is_landed = yes
+        has_character_flag = fox_spirit_awakening_complete
+        has_trait = cannibal
+    }
+
+    is_valid = {
+        NOT = { has_character_flag = fox_spirit_mortal_hunt_cooldown }
+    }
+
+    effect = {
+        add_character_flag = { flag = fox_spirit_mortal_hunt_cooldown days = 730 }
+        trigger_event = xianxia_world.2261
+    }
+
+    ai_check_interval = 36
+    ai_will_do = { base = 18 }
+}
+
 
 sell_spirit_pill_decision = {
     picture = { reference = "gfx/interface/illustrations/decisions/decision_ask_for_gold.dds" }
