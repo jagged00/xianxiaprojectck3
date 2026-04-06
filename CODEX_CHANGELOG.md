@@ -399,3 +399,4 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Added `xianxia_martial_hero_frame` for martial-focused personalities/education/traits (brave, wrathful, blademaster, hunter, high martial education), with a taller and stronger heroic frame.
 - Added `xianxia_refined_sage_frame` for calm/patient/humble/scholar-theologian-mystic leaning cultivators, emphasizing an elegant refined immortal body line.
 - Added `xianxia_indulgent_deviation_frame` so indulgent paths (gluttonous/lazy/drunkard/hashishiyah/reveler) visibly diverge from orthodox cultivation physiques unless counterbalanced by elite body-discipline traits.
+- Follow-up regression fix (same date): moved Nirvana/True Immortal demonic/unorthodox white-hair gating into dedicated hair-aspect modifiers so high-realm eye/body/height transformation progression now applies to all faith paths again.

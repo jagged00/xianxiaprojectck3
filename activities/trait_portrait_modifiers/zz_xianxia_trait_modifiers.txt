@@ -121,20 +121,6 @@ xianxia_realm_transformation = {
 
 	entering_nirvana_transformation = {
 		traits = { cultivation_entering_nirvana }
-		trigger = {
-			trigger_if = {
-				limit = { exists = root }
-				OR = {
-					faith = { has_doctrine_parameter = unorthodox_cultivation }
-					AND = {
-						faith = { has_doctrine_parameter = demonic_cultivation }
-						NOT = { has_trait = wrathful }
-						NOT = { has_trait = sadistic }
-						NOT = { has_trait = vengeful }
-					}
-				}
-			}
-		}
 		dna_modifiers = {
 			human = {
 				color = {
@@ -153,32 +139,12 @@ xianxia_realm_transformation = {
 					gene = gene_bs_body_type
 					value = 0.78
 				}
-				color = {
-					gene = hair_color
-					mode = modify
-					x = -0.8
-					y = -0.8
-				}
 			}
 		}
 	}
 
 	true_immortal_transformation = {
 		traits = { cultivation_true_immortal }
-		trigger = {
-			trigger_if = {
-				limit = { exists = root }
-				OR = {
-					faith = { has_doctrine_parameter = unorthodox_cultivation }
-					AND = {
-						faith = { has_doctrine_parameter = demonic_cultivation }
-						NOT = { has_trait = wrathful }
-						NOT = { has_trait = sadistic }
-						NOT = { has_trait = vengeful }
-					}
-				}
-			}
-		}
 		dna_modifiers = {
 			human = {
 				color = {
@@ -196,12 +162,6 @@ xianxia_realm_transformation = {
 					mode = modify_multiply
 					gene = gene_bs_body_type
 					value = 0.72
-				}
-				color = {
-					gene = hair_color
-					mode = modify
-					x = -1.0
-					y = -1.0
 				}
 			}
 		}
@@ -307,6 +267,62 @@ xianxia_faith_eye_aspects = {
 }
 
 xianxia_faith_hair_aspects = {
+	unorthodox_demonic_nirvana_white_hair = {
+		traits = { cultivation_entering_nirvana }
+		trigger = {
+			trigger_if = {
+				limit = { exists = root }
+				OR = {
+					faith = { has_doctrine_parameter = unorthodox_cultivation }
+					AND = {
+						faith = { has_doctrine_parameter = demonic_cultivation }
+						NOT = { has_trait = wrathful }
+						NOT = { has_trait = sadistic }
+						NOT = { has_trait = vengeful }
+					}
+				}
+			}
+		}
+		dna_modifiers = {
+			human = {
+				color = {
+					gene = hair_color
+					mode = modify
+					x = -0.8
+					y = -0.8
+				}
+			}
+		}
+	}
+
+	unorthodox_demonic_true_immortal_white_hair = {
+		traits = { cultivation_true_immortal }
+		trigger = {
+			trigger_if = {
+				limit = { exists = root }
+				OR = {
+					faith = { has_doctrine_parameter = unorthodox_cultivation }
+					AND = {
+						faith = { has_doctrine_parameter = demonic_cultivation }
+						NOT = { has_trait = wrathful }
+						NOT = { has_trait = sadistic }
+						NOT = { has_trait = vengeful }
+					}
+				}
+			}
+		}
+		dna_modifiers = {
+			human = {
+				color = {
+					gene = hair_color
+					mode = modify
+					x = -1.0
+					y = -1.0
+				}
+			}
+		}
+	}
+
 	demonic_high_realm_blood_red_hair = {
 		traits = {
 			cultivation_entering_nirvana
