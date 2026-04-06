@@ -1,4 +1,4 @@
-nick_the_mount_hua_sword_sage = {}
+﻿nick_the_mount_hua_sword_sage = {}
 nick_the_heavenly_sword_lord = {}
 nick_the_ten_thousand_blades = {}
 nick_the_violet_thunder_blade = {}
