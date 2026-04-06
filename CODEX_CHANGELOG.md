@@ -408,3 +408,11 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Added `xianxia_refined_sage_frame` for calm/patient/humble/scholar-theologian-mystic leaning cultivators, emphasizing an elegant refined immortal body line.
 - Added `xianxia_indulgent_deviation_frame` so indulgent paths (gluttonous/lazy/drunkard/hashishiyah/reveler) visibly diverge from orthodox cultivation physiques unless counterbalanced by elite body-discipline traits.
 - Follow-up regression fix (same date): moved Nirvana/True Immortal demonic/unorthodox white-hair gating into dedicated hair-aspect modifiers so high-realm eye/body/height transformation progression now applies to all faith paths again.
+
+### 36) Reincarnation startup singleton enforcement + portrait/log cleanup (2026-04-06)
+- Strengthened `cultivation_ai.2270` game-start setup with a one-time initialization pass that enforces exactly one landed count+ reincarnator holder at campaign start.
+- Startup pass now clears stale reincarnation holder/cooldown flags, removes existing `cultivation_true_immortal` from rulers, and reassigns one random eligible ruler as the fully maxed true-immortal reincarnator.
+- Reincarnator package application now guarantees full cultivation-realm cleanup, heavenly meridians, and full perk-chain grant during setup before normal monthly singleton maintenance continues.
+- Fixed fox portrait scripted-trigger errors by removing unsupported dynamic clothing-gfx flag usage in `portrait_fox_ears_trigger`.
+- Fixed malformed fox-name localization ingestion by adding missing `l_english:` language scope to `fox_character_names_l_english.yml`.
+- Simplified fox dynasty localization lines to remove parser-breaking inline comment content that produced unexpected localization-token errors.
