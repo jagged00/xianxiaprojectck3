@@ -34,6 +34,7 @@
  refine_spirit_pill_decision_desc:0 "Consume rare herbs and spirit stones to attempt high-level alchemy. Success grants power, failure brings backlash."
  refine_spirit_pill_decision_tooltip:0 "Risk/reward alchemy with possible cultivation deviation or death."
  refine_spirit_pill_decision_confirm:0 "Ignite the cauldron."
+ spirit_pill_refining_cooldown:0 "You must wait before refining another Spirit Pill."
 
  comprehend_martial_manual_decision:0 "Comprehend a Martial Manual"
  comprehend_martial_manual_decision_desc:0 "Study sword scriptures, saber diagrams, body-method tablets, and spear intent to deepen your martial path."
