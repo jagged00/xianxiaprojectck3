@@ -42,7 +42,6 @@
                 modifier = dual_cultivation_insight
                 months = 6
             }
-            scope:recipient = { save_scope_as = carn_sex_partner_scope }
             dual_cultivation_effect = yes
 
             scope:recipient = {
