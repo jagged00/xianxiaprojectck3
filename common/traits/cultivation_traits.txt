@@ -69,13 +69,13 @@ cultivation_qi_gathering = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = cultivation_qi_gathering.dds
+				desc = qi_gathering.dds
 			}
 			triggered_desc = {
 				trigger = { is_female = yes }
-				desc = cultivation_qi_gathering_f.dds
+				desc = qi_gathering.dds
 			}
-			desc = cultivation_qi_gathering.dds
+			desc = qi_gathering.dds
 		}
 	}
 	
@@ -125,13 +125,13 @@ cultivation_qi_refining = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = cultivation_qi_refining.dds
+				desc = foundation_establishment.dds
 			}
 			triggered_desc = {
 				trigger = { is_female = yes }
-				desc = cultivation_qi_refining_f.dds
+				desc = foundation_establishment.dds
 			}
-			desc = cultivation_qi_refining.dds
+			desc = foundation_establishment.dds
 		}
 	}
 	
@@ -187,13 +187,13 @@ cultivation_qi_building = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = cultivation_qi_building.dds
+				desc = golden_core.dds
 			}
 			triggered_desc = {
 				trigger = { is_female = yes }
-				desc = cultivation_qi_building_f.dds
+				desc = golden_core.dds
 			}
-			desc = cultivation_qi_building.dds
+			desc = golden_core.dds
 		}
 	}
 	
@@ -243,13 +243,13 @@ cultivation_core_formation = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = cultivation_core_formation.dds
+				desc = core_formation.dds
 			}
 			triggered_desc = {
 				trigger = { is_female = yes }
-				desc = cultivation_core_formation_f.dds
+				desc = core_formation.dds
 			}
-			desc = cultivation_core_formation.dds
+			desc = core_formation.dds
 		}
 	}
 	
@@ -301,13 +301,13 @@ cultivation_nascent_soul = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = cultivation_nascent_soul.dds
+				desc = nascent_soul.dds
 			}
 			triggered_desc = {
 				trigger = { is_female = yes }
-				desc = cultivation_nascent_soul_f.dds
+				desc = nascent_soul.dds
 			}
-			desc = cultivation_nascent_soul.dds
+			desc = nascent_soul.dds
 		}
 	}
 	
@@ -368,13 +368,13 @@ cultivation_heavenly_being = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = cultivation_heavenly_being.dds
+				desc = dao_seeking.dds
 			}
 			triggered_desc = {
 				trigger = { is_female = yes }
-				desc = cultivation_heavenly_being_f.dds
+				desc = dao_seeking.dds
 			}
-			desc = cultivation_heavenly_being.dds
+			desc = dao_seeking.dds
 		}
 	}
 	
@@ -438,13 +438,13 @@ cultivation_four_axis = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = cultivation_four_axis.dds
+				desc = profound_realm.dds
 			}
 			triggered_desc = {
 				trigger = { is_female = yes }
-				desc = cultivation_four_axis_f.dds
+				desc = profound_realm.dds
 			}
-			desc = cultivation_four_axis.dds
+			desc = profound_realm.dds
 		}
 	}
 	
@@ -510,13 +510,13 @@ cultivation_integration = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = cultivation_integration.dds
+				desc = unrestrained_realm.dds
 			}
 			triggered_desc = {
 				trigger = { is_female = yes }
-				desc = cultivation_integration_f.dds
+				desc = unrestrained_realm.dds
 			}
-			desc = cultivation_integration.dds
+			desc = unrestrained_realm.dds
 		}
 	}
 	
@@ -585,13 +585,13 @@ cultivation_star_shattering = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = cultivation_star_shattering.dds
+				desc = peak_realm.dds
 			}
 			triggered_desc = {
 				trigger = { is_female = yes }
-				desc = cultivation_star_shattering_f.dds
+				desc = peak_realm.dds
 			}
-			desc = cultivation_star_shattering.dds
+			desc = peak_realm.dds
 		}
 	}
 	
@@ -659,13 +659,13 @@ cultivation_sacred_vessel = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = cultivation_sacred_vessel.dds
+				desc = spirit_severing.dds
 			}
 			triggered_desc = {
 				trigger = { is_female = yes }
-				desc = cultivation_sacred_vessel_f.dds
+				desc = spirit_severing.dds
 			}
-			desc = cultivation_sacred_vessel.dds
+			desc = spirit_severing.dds
 		}
 	}
 	
@@ -734,13 +734,13 @@ cultivation_entering_nirvana = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = cultivation_entering_nirvana.dds
+				desc = immortal_realm.dds
 			}
 			triggered_desc = {
 				trigger = { is_female = yes }
-				desc = cultivation_entering_nirvana_f.dds
+				desc = immortal_realm.dds
 			}
-			desc = cultivation_entering_nirvana.dds
+			desc = immortal_realm.dds
 		}
 	}
 	
@@ -811,13 +811,13 @@ cultivation_true_immortal = {
 		first_valid = {
 			triggered_desc = {
 				trigger = { NOT = { exists = this } }
-				desc = cultivation_true_immortal.dds
+				desc = immortal_ascension.dds
 			}
 			triggered_desc = {
 				trigger = { is_female = yes }
-				desc = cultivation_true_immortal_f.dds
+				desc = immortal_ascension.dds
 			}
-			desc = cultivation_true_immortal.dds
+			desc = immortal_ascension.dds
 		}
 	}
 	

@@ -49,7 +49,7 @@ cultivation_vagrant = {
 	faiths = {
 		lone_wolf_wanderers = {
 			color = { 0.5 0.5 0.5 }
-			icon = lone_wolf_wanderers
+			icon = cultivation
 			holy_site = chang_an
 			holy_site = luoyang
 			doctrine = tenet_adaptive
@@ -60,7 +60,7 @@ cultivation_vagrant = {
 
 		vagrant_blade_brotherhood = {
 			color = { 0.4 0.4 0.4 }
-			icon = vagrant_blade_brotherhood
+			icon = cultivation_reformed
 			holy_site = chang_an
 			holy_site = luoyang
 			doctrine = tenet_adaptive
@@ -71,7 +71,7 @@ cultivation_vagrant = {
 
 		thousand_treasures_pavilion = {
 			color = { 0.8 0.7 0.3 }
-			icon = thousand_treasures_pavilion
+			icon = kunlun_sect_reformed
 			holy_site = chang_an
 			holy_site = luoyang
 			doctrine = tenet_pursuit_of_power
@@ -82,7 +82,7 @@ cultivation_vagrant = {
 
 		mystic_forge_hall = {
 			color = { 0.7 0.4 0.2 }
-			icon = mystic_forge_hall
+			icon = kongtong_sect_reformed
 			holy_site = chang_an
 			holy_site = luoyang
 			doctrine = tenet_pursuit_of_power
@@ -93,7 +93,7 @@ cultivation_vagrant = {
 
 		ancient_relic_sect = {
 			color = { 0.6 0.5 0.4 }
-			icon = ancient_relic_sect
+			icon = mount_hua_sect_reformed
 			holy_site = chang_an
 			holy_site = luoyang
 			doctrine = tenet_pursuit_of_power
@@ -104,7 +104,7 @@ cultivation_vagrant = {
 
 		primal_beast_sect = {
 			color = { 0.5 0.4 0.3 }
-			icon = primal_beast_sect
+			icon = hainan_sect_reformed
 			holy_site = chang_an
 			holy_site = luoyang
 			doctrine = tenet_sanctity_of_nature
@@ -115,7 +115,7 @@ cultivation_vagrant = {
 
 		primordial_chaos_hall = {
 			color = { 0.4 0.4 0.5 }
-			icon = primordial_chaos_hall
+			icon = wudang_sect_reformed
 			holy_site = chang_an
 			holy_site = luoyang
 			doctrine = tenet_adaptive
@@ -126,7 +126,7 @@ cultivation_vagrant = {
 		
 		feral_bond_sect = {
 			color = { 0.4 0.5 0.4 }
-			icon = feral_bond_sect
+			icon = diancang_sect_reformed
 			holy_site = chang_an
 			holy_site = luoyang
 			doctrine = tenet_sanctity_of_nature

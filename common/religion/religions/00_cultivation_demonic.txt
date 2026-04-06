@@ -56,7 +56,7 @@ cultivation_demonic = {
 	faiths = {
 		ten_thousand_corpse_valley = {
 			color = { 0.3 0.1 0.1 }
-			icon = ten_thousand_corpse_valley
+			icon = demonic_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -68,7 +68,7 @@ cultivation_demonic = {
 
 		venomous_serpent_valley = {
 			color = { 0.2 0.5 0.1 }
-			icon = venomous_serpent_valley
+			icon = demonic_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -80,7 +80,7 @@ cultivation_demonic = {
 
 		blood_yin_cult = {
 			color = { 0.5 0.0 0.1 }
-			icon = blood_yin_cult
+			icon = demonic_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -92,7 +92,7 @@ cultivation_demonic = {
 
 		blood_moon_demonic_sect = {
 			color = { 0.6 0.1 0.2 }
-			icon = crimson_moon_demonic_sect
+			icon = demonic_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
@@ -105,7 +105,7 @@ cultivation_demonic = {
 		# Soul draining through pleasure
 		succubus_palace = {
 			color = { 0.8 0.2 0.5 }
-			icon = succubus_palace
+			icon = demonic_sect
 			holy_site = chang_an
 			holy_site = hiei
 			holy_site = luoyang
