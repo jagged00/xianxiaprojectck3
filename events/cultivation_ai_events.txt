@@ -1129,7 +1129,7 @@ cultivation_ai.2250 = {
                         is_alive = yes
                         is_ai = yes
                         is_adult = no
-                        is_noble = yes
+                        is_lowborn = no
                         age >= 6
                         age <= 13
                         NOT = { has_trait = huxian_blood }
@@ -1152,7 +1152,7 @@ cultivation_ai.2250 = {
                         is_alive = yes
                         is_ai = yes
                         is_adult = no
-                        is_noble = yes
+                        is_lowborn = no
                         age >= 6
                         age <= 13
                         NOT = { has_trait = huxian_blood }
@@ -1264,7 +1264,7 @@ cultivation_ai.2250 = {
                                 is_alive = yes
                                 is_ai = yes
                                 is_adult = no
-                                is_noble = yes
+                                is_lowborn = no
                                 age >= 6
                                 age <= 13
                                 NOT = { has_trait = huxian_blood }
@@ -1287,7 +1287,7 @@ cultivation_ai.2250 = {
                                 is_alive = yes
                                 is_ai = yes
                                 is_adult = no
-                                is_noble = yes
+                                is_lowborn = no
                                 age >= 6
                                 age <= 13
                                 NOT = { has_trait = huxian_blood }
