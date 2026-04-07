@@ -430,3 +430,8 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 ### 39) Reincarnation startup safety + ruler-tier scope correction (2026-04-06)
 - Reworked first-run migration behavior in `cultivation_ai.2270` to only set `cultivation_reincarnation_initialized`, preserving active holders/cooldown anchors in pre-patch saves instead of force-clearing state.
 - Restricted reincarnation holder candidate/validation tiers to landed count/duke rulers (excluded kingdom/emperor tiers) to prevent higher-rank rulers from being selected in the singleton lottery flow.
+
+### 40) Crash-path parser/localization cleanup for character selection (2026-04-07)
+- Removed invalid `guardian` trigger usage from `00_marriage_scripted_modifiers` liege-disapproval block and replaced it with a safe liege-opinion gate to stop parser errors in marriage AI evaluation.
+- Removed duplicate vanilla scheme localization keys from `localization/english/gui/schem_l_english.yml` (`scheme_physique_good_*` and `scheme_beauty_bad_*`) to avoid duplicate-key load conflicts.
+- Namespaced fox compatch personal-name localization keys with `hux_` and updated `name_list_huxian` male/female pools to reference the new keys, eliminating duplicate localization-key collisions with base xianxia name files.

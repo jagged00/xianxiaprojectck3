@@ -1,88 +1,88 @@
 ﻿l_english:
  # Male Names
- Xian: "Xian"           # Immortal / Fairy-like
- Huo: "Huo"             # Fire / Spirit
- Lang: "Lang"           # Wolf / Bold
- Yuan: "Yuan"           # Origin / First
- Jin: "Jin"             # Gold / Splendid
- Shen: "Shen"           # Divine / Spirit
- Ying: "Ying"           # Eagle / Brave
- Dao: "Dao"             # Path / Way
- Lei: "Lei"             # Thunder / Force
- An: "An"               # Peace / Calm
- Rong: "Rong"           # Glory / Honor
- Huozi: "Huozi"         # Fiery Child
- Jue: "Jue"             # Resolve / Determined
- Feng: "Feng"           # Wind / Agile
- Yao: "Yao"             # Radiant / Mysterious
- Zhen: "Zhen"           # Precious / True
- Kai: "Kai"             # Open / Begin
- Mu: "Mu"               # Wood / Life
- Qiu: "Qiu"             # Autumn / Harvest
- Xun: "Xun"             # Swift / Seek
- Bo: "Bo"               # Vast / Broad
- Yi: "Yi"               # Righteous / Justice
- Cheng: "Cheng"         # Accomplished / Success
- Lianhao: "Lianhao"     # Refined / Excellent
- Tianyu: "Tianyu"       # Heavenly Jade
- Guiming: "Guiming"     # Bright Destiny
- Yuhang: "Yuhang"       # Jade Navigator
- Zihan: "Zihan"         # Purple Splendor
- Qingyu: "Qingyu"       # Clear Jade
- Xuefeng: "Xuefeng"     # Snowy Peak
- Haoran: "Haoran"       # Magnificent / Vast
- Zhenlei: "Zhenlei"     # Thunderbolt
- Liangyu: "Liangyu"     # Bright Jade
- Shiyuan: "Shiyuan"     # Ambitious / Aspirant
- Fengxian: "Fengxian"   # Wind Immortal
- Yulin: "Yulin"         # Jade Forest
- Jinhai: "Jinhai"       # Golden Sea
- Zongyu: "Zongyu"       # Ancestor Jade
- Mingwei: "Mingwei"     # Bright / Clever
- Yunbo: "Yunbo"         # Cloud Waves
- Ruxin: "Ruxin"         # Like Heart
- Xinyuan: "Xinyuan"     # Trustworthy Origin
+ hux_Xian: "Xian"           # Immortal / Fairy-like
+ hux_Huo: "Huo"             # Fire / Spirit
+ hux_Lang: "Lang"           # Wolf / Bold
+ hux_Yuan: "Yuan"           # Origin / First
+ hux_Jin: "Jin"             # Gold / Splendid
+ hux_Shen: "Shen"           # Divine / Spirit
+ hux_Ying: "Ying"           # Eagle / Brave
+ hux_Dao: "Dao"             # Path / Way
+ hux_Lei: "Lei"             # Thunder / Force
+ hux_An: "An"               # Peace / Calm
+ hux_Rong: "Rong"           # Glory / Honor
+ hux_Huozi: "Huozi"         # Fiery Child
+ hux_Jue: "Jue"             # Resolve / Determined
+ hux_Feng: "Feng"           # Wind / Agile
+ hux_Yao: "Yao"             # Radiant / Mysterious
+ hux_Zhen: "Zhen"           # Precious / True
+ hux_Kai: "Kai"             # Open / Begin
+ hux_Mu: "Mu"               # Wood / Life
+ hux_Qiu: "Qiu"             # Autumn / Harvest
+ hux_Xun: "Xun"             # Swift / Seek
+ hux_Bo: "Bo"               # Vast / Broad
+ hux_Yi: "Yi"               # Righteous / Justice
+ hux_Cheng: "Cheng"         # Accomplished / Success
+ hux_Lianhao: "Lianhao"     # Refined / Excellent
+ hux_Tianyu: "Tianyu"       # Heavenly Jade
+ hux_Guiming: "Guiming"     # Bright Destiny
+ hux_Yuhang: "Yuhang"       # Jade Navigator
+ hux_Zihan: "Zihan"         # Purple Splendor
+ hux_Qingyu: "Qingyu"       # Clear Jade
+ hux_Xuefeng: "Xuefeng"     # Snowy Peak
+ hux_Haoran: "Haoran"       # Magnificent / Vast
+ hux_Zhenlei: "Zhenlei"     # Thunderbolt
+ hux_Liangyu: "Liangyu"     # Bright Jade
+ hux_Shiyuan: "Shiyuan"     # Ambitious / Aspirant
+ hux_Fengxian: "Fengxian"   # Wind Immortal
+ hux_Yulin: "Yulin"         # Jade Forest
+ hux_Jinhai: "Jinhai"       # Golden Sea
+ hux_Zongyu: "Zongyu"       # Ancestor Jade
+ hux_Mingwei: "Mingwei"     # Bright / Clever
+ hux_Yunbo: "Yunbo"         # Cloud Waves
+ hux_Ruxin: "Ruxin"         # Like Heart
+ hux_Xinyuan: "Xinyuan"     # Trustworthy Origin
 
  # Female Names
- Mei: "Mei"             # Beautiful / Elegant
- Lan: "Lan"             # Orchid
- Hua: "Hua"             # Flower / Blossom
- Xia: "Xia"             # Little / Young
- Yun: "Yun"             # Cloud / Grace
- Feng: "Feng"           # Phoenix / Wind
- Rong: "Rong"           # Glory / Honor
- Ling: "Ling"           # Spirit / Bell
- Xiao: "Xiao"           # Small / Little
- Yao: "Yao"             # Radiant / Beautiful
- Huai: "Huai"           # Gentle / Kind
- Shen: "Shen"           # Divine / Spirit
- Lian: "Lian"           # Lotus / Refined
- Jing: "Jing"           # Crystal / Pure
- Xiu: "Xiu"             # Graceful / Elegant
- Rou: "Rou"             # Soft / Tender
- Ming: "Ming"           # Bright / Clever
- Qing: "Qing"           # Clear / Pure
- Yue: "Yue"             # Moon / Gentle
- Lianhua: "Lianhua"     # Lotus Flower
- Feiyan: "Feiyan"       # Flying Swallow
- Yuhuan: "Yuhuan"       # Jade Ring
- Taojin: "Taojin"       # Peach Gold
- Xiaomei: "Xiaomei"     # Little Plum
- Xiangling: "Xiangling" # Fragrant Bell
- Shuanghua: "Shuanghua" # Twin Flowers
- Luhua: "Luhua"         # Green Blossom
- Yixuan: "Yixuan"       # Elegant Jade
- Ruolan: "Ruolan"       # Like Orchid
- Muer: "Muer"           # Gentle Child
- Tianyun: "Tianyun"     # Heavenly Cloud
- Lanfang: "Lanfang"     # Orchid Fragrance
- Yuhong: "Yuhong"       # Jade Red
- Xianger: "Xianger"     # Auspicious Child
- Xiulan: "Xiulan"       # Elegant Orchid
- Mingmei: "Mingmei"     # Bright Beauty
- Zhenzhu: "Zhenzhu"     # Precious Pearl
- Qingling: "Qingling"   # Clear and Pure
- Yuehua: "Yuehua"       # Moon Flower
- Xiuying: "Xiuying"     # Elegant Reflection
- Lingyun: "Lingyun"     # Spiritual Cloud
- Huixin: "Huixin"       # Kind Heart
+ hux_Mei: "Mei"             # Beautiful / Elegant
+ hux_Lan: "Lan"             # Orchid
+ hux_Hua: "Hua"             # Flower / Blossom
+ hux_Xia: "Xia"             # Little / Young
+ hux_Yun: "Yun"             # Cloud / Grace
+ hux_Feng: "Feng"           # Phoenix / Wind
+ hux_Rong: "Rong"           # Glory / Honor
+ hux_Ling: "Ling"           # Spirit / Bell
+ hux_Xiao: "Xiao"           # Small / Little
+ hux_Yao: "Yao"             # Radiant / Beautiful
+ hux_Huai: "Huai"           # Gentle / Kind
+ hux_Shen: "Shen"           # Divine / Spirit
+ hux_Lian: "Lian"           # Lotus / Refined
+ hux_Jing: "Jing"           # Crystal / Pure
+ hux_Xiu: "Xiu"             # Graceful / Elegant
+ hux_Rou: "Rou"             # Soft / Tender
+ hux_Ming: "Ming"           # Bright / Clever
+ hux_Qing: "Qing"           # Clear / Pure
+ hux_Yue: "Yue"             # Moon / Gentle
+ hux_Lianhua: "Lianhua"     # Lotus Flower
+ hux_Feiyan: "Feiyan"       # Flying Swallow
+ hux_Yuhuan: "Yuhuan"       # Jade Ring
+ hux_Taojin: "Taojin"       # Peach Gold
+ hux_Xiaomei: "Xiaomei"     # Little Plum
+ hux_Xiangling: "Xiangling" # Fragrant Bell
+ hux_Shuanghua: "Shuanghua" # Twin Flowers
+ hux_Luhua: "Luhua"         # Green Blossom
+ hux_Yixuan: "Yixuan"       # Elegant Jade
+ hux_Ruolan: "Ruolan"       # Like Orchid
+ hux_Muer: "Muer"           # Gentle Child
+ hux_Tianyun: "Tianyun"     # Heavenly Cloud
+ hux_Lanfang: "Lanfang"     # Orchid Fragrance
+ hux_Yuhong: "Yuhong"       # Jade Red
+ hux_Xianger: "Xianger"     # Auspicious Child
+ hux_Xiulan: "Xiulan"       # Elegant Orchid
+ hux_Mingmei: "Mingmei"     # Bright Beauty
+ hux_Zhenzhu: "Zhenzhu"     # Precious Pearl
+ hux_Qingling: "Qingling"   # Clear and Pure
+ hux_Yuehua: "Yuehua"       # Moon Flower
+ hux_Xiuying: "Xiuying"     # Elegant Reflection
+ hux_Lingyun: "Lingyun"     # Spiritual Cloud
+ hux_Huixin: "Huixin"       # Kind Heart
