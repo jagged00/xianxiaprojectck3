@@ -288,7 +288,7 @@ xianxia_world.1120 = {
         name = xianxia_world.1120.a
         add_prestige = 350
         add_character_modifier = { modifier = sect_resource_surplus days = 730 }
-        add_dynasty_prestige = 120
+        dynasty = { add_dynasty_prestige = 120 }
     }
 }
 
@@ -360,25 +360,25 @@ xianxia_world.1320 = {
         xianxia_update_alchemy_lifestyle_trait_effect = yes
 
         if = {
-            limit = {
-                has_trait = alchemy_lifestyle_tier_3
-                random = 10
+            limit = { has_trait = alchemy_lifestyle_tier_3 }
+            random = {
+                chance = 10
+                add_character_modifier = { modifier = perfected_spirit_pill days = 730 }
             }
-            add_character_modifier = { modifier = perfected_spirit_pill days = 730 }
         }
         else_if = {
-            limit = {
-                has_trait = alchemy_lifestyle_tier_2
-                random = 6
+            limit = { has_trait = alchemy_lifestyle_tier_2 }
+            random = {
+                chance = 6
+                add_character_modifier = { modifier = perfected_spirit_pill days = 365 }
             }
-            add_character_modifier = { modifier = perfected_spirit_pill days = 365 }
         }
         else_if = {
-            limit = {
-                has_trait = alchemy_lifestyle_tier_1
-                random = 3
+            limit = { has_trait = alchemy_lifestyle_tier_1 }
+            random = {
+                chance = 3
+                add_character_modifier = { modifier = perfected_spirit_pill days = 180 }
             }
-            add_character_modifier = { modifier = perfected_spirit_pill days = 180 }
         }
 
         if = {
