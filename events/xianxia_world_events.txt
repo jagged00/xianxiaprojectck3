@@ -362,21 +362,21 @@ xianxia_world.1320 = {
         if = {
             limit = {
                 has_trait = alchemy_lifestyle_tier_3
-                random = { chance = 10 }
+                random = 10
             }
             add_character_modifier = { modifier = perfected_spirit_pill days = 730 }
         }
         else_if = {
             limit = {
                 has_trait = alchemy_lifestyle_tier_2
-                random = { chance = 6 }
+                random = 6
             }
             add_character_modifier = { modifier = perfected_spirit_pill days = 365 }
         }
         else_if = {
             limit = {
                 has_trait = alchemy_lifestyle_tier_1
-                random = { chance = 3 }
+                random = 3
             }
             add_character_modifier = { modifier = perfected_spirit_pill days = 180 }
         }

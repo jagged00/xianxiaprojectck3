@@ -78,8 +78,11 @@
 					liege = {
 						opinion = { target = scope:actor value <= -1 }
 					}
-					guardian = {
-						opinion = { target = scope:actor value <= -1 }
+					AND = {
+						exists = guardian
+						guardian = {
+							opinion = { target = scope:actor value <= -1 }
+						}
 					}
 				}
 			}
@@ -103,10 +106,7 @@
 					if = {
 						limit = {
 							scope:secondary_recipient = {
-								OR = {
-									is_primary_heir = yes
-									any_claim = { }
-								}
+								any_claim = { }
 							}
 						}
 						add = 550  # Huge bonus - AI gains land/title through the marriage
@@ -120,14 +120,6 @@
 							}
 						}
 						add = 400  # Huge boost for desperate heirless old AI
-					}
-					else_if = {
-						limit = {
-							scope:actor = {
-								NOT = { any_eligible_noble_match_in_range_trigger = yes }
-							}
-						}
-						add = 50  # Small boost for very limited options
 					}
 				}
 				else_if = {
@@ -172,17 +164,6 @@
 			desc = class_mismatch_marriage
 		}
 
-        # Virgin Bride Offered (Purity premium) - Boost only when AI is offering their own virgin girl
-		modifier = {
-			add = 200
-			desc = VIRGIN_BRIDE_BONUS
-			scope:actor = { is_ai = yes }  # AI must be the one offering/proposing
-			scope:secondary_recipient = {
-				is_female = yes
-				is_virgin_trigger = yes
-			}
-		}
-
 		# For Noble Women (High status, more severe penalty)
 		modifier = {
 			add = -150 # Severe penalty for marriage acceptance (for high-status/noble women)
@@ -192,12 +173,12 @@
 			}
 			scope:secondary_recipient = {
 				is_female = yes
-				is_virgin_trigger = no # Ensure the recipient is not a virgin
+				NOT = { has_trait = chaste } # Approximate non-virgin preference gate without custom triggers
 			}
 			scope:recipient = {
 				is_ai = yes # Ensure this applies to AI characters
 				OR = {
-					is_noble = yes # Apply only if the recipient is a noble (high status)
+					is_lowborn = no # Apply only if the recipient is a noble (high status)
 				}
 			}
 		}
@@ -211,12 +192,12 @@
 			}
 			scope:secondary_recipient = {
 				is_female = yes
-				is_virgin_trigger = no # Ensure the recipient is not a virgin
+				NOT = { has_trait = chaste } # Approximate non-virgin preference gate without custom triggers
 			}
 			scope:recipient = {
 				is_ai = yes # Ensure this applies to AI characters
 				OR = {
-					is_noble = no # Apply only if the recipient is a commoner (low status)
+					is_lowborn = yes # Apply only if the recipient is a commoner (low status)
 				}
 			}
 		}
