@@ -28,3 +28,5 @@ mirror_events = {
 # sync_update: added cultivation_ai.3001 lightweight monthly sect-pact maintenance pulse to restore alliances without full monthly global sweep
 # sync_update: increased cultivation_ai.3001 monthly pact maintenance attempts per pulse to improve visible sect alliance formation
 # sync_update: forced fox-spirit vessel awakenings now invoke shared parent accept/disown flow (including player-parent event trigger)
+# sync_update: removed references to non-existent sect faith ids from fox-spirit runtime flows and corrected formation-barrier realm trait checks
+# sync_update: guarded reincarnation perk grants/flagging against dead scope and duplicate-perk runtime errors

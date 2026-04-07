@@ -1011,35 +1011,32 @@ cultivation_ai.2250 = {
                     NOT = { has_trait = honest }
                     NOT = { has_trait = just }
                     NOT = { has_trait = compassionate }
-                    NOT = {
-                        faith = {
-                            OR = {
-                                this = faith:mount_hua_sect
-                                this = faith:heavenly_sword_pavilion
-                                this = faith:azure_edge_sect
-                                this = faith:ten_thousand_swords_valley
-                                this = faith:violet_thunder_blade_sect
-                                this = faith:eight_trigrams_palace
-                                this = faith:celestial_talisman_hall
-                            }
-                        }
-                    }
+	                    NOT = {
+	                        faith = {
+	                            OR = {
+	                                this = faith:mount_hua_sect
+	                                this = faith:heavenly_sword_pavilion
+	                                this = faith:ten_thousand_swords_valley
+	                                this = faith:violet_thunder_blade_sect
+	                            }
+	                        }
+	                    }
                 }
 
                 add_character_flag = { flag = fox_spirit_awakening_cooldown days = 3650 }
 
-                random_list = {
-                    # Demonic sects are strong supporters.
-                    16 = { trigger = { faith = { has_doctrine_parameter = demonic_cultivation } } add_character_flag = fox_spirit_awakening_complete }
-                    # Yin/spirit/charm-compatible sect identities.
-                    10 = { trigger = { faith = faith:yin_phoenix_sect } add_character_flag = fox_spirit_awakening_complete }
-                    9 = { trigger = { faith = faith:succubus_palace } add_character_flag = fox_spirit_awakening_complete }
-                    8 = { trigger = { faith = faith:spirit_communion_temple } add_character_flag = fox_spirit_awakening_complete }
-                    # Unorthodox and vagrant are situational.
-                    6 = { trigger = { faith = { has_doctrine_parameter = unorthodox_cultivation } } add_character_flag = fox_spirit_awakening_complete }
-                    4 = { trigger = { faith = { has_doctrine_parameter = vagrant_cultivation } } add_character_flag = fox_spirit_awakening_complete }
-                    947 = { }
-                }
+	                random_list = {
+	                    # Demonic sects are strong supporters.
+	                    16 = { trigger = { faith = { has_doctrine_parameter = demonic_cultivation } } add_character_flag = fox_spirit_awakening_complete }
+	                    # Yin/charm-compatible sect identities.
+	                    9 = { trigger = { faith = faith:succubus_palace } add_character_flag = fox_spirit_awakening_complete }
+	                    8 = { trigger = { faith = faith:jade_chamber_sect } add_character_flag = fox_spirit_awakening_complete }
+	                    7 = { trigger = { faith = faith:eternal_pleasure_hall } add_character_flag = fox_spirit_awakening_complete }
+	                    # Unorthodox and vagrant are situational.
+	                    6 = { trigger = { faith = { has_doctrine_parameter = unorthodox_cultivation } } add_character_flag = fox_spirit_awakening_complete }
+	                    4 = { trigger = { faith = { has_doctrine_parameter = vagrant_cultivation } } add_character_flag = fox_spirit_awakening_complete }
+	                    950 = { }
+	                }
 
                 if = {
                     limit = { has_character_flag = fox_spirit_awakening_complete }
@@ -1055,46 +1052,33 @@ cultivation_ai.2250 = {
                             NOT = { this = root }
                         }
 
-                        if = {
-                            limit = {
-                                faith = {
-                                    OR = {
-                                        this = faith:mount_hua_sect
-                                        this = faith:heavenly_sword_pavilion
-                                        this = faith:azure_edge_sect
-                                        this = faith:ten_thousand_swords_valley
-                                        this = faith:violet_thunder_blade_sect
-                                    }
-                                }
-                            }
-                            add_opinion = { target = root modifier = opinion_fox_spirit_orthodox_hate years = 30 }
-                        }
-                        else_if = {
-                            limit = {
-                                faith = {
-                                    OR = {
-                                        this = faith:eight_trigrams_palace
-                                        this = faith:celestial_talisman_hall
-                                    }
-                                }
-                            }
-                            add_opinion = { target = root modifier = opinion_fox_spirit_order_hate years = 30 }
-                        }
-                        else_if = {
-                            limit = { faith = { has_doctrine_parameter = demonic_cultivation } }
-                            add_opinion = { target = root modifier = opinion_fox_spirit_demonic_ally years = 30 }
-                        }
-                        else_if = {
-                            limit = {
-                                OR = {
-                                    faith = faith:yin_phoenix_sect
-                                    faith = faith:spirit_communion_temple
-                                    faith = faith:jade_chamber_sect
-                                    faith = faith:eternal_pleasure_hall
-                                }
-                            }
-                            add_opinion = { target = root modifier = opinion_fox_spirit_yin_affinity years = 30 }
-                        }
+	                        if = {
+	                            limit = {
+	                                faith = {
+	                                    OR = {
+	                                        this = faith:mount_hua_sect
+	                                        this = faith:heavenly_sword_pavilion
+	                                        this = faith:ten_thousand_swords_valley
+	                                        this = faith:violet_thunder_blade_sect
+	                                    }
+	                                }
+	                            }
+	                            add_opinion = { target = root modifier = opinion_fox_spirit_orthodox_hate years = 30 }
+	                        }
+	                        else_if = {
+	                            limit = { faith = { has_doctrine_parameter = demonic_cultivation } }
+	                            add_opinion = { target = root modifier = opinion_fox_spirit_demonic_ally years = 30 }
+	                        }
+	                        else_if = {
+	                            limit = {
+	                                OR = {
+	                                    faith = faith:jade_chamber_sect
+	                                    faith = faith:eternal_pleasure_hall
+	                                    faith = faith:succubus_palace
+	                                }
+	                            }
+	                            add_opinion = { target = root modifier = opinion_fox_spirit_yin_affinity years = 30 }
+	                        }
                         else_if = {
                             limit = { faith = { has_doctrine_parameter = unorthodox_cultivation } }
                             add_opinion = { target = root modifier = opinion_fox_spirit_unorthodox_wary years = 20 }
@@ -1401,20 +1385,17 @@ cultivation_ai.2260 = {
                 is_alive = yes
                 has_character_flag = fox_spirit_awakening_complete
                 exists = liege
-                liege = {
-                    is_alive = yes
-                    faith = {
-                        OR = {
-                            this = faith:mount_hua_sect
-                            this = faith:heavenly_sword_pavilion
-                            this = faith:azure_edge_sect
-                            this = faith:ten_thousand_swords_valley
-                            this = faith:violet_thunder_blade_sect
-                            this = faith:eight_trigrams_palace
-                            this = faith:celestial_talisman_hall
-                        }
-                    }
-                }
+	                liege = {
+	                    is_alive = yes
+	                    faith = {
+	                        OR = {
+	                            this = faith:mount_hua_sect
+	                            this = faith:heavenly_sword_pavilion
+	                            this = faith:ten_thousand_swords_valley
+	                            this = faith:violet_thunder_blade_sect
+	                        }
+	                    }
+	                }
             }
 
             random_list = {
@@ -1575,51 +1556,51 @@ cultivation_ai.2270 = {
                 add_trait = heavenly_meridians
 
                 # Grant the full cultivation perk progression.
-                add_perk = mortal_muscle_reconstruction_perk
-                add_perk = mortal_bone_reconstruction_perk
-                add_perk = mortal_internal_reconstruction_perk
-                add_perk = mortal_external_reconstruction_perk
-                add_perk = mortal_body_reconstruction_perk
-                add_perk = mortal_qi_gathering_breakthrough_perk
-                add_perk = qi_gathering_meridian_1_perk
-                add_perk = qi_gathering_meridian_2_perk
-                add_perk = qi_gathering_meridian_3a_perk
-                add_perk = qi_gathering_meridian_3b_perk
-                add_perk = qi_gathering_meridian_4_perk
-                add_perk = qi_gathering_qi_refining_breakthrough_perk
-                add_perk = qi_refining_1a_star_perk
-                add_perk = qi_refining_1b_star_perk
-                add_perk = qi_refining_qi_building_breakthrough_perk
-                add_perk = qi_building_1_perk
-                add_perk = qi_building_core_formation_breakthrough_perk
-                add_perk = core_formation_qi1_perk
-                add_perk = core_formation_nascent_soul_breakthrough_perk
-                add_perk = nascent_soul_early_perk
-                add_perk = nascent_soul_heavenly_being_breakthrough_perk
-                add_perk = heavenly_being_1_perk
-                add_perk = heavenly_being_four_axis_breakthrough_perk
-                add_perk = four_axis_axis_1a_perk
-                add_perk = four_axis_axis_1b_perk
-                add_perk = four_axis_axis_1c_perk
-                add_perk = four_axis_axis_1d_perk
-                add_perk = four_axis_integration_breakthrough_perk
-                add_perk = integration_1a_perk
-                add_perk = integration_1b_perk
-                add_perk = integration_1c_perk
-                add_perk = integration_1d_perk
-                add_perk = integration_1e_perk
-                add_perk = integration_star_shattering_breakthrough_perk
-                add_perk = star_shattering_explode_perk
-                add_perk = star_shattering_sacred_vessel_breakthrough_perk
-                add_perk = sacred_vessel_hour_perk
-                add_perk = sacred_vessel_entering_nirvana_breakthrough_perk
-                add_perk = entering_nirvana_life_perk
-                add_perk = entering_nirvana_death_perk
-                add_perk = entering_nirvana_reborn_perk
-                add_perk = true_immortal_final_perk
+                if = { limit = { is_alive = yes NOT = { has_perk = mortal_muscle_reconstruction_perk } } add_perk = mortal_muscle_reconstruction_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = mortal_bone_reconstruction_perk } } add_perk = mortal_bone_reconstruction_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = mortal_internal_reconstruction_perk } } add_perk = mortal_internal_reconstruction_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = mortal_external_reconstruction_perk } } add_perk = mortal_external_reconstruction_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = mortal_body_reconstruction_perk } } add_perk = mortal_body_reconstruction_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = mortal_qi_gathering_breakthrough_perk } } add_perk = mortal_qi_gathering_breakthrough_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = qi_gathering_meridian_1_perk } } add_perk = qi_gathering_meridian_1_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = qi_gathering_meridian_2_perk } } add_perk = qi_gathering_meridian_2_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = qi_gathering_meridian_3a_perk } } add_perk = qi_gathering_meridian_3a_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = qi_gathering_meridian_3b_perk } } add_perk = qi_gathering_meridian_3b_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = qi_gathering_meridian_4_perk } } add_perk = qi_gathering_meridian_4_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = qi_gathering_qi_refining_breakthrough_perk } } add_perk = qi_gathering_qi_refining_breakthrough_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = qi_refining_1a_star_perk } } add_perk = qi_refining_1a_star_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = qi_refining_1b_star_perk } } add_perk = qi_refining_1b_star_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = qi_refining_qi_building_breakthrough_perk } } add_perk = qi_refining_qi_building_breakthrough_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = qi_building_1_perk } } add_perk = qi_building_1_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = qi_building_core_formation_breakthrough_perk } } add_perk = qi_building_core_formation_breakthrough_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = core_formation_qi1_perk } } add_perk = core_formation_qi1_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = core_formation_nascent_soul_breakthrough_perk } } add_perk = core_formation_nascent_soul_breakthrough_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = nascent_soul_early_perk } } add_perk = nascent_soul_early_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = nascent_soul_heavenly_being_breakthrough_perk } } add_perk = nascent_soul_heavenly_being_breakthrough_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = heavenly_being_1_perk } } add_perk = heavenly_being_1_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = heavenly_being_four_axis_breakthrough_perk } } add_perk = heavenly_being_four_axis_breakthrough_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = four_axis_axis_1a_perk } } add_perk = four_axis_axis_1a_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = four_axis_axis_1b_perk } } add_perk = four_axis_axis_1b_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = four_axis_axis_1c_perk } } add_perk = four_axis_axis_1c_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = four_axis_axis_1d_perk } } add_perk = four_axis_axis_1d_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = four_axis_integration_breakthrough_perk } } add_perk = four_axis_integration_breakthrough_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = integration_1a_perk } } add_perk = integration_1a_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = integration_1b_perk } } add_perk = integration_1b_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = integration_1c_perk } } add_perk = integration_1c_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = integration_1d_perk } } add_perk = integration_1d_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = integration_1e_perk } } add_perk = integration_1e_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = integration_star_shattering_breakthrough_perk } } add_perk = integration_star_shattering_breakthrough_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = star_shattering_explode_perk } } add_perk = star_shattering_explode_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = star_shattering_sacred_vessel_breakthrough_perk } } add_perk = star_shattering_sacred_vessel_breakthrough_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = sacred_vessel_hour_perk } } add_perk = sacred_vessel_hour_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = sacred_vessel_entering_nirvana_breakthrough_perk } } add_perk = sacred_vessel_entering_nirvana_breakthrough_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = entering_nirvana_life_perk } } add_perk = entering_nirvana_life_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = entering_nirvana_death_perk } } add_perk = entering_nirvana_death_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = entering_nirvana_reborn_perk } } add_perk = entering_nirvana_reborn_perk }
+                if = { limit = { is_alive = yes NOT = { has_perk = true_immortal_final_perk } } add_perk = true_immortal_final_perk }
 
-                give_nickname = nick_the_reincarnator
-                add_character_flag = cultivation_reincarnation_holder
+                if = { limit = { is_alive = yes } give_nickname = nick_the_reincarnator }
+                if = { limit = { is_alive = yes } add_character_flag = cultivation_reincarnation_holder }
                 }
             }
         }
