@@ -258,6 +258,10 @@ It summarizes *what has been changed recently*, *why*, and *what constraints to 
 - Added a fuller sect office layer: new role traits for Inner Hall Elder, Outer Hall Elder, Enforcement Elder, and Lineage Heir, plus periodic assignment flow for landed sect rulers.
 - Added sect-internal governance pressure pulses with dispute/power-struggle/resource-obligation outcomes and sect resource stockpile/obligation modifiers tied to realm gameplay.
 - Extended Jianghu tournament behavior into a multi-stage chain (`xianxia_world.1100 -> 1110 -> 1120`) with injuries, rivalry generation, and scaled rewards.
+
+### 26) Reincarnation startup safety throttle (2026-04-08)
+- Removed `cultivation_ai.2270` from `on_game_start_after_lobby` so the heavy reincarnation lottery mutation pass no longer executes during the immediate post-character-select load transition.
+- Kept `cultivation_ai.2270` on monthly pulse so the system still functions in active gameplay, but avoids first-load instability risk.
 - Extended secret-realm expeditions into a progression chain (`xianxia_world.1500 -> 1510 -> 1520`) with staged setbacks and final inheritance outcomes.
 - Added a full master-disciple interaction suite: recruit disciple, teach technique, inherit manuals, and expel/betray disciple; added lineage prestige/disciple growth modifiers tied to mentor office traits.
 - Reworked alchemy into a two-step pipeline (`xianxia_world.1300 -> 1310 -> 1320`) including furnace-quality scaling (learning gate), failure states, and reward gradients.

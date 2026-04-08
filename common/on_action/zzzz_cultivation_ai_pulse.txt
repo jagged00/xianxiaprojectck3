@@ -2,7 +2,6 @@
     events = {
         cultivation_ai.1000
         cultivation_ai.2250
-        cultivation_ai.2270
         cultivation_ai.3000
         xianxia_world.1000
         xianxia_world.1700
